@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PrimitiveTypeFacets="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0" xmlns:bomnotation="http://www.tibco.com/models/bomnotation" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0 pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw">
+  <uml:Model xmi:id="_koGeMO-AEeew6MIz6mWFYQ" name="com.sfc.fosImpl.adminOps.dataModel">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_koGeMe-AEeew6MIz6mWFYQ" source="model.metadata">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_koGeMu-AEeew6MIz6mWFYQ" key="author" value="ideshpan"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_koGeM--AEeew6MIz6mWFYQ" key="created" value="1514872115091"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_koGeNO-AEeew6MIz6mWFYQ" key="version" value="1000"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ipNxwPBTEeeuzZ1H_57zBQ" name="Resource">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_k1FMYPBTEeeuzZ1H_57zBQ" name="loginName" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k1I2wfBTEeeuzZ1H_57zBQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k1I2wvBTEeeuzZ1H_57zBQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_lQShsPBTEeeuzZ1H_57zBQ" name="emailAddress" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lQTIwfBTEeeuzZ1H_57zBQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lQTIwvBTEeeuzZ1H_57zBQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_oZnqIPBTEeeuzZ1H_57zBQ" name="groupName" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oZo4QfBTEeeuzZ1H_57zBQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oZo4QvBTEeeuzZ1H_57zBQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_L4nc4PBVEeeuzZ1H_57zBQ" name="ContractorGroups">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PGKW8PBVEeeuzZ1H_57zBQ" name="firstName" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PGLlEfBVEeeuzZ1H_57zBQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PGLlEvBVEeeuzZ1H_57zBQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PiE24PBVEeeuzZ1H_57zBQ" name="lastName" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PiFd8fBVEeeuzZ1H_57zBQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PiFd8vBVEeeuzZ1H_57zBQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Pxo84PBVEeeuzZ1H_57zBQ" name="emailID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PxqLAPBVEeeuzZ1H_57zBQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PxqLAfBVEeeuzZ1H_57zBQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TtqGgPBVEeeuzZ1H_57zBQ" name="contractorGroupName" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TtsiwPBVEeeuzZ1H_57zBQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TtsiwfBVEeeuzZ1H_57zBQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_V7YiUPBVEeeuzZ1H_57zBQ" name="masterUser" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V7ZwcfBVEeeuzZ1H_57zBQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V7ZwcvBVEeeuzZ1H_57zBQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ZsptIPBYEeeuzZ1H_57zBQ" name="loginName" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZsswcPBYEeeuzZ1H_57zBQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZsswcfBYEeeuzZ1H_57zBQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KHBXwPRYEeeRs7eYTPjalw" name="BPMUsers">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_MiwaYPRYEeeRs7eYTPjalw" name="name" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mi0EwfRYEeeRs7eYTPjalw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mi0EwvRYEeeRs7eYTPjalw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_MuSU8PRYEeeRs7eYTPjalw" name="groupName" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MuS8AfRYEeeRs7eYTPjalw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MuTjEPRYEeeRs7eYTPjalw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_M1iMcPRYEeeRs7eYTPjalw" name="addedBy" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M1izgfRYEeeRs7eYTPjalw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M1izgvRYEeeRs7eYTPjalw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_M9KecPRYEeeRs7eYTPjalw" name="addedOn" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M9LFgfRYEeeRs7eYTPjalw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M9LFgvRYEeeRs7eYTPjalw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gHLbQO-BEeew6MIz6mWFYQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gHLbQe-BEeew6MIz6mWFYQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_3A574HcJEdytQ9AWEvOuug?PrimitiveTypeFacets?"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yf3KoC0GEe2FFZh-0a9tGg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yf3KoS0GEe2FFZh-0a9tGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_-r7KEXyPEeCumvZ6xHSUiw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_20kHsWs1EeC_hvle0zpSaA?BOM%20Global%20Data%20Profile?"/>
+    </profileApplication>
+  </uml:Model>
+  <notation:Diagram xmi:id="_kpSxAO-AEeew6MIz6mWFYQ" type="Business Object Model" element="_koGeMO-AEeew6MIz6mWFYQ?com.sfc.fosImpl.adminOps.dataModel?" name="BusinessObjectModel.bom" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_htrWkPBTEeeuzZ1H_57zBQ" type="1007" element="_koGeMO-AEeew6MIz6mWFYQ?com.sfc.fosImpl.adminOps.dataModel?">
+      <children xmi:type="notation:Node" xmi:id="_htvA8PBTEeeuzZ1H_57zBQ" type="4023">
+        <styles xmi:type="notation:FontStyle" xmi:id="_htvA8fBTEeeuzZ1H_57zBQ" fontName="Segoe UI" fontHeight="10" bold="true"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_htvoAPBTEeeuzZ1H_57zBQ" type="4024"/>
+      <children xmi:type="notation:Node" xmi:id="_htvoAfBTEeeuzZ1H_57zBQ" type="4025"/>
+      <children xmi:type="notation:Node" xmi:id="_htvoAvBTEeeuzZ1H_57zBQ" type="4026"/>
+      <children xmi:type="notation:Node" xmi:id="_htwPEPBTEeeuzZ1H_57zBQ" type="4027"/>
+      <children xmi:type="notation:Node" xmi:id="_htwPEfBTEeeuzZ1H_57zBQ" type="4028"/>
+      <children xmi:type="notation:Node" xmi:id="_htw2IPBTEeeuzZ1H_57zBQ" type="4029"/>
+      <children xmi:type="notation:Node" xmi:id="_htw2IfBTEeeuzZ1H_57zBQ" type="4030"/>
+      <children xmi:type="notation:Node" xmi:id="_htxdMPBTEeeuzZ1H_57zBQ" type="5007">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_htxdMfBTEeeuzZ1H_57zBQ"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_htxdMvBTEeeuzZ1H_57zBQ" showTitle="true"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_htxdM_BTEeeuzZ1H_57zBQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_htxdNPBTEeeuzZ1H_57zBQ"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_htrWkfBTEeeuzZ1H_57zBQ" fontName="Segoe UI" fontHeight="10" fillColor="16316150" lineColor="37120"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_htrWkvBTEeeuzZ1H_57zBQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_htrWk_BTEeeuzZ1H_57zBQ"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_ipb0MPBTEeeuzZ1H_57zBQ" type="1002" element="_ipNxwPBTEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aResource?">
+      <children xmi:type="notation:Node" xmi:id="_ipcbQPBTEeeuzZ1H_57zBQ" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_ipcbQfBTEeeuzZ1H_57zBQ" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_ipdCUPBTEeeuzZ1H_57zBQ" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_ipdpYPBTEeeuzZ1H_57zBQ" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_k1gqMPBTEeeuzZ1H_57zBQ" type="2001" element="_k1FMYPBTEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aResource%3a%3aloginName?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_k1gqMfBTEeeuzZ1H_57zBQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_lQbroPBTEeeuzZ1H_57zBQ" type="2001" element="_lQShsPBTEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aResource%3a%3aemailAddress?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_lQbrofBTEeeuzZ1H_57zBQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_oZz3YPBTEeeuzZ1H_57zBQ" type="2001" element="_oZnqIPBTEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aResource%3a%3agroupName?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oZz3YfBTEeeuzZ1H_57zBQ"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_ipdpYfBTEeeuzZ1H_57zBQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_ipdpYvBTEeeuzZ1H_57zBQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_ipdpY_BTEeeuzZ1H_57zBQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_ipe3gPBTEeeuzZ1H_57zBQ" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_ipe3gfBTEeeuzZ1H_57zBQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_ipe3gvBTEeeuzZ1H_57zBQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_ipe3g_BTEeeuzZ1H_57zBQ"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_ipb0MfBTEeeuzZ1H_57zBQ" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_ipb0MvBTEeeuzZ1H_57zBQ" gradStartColor="6356832" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ipb0M_BTEeeuzZ1H_57zBQ" x="345" y="105"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_L404QPBVEeeuzZ1H_57zBQ" type="1002" element="_L4nc4PBVEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aContractorGroups?">
+      <children xmi:type="notation:Node" xmi:id="_L41fUPBVEeeuzZ1H_57zBQ" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_L41fUfBVEeeuzZ1H_57zBQ" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_L41fUvBVEeeuzZ1H_57zBQ" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_L41fU_BVEeeuzZ1H_57zBQ" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_PGQdkPBVEeeuzZ1H_57zBQ" type="2001" element="_PGKW8PBVEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aContractorGroups%3a%3afirstName?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_PGQdkfBVEeeuzZ1H_57zBQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_PiS5UPBVEeeuzZ1H_57zBQ" type="2001" element="_PiE24PBVEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aContractorGroups%3a%3alastName?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_PiS5UfBVEeeuzZ1H_57zBQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Pxt1YPBVEeeuzZ1H_57zBQ" type="2001" element="_Pxo84PBVEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aContractorGroups%3a%3aemailID?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Pxt1YfBVEeeuzZ1H_57zBQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Tt5XEPBVEeeuzZ1H_57zBQ" type="2001" element="_TtqGgPBVEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aContractorGroups%3a%3acontractorGroupName?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Tt5XEfBVEeeuzZ1H_57zBQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_V7eB4PBVEeeuzZ1H_57zBQ" type="2001" element="_V7YiUPBVEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aContractorGroups%3a%3amasterUser?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_V7eB4fBVEeeuzZ1H_57zBQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Zs0FMPBYEeeuzZ1H_57zBQ" type="2001" element="_ZsptIPBYEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aContractorGroups%3a%3aloginName?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Zs0FMfBYEeeuzZ1H_57zBQ"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_L41fVPBVEeeuzZ1H_57zBQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_L41fVfBVEeeuzZ1H_57zBQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_L41fVvBVEeeuzZ1H_57zBQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_L42GYPBVEeeuzZ1H_57zBQ" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_L42GYfBVEeeuzZ1H_57zBQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_L42GYvBVEeeuzZ1H_57zBQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_L42GY_BVEeeuzZ1H_57zBQ"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_L404QfBVEeeuzZ1H_57zBQ" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_L404QvBVEeeuzZ1H_57zBQ" gradStartColor="6356832" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L404Q_BVEeeuzZ1H_57zBQ" x="564" y="126" width="281" height="156"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_KHbncPRYEeeRs7eYTPjalw" type="1002" element="_KHBXwPRYEeeRs7eYTPjalw?com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers?">
+      <children xmi:type="notation:Node" xmi:id="_KHc1kPRYEeeRs7eYTPjalw" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_KHc1kfRYEeeRs7eYTPjalw" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_KHdcoPRYEeeRs7eYTPjalw" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_KHeDsPRYEeeRs7eYTPjalw" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_Mi3IEPRYEeeRs7eYTPjalw" type="2001" element="_MiwaYPRYEeeRs7eYTPjalw?com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%3a%3aname?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Mi3IEfRYEeeRs7eYTPjalw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_MuWmYPRYEeeRs7eYTPjalw" type="2001" element="_MuSU8PRYEeeRs7eYTPjalw?com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%3a%3agroupName?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_MuWmYfRYEeeRs7eYTPjalw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_M1md4PRYEeeRs7eYTPjalw" type="2001" element="_M1iMcPRYEeeRs7eYTPjalw?com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%3a%3aaddedBy?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_M1md4fRYEeeRs7eYTPjalw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_M9OI0PRYEeeRs7eYTPjalw" type="2001" element="_M9KecPRYEeeRs7eYTPjalw?com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%3a%3aaddedOn?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_M9OI0fRYEeeRs7eYTPjalw"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_KHeDsfRYEeeRs7eYTPjalw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_KHeDsvRYEeeRs7eYTPjalw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_KHeDs_RYEeeRs7eYTPjalw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_KHeqwPRYEeeRs7eYTPjalw" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_KHeqwfRYEeeRs7eYTPjalw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_KHeqwvRYEeeRs7eYTPjalw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_KHeqw_RYEeeRs7eYTPjalw"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_KHbncfRYEeeRs7eYTPjalw" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_KHbncvRYEeeRs7eYTPjalw" gradStartColor="6356832" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KHbnc_RYEeeRs7eYTPjalw" x="88" y="246" width="337" height="192"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_kpTYEO-AEeew6MIz6mWFYQ"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_kpTYEe-AEeew6MIz6mWFYQ"/>
+  </notation:Diagram>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_gHMCUO-BEeew6MIz6mWFYQ" displayLabel="com.sfc.fosImpl.adminOps.dataModel" base_NamedElement="_koGeMO-AEeew6MIz6mWFYQ?com.sfc.fosImpl.adminOps.dataModel?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_ipQOAPBTEeeuzZ1H_57zBQ" displayLabel="Resource" base_NamedElement="_ipNxwPBTEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aResource?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_k1I2wPBTEeeuzZ1H_57zBQ" displayLabel="login Name" base_NamedElement="_k1FMYPBTEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aResource%3a%3aloginName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_lQTIwPBTEeeuzZ1H_57zBQ" displayLabel="email Address" base_NamedElement="_lQShsPBTEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aResource%3a%3aemailAddress?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_oZo4QPBTEeeuzZ1H_57zBQ" displayLabel="group Name" base_NamedElement="_oZnqIPBTEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aResource%3a%3agroupName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_L4orAPBVEeeuzZ1H_57zBQ" displayLabel="Contractor Groups" base_NamedElement="_L4nc4PBVEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aContractorGroups?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_PGLlEPBVEeeuzZ1H_57zBQ" displayLabel="first Name" base_NamedElement="_PGKW8PBVEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aContractorGroups%3a%3afirstName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_PiFd8PBVEeeuzZ1H_57zBQ" displayLabel="last Name" base_NamedElement="_PiE24PBVEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aContractorGroups%3a%3alastName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_Pxpj8PBVEeeuzZ1H_57zBQ" displayLabel="email ID" base_NamedElement="_Pxo84PBVEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aContractorGroups%3a%3aemailID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_Ttr7sPBVEeeuzZ1H_57zBQ" displayLabel="Contractor Group Name" base_NamedElement="_TtqGgPBVEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aContractorGroups%3a%3acontractorGroupName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_V7ZwcPBVEeeuzZ1H_57zBQ" displayLabel="Master User" base_NamedElement="_V7YiUPBVEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aContractorGroups%3a%3amasterUser?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_ZsriUPBYEeeuzZ1H_57zBQ" displayLabel="login Name" base_NamedElement="_ZsptIPBYEeeuzZ1H_57zBQ?com.sfc.fosImpl.adminOps.dataModel%3a%3aContractorGroups%3a%3aloginName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_KHDM8PRYEeeRs7eYTPjalw" displayLabel="BPMUsers" base_NamedElement="_KHBXwPRYEeeRs7eYTPjalw?com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_Mi0EwPRYEeeRs7eYTPjalw" displayLabel="Name" base_NamedElement="_MiwaYPRYEeeRs7eYTPjalw?com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%3a%3aname?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_MuS8APRYEeeRs7eYTPjalw" displayLabel="Group Name" base_NamedElement="_MuSU8PRYEeeRs7eYTPjalw?com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%3a%3agroupName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_M1izgPRYEeeRs7eYTPjalw" displayLabel="Added By" base_NamedElement="_M1iMcPRYEeeRs7eYTPjalw?com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%3a%3aaddedBy?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_M9LFgPRYEeeRs7eYTPjalw" displayLabel="Added On" base_NamedElement="_M9KecPRYEeeRs7eYTPjalw?com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%3a%3aaddedOn?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_QaDcEPRYEeeRs7eYTPjalw" textLength="100" base_Property="_MiwaYPRYEeeRs7eYTPjalw?com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%3a%3aname?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_Q-5OgPRYEeeRs7eYTPjalw" textLength="100" base_Property="_MuSU8PRYEeeRs7eYTPjalw?com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%3a%3agroupName?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_akxjoPRYEeeRs7eYTPjalw" textLength="100" base_Property="_M1iMcPRYEeeRs7eYTPjalw?com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%3a%3aaddedBy?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_bGGvEPRYEeeRs7eYTPjalw" textLength="100" base_Property="_M9KecPRYEeeRs7eYTPjalw?com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%3a%3aaddedOn?"/>
+</xmi:XMI>

@@ -1,0 +1,5 @@
+#Merged common properties for locale ja_JP#N.B. GENERATED FILE - DO NOT EDIT! CHANGES WILL BE OVERWRITTEN BY THE BUILDER.
+#Tue Nov 29 12:57:07 CAT 2022
+date_format=yyyy MMM dd
+date_time_format=yyyy MMM dd a hh\:mm\:ss
+time_format=a hh\:mm\:ss

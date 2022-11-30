@@ -1,0 +1,5 @@
+DIALOG_RETURN_CODE_PREFIXsuppressRebuildRequest=2
+commonPropertiesOverride=/com.sfc.fosImpl.activation.v02/Presentation Resources/properties/sfc.properties
+eclipse.preferences.version=1
+previewData//Forms/comsfcfosImplremoval_tobe_pageflow/comsfcfosImplremoval_tobe_pageflowProcess/ConfirmDetails/GatekeeperApproval.form=(none)
+suppressRebuildRequest=true

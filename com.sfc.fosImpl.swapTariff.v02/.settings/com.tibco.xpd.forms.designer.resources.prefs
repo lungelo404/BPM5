@@ -1,0 +1,3 @@
+DIALOG_RETURN_CODE_PREFIXsuppressRebuildRequest=2
+commonPropertiesOverride=/com.sfc.fosImpl.swapTariff.v02/Presentation Resources/properties/sfc.properties
+eclipse.preferences.version=1

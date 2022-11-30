@@ -1,0 +1,10 @@
+#Merged common properties for locale pt_PT#N.B. GENERATED FILE - DO NOT EDIT! CHANGES WILL BE OVERWRITTEN BY THE BUILDER.
+#Tue Nov 29 12:57:07 CAT 2022
+currency_code=EUR
+currency_symbol=\u20AC
+date_era_long=['a.C.','d.C.']
+date_month=['Janeiro','Fevereiro','Mar\u00E7o','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro']
+date_month_abbrev=['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
+display_length_factor=1.15
+format_currency=\u00A4\#,\#\#0.00;(\u00A4\#,\#\#0.00)
+time_ampm=['Antes do meio-dia','Depois do meio-dia']

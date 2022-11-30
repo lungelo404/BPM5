@@ -1,0 +1,1669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xpdl2:Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:email="http://www.tibco.com/XPD/email1.0.0" xmlns:orchestrator="http://www.tibco.com/XPD/orchestrator1.0.0" xmlns:order="http://www.tibco.com/XPD/order1.0.0" xmlns:xpdExt="http://www.tibco.com/XPD/xpdExtension1.0.0" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" xsi:schemaLocation="http://www.wfmc.org/2008/XPDL2.1 http://www.wfmc.org/standards/bpmnxpdl_31.xsd" Id="_WQoMAF5SEeiqvPRh5aeaAQ" xpdExt:DisplayName="com.sfc.fosImpl.swapTariff_pageflow" Name="comsfcfosImplswapTariff_pageflow">
+  <xpdl2:PackageHeader xpdExt:Language="en_US">
+    <xpdl2:XPDLVersion>2.1</xpdl2:XPDLVersion>
+    <xpdl2:Vendor>TIBCO</xpdl2:Vendor>
+    <xpdl2:Created>2018-05-23</xpdl2:Created>
+    <xpdl2:Description></xpdl2:Description>
+    <xpdl2:Documentation></xpdl2:Documentation>
+    <xpdl2:CostUnit>USD</xpdl2:CostUnit>
+  </xpdl2:PackageHeader>
+  <xpdl2:RedefinableHeader PublicationStatus="UNDER_REVISION">
+    <xpdl2:Author>hakadam</xpdl2:Author>
+  </xpdl2:RedefinableHeader>
+  <xpdl2:Participants>
+    <xpdl2:Participant Id="_if9mwmPkEeiJIv1t8AuYSA" xpdExt:DisplayName="PortTypeEndpoint0_Consumer6" Name="PortTypeEndpoint0_Consumer6">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_09AXVGimEeitE7KXvuZFcQ" xpdExt:DisplayName="PortTypeEndpoint0_Consumer" Name="PortTypeEndpoint0_Consumer">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_NZVmEJA1Eeia6Yd4TMHhyw" xpdExt:DisplayName="PortTypeEndpoint0_Consumer2" Name="PortTypeEndpoint0_Consumer2">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+  </xpdl2:Participants>
+  <xpdl2:Pools>
+    <xpdl2:Pool Id="_cjJS8F5SEeiqvPRh5aeaAQ" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_WSwS8F5SEeiqvPRh5aeaAQ">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_cjJS8V5SEeiqvPRh5aeaAQ" xpdExt:DisplayName="Lane" Name="Lane">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="314.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+      <xpdl2:NodeGraphicsInfos>
+        <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="223,179,0" IsVisible="true"/>
+      </xpdl2:NodeGraphicsInfos>
+    </xpdl2:Pool>
+    <xpdl2:Pool Id="_CvM28F_eEeiS67H0McQHwA" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_CvM28l_eEeiS67H0McQHwA">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_CvM28V_eEeiS67H0McQHwA" xpdExt:DisplayName="Lane" Name="Lane">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="300.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+    </xpdl2:Pool>
+    <xpdl2:Pool Id="_5_OcsF_iEeiS67H0McQHwA" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_5_Ocsl_iEeiS67H0McQHwA">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_5_OcsV_iEeiS67H0McQHwA" xpdExt:DisplayName="Lane" Name="Lane">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="300.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+    </xpdl2:Pool>
+    <xpdl2:Pool Id="_if9msGPkEeiJIv1t8AuYSA" xpdExt:DisplayName="InstallationRemoval" Name="InstallationRemoval" BoundaryVisible="true" Process="_if9msmPkEeiJIv1t8AuYSA">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_if9msWPkEeiJIv1t8AuYSA" xpdExt:DisplayName="Contractor" Name="Contractor">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="128,155,183" Height="104.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+      <xpdl2:NodeGraphicsInfos>
+        <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="223,179,0"/>
+      </xpdl2:NodeGraphicsInfos>
+    </xpdl2:Pool>
+  </xpdl2:Pools>
+  <xpdl2:WorkflowProcesses>
+    <xpdl2:WorkflowProcess Id="_WSwS8F5SEeiqvPRh5aeaAQ" xpdExt:DisplayName="comsfcfosImplswapTariff_pageflow-Process" xpdExt:XpdModelType="PageFlow" Name="comsfcfosImplswapTariff_pageflowProcess">
+      <xpdl2:ProcessHeader>
+        <xpdl2:Description></xpdl2:Description>
+      </xpdl2:ProcessHeader>
+      <xpdl2:FormalParameters>
+        <xpdl2:FormalParameter Id="_iZevAF5kEeitnMUMpcD2uQ" Name="ProvisioningData" IsArray="false" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="ProvisioningData">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_K9HKcM3FEeeozIUd784NFw"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_kSCMEF5kEeitnMUMpcD2uQ" Name="SelectedECS" IsArray="false" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="SelectedECS">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_N4XHcF58EeitnMUMpcD2uQ" Name="LicenseUpgradeFlag" IsArray="false" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="LicenseUpgradeFlag">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_lfXpcF6GEeitnMUMpcD2uQ" Name="NetworkMappingStatus" IsArray="false" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="NetworkMappingStatus">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_wJIpwF8QEeiXAsqt2_swAg" Name="FetchDataURL" IsArray="false" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="FetchDataURL">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_KJ5c8F8REeiXAsqt2_swAg" Name="TaskName" IsArray="false" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="TaskName">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_4i1NIV6jEeiXAsqt2_swAg" Name="TechnicalInfo" IsArray="false" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="TechnicalInfo">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_jnE9UOCeEeeeKsD8kq9l7g"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_a-5GQV_kEeiS67H0McQHwA" Name="CommentText" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="CommentText">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>500</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_t8QN8GHuEeitVYXjOFg9ng" Name="CommentHistory" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="CommentHistory">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_nDo8QPRREee7y7M2_IZS-A"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_CJ9cwGJEEeipkLJDj-uobw" Name="SelectedContractorGroup" IsArray="false" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="SelectedContractorGroup">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_D4lhwGJEEeipkLJDj-uobw" Name="SelectedContractor" IsArray="false" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="SelectedContractor">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_qRouAGJJEeipkLJDj-uobw" Name="ContractorNames" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="ContractorNames">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_fzEQ0GJeEeieJflXe0ZPGg" Name="ContractorGroupNames" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="ContractorGroupNames">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_IeHZQGKCEeieJflXe0ZPGg" Name="SFC_POPArray" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="SFC_POPArray">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_I6DuYGKCEeieJflXe0ZPGg" Name="AggregationPointsArray" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="AggregationPointsArray">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_JSKsYGKCEeieJflXe0ZPGg" Name="BuildingFloorArray" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="BuildingFloorArray">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_JoEq8GKCEeieJflXe0ZPGg" Name="PortNumberArray" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="PortNumberArray">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_J9s8sGKCEeieJflXe0ZPGg" Name="BandwidthArray" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="BandwidthArray">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_KXxpkGKCEeieJflXe0ZPGg" Name="TechnologyArray" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="TechnologyArray">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_LYHsQGKCEeieJflXe0ZPGg" Name="EquipmentArray" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="EquipmentArray">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_LxdZUGKCEeieJflXe0ZPGg" Name="Account_Manager" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Account_Manager">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_MaknwGKCEeieJflXe0ZPGg" Name="ServiceStatusArray" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="ServiceStatusArray">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_MxIGkGKCEeieJflXe0ZPGg" Name="AccountTypeArray" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="AccountTypeArray">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_NGQCAGKCEeieJflXe0ZPGg" Name="ServiceTypeArray" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="ServiceTypeArray">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_N9hoQGKCEeieJflXe0ZPGg" Name="RegionArray" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="RegionArray">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_OUiaEGKCEeieJflXe0ZPGg" Name="PortTypeArray" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="PortTypeArray">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_zRQTgGM9EeiOkKXScnv0Kg" Name="SystemParamRef" IsArray="false" ReadOnly="false" Mode="IN" Required="false" xpdExt:DisplayName="SystemParamRef">
+          <xpdl2:DataType>
+            <xpdl2:RecordType>
+              <xpdl2:Member>
+                <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_8CyNENAdEeeYN6H5-MXFxQ"/>
+              </xpdl2:Member>
+            </xpdl2:RecordType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_BuRuAGNPEeizvM5NHFHmSQ" Name="xDMSURL" IsArray="false" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="xDMSURL">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>300</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_jTqkIGVbEeiIivBKxgG8bA" Name="Building_NameArray" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Building_NameArray">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>200</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_FhqJ8WXJEeiy2JxaxBGPhQ" Name="DemandDeskDecision" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="DemandDeskDecision">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_sxDV0HUYEeiVe-oFPaCWzA" Name="BuildingIDArray" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="BuildingIDArray">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_vFZSMJBPEeisuOyY9qR7Hw" Name="PortCapacity" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="PortCapacity">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_6nDXgJBPEeisuOyY9qR7Hw" Name="Carrier_Eq_Type" IsArray="true" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Carrier_Eq_Type">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_DP15YHiCEeiaDfAHZcigjg" Name="OldServiceRequest" IsArray="false" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="OldServiceRequest">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_tNB9IGrpEe2_19HObtlc-w"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+      </xpdl2:FormalParameters>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_-t5PcV_bEeiS67H0McQHwA" xpdExt:DisplayName="Technical_InformationRef" Name="Technical_InformationRef" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:RecordType>
+              <xpdl2:Member>
+                <xpdl2:ExternalReference location="com.sfc.fosImpl.bizData.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_oVYmcBbLEei5zJcabt9kCg"/>
+              </xpdl2:Member>
+            </xpdl2:RecordType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_KF30UV_cEeiS67H0McQHwA" xpdExt:DisplayName="Customer_InformationRef" Name="Customer_InformationRef" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:RecordType>
+              <xpdl2:Member>
+                <xpdl2:ExternalReference location="com.sfc.fosImpl.bizData.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_EtWckCgaEei5K6PV_O0G8g"/>
+              </xpdl2:Member>
+            </xpdl2:RecordType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_qBHDEGJnEeieJflXe0ZPGg" xpdExt:DisplayName="ContractorAgencyNames" Name="ContractorAgencyNames" IsArray="true" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_PJFLwGHaEeix-5_FZ5sv2Q" xpdExt:DisplayName="CommentDataSet" Name="CommentDataSet" IsArray="true" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:RecordType>
+              <xpdl2:Member>
+                <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_DeEdsPaQEeeyW8gonFLB3A"/>
+              </xpdl2:Member>
+            </xpdl2:RecordType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_cjJS8l5SEeiqvPRh5aeaAQ" Name="StartEvent" xpdExt:DisplayName="Start Event" xpdExt:Visibility="Private">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="143,191,251" Height="82.0" LaneId="_cjJS8V5SEeiqvPRh5aeaAQ" Width="45.0">
+              <xpdl2:Coordinates XCoordinate="63.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Completed">
+              <xpdExt:Information ScriptGrammar="JavaScript">if(data.TaskName == &quot;N/W_Mapping_Initial_Setup&quot;) {&#xD;
+	Log.write(&quot;IN N/W&quot;);&#xD;
+	var criteria = &quot;masterUser='Y'&quot;;	&#xD;
+	//var Fetch_Groups=cac_com_sfc_fosImpl_dataModel_ContractorGroups.findByCriteria(criteria);&#xD;
+	var Fetch_Groups = bpm.caseData.findByCriteria(criteria,&quot;com.sfc.fosImpl.dataModel.ContractorGroups&quot;,1,100);&#xD;
+	&#xD;
+	var Fetch_GroupsObj = factory.com_sfc_fosImpl_dataModel.createContractorGroups();&#xD;
+	&#xD;
+	Log.write(&quot;afterCaseCall N/W&quot;);&#xD;
+	Log.write(&quot;ContractorGrpsLog&quot;+Fetch_Groups.length);&#xD;
+&#xD;
+	for(var i=0;i&lt;Fetch_Groups.length;i++) {	&#xD;
+	&#xD;
+	    Fetch_GroupsObj = bpm.caseData.read(Fetch_Groups[i]);&#xD;
+	    &#xD;
+	    if (data.ContractorAgencyNames  != Fetch_GroupsObj.contractorGroupName) {&#xD;
+	    	&#xD;
+	    	data.ContractorAgencyNames.push(Fetch_GroupsObj.contractorGroupName);&#xD;
+	    }&#xD;
+&#xD;
+	//	if(!data.ContractorAgencyNames.contains(Fetch_Groups.get(i).readContractorGroups().contractorGroupName))&#xD;
+	//	{&#xD;
+	////		data.ContractorAgencyNames.push(Fetch_Groups.get(i).readContractorGroups().contractorGroupName);&#xD;
+	//	}&#xD;
+	}&#xD;
+	Log.write(&quot;out N/W&quot;);&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+/***&#xD;
+* This is a script to fetch the comment history for a particular case.&#xD;
+*&#xD;
+***/&#xD;
+&#xD;
+var criteria = &quot;siebelCircuitID='&quot;+data.ProvisioningData.siebelCircuitID+&quot;'&quot;;&#xD;
+Log.write(&quot;CommentCheck&quot;+data.ProvisioningData.siebelCircuitID);&#xD;
+//data.CommentDataSet=cac_com_sfc_fosImpl_dataModel_CommentDataCase.findByCriteria(criteria);&#xD;
+&#xD;
+data.CommentDataSet.pushAll(bpm.caseData.findByCriteria(criteria,&quot;com.sfc.fosImpl.dataModel.CommentDataCase&quot;,1,100));&#xD;
+data.CommentHistory.length = 0;&#xD;
+var commentDataObj = factory.com_sfc_fosImpl_dataModel.createCommentDataCase();&#xD;
+&#xD;
+&#xD;
+if(data.CommentDataSet.length >0){&#xD;
+	for(var index=0; index&lt;data.CommentDataSet.length ; index++) {&#xD;
+	    commentDataObj = bpm.caseData.read(data.CommentDataSet[index]);&#xD;
+		var comment=factory.com_sfc_fosImpl_dataModel.createCommentData();&#xD;
+		comment.addedby=commentDataObj.addedby;&#xD;
+		comment.comments=commentDataObj.comments;&#xD;
+		comment.stepName=commentDataObj.taskName;&#xD;
+		comment.time=commentDataObj.time;&#xD;
+		data.CommentHistory.push(comment);&#xD;
+		Log.write(&quot;CommentChecksize&quot;+data.CommentHistory.length );&#xD;
+		Log.write(data.CommentHistory[index].comments);	&#xD;
+	}&#xD;
+}&#xD;
+&#xD;
+if(data.TaskName==&quot;Equipment_Change&quot;)&#xD;
+{&#xD;
+	Log.write(&quot;ErrorSearch pageflow start&quot;);&#xD;
+	}&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_cjJ6AF5SEeiqvPRh5aeaAQ" Name="EndEvent" xpdExt:DisplayName="End Event">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="143,191,251" Height="82.0" LaneId="_cjJS8V5SEeiqvPRh5aeaAQ" Width="45.0">
+              <xpdl2:Coordinates XCoordinate="998.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">Log.write(&quot;Afterpageflowcommentsend&quot;);</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_5DVrEF5UEeitnMUMpcD2uQ" Name="UserTask" xpdExt:Visibility="Private" xpdExt:DisplayName="User Task">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_5DVrEV5UEeitnMUMpcD2uQ"/>
+                <xpdl2:MessageOut Id="_5DVrEl5UEeitnMUMpcD2uQ"/>
+                <xpdExt:FormImplementation FormType="Form" FormURI="form://comsfcfosImplswapTariff/SwapTariff/InitiateSwapTariff/InitiateSwapTariff.form"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:ExtendedAttributes>
+            <xpdl2:ExtendedAttribute Name="bpmJspTask" Value="form://comsfcfosImplswapTariff/SwapTariff/InitiateSwapTariff/InitiateSwapTariff.form"/>
+          </xpdl2:ExtendedAttributes>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="143,191,251" Height="64.0" LaneId="_cjJS8V5SEeiqvPRh5aeaAQ" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="401.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
+            <xpdExt:AssociatedParameter FormalParam="NetworkMappingStatus" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="LicenseUpgradeFlag" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="ProvisioningData" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="SelectedECS" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="TechnicalInfo" Mode="INOUT" Mandatory="true"/>
+            <xpdExt:AssociatedParameter FormalParam="FetchDataURL" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="TaskName" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="CommentText" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="CommentHistory" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="SelectedContractor" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="SelectedContractorGroup" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="ContractorNames" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="ContractorGroupNames" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="ContractorAgencyNames" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="EquipmentArray" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="RegionArray" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="PortTypeArray" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="BandwidthArray" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="ServiceTypeArray" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="PortNumberArray" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="SFC_POPArray" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="TechnologyArray" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="Account_Manager" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="AggregationPointsArray" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="ServiceStatusArray" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="BuildingFloorArray" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="AccountTypeArray" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="xDMSURL" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="Building_NameArray" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="DemandDeskDecision" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="BuildingIDArray" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="OldServiceRequest" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="Carrier_Eq_Type" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="PortCapacity" Mode="INOUT" Mandatory="false"/>
+          </xpdExt:AssociatedParameters>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">for(var i=0;i&lt;data.CommentHistory.length ;i++)&#xD;
+{&#xD;
+	Log.write(&quot;BeforeComment&quot;+data.CommentHistory[i].addedby+&quot;   &quot;+data.CommentHistory[i].comments);&#xD;
+}&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_O2yicF_YEeiS67H0McQHwA" Name="LookUpData" xpdExt:Visibility="Private" xpdExt:DisplayName="Look Up Data">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskScript>
+                <xpdl2:Script ScriptGrammar="JavaScript">&#xD;
+&#xD;
+&#xD;
+//var tmpTechnicalInfo = cac_com_sfc_fosImpl_bizData_dataModel_Technical_Information.findBySiebelCircuitID(data.ProvisioningData.siebelCircuitID);&#xD;
+&#xD;
+var tmpTechnicalInfo = bpm.caseData.findByCaseIdentifier(data.ProvisioningData.siebelCircuitID,&quot;com.sfc.fosImpl.bizData.dataModel.Technical_Information&quot;);&#xD;
+&#xD;
+var tmpTechnicalInfoObj = factory.com_sfc_fosImpl_dataModel.createTechnicalInformation();&#xD;
+var copyTo   = factory.com_sfc_fosImpl_dataModel.createTechnicalInformation();&#xD;
+if(tmpTechnicalInfo!=null) {&#xD;
+Log.write(&quot;[SFC_FOSIMPL_BPM] INSIDE_IF_TECHNICAL_INFO TaskName: &quot;+data.TaskName+&quot;CURRENT_OWNER: &quot;+bpm.process.getWorkItemCompleter());&#xD;
+    &#xD;
+    tmpTechnicalInfoObj = bpm.caseData.read(tmpTechnicalInfo);&#xD;
+//	var copyFrom = tmpTechnicalInfo.readTechnical_Information();&#xD;
+	&#xD;
+	copyTo.SFCPOPPE	       = 	tmpTechnicalInfoObj.SFCPOPPE;&#xD;
+	//copyTo.aggPoint		   = 	copyFrom.aggPoint;	&#xD;
+	copyTo.carrierIP	   = 	tmpTechnicalInfoObj.carrierIP;&#xD;
+	copyTo.carrierVLAN     = 	tmpTechnicalInfoObj.carrierVLAN;&#xD;
+	copyTo.clientIP        = 	tmpTechnicalInfoObj.clientIP;&#xD;
+	copyTo.clientVLAN	   = 	tmpTechnicalInfoObj.clientVLAN;&#xD;
+	copyTo.modifiedBy	   = 	tmpTechnicalInfoObj.modifiedBy; &#xD;
+	copyTo.modifiedDate	   = 	tmpTechnicalInfoObj.modifiedDate;&#xD;
+	copyTo.port			   = 	tmpTechnicalInfoObj.port;		&#xD;
+	copyTo.portType		   = 	tmpTechnicalInfoObj.portType;	&#xD;
+	copyTo.IR_Number	   =	tmpTechnicalInfoObj.IR_Number;&#xD;
+	copyTo.MRR			   =	tmpTechnicalInfoObj.MRR;&#xD;
+	copyTo.security		   =	tmpTechnicalInfoObj.security;&#xD;
+	for(var i=0;i&lt;tmpTechnicalInfoObj.equipment.length;i++) {&#xD;
+		var equipments  = factory.com_sfc_fosImpl_dataModel.createEquipmentDetails();&#xD;
+		equipments.VLAN	= tmpTechnicalInfoObj.equipment[i].VLAN;&#xD;
+		equipments.address	= tmpTechnicalInfoObj.equipment[i].address;&#xD;
+		equipments.type	= tmpTechnicalInfoObj.equipment[i].type;&#xD;
+		equipments.EMEI	= tmpTechnicalInfoObj.equipment[i].EMEI;&#xD;
+		equipments.IR_Number = tmpTechnicalInfoObj.equipment[i].IR_Number;&#xD;
+		equipments.SFC_Tag_Number = tmpTechnicalInfoObj.equipment[i].SFC_Tag_Number;&#xD;
+		equipments.addedBy = tmpTechnicalInfoObj.equipment[i].addedBy;&#xD;
+		equipments.serial_Number = tmpTechnicalInfoObj.equipment[i].serial_Number;&#xD;
+		equipments.siebel_Circuit_ID = tmpTechnicalInfoObj.equipment[i].siebel_Circuit_ID;&#xD;
+		equipments.status = tmpTechnicalInfoObj.equipment[i].status;&#xD;
+	    copyTo.equipment.push(equipments);&#xD;
+	    &#xD;
+		//copyTo.equipment.add(equipments);	&#xD;
+	}&#xD;
+	for(var j=0;j&lt;tmpTechnicalInfoObj.management_IP_Info.length;j++){&#xD;
+		var management_info=factory.com_sfc_fosImpl_dataModel.createManagement_IP_List();&#xD;
+		management_info.aggregation_Point=tmpTechnicalInfoObj.management_IP_Info[i].aggregation_Point;&#xD;
+		management_info.carrier_VLAN=tmpTechnicalInfoObj.management_IP_Info[i].carrier_VLAN;&#xD;
+		management_info.comments=tmpTechnicalInfoObj.management_IP_Info[i].comments;&#xD;
+		management_info.management_Carrier_IP=tmpTechnicalInfoObj.management_IP_Info[i].management_Carrier_IP;&#xD;
+		management_info.management_VLAN=tmpTechnicalInfoObj.management_IP_Info[i].management_VLAN;&#xD;
+		management_info.port_Number=tmpTechnicalInfoObj.management_IP_Info[i].port_Number;&#xD;
+		management_info.capacity=tmpTechnicalInfoObj.management_IP_Info[i].capacity;&#xD;
+		management_info.carrierEquipmentType	=tmpTechnicalInfoObj.management_IP_Info[i].carrierEquipmentType;&#xD;
+		management_info.port_Type	= tmpTechnicalInfoObj.management_IP_Info[i].port_Type;&#xD;
+		management_info.carrierIP	= tmpTechnicalInfoObj.management_IP_Info[i].carrierIP;&#xD;
+	//	copyTo.management_IP_Info.add(management_info);&#xD;
+		&#xD;
+		copyTo.management_IP_Info.push(management_info);&#xD;
+	}&#xD;
+	&#xD;
+	if(tmpTechnicalInfoObj.CPEManagementIPDetails!=null) {&#xD;
+		var s = tmpTechnicalInfoObj.CPEManagementIPDetails.length;&#xD;
+		var cpe = tmpTechnicalInfoObj.CPEManagementIPDetails;&#xD;
+		for(var j=0;j&lt;s;j++) {&#xD;
+			var CPEDetailsObj = factory.com_sfc_fosImpl_dataModel.createCPEManagementIPDetails();&#xD;
+			CPEDetailsObj.CPEManagementIP = cpe[j].CPEManagementIP;&#xD;
+			CPEDetailsObj.CPEManagementVLAN = cpe[j].CPEManagementVLAN;&#xD;
+			&#xD;
+		//	copyTo.CPEManagementIPDetails.add(CPEDetailsObj);&#xD;
+			copyTo.CPEManagementIPDetails.push(CPEDetailsObj);&#xD;
+		}&#xD;
+	}&#xD;
+	&#xD;
+	if(tmpTechnicalInfoObj.serviceIPDetails!=null) {&#xD;
+		var s = tmpTechnicalInfoObj.serviceIPDetails.length;&#xD;
+		&#xD;
+		for(var j=0;j&lt;s;j++) {&#xD;
+			var ServIPDetailsObj = factory.com_sfc_fosImpl_dataModel.createServiceIPDetails();&#xD;
+			ServIPDetailsObj.SFCPOPPE	= tmpTechnicalInfoObj.serviceIPDetails[j].SFCPOPPE;&#xD;
+			ServIPDetailsObj.clientIP	= tmpTechnicalInfoObj.serviceIPDetails[j].clientIP;&#xD;
+			ServIPDetailsObj.clientVLAN	= tmpTechnicalInfoObj.serviceIPDetails[j].clientVLAN;&#xD;
+		//	copyTo.serviceIPDetails.add(ServIPDetailsObj);&#xD;
+			copyTo.serviceIPDetails.push(ServIPDetailsObj);&#xD;
+		}&#xD;
+	}&#xD;
+	&#xD;
+	if(tmpTechnicalInfoObj.deviceRequest!=null) {&#xD;
+		if(tmpTechnicalInfoObj.deviceRequest.length > 0) {&#xD;
+			var cfD = tmpTechnicalInfoObj.deviceRequest;&#xD;
+				for(var i=0;i&lt;cfD.length;i++) {&#xD;
+				var d = factory.com_sfc_fosImpl_dataModel.createDeviceRequest();&#xD;
+				d.deviceDescription = cfD[i].deviceDescription;&#xD;
+				d.deviceName		= cfD[i].deviceName;&#xD;
+				d.quantity			= cfD[i].quantity;&#xD;
+				d.siebelCircuitID   = cfD[i].siebelCircuitID;&#xD;
+				&#xD;
+				 &#xD;
+				d.SFC_Tag_Number=cfD[i].SFC_Tag_Number;&#xD;
+				d.serial_Number=cfD[i].serial_Number;&#xD;
+				d.IMEI=cfD[i].IMEI;&#xD;
+				d.address=cfD[i].address;&#xD;
+				&#xD;
+				&#xD;
+		//		copyTo.deviceRequest.add(d);&#xD;
+				copyTo.deviceRequest.push(d);&#xD;
+			}&#xD;
+		}&#xD;
+	}&#xD;
+	&#xD;
+	data.TechnicalInfo = bpm.scriptUtil.copy(copyTo);&#xD;
+}&#xD;
+else {&#xD;
+}&#xD;
+&#xD;
+/*Copying the customer information below*/&#xD;
+//var tmpCustomerInfo = cac_com_sfc_fosImpl_bizData_dataModel_Customer_Information.findBySiebelCircuitID(data.ProvisioningData.siebelCircuitID);&#xD;
+var tmpCustomerInfo = bpm.caseData.findByCaseIdentifier(data.ProvisioningData.siebelCircuitID,&quot;com.sfc.fosImpl.bizData.dataModel.Customer_Information&quot;);&#xD;
+var copyTo          = factory.com_sfc_fosImpl_dataModel.createProvisioningDataModel();&#xD;
+var tmpCustomerInfoObj = factory.com_sfc_fosImpl_dataModel.createProvisioningDataModel();&#xD;
+&#xD;
+if(tmpCustomerInfo!=null) {&#xD;
+	Log.write(&quot;[SFC_FOSIMPL_BPM] INSIDE_IF_CUSTOMER_INFO TaskName: &quot;+data.TaskName+&quot;CURRENT_OWNER: &quot;+bpm.process.getWorkItemCompleter());&#xD;
+	//var copyFrom =	tmpCustomerInfo.readCustomer_Information();&#xD;
+	&#xD;
+	tmpCustomerInfoObj = bpm.caseData.read(tmpCustomerInfo);&#xD;
+	&#xD;
+	copyTo.GPSCoordinates    = tmpCustomerInfoObj.GPSCoordinates;&#xD;
+	copyTo.account		     = tmpCustomerInfoObj.account;	&#xD;
+	copyTo.accountManager    = tmpCustomerInfoObj.accountManager;&#xD;
+	copyTo.bandwidthupdown   = tmpCustomerInfoObj.bandwidthupdown;&#xD;
+	copyTo.buildingID        = tmpCustomerInfoObj.buildingID;&#xD;
+	copyTo.buildingName      = tmpCustomerInfoObj.buildingName;&#xD;
+	copyTo.clientID          = tmpCustomerInfoObj.clientID;&#xD;
+	copyTo.clientName        = tmpCustomerInfoObj.clientName;&#xD;
+	copyTo.contactPerson     = tmpCustomerInfoObj.contactPerson;&#xD;
+	copyTo.contractor        = tmpCustomerInfoObj.contractor;&#xD;
+	copyTo.email             = tmpCustomerInfoObj.email;&#xD;
+	copyTo.floor             = tmpCustomerInfoObj.floor;&#xD;
+	copyTo.installDate       = tmpCustomerInfoObj.installDate;&#xD;
+	copyTo.location          = tmpCustomerInfoObj.location;&#xD;
+	copyTo.mobile            = tmpCustomerInfoObj.mobile;&#xD;
+	copyTo.notesComments     = tmpCustomerInfoObj.notesComments;&#xD;
+	copyTo.projectManager    = tmpCustomerInfoObj.projectManager;&#xD;
+	copyTo.regionView        = tmpCustomerInfoObj.regionView;&#xD;
+	copyTo.requestDate       = tmpCustomerInfoObj.requestDate;&#xD;
+	copyTo.sector   		 = tmpCustomerInfoObj.sector;&#xD;
+	copyTo.serviceEnd		 = tmpCustomerInfoObj.serviceEnd;&#xD;
+	copyTo.serviceStart      = tmpCustomerInfoObj.serviceStart;&#xD;
+	copyTo.serviceStatus     = tmpCustomerInfoObj.serviceStatus;&#xD;
+	copyTo.serviceType       = tmpCustomerInfoObj.serviceType;&#xD;
+	copyTo.siebelCircuitID   = tmpCustomerInfoObj.siebelCircuitID;&#xD;
+	copyTo.technology        = tmpCustomerInfoObj.technology;&#xD;
+	copyTo.address			 = tmpCustomerInfoObj.address;&#xD;
+	copyTo.contractor_Engineer=tmpCustomerInfoObj.contractor_Engineer;&#xD;
+	&#xD;
+	data.ProvisioningData = bpm.scriptUtil.copy(copyTo);&#xD;
+}&#xD;
+else {&#xD;
+}&#xD;
+&#xD;
+&#xD;
+if(data.TaskName==&quot;PM_Track_Installation&quot;){	&#xD;
+&#xD;
+		data.ProvisioningData.projectManager = bpm.process.getWorkItemCompleter();&#xD;
+}&#xD;
+Log.write(&quot;[SFC_FOSIMPL_BPM] END_SCRIPT TaskName: &quot;+data.TaskName+&quot;CURRENT_OWNER: &quot;+bpm.process.getWorkItemCompleter());&#xD;
+</xpdl2:Script>
+              </xpdl2:TaskScript>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="143,191,251" Height="64.0" LaneId="_cjJS8V5SEeiqvPRh5aeaAQ" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="145.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:AssociatedParameters DisableImplicitAssociation="false"/>
+          <xpdExt:Audit/>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_kRlTRF_cEeiS67H0McQHwA" Name="InsertBusinessData" FinishMode="Automatic" StartMode="Automatic" xpdExt:Visibility="Private" xpdExt:DisplayName="Insert Business Data">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="_CvM28l_eEeiS67H0McQHwA" xpdExt:StartStrategy="StartImmediately" xpdExt:SuspendResumeWithParent="true">
+              <xpdExt:InputMappings MapperContext="ProcessToSubProcess" MappingDirection="IN">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="ProvisoningData">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">ProvisioningData</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="TechnicalInfomation">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">TechnicalInfo</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:InputMappings>
+            </xpdl2:SubFlow>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="143,191,251" Height="80.0" LaneId="_cjJS8V5SEeiqvPRh5aeaAQ" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="558.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">if(data.TaskName==&quot;N/W_Mapping_Initial_Setup&quot;)&#xD;
+{&#xD;
+	if(data.SelectedContractorGroup!=null &amp;&amp; data.SelectedContractorGroup!=&quot;&quot;)&#xD;
+	{&#xD;
+		data.ProvisioningData.contractor=data.SelectedContractorGroup;&#xD;
+	}&#xD;
+}&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_3pFEsF_iEeiS67H0McQHwA" Name="CallSubProcess" FinishMode="Automatic" StartMode="Automatic" xpdExt:Visibility="Private" xpdExt:DisplayName="Call Sub-Process">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="_5_Ocsl_iEeiS67H0McQHwA" xpdExt:StartStrategy="StartImmediately" xpdExt:SuspendResumeWithParent="true">
+              <xpdExt:InputMappings MapperContext="ProcessToSubProcess" MappingDirection="IN"/>
+            </xpdl2:SubFlow>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="143,191,251" Height="80.0" LaneId="_cjJS8V5SEeiqvPRh5aeaAQ" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="774.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Completed">
+              <xpdExt:Information ScriptGrammar="JavaScript">Log.write(&quot;Afterpageflowcomments&quot;+data.TaskName);
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">Log.write(&quot;ErrorSearch before commentcase call&quot;);&#xD;
+&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_xhFkMGJ-EeieJflXe0ZPGg" Name="DropDownFetch" xpdExt:Visibility="Private" xpdExt:DisplayName="Drop Down Fetch">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskScript>
+                <xpdl2:Script ScriptGrammar="JavaScript">;</xpdl2:Script>
+              </xpdl2:TaskScript>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="143,191,251" Height="64.0" LaneId="_cjJS8V5SEeiqvPRh5aeaAQ" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="273.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_5DVrE15UEeitnMUMpcD2uQ" xpdExt:DisplayName="" Name="" From="_xhFkMGJ-EeieJflXe0ZPGg" To="_5DVrEF5UEeitnMUMpcD2uQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_O2yicV_YEeiS67H0McQHwA" xpdExt:DisplayName="" Name="" From="_cjJS8l5SEeiqvPRh5aeaAQ" To="_O2yicF_YEeiS67H0McQHwA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_kRlTRV_cEeiS67H0McQHwA" xpdExt:DisplayName="" Name="" From="_5DVrEF5UEeitnMUMpcD2uQ" To="_kRlTRF_cEeiS67H0McQHwA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_3pFrwF_iEeiS67H0McQHwA" xpdExt:DisplayName="" Name="" From="_kRlTRF_cEeiS67H0McQHwA" To="_3pFEsF_iEeiS67H0McQHwA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_xhGLQGJ-EeieJflXe0ZPGg" xpdExt:DisplayName="" Name="" From="_O2yicF_YEeiS67H0McQHwA" To="_xhFkMGJ-EeieJflXe0ZPGg">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_M4w-YGMsEeieJflXe0ZPGg" xpdExt:DisplayName="" Name="" From="_3pFEsF_iEeiS67H0McQHwA" To="_cjJ6AF5SEeiqvPRh5aeaAQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="CE"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:WorkflowProcess>
+    <xpdl2:WorkflowProcess Id="_CvM28l_eEeiS67H0McQHwA" xpdExt:XpdModelType="ServiceProcess" xpdExt:DisplayName="Insert Business Data" Name="InsertBusinessData">
+      <xpdl2:ProcessHeader/>
+      <xpdl2:FormalParameters>
+        <xpdl2:FormalParameter Id="_CvM3CV_eEeiS67H0McQHwA" Name="TechnicalInfomation" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="TechnicalInfomation">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_jnE9UOCeEeeeKsD8kq9l7g"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_CvM3Cl_eEeiS67H0McQHwA" Name="ProvisoningData" Mode="INOUT" Required="false" xpdExt:DisplayName="ProvisoningData">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_K9HKcM3FEeeozIUd784NFw"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+      </xpdl2:FormalParameters>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_CvM3C1_eEeiS67H0McQHwA" xpdExt:DisplayName="Technical_Information" Name="Technical_Information">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.sfc.fosImpl.bizData.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_oVYmcBbLEei5zJcabt9kCg"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_CvM3DF_eEeiS67H0McQHwA" xpdExt:DisplayName="Technical_InformationRef" Name="Technical_InformationRef">
+          <xpdl2:DataType>
+            <xpdl2:RecordType>
+              <xpdl2:Member>
+                <xpdl2:ExternalReference location="com.sfc.fosImpl.bizData.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_oVYmcBbLEei5zJcabt9kCg"/>
+              </xpdl2:Member>
+            </xpdl2:RecordType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_CvM3DV_eEeiS67H0McQHwA" xpdExt:DisplayName="technicalInfoInsertFlag" Name="technicalInfoInsertFlag">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_CvM3Dl_eEeiS67H0McQHwA" xpdExt:DisplayName="Customer_Information" Name="Customer_Information">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.sfc.fosImpl.bizData.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_EtWckCgaEei5K6PV_O0G8g"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_CvM3D1_eEeiS67H0McQHwA" xpdExt:DisplayName="Customer_InformationRef" Name="Customer_InformationRef">
+          <xpdl2:DataType>
+            <xpdl2:RecordType>
+              <xpdl2:Member>
+                <xpdl2:ExternalReference location="com.sfc.fosImpl.bizData.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_EtWckCgaEei5K6PV_O0G8g"/>
+              </xpdl2:Member>
+            </xpdl2:RecordType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_CvM281_eEeiS67H0McQHwA" Name="Start" xpdExt:Visibility="Private" xpdExt:DisplayName="Start">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="168,186,200" Height="27.0" LaneId="_CvM28V_eEeiS67H0McQHwA" Width="27.0">
+              <xpdl2:Coordinates XCoordinate="53.0" YCoordinate="132.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Completed">
+              <xpdExt:Information ScriptGrammar="JavaScript">var copyTo = factory.com_sfc_fosImpl_bizData_dataModel.createTechnical_Information();&#xD;
+var copyFrom = data.TechnicalInfomation;&#xD;
+//.Technical_InformationRef = cac_com_sfc_fosImpl_bizData_dataModel_Technical_Information.findBySiebelCircuitID(data.ProvisoningData.siebelCircuitID);&#xD;
+&#xD;
+data.Technical_InformationRef = bpm.caseData.findByCaseIdentifier(data.ProvisoningData.siebelCircuitID,&quot;com.sfc.fosImpl.bizData.dataModel.Technical_Information&quot;);&#xD;
+&#xD;
+data.Customer_InformationRef = bpm.caseData.findByCaseIdentifier(data.ProvisoningData.siebelCircuitID,&quot;com.sfc.fosImpl.bizData.dataModel.Customer_Information&quot;);&#xD;
+//data.Customer_InformationRef  = cac_com_sfc_fosImpl_bizData_dataModel_Customer_Information.findBySiebelCircuitID(data.ProvisoningData.siebelCircuitID);&#xD;
+&#xD;
+copyTo.SFCPOPPE	       = 	copyFrom.SFCPOPPE;&#xD;
+//copyTo.aggPoint		   = 	copyFrom.aggPoint;	&#xD;
+copyTo.carrierIP	   = 	copyFrom.carrierIP;&#xD;
+copyTo.carrierVLAN     = 	copyFrom.carrierVLAN;&#xD;
+copyTo.clientIP        = 	copyFrom.clientIP;&#xD;
+copyTo.clientVLAN	   = 	copyFrom.clientVLAN;&#xD;
+copyTo.modifiedBy	   = 	copyFrom.modifiedBy; &#xD;
+copyTo.modifiedDate	   = 	copyFrom.modifiedDate;&#xD;
+copyTo.port			   = 	copyFrom.port;		&#xD;
+copyTo.portType		   = 	copyFrom.portType;	&#xD;
+copyTo.siebelCircuitID = 	data.ProvisoningData.siebelCircuitID;&#xD;
+copyTo.recordStatus    = &quot;CREATED&quot;;&#xD;
+copyTo.MRR			   = copyFrom.MRR;&#xD;
+copyTo.IR_Number	   = copyFrom.IR_Number;&#xD;
+copyTo.security		   = copyFrom.security;&#xD;
+&#xD;
+&#xD;
+&#xD;
+for(var i=0;i&lt;copyFrom.equipment.length;i++) {&#xD;
+	var equipments  = factory.com_sfc_fosImpl_bizData_dataModel.createEquipment_Details();&#xD;
+	equipments.VLAN	= copyFrom.equipment[i].VLAN;&#xD;
+	equipments.address	= copyFrom.equipment[i].address;&#xD;
+	equipments.type	= copyFrom.equipment[i].type;&#xD;
+	equipments.EMEI	= copyFrom.equipment[i].EMEI;&#xD;
+	equipments.SFC_Tag_Number	= copyFrom.equipment[i].SFC_Tag_Number;&#xD;
+	equipments.status	= copyFrom.equipment[i].status;&#xD;
+	equipments.serial_Number	= copyFrom.equipment[i].serial_Number;&#xD;
+	equipments.addedBy	= copyFrom.equipment[i].addedBy;&#xD;
+	equipments.IR_Number = copyFrom.equipment[i].IR_Number;&#xD;
+	equipments.siebel_Circuit_ID = data.ProvisoningData.siebelCircuitID;&#xD;
+	&#xD;
+//	copyTo.equipment.add(equipments);	&#xD;
+	copyTo.equipment.push(equipments);&#xD;
+}&#xD;
+&#xD;
+for(var j=0;j&lt;copyFrom.management_IP_Info.length;j++){&#xD;
+	var management_info=factory.com_sfc_fosImpl_bizData_dataModel.createManagement_IP_List();&#xD;
+	management_info.aggregation_Point=copyFrom.management_IP_Info[i].aggregation_Point;&#xD;
+	management_info.carrier_VLAN=copyFrom.management_IP_Info[i].carrier_VLAN;&#xD;
+	management_info.comments=copyFrom.management_IP_Info[i].comments;&#xD;
+	management_info.management_Carrier_IP=copyFrom.management_IP_Info[i].management_Carrier_IP;&#xD;
+	management_info.management_VLAN=copyFrom.management_IP_Info[i].management_VLAN;&#xD;
+	management_info.port_Number=copyFrom.management_IP_Info[i].port_Number;&#xD;
+	management_info.capacity	= copyFrom.management_IP_Info[i].capacity;&#xD;
+	management_info.carrierEquipmentType	= copyFrom.management_IP_Info[i].carrierEquipmentType;&#xD;
+	management_info.port_Type	= copyFrom.management_IP_Info[i].port_Type;&#xD;
+	management_info.carrierIP	= copyFrom.management_IP_Info[i].carrierIP;&#xD;
+	&#xD;
+	&#xD;
+	//copyTo.management_IP_Info.add(management_info);	&#xD;
+	copyTo.management_IP_Info.push(management_info);&#xD;
+}&#xD;
+&#xD;
+	if(copyFrom.CPEManagementIPDetails!=null) {&#xD;
+		var s = copyFrom.CPEManagementIPDetails.length;&#xD;
+		&#xD;
+		for(var j=0;j&lt;s;j++) {&#xD;
+			var CPEDetailsObj = factory.com_sfc_fosImpl_bizData_dataModel.createCPEManagementIPDetails();&#xD;
+			CPEDetailsObj.CPEManagementIP = copyFrom.CPEManagementIPDetails[j].CPEManagementIP;&#xD;
+			CPEDetailsObj.CPEManagementVLAN = copyFrom.CPEManagementIPDetails[j].CPEManagementVLAN;&#xD;
+			&#xD;
+			&#xD;
+		//	copyTo.CPEManagementIPDetails.add(CPEDetailsObj);&#xD;
+			copyTo.CPEManagementIPDetails.push(CPEDetailsObj);&#xD;
+		}&#xD;
+	}&#xD;
+	&#xD;
+	if(copyFrom.serviceIPDetails!=null) {&#xD;
+		var s = copyFrom.serviceIPDetails.length;&#xD;
+		&#xD;
+		for(var j=0;j&lt;s;j++) {&#xD;
+			var ServIPDetailsObj = factory.com_sfc_fosImpl_bizData_dataModel.createServiceIPDetails();&#xD;
+			ServIPDetailsObj.SFCPOPPE	= copyFrom.serviceIPDetails[j].SFCPOPPE;&#xD;
+			ServIPDetailsObj.clientIP	= copyFrom.serviceIPDetails[j].clientIP;&#xD;
+			ServIPDetailsObj.clientVLAN	= copyFrom.serviceIPDetails[j].clientVLAN;&#xD;
+			&#xD;
+			&#xD;
+		//	copyTo.serviceIPDetails.add(ServIPDetailsObj);&#xD;
+			copyTo.serviceIPDetails.push(ServIPDetailsObj);&#xD;
+		}&#xD;
+	}&#xD;
+&#xD;
+var cfD = copyFrom.deviceRequest;&#xD;
+&#xD;
+for(var i=0;i&lt;cfD.length;i++) {&#xD;
+	var d = factory.com_sfc_fosImpl_bizData_dataModel.createDeviceRequest();&#xD;
+	d.deviceDescription  = cfD[i].deviceDescription;&#xD;
+	d.deviceName         = cfD[i].deviceName;&#xD;
+	d.quantity           = cfD[i].quantity;&#xD;
+	d.siebelCircuitID    = cfD[i].siebelCircuitID;&#xD;
+	d.IMEI				 = cfD[i].IMEI;&#xD;
+	d.IR_Number			 = cfD[i].IR_Number;&#xD;
+	d.SFC_Tag_Number	 = cfD[i].SFC_Tag_Number;&#xD;
+	d.VLAN				 = cfD[i].VLAN;&#xD;
+	d.addedBy			 = cfD[i].addedBy;&#xD;
+	d.address			 = cfD[i].address;&#xD;
+	d.serial_Number		 = cfD[i].serial_Number;&#xD;
+	d.status			 = cfD[i].status;&#xD;
+	d.type				 = cfD[i].type;&#xD;
+//	copyTo.deviceRequest.add(d);&#xD;
+	copyTo.deviceRequest.push(d);&#xD;
+}&#xD;
+&#xD;
+&#xD;
+//var tmpTechnicalInfo = cac_com_sfc_fosImpl_bizData_dataModel_Technical_Information.findBySiebelCircuitID(data.ProvisoningData.siebelCircuitID);&#xD;
+&#xD;
+var tmpTechnicalInfo = bpm.caseData.findByCaseIdentifier(data.ProvisoningData.siebelCircuitID,&quot;com.sfc.fosImpl.bizData.dataModel.Technical_Information&quot;);&#xD;
+if(tmpTechnicalInfo==null) {&#xD;
+	data.technicalInfoInsertFlag = true;&#xD;
+}&#xD;
+else {&#xD;
+	data.technicalInfoInsertFlag = false;&#xD;
+}&#xD;
+data.Technical_Information=bpm.scriptUtil.copy(copyTo);&#xD;
+	    &#xD;
+/*Copying the customer Information*/  &#xD;
+&#xD;
+var copyFrom = factory.com_sfc_fosImpl_bizData_dataModel.createCustomer_Information();&#xD;
+copyFrom = bpm.scriptUtil.copy(data.ProvisoningData);&#xD;
+var copyTo   = factory.com_sfc_fosImpl_bizData_dataModel.createCustomer_Information();&#xD;
+&#xD;
+if(copyFrom!=null) {&#xD;
+	&#xD;
+	copyTo.GPSCoordinates    = copyFrom.GPSCoordinates;&#xD;
+	copyTo.account		     = copyFrom.account;	&#xD;
+	copyTo.accountManager    = copyFrom.accountManager;&#xD;
+	copyTo.bandwidthupdown   = copyFrom.bandwidthupdown;&#xD;
+	copyTo.buildingID        = copyFrom.buildingID;&#xD;
+	copyTo.buildingName      = copyFrom.buildingName;&#xD;
+	copyTo.clientID          = copyFrom.clientID;&#xD;
+	copyTo.clientName        = copyFrom.clientName;&#xD;
+	copyTo.contactPerson     = copyFrom.contactPerson;&#xD;
+	copyTo.contractor        = copyFrom.contractor;&#xD;
+	copyTo.email             = copyFrom.email;&#xD;
+	copyTo.floor             = copyFrom.floor;&#xD;
+	copyTo.installDate       = copyFrom.installDate;&#xD;
+	copyTo.location          = copyFrom.location;&#xD;
+	copyTo.mobile            = copyFrom.mobile;&#xD;
+	copyTo.notesComments     = copyFrom.notesComments;&#xD;
+	copyTo.projectManager    = copyFrom.projectManager;&#xD;
+	copyTo.regionView        = copyFrom.regionView;&#xD;
+	copyTo.requestDate       = copyFrom.requestDate;&#xD;
+	copyTo.sector   		 = copyFrom.sector;&#xD;
+	copyTo.serviceEnd		 = copyFrom.serviceEnd;&#xD;
+	copyTo.serviceStart      = copyFrom.serviceStart;&#xD;
+	copyTo.serviceStatus     = copyFrom.serviceStatus;&#xD;
+	copyTo.serviceType       = copyFrom.serviceType;&#xD;
+	copyTo.siebelCircuitID   = copyFrom.siebelCircuitID;&#xD;
+	copyTo.technology        = copyFrom.technology;&#xD;
+	copyTo.recordStatus		 =&quot;CREATED&quot;;&#xD;
+	copyTo.address			 = copyFrom.address;&#xD;
+	copyTo.contractor_Engineer=copyFrom.contractor_Engineer;&#xD;
+	if(copyTo.projectManager==null || copyTo.projectManager==&quot;&quot;)&#xD;
+	{&#xD;
+		copyTo.projectManager=&quot;NA&quot;;&#xD;
+	}&#xD;
+	data.Customer_Information = bpm.scriptUtil.copy(copyTo);&#xD;
+}&#xD;
+    &#xD;
+	   &#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_CvM29F_eEeiS67H0McQHwA" Name="End" xpdExt:Visibility="Private" xpdExt:DisplayName="End">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Join Type="Exclusive" ExclusiveType="Data"/>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="168,186,200" Height="57.0" LaneId="_CvM28V_eEeiS67H0McQHwA" Width="32.0">
+              <xpdl2:Coordinates XCoordinate="709.0" YCoordinate="132.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_CvM29V_eEeiS67H0McQHwA">
+          <xpdl2:Route GatewayType="Exclusive" MarkerVisible="true" ExclusiveType="Data"/>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Split Type="Exclusive" ExclusiveType="Data">
+                <xpdl2:TransitionRefs>
+                  <xpdl2:TransitionRef Id="_CvM3BF_eEeiS67H0McQHwA"/>
+                  <xpdl2:TransitionRef Id="_CvM3BV_eEeiS67H0McQHwA"/>
+                </xpdl2:TransitionRefs>
+              </xpdl2:Split>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="168,186,200" Height="43.0" LaneId="_CvM28V_eEeiS67H0McQHwA" Width="41.0">
+              <xpdl2:Coordinates XCoordinate="146.0" YCoordinate="132.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_CvM29l_eEeiS67H0McQHwA" Name="InsertTechnicalInformation" xpdExt:Visibility="Private" xpdExt:DisplayName="Insert Technical Information">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskService xpdExt:ImplementationType="GlobalData" Implementation="Other">
+                <xpdl2:MessageIn Id="_CvM291_eEeiS67H0McQHwA"/>
+                <xpdl2:MessageOut Id="_CvM2-F_eEeiS67H0McQHwA"/>
+                <xpdExt:GlobalDataOperation>
+                  <xpdExt:CaseAccessOperations>
+                    <xpdExt:CaseClassExternalReference location="com.sfc.fosImpl.bizData.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_oVYmcBbLEei5zJcabt9kCg"/>
+                    <xpdExt:Create FromFieldPath="Technical_Information" ToCaseRefField="Technical_InformationRef"/>
+                  </xpdExt:CaseAccessOperations>
+                </xpdExt:GlobalDataOperation>
+              </xpdl2:TaskService>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="168,186,200" Height="64.0" LaneId="_CvM28V_eEeiS67H0McQHwA" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="322.0" YCoordinate="132.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">var Log_Activity_Name=&quot;Insert Technical Information&quot;;&#xD;
+var Log_Activity_Type=&quot;Start&quot;;&#xD;
+var Log_Activity_Resource=&quot;SYSTEM&quot;;&#xD;
+Log.write(&quot;[SFC_FOS_IMPL] SIEBEL_CIRCUIT_ID=&quot;+data.ProvisoningData.siebelCircuitID+&quot;,CLIENT_NAME=&quot;+data.ProvisoningData.clientName+&quot;,PVM_ID=&quot;+bpm.process.getId()+&quot;,PROCESS_NAME=&quot;+bpm.process.getName()+&quot;,ACTIVITY_NAME=&quot;+Log_Activity_Name+&quot;,ACTIVITY_TYPE=&quot;+Log_Activity_Type+&quot;,ACTIVITY_RESOURCE=&quot;+Log_Activity_Resource+&quot;,BEGIN_TIME=&quot;+new Date()+&quot;,&quot;);&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+            <xpdExt:AuditEvent Type="Completed">
+              <xpdExt:Information ScriptGrammar="JavaScript">var Log_Activity_Name=&quot;Insert Technical Info&quot;;&#xD;
+var Log_Activity_Type=&quot;End&quot;;&#xD;
+var Log_Activity_Resource=&quot;SYSTEM&quot;;&#xD;
+Log.write(&quot;[SFC_FOS_IMPL] SIEBEL_CIRCUIT_ID=&quot;+data.ProvisoningData.siebelCircuitID+&quot;,CLIENT_NAME=&quot;+data.ProvisoningData.clientName+&quot;,PVM_ID=&quot;+bpm.process.getId()+&quot;,PROCESS_NAME=&quot;+bpm.process.getName()+&quot;,ACTIVITY_NAME=&quot;+Log_Activity_Name+&quot;,ACTIVITY_TYPE=&quot;+Log_Activity_Type+&quot;,ACTIVITY_RESOURCE=&quot;+Log_Activity_Resource+&quot;,END_TIME=&quot;+new Date()+&quot;,&quot;);&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_CvM2-V_eEeiS67H0McQHwA" Name="UpdateTechnicalInformation" xpdExt:Visibility="Private" xpdExt:DisplayName="Update Technical Information">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskService xpdExt:ImplementationType="GlobalData" Implementation="Other">
+                <xpdl2:MessageIn Id="_CvM2-l_eEeiS67H0McQHwA"/>
+                <xpdl2:MessageOut Id="_CvM2-1_eEeiS67H0McQHwA"/>
+                <xpdExt:GlobalDataOperation>
+                  <xpdExt:CaseReferenceOperations>
+                    <xpdExt:CaseRefField>Technical_InformationRef</xpdExt:CaseRefField>
+                    <xpdExt:Update FromFieldPath="Technical_Information"/>
+                  </xpdExt:CaseReferenceOperations>
+                </xpdExt:GlobalDataOperation>
+              </xpdl2:TaskService>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="168,186,200" Height="64.0" LaneId="_CvM28V_eEeiS67H0McQHwA" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="322.0" YCoordinate="236.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">var Log_Activity_Name=&quot;Update Technical Information&quot;;&#xD;
+var Log_Activity_Type=&quot;Start&quot;;&#xD;
+var Log_Activity_Resource=&quot;SYSTEM&quot;;&#xD;
+Log.write(&quot;[SFC_FOS_IMPL] SIEBEL_CIRCUIT_ID=&quot;+data.ProvisoningData.siebelCircuitID+&quot;,CLIENT_NAME=&quot;+data.ProvisoningData.clientName+&quot;,PVM_ID=&quot;+bpm.process.getId()+&quot;,PROCESS_NAME=&quot;+bpm.process.getName()+&quot;,ACTIVITY_NAME=&quot;+Log_Activity_Name+&quot;,ACTIVITY_TYPE=&quot;+Log_Activity_Type+&quot;,ACTIVITY_RESOURCE=&quot;+Log_Activity_Resource+&quot;,BEGIN_TIME=&quot;+new Date()+&quot;,&quot;);&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+            <xpdExt:AuditEvent Type="Completed">
+              <xpdExt:Information ScriptGrammar="JavaScript">var Log_Activity_Name=&quot;Update Technical Information&quot;;&#xD;
+var Log_Activity_Type=&quot;End&quot;;&#xD;
+var Log_Activity_Resource=&quot;SYSTEM&quot;;&#xD;
+Log.write(&quot;[SFC_FOS_IMPL] SIEBEL_CIRCUIT_ID=&quot;+data.ProvisoningData.siebelCircuitID+&quot;,CLIENT_NAME=&quot;+data.ProvisoningData.clientName+&quot;,PVM_ID=&quot;+bpm.process.getId()+&quot;,PROCESS_NAME=&quot;+bpm.process.getName()+&quot;,ACTIVITY_NAME=&quot;+Log_Activity_Name+&quot;,ACTIVITY_TYPE=&quot;+Log_Activity_Type+&quot;,ACTIVITY_RESOURCE=&quot;+Log_Activity_Resource+&quot;,END_TIME=&quot;+new Date()+&quot;,&quot;);&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_CvM2_F_eEeiS67H0McQHwA" Name="InsertCustomerInformation" xpdExt:Visibility="Private" xpdExt:DisplayName="Insert Customer Information">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskService xpdExt:ImplementationType="GlobalData" Implementation="Other">
+                <xpdl2:MessageIn Id="_CvM2_V_eEeiS67H0McQHwA"/>
+                <xpdl2:MessageOut Id="_CvM2_l_eEeiS67H0McQHwA"/>
+                <xpdExt:GlobalDataOperation>
+                  <xpdExt:CaseAccessOperations>
+                    <xpdExt:CaseClassExternalReference location="com.sfc.fosImpl.bizData.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_EtWckCgaEei5K6PV_O0G8g"/>
+                    <xpdExt:Create FromFieldPath="Customer_Information" ToCaseRefField="Customer_InformationRef"/>
+                  </xpdExt:CaseAccessOperations>
+                </xpdExt:GlobalDataOperation>
+              </xpdl2:TaskService>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="168,186,200" Height="64.0" LaneId="_CvM28V_eEeiS67H0McQHwA" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="529.0" YCoordinate="132.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">var Log_Activity_Name=&quot;Insert Customer Information&quot;;&#xD;
+var Log_Activity_Type=&quot;Start&quot;;&#xD;
+var Log_Activity_Resource=&quot;SYSTEM&quot;;&#xD;
+Log.write(&quot;[SFC_FOS_IMPL] SIEBEL_CIRCUIT_ID=&quot;+data.ProvisoningData.siebelCircuitID+&quot;,CLIENT_NAME=&quot;+data.ProvisoningData.clientName+&quot;,PVM_ID=&quot;+bpm.process.getId()+&quot;,PROCESS_NAME=&quot;+bpm.process.getName()+&quot;,ACTIVITY_NAME=&quot;+Log_Activity_Name+&quot;,ACTIVITY_TYPE=&quot;+Log_Activity_Type+&quot;,ACTIVITY_RESOURCE=&quot;+Log_Activity_Resource+&quot;,BEGIN_TIME=&quot;+new Date()+&quot;,&quot;);&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+            <xpdExt:AuditEvent Type="Completed">
+              <xpdExt:Information ScriptGrammar="JavaScript">var Log_Activity_Name=&quot;Insert Customer Information&quot;;&#xD;
+var Log_Activity_Type=&quot;End&quot;;&#xD;
+var Log_Activity_Resource=&quot;SYSTEM&quot;;&#xD;
+Log.write(&quot;[SFC_FOS_IMPL] SIEBEL_CIRCUIT_ID=&quot;+data.ProvisoningData.siebelCircuitID+&quot;,CLIENT_NAME=&quot;+data.ProvisoningData.clientName+&quot;,PVM_ID=&quot;+bpm.process.getId()+&quot;,PROCESS_NAME=&quot;+bpm.process.getName()+&quot;,ACTIVITY_NAME=&quot;+Log_Activity_Name+&quot;,ACTIVITY_TYPE=&quot;+Log_Activity_Type+&quot;,ACTIVITY_RESOURCE=&quot;+Log_Activity_Resource+&quot;,END_TIME=&quot;+new Date()+&quot;,&quot;);&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_CvM2_1_eEeiS67H0McQHwA" Name="UpdateCustomerInformation" xpdExt:Visibility="Private" xpdExt:DisplayName="Update Customer Information">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskService xpdExt:ImplementationType="GlobalData" Implementation="Other">
+                <xpdl2:MessageIn Id="_CvM3AF_eEeiS67H0McQHwA"/>
+                <xpdl2:MessageOut Id="_CvM3AV_eEeiS67H0McQHwA"/>
+                <xpdExt:GlobalDataOperation>
+                  <xpdExt:CaseReferenceOperations>
+                    <xpdExt:CaseRefField>Customer_InformationRef</xpdExt:CaseRefField>
+                    <xpdExt:Update FromFieldPath="Customer_Information"/>
+                  </xpdExt:CaseReferenceOperations>
+                </xpdExt:GlobalDataOperation>
+              </xpdl2:TaskService>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="168,186,200" Height="64.0" LaneId="_CvM28V_eEeiS67H0McQHwA" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="529.0" YCoordinate="230.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Completed">
+              <xpdExt:Information ScriptGrammar="JavaScript">var Log_Activity_Name=&quot;Update Customer Information&quot;;&#xD;
+var Log_Activity_Type=&quot;End&quot;;&#xD;
+var Log_Activity_Resource=&quot;SYSTEM&quot;;&#xD;
+Log.write(&quot;[SFC_FOS_IMPL] SIEBEL_CIRCUIT_ID=&quot;+data.ProvisoningData.siebelCircuitID+&quot;,CLIENT_NAME=&quot;+data.ProvisoningData.clientName+&quot;,PVM_ID=&quot;+bpm.process.getId()+&quot;,PROCESS_NAME=&quot;+bpm.process.getName()+&quot;,ACTIVITY_NAME=&quot;+Log_Activity_Name+&quot;,ACTIVITY_TYPE=&quot;+Log_Activity_Type+&quot;,ACTIVITY_RESOURCE=&quot;+Log_Activity_Resource+&quot;,END_TIME=&quot;+new Date()+&quot;,&quot;);&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">var Log_Activity_Name=&quot;Update Customer Information&quot;;&#xD;
+var Log_Activity_Type=&quot;Start&quot;;&#xD;
+var Log_Activity_Resource=&quot;SYSTEM&quot;;&#xD;
+Log.write(&quot;[SFC_FOS_IMPL] SIEBEL_CIRCUIT_ID=&quot;+data.ProvisoningData.siebelCircuitID+&quot;,CLIENT_NAME=&quot;+data.ProvisoningData.clientName+&quot;,PVM_ID=&quot;+bpm.process.getId()+&quot;,PROCESS_NAME=&quot;+bpm.process.getName()+&quot;,ACTIVITY_NAME=&quot;+Log_Activity_Name+&quot;,ACTIVITY_TYPE=&quot;+Log_Activity_Type+&quot;,ACTIVITY_RESOURCE=&quot;+Log_Activity_Resource+&quot;,BEGIN_TIME=&quot;+new Date()+&quot;,&quot;);&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_CvM3Al_eEeiS67H0McQHwA" xpdExt:DisplayName="" Name="" From="_CvM2_F_eEeiS67H0McQHwA" To="_CvM29F_eEeiS67H0McQHwA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_CvM3A1_eEeiS67H0McQHwA" xpdExt:DisplayName="" Name="" From="_CvM281_eEeiS67H0McQHwA" To="_CvM29V_eEeiS67H0McQHwA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_CvM3BF_eEeiS67H0McQHwA" xpdExt:DisplayName="" Name="" From="_CvM29V_eEeiS67H0McQHwA" To="_CvM29l_eEeiS67H0McQHwA">
+          <xpdl2:Condition Type="CONDITION">
+                        <xpdl2:Expression ScriptGrammar="JavaScript">(data.technicalInfoInsertFlag==true);
+</xpdl2:Expression>
+                    </xpdl2:Condition>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_CvM3BV_eEeiS67H0McQHwA" Name="" From="_CvM29V_eEeiS67H0McQHwA" To="_CvM2-V_eEeiS67H0McQHwA">
+          <xpdl2:Condition Type="OTHERWISE"/>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="-1.0" YCoordinate="37.0"/>
+              <xpdl2:Coordinates XCoordinate="-129.0" YCoordinate="-37.0"/>
+              <xpdl2:Coordinates XCoordinate="-1.0" YCoordinate="76.0"/>
+              <xpdl2:Coordinates XCoordinate="-129.0" YCoordinate="2.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="62.81250000000001" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_CvM3Bl_eEeiS67H0McQHwA" xpdExt:DisplayName="" Name="" From="_CvM2_1_eEeiS67H0McQHwA" To="_CvM29F_eEeiS67H0McQHwA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="64.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-116.0" YCoordinate="83.0"/>
+              <xpdl2:Coordinates XCoordinate="164.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-2.0" YCoordinate="96.0"/>
+              <xpdl2:Coordinates XCoordinate="170.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-10.0" YCoordinate="83.0"/>
+              <xpdl2:Coordinates XCoordinate="179.0" YCoordinate="-77.0"/>
+              <xpdl2:Coordinates XCoordinate="13.0" YCoordinate="20.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="25.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_CvM3B1_eEeiS67H0McQHwA" xpdExt:DisplayName="" Name="" From="_CvM29l_eEeiS67H0McQHwA" To="_CvM2_F_eEeiS67H0McQHwA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_CvM3CF_eEeiS67H0McQHwA" xpdExt:DisplayName="" Name="" From="_CvM2-V_eEeiS67H0McQHwA" To="_CvM2_1_eEeiS67H0McQHwA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="8.125" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="CE"/>
+      </xpdl2:ExtendedAttributes>
+      <xpdl2:Extensions/>
+      <xpdExt:ServiceProcessConfiguration xpdExt:DeployToProcessRuntime="true" xpdExt:DeployToPageflowRuntime="true"/>
+    </xpdl2:WorkflowProcess>
+    <xpdl2:WorkflowProcess Id="_5_Ocsl_iEeiS67H0McQHwA" xpdExt:XpdModelType="ServiceProcess" xpdExt:DisplayName="Insert Comment Data" Name="InsertCommentData">
+      <xpdl2:ProcessHeader/>
+      <xpdl2:FormalParameters>
+        <xpdl2:FormalParameter Id="_5_OcvV_iEeiS67H0McQHwA" Name="CaseCommentData" Mode="INOUT" Required="false" xpdExt:DisplayName="CaseCommentData">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_DeEdsPaQEeeyW8gonFLB3A"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+      </xpdl2:FormalParameters>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_5_Ocvl_iEeiS67H0McQHwA" xpdExt:DisplayName="CommentDataCaseRef" Name="CommentDataCaseRef">
+          <xpdl2:DataType>
+            <xpdl2:RecordType>
+              <xpdl2:Member>
+                <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_DeEdsPaQEeeyW8gonFLB3A"/>
+              </xpdl2:Member>
+            </xpdl2:RecordType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_5_Ocs1_iEeiS67H0McQHwA" Name="Start" xpdExt:Visibility="Private" xpdExt:DisplayName="Start">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="168,186,200" Height="27.0" LaneId="_5_OcsV_iEeiS67H0McQHwA" Width="27.0">
+              <xpdl2:Coordinates XCoordinate="53.0" YCoordinate="132.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Completed">
+              <xpdExt:Information ScriptGrammar="JavaScript">&#xD;
+Log.write(&quot;CommentDataCheck&quot;);&#xD;
+Log.write(data.CaseCommentData.addedby);&#xD;
+&#xD;
+Log.write(data.CaseCommentData.comments);&#xD;
+Log.write(data.CaseCommentData.siebelCircuitID);&#xD;
+Log.write(data.CaseCommentData.taskName);&#xD;
+Log.write(data.CaseCommentData.time);&#xD;
+Log.write(data.CaseCommentData.comment_Id);&#xD;
+&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_5_OctF_iEeiS67H0McQHwA" Name="End" xpdExt:Visibility="Private" xpdExt:DisplayName="End">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Join Type="Exclusive" ExclusiveType="Data"/>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="168,186,200" Height="30.0" LaneId="_5_OcsV_iEeiS67H0McQHwA" Width="30.0">
+              <xpdl2:Coordinates XCoordinate="515.0" YCoordinate="132.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">Log.write(&quot;Commentinsertedhereend&quot;+bpm.process.getWorkItemCompleter());
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_5_OctV_iEeiS67H0McQHwA">
+          <xpdl2:Route GatewayType="Exclusive" MarkerVisible="true" ExclusiveType="Data"/>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Split Type="Exclusive" ExclusiveType="Data">
+                <xpdl2:TransitionRefs>
+                  <xpdl2:TransitionRef Id="_5_Ocu1_iEeiS67H0McQHwA"/>
+                  <xpdl2:TransitionRef Id="_5_OcvF_iEeiS67H0McQHwA"/>
+                </xpdl2:TransitionRefs>
+              </xpdl2:Split>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="168,186,200" Height="43.0" LaneId="_5_OcsV_iEeiS67H0McQHwA" Width="41.0">
+              <xpdl2:Coordinates XCoordinate="150.0" YCoordinate="132.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_5_Octl_iEeiS67H0McQHwA" Name="InsertComment" xpdExt:Visibility="Private" xpdExt:DisplayName="Insert Comment">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskService xpdExt:ImplementationType="GlobalData" Implementation="Other">
+                <xpdl2:MessageIn Id="_5_Oct1_iEeiS67H0McQHwA"/>
+                <xpdl2:MessageOut Id="_5_OcuF_iEeiS67H0McQHwA"/>
+                <xpdExt:GlobalDataOperation>
+                  <xpdExt:CaseAccessOperations>
+                    <xpdExt:CaseClassExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_DeEdsPaQEeeyW8gonFLB3A"/>
+                    <xpdExt:Create FromFieldPath="CaseCommentData" ToCaseRefField="CommentDataCaseRef"/>
+                  </xpdExt:CaseAccessOperations>
+                </xpdExt:GlobalDataOperation>
+              </xpdl2:TaskService>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="168,186,200" Height="64.0" LaneId="_5_OcsV_iEeiS67H0McQHwA" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="288.0" YCoordinate="132.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">/***&#xD;
+* This is a script to add comments to case data with time stamp.&#xD;
+*&#xD;
+***/&#xD;
+var tskName = data.CaseCommentData.taskName;&#xD;
+var tmpName;&#xD;
+/*for(var i=0; i&lt;tskName.length; i++) {&#xD;
+	tmpName=tskName.replace(&quot;_&quot;,&quot; &quot;);&#xD;
+	Log.write(tmpName);&#xD;
+	&#xD;
+} &#xD;
+//CommentDataCase.taskName=tmpName;&#xD;
+*/&#xD;
+data.CaseCommentData.time=new Date();&#xD;
+&#xD;
+var Log_Activity_Name=&quot;Insert Comments&quot;;&#xD;
+var Log_Activity_Type=&quot;Start&quot;;&#xD;
+var Log_Activity_Resource=&quot;SYSTEM&quot;;&#xD;
+Log.write(&quot;[SFC_FOS_IMPL] SIEBEL_CIRCUIT_ID=&quot;+data.CaseCommentData.siebelCircuitID+&quot;,PVM_ID=&quot;+bpm.process.getId()+&quot;,PROCESS_NAME=&quot;+bpm.process.getName()+&quot;,ACTIVITY_NAME=&quot;+Log_Activity_Name+&quot;,ACTIVITY_TYPE=&quot;+Log_Activity_Type+&quot;,ACTIVITY_RESOURCE=&quot;+Log_Activity_Resource+&quot;,BEGIN_TIME=&quot;+new Date()+&quot;,&quot;);&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+            <xpdExt:AuditEvent Type="Completed">
+              <xpdExt:Information ScriptGrammar="JavaScript">var Log_Activity_Name=&quot;Insert Comments&quot;;&#xD;
+var Log_Activity_Type=&quot;End&quot;;&#xD;
+var Log_Activity_Resource=&quot;SYSTEM&quot;;&#xD;
+Log.write(&quot;[SFC_FOS_IMPL] SIEBEL_CIRCUIT_ID=&quot;+data.CaseCommentData.siebelCircuitID+&quot;,PVM_ID=&quot;+bpm.process.getId()+&quot;,PROCESS_NAME=&quot;+bpm.process.getName()+&quot;,ACTIVITY_NAME=&quot;+Log_Activity_Name+&quot;,ACTIVITY_TYPE=&quot;+Log_Activity_Type+&quot;,ACTIVITY_RESOURCE=&quot;+Log_Activity_Resource+&quot;,END_TIME=&quot;+new Date()+&quot;,&quot;);&#xD;
+&#xD;
+Log.write(&quot;Commentinsertedhere&quot;);&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_5_OcuV_iEeiS67H0McQHwA" xpdExt:DisplayName="" Name="" From="_5_Octl_iEeiS67H0McQHwA" To="_5_OctF_iEeiS67H0McQHwA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_5_Ocul_iEeiS67H0McQHwA" xpdExt:DisplayName="" Name="" From="_5_Ocs1_iEeiS67H0McQHwA" To="_5_OctV_iEeiS67H0McQHwA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_5_Ocu1_iEeiS67H0McQHwA" xpdExt:DisplayName="" Name="" From="_5_OctV_iEeiS67H0McQHwA" To="_5_Octl_iEeiS67H0McQHwA">
+          <xpdl2:Condition Type="CONDITION">
+                        <xpdl2:Expression ScriptGrammar="JavaScript">(data.CaseCommentData.comments!=null) &amp;&amp; (data.CaseCommentData.comments.length>0);
+</xpdl2:Expression>
+                    </xpdl2:Condition>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_5_OcvF_iEeiS67H0McQHwA" Name="" From="_5_OctV_iEeiS67H0McQHwA" To="_5_OctF_iEeiS67H0McQHwA">
+          <xpdl2:Condition Type="OTHERWISE"/>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="-1.0" YCoordinate="58.0"/>
+              <xpdl2:Coordinates XCoordinate="-352.0" YCoordinate="78.0"/>
+              <xpdl2:Coordinates XCoordinate="246.0" YCoordinate="69.0"/>
+              <xpdl2:Coordinates XCoordinate="-105.0" YCoordinate="89.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="49.33723776933645" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="CE"/>
+      </xpdl2:ExtendedAttributes>
+      <xpdl2:Extensions/>
+      <xpdExt:ServiceProcessConfiguration xpdExt:DeployToProcessRuntime="true" xpdExt:DeployToPageflowRuntime="true"/>
+    </xpdl2:WorkflowProcess>
+    <xpdl2:WorkflowProcess Id="_if9msmPkEeiJIv1t8AuYSA" xpdExt:XpdModelType="ServiceProcess" xpdExt:DisplayName="NotifyPlanItem" Name="NotifyPlanItem">
+      <xpdl2:ProcessHeader/>
+      <xpdl2:FormalParameters>
+        <xpdl2:FormalParameter Id="_if9mvmPkEeiJIv1t8AuYSA" Name="Provisioning_Data" IsArray="false" Mode="INOUT" xpdExt:DisplayName="Provisioning_Data">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_K9HKcM3FEeeozIUd784NFw"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_if9mv2PkEeiJIv1t8AuYSA" Name="ProcessExecutionRequest" IsArray="false" Mode="INOUT" xpdExt:DisplayName="ProcessExecutionRequest">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_eVjggKPGEeis2p20Oiabfw"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+      </xpdl2:FormalParameters>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_if9mwWPkEeiJIv1t8AuYSA" xpdExt:DisplayName="PlanItemData" Name="PlanItemData" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.SchemaPlanItemType"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_if9ms2PkEeiJIv1t8AuYSA" Name="JMSAppenderMessage" IsATransaction="false" xpdExt:Visibility="Private" xpdExt:DisplayName="JMS Appender Message" xpdExt:RequireNewTransaction="false">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskService xpdExt:ImplementationType="RESTService" Implementation="Other">
+                <xpdl2:MessageIn Id="_cncCQGTfEe2NNMoSeP-FXw">
+                  <xpdExt:ScriptDataMapper MapperContext="ProcessToRestService" MappingDirection="IN"/>
+                </xpdl2:MessageIn>
+                <xpdl2:MessageOut Id="_cncCQWTfEe2NNMoSeP-FXw">
+                  <xpdExt:ScriptDataMapper MapperContext="RestServiceToProcess" MappingDirection="OUT"/>
+                </xpdl2:MessageOut>
+                <xpdExt:RestServiceOperation xpdExt:Location="com.sfc.fosImpl.RestServices.rsd" xpdExt:MethodId="_66pyUW_FEe2vBId6cfbH5A"/>
+              </xpdl2:TaskService>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:Performers>
+            <xpdl2:Performer>_NZVmEJA1Eeia6Yd4TMHhyw</xpdl2:Performer>
+          </xpdl2:Performers>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="168,186,200" Height="64.0" LaneId="_if9msWPkEeiJIv1t8AuYSA" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="269.0" YCoordinate="52.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">/***&#xD;
+* This is a script to update the Activation Execution Request&#xD;
+*&#xD;
+***/&#xD;
+&#xD;
+//data.PlanItemData=factory.com_tibco_schemas_SFC_FOS_BPM_SharedResources_SchemaDefinitions_Schema.createPlanItemType();&#xD;
+for (var i=0;i&lt;data.ProcessExecutionRequest.udf.length ;i++)&#xD;
+{&#xD;
+	&#xD;
+	var UDFData=factory.com_tibco_schemas_SFC_FOS_BPM_SharedResources_SchemaDefinitions_Schema.createUDFType();&#xD;
+	UDFData.evaluationPriority=data.ProcessExecutionRequest.udf[i].evaluationPriority;&#xD;
+	UDFData.flavour=data.ProcessExecutionRequest.udf[i].flavour;&#xD;
+	UDFData.name=data.ProcessExecutionRequest.udf[i].name;&#xD;
+	UDFData.value=data.ProcessExecutionRequest.udf[i].value;&#xD;
+	UDFData.type=data.ProcessExecutionRequest.udf[i].type;&#xD;
+	data.PlanItemData.UDF.push(UDFData);&#xD;
+	Log.write(UDFData.evaluationPriority);&#xD;
+}&#xD;
+data.PlanItemData.planItemId=data.ProcessExecutionRequest.planitemID;&#xD;
+data.PlanItemData.isError=&quot;0&quot;;&#xD;
+data.PlanItemData.resultCode=&quot;1&quot;;&#xD;
+data.PlanItemData.resultMessage=&quot;SUCCESS&quot;;&#xD;
+&#xD;
+var Log_Activity_Name=&quot;JMS Appender&quot;;&#xD;
+var Log_Activity_Type=&quot;Start&quot;;&#xD;
+var Log_Activity_Resource=&quot;SYSTEM&quot;;&#xD;
+//Log.write(&quot;[SFC_FOS_IMPL] SIEBEL_CIRCUIT_ID=&quot;+Provisioning_Data.siebelCircuitID+&quot;,CLIENT_NAME=&quot;+Provisioning_Data.clientName+&quot;,PVM_ID=&quot;+Process.getId()+&quot;,PROCESS_NAME=&quot;+Process.getName()+&quot;,ACTIVITY_NAME=&quot;+Log_Activity_Name+&quot;,ACTIVITY_TYPE=&quot;+Log_Activity_Type+&quot;,ACTIVITY_RESOURCE=&quot;+Log_Activity_Resource+&quot;,BEGIN_TIME=&quot;+DateTimeUtil.createDatetime()+&quot;,&quot;);&#xD;
+&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+            <xpdExt:AuditEvent Type="Completed">
+              <xpdExt:Information ScriptGrammar="JavaScript">var Log_Activity_Name=&quot;JMS Appender&quot;;&#xD;
+var Log_Activity_Type=&quot;End&quot;;&#xD;
+var Log_Activity_Resource=&quot;SYSTEM&quot;;&#xD;
+Log.write(&quot;[SFC_FOS_IMPL] SIEBEL_CIRCUIT_ID=&quot;+data.Provisioning_Data.siebelCircuitID+&quot;,CLIENT_NAME=&quot;+data.Provisioning_Data.clientName+&quot;,PVM_ID=&quot;+bpm.process.getId()+&quot;,PROCESS_NAME=&quot;+bpm.process.getName()+&quot;,ACTIVITY_NAME=&quot;+Log_Activity_Name+&quot;,ACTIVITY_TYPE=&quot;+Log_Activity_Type+&quot;,ACTIVITY_RESOURCE=&quot;+Log_Activity_Resource+&quot;,END_TIME=&quot;+new Date()+&quot;,&quot;);&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+          <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
+            <xpdExt:AssociatedParameter FormalParam="ProcessExecutionRequest" Mode="IN" Mandatory="true"/>
+            <xpdExt:AssociatedParameter FormalParam="PlanItemData" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+          </xpdExt:AssociatedParameters>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_if9mt2PkEeiJIv1t8AuYSA" Name="StartEvent" xpdExt:Visibility="Private" xpdExt:DisplayName="Start Event">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="168,186,200" Height="52.0" LaneId="_if9msWPkEeiJIv1t8AuYSA" Width="73.0">
+              <xpdl2:Coordinates XCoordinate="70.0" YCoordinate="52.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:Audit/>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_if9muGPkEeiJIv1t8AuYSA" Name="EndEvent" xpdExt:Visibility="Private" xpdExt:DisplayName="End Event">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="168,186,200" Height="52.0" LaneId="_if9msWPkEeiJIv1t8AuYSA" Width="67.0">
+              <xpdl2:Coordinates XCoordinate="436.0" YCoordinate="52.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_if9mumPkEeiJIv1t8AuYSA" xpdExt:DisplayName="" Name="" From="_if9mt2PkEeiJIv1t8AuYSA" To="_if9ms2PkEeiJIv1t8AuYSA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_if9mu2PkEeiJIv1t8AuYSA" Name="" From="_if9ms2PkEeiJIv1t8AuYSA" To="_if9muGPkEeiJIv1t8AuYSA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="CE"/>
+      </xpdl2:ExtendedAttributes>
+      <xpdl2:Extensions/>
+      <xpdExt:ServiceProcessConfiguration xpdExt:DeployToProcessRuntime="true"/>
+    </xpdl2:WorkflowProcess>
+  </xpdl2:WorkflowProcesses>
+  <xpdl2:ExtendedAttributes>
+    <xpdl2:ExtendedAttribute Name="CreatedBy" Value="TIBCO Business Studio"/>
+    <xpdl2:ExtendedAttribute Name="FormatVersion" Value="1000"/>
+    <xpdl2:ExtendedAttribute Name="OriginalFormatVersion" Value="20"/>
+  </xpdl2:ExtendedAttributes>
+</xpdl2:Package>

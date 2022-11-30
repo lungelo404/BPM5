@@ -1,0 +1,1615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BOMGlobalDataProfile="http:///schemas/BOMGlobalDataProfile/_-rxZEHyPEeCumvZ6xHSUiw/0" xmlns:PrimitiveTypeFacets="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0" xmlns:bomnotation="http://www.tibco.com/models/bomnotation" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elx="http://www.tibco.com/EnumLiteralExt" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/BOMGlobalDataProfile/_-rxZEHyPEeCumvZ6xHSUiw/0 pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_-r7KEXyPEeCumvZ6xHSUiw http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0 pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw">
+  <uml:Model xmi:id="_iy080BbLEei5zJcabt9kCg" name="com.sfc.fosImpl.bizData.dataModel">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iy080RbLEei5zJcabt9kCg" source="model.metadata">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iy080hbLEei5zJcabt9kCg" key="author" value="ideshpan"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iy080xbLEei5zJcabt9kCg" key="created" value="1519192410397"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iy081BbLEei5zJcabt9kCg" key="version" value="1000"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oVYmcBbLEei5zJcabt9kCg" name="Technical_Information">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sjAdcBbLEei5zJcabt9kCg" name="carrierVLAN" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sjAdchbLEei5zJcabt9kCg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sjAdcRbLEei5zJcabt9kCg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sjBrkBbLEei5zJcabt9kCg" name="carrierIP" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sjBrkhbLEei5zJcabt9kCg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sjBrkRbLEei5zJcabt9kCg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sjBrkxbLEei5zJcabt9kCg" name="aggPoint" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sjBrlRbLEei5zJcabt9kCg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sjBrlBbLEei5zJcabt9kCg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sjCSoBbLEei5zJcabt9kCg" name="port" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sjCSohbLEei5zJcabt9kCg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sjCSoRbLEei5zJcabt9kCg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sjCSoxbLEei5zJcabt9kCg" name="clientVLAN" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sjCSpRbLEei5zJcabt9kCg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sjCSpBbLEei5zJcabt9kCg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sjC5sBbLEei5zJcabt9kCg" name="clientIP" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sjC5shbLEei5zJcabt9kCg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sjC5sRbLEei5zJcabt9kCg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sjC5sxbLEei5zJcabt9kCg" name="SFCPOPPE" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sjC5tRbLEei5zJcabt9kCg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sjC5tBbLEei5zJcabt9kCg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sjDgwBbLEei5zJcabt9kCg" name="portType" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sjDgwhbLEei5zJcabt9kCg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sjDgwRbLEei5zJcabt9kCg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sjDgwxbLEei5zJcabt9kCg" name="modifiedBy" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sjDgxRbLEei5zJcabt9kCg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sjDgxBbLEei5zJcabt9kCg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sjDgxhbLEei5zJcabt9kCg" name="modifiedDate" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_UcSGcIvhEd68OqPx9MxH3A?BomPrimitiveTypes%3a%3aDateTimeTZ?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sjDgyBbLEei5zJcabt9kCg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sjDgxxbLEei5zJcabt9kCg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_uvKzABbLEei5zJcabt9kCg" name="siebelCircuitID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u38UgBbLEei5zJcabt9kCg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u38UgRbLEei5zJcabt9kCg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5luF0BbLEei5zJcabt9kCg" name="equipment" type="_0RkEkBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5lv7ABbLEei5zJcabt9kCg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5lv7ARbLEei5zJcabt9kCg" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Jjo-wEZmEeimsaF6DY9_0g" name="recordStatus" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JnrKMEZmEeimsaF6DY9_0g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JnrxQEZmEeimsaF6DY9_0g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_cGELEFjQEei-YLtY71j4-A" name="management_IP_Info" type="_xE-DYFjPEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cGEyIVjQEei-YLtY71j4-A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cGEyIljQEei-YLtY71j4-A" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dfSV4FjSEei-YLtY71j4-A" name="IR_Number" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dfS88VjSEei-YLtY71j4-A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dfS88ljSEei-YLtY71j4-A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CbRrEFjUEei-YLtY71j4-A" name="MRR" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CbTgQVjUEei-YLtY71j4-A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CbTgQljUEei-YLtY71j4-A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wbRwoFmUEei-YLtY71j4-A" name="security" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wbcIsFmUEei-YLtY71j4-A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wbcIsVmUEei-YLtY71j4-A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UjsGMFp6EeiX_Mb7qrf0MA" name="deviceRequest" type="_SVvn8Fp6EeiX_Mb7qrf0MA?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UjstQVp6EeiX_Mb7qrf0MA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UjstQlp6EeiX_Mb7qrf0MA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zyMhkGDFEeiKHe8PzgqrqQ" name="clientName" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zyTPQWDFEeiKHe8PzgqrqQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zyT2UGDFEeiKHe8PzgqrqQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0422UI11Eeima4J9XCb_cA" name="CPEManagementIPDetails" type="_qCvBUI11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aCPEManagementIPDetails?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0422Uo11Eeima4J9XCb_cA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0422U411Eeima4J9XCb_cA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3cepoI11Eeima4J9XCb_cA" name="serviceIPDetails" type="_tqJM4I11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aServiceIPDetails?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3cepoo11Eeima4J9XCb_cA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3cepo411Eeima4J9XCb_cA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_P6We4CLkEe2wEoo8St6PPQ" name="state" type="_e0weICLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P6ZiMiLkEe2wEoo8St6PPQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P6ZiMyLkEe2wEoo8St6PPQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0RkEkBbLEei5zJcabt9kCg" name="Equipment_Details">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3IJ3NxbLEei5zJcabt9kCg" name="type" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3IJ3ORbLEei5zJcabt9kCg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3IJ3OBbLEei5zJcabt9kCg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3IKeQBbLEei5zJcabt9kCg" name="address" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3IKeQhbLEei5zJcabt9kCg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3IKeQRbLEei5zJcabt9kCg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3IKeQxbLEei5zJcabt9kCg" name="VLAN" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3IKeRRbLEei5zJcabt9kCg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3IKeRBbLEei5zJcabt9kCg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_lBlfIFjREei-YLtY71j4-A" name="SFC_Tag_Number" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lBoicFjREei-YLtY71j4-A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lBoicVjREei-YLtY71j4-A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_niU9kFjREei-YLtY71j4-A" name="serial_Number" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_niWLsVjREei-YLtY71j4-A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_niWLsljREei-YLtY71j4-A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_o_p3MFjREei-YLtY71j4-A" name="EMEI" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o_s6gFjREei-YLtY71j4-A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o_s6gVjREei-YLtY71j4-A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sKEkwFjREei-YLtY71j4-A" name="addedBy" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sKGZ8VjREei-YLtY71j4-A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sKGZ8ljREei-YLtY71j4-A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_t7amkFjREei-YLtY71j4-A" name="status" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t7b0sVjREei-YLtY71j4-A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t7b0sljREei-YLtY71j4-A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UfTjEFmWEei-YLtY71j4-A" name="IR_Number" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UfVYQVmWEei-YLtY71j4-A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UfVYQlmWEei-YLtY71j4-A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_uPqiwFmWEei-YLtY71j4-A" name="siebel_Circuit_ID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uPs_AFmWEei-YLtY71j4-A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uPs_AVmWEei-YLtY71j4-A" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EtWckCgaEei5K6PV_O0G8g" name="Customer_Information">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_A-_fACgbEei5K6PV_O0G8g" name="siebelCircuitID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZZ218CgcEei5K6PV_O0G8g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZZ4EECgcEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_C16kYCgbEei5K6PV_O0G8g" name="projectManager" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C17ygSgbEei5K6PV_O0G8g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C17ygigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DNMb8CgbEei5K6PV_O0G8g" name="clientName" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DNNqESgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DNNqEigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ELTC8CgbEei5K6PV_O0G8g" name="accountManager" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ELURESgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ELUREigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EShsUCgbEei5K6PV_O0G8g" name="account" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ESi6cSgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ESi6cigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EZZwYCgbEei5K6PV_O0G8g" name="contractor" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EZaXcSgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EZaXcigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EgDyACgbEei5K6PV_O0G8g" name="location" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EgFAISgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EgFAIigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EoiYkCgbEei5K6PV_O0G8g" name="regionView" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EojmsSgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EojmsigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EwEj8CgbEei5K6PV_O0G8g" name="floor" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EwFyECgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EwFyESgbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_E22hYCgbEei5K6PV_O0G8g" name="clientID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E23IcSgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E23IcigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_E_QPcCgbEei5K6PV_O0G8g" name="serviceType" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E_SEoCgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E_SEoSgbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_FJZp8CgbEei5K6PV_O0G8g" name="GPSCoordinates" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FJa4ESgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FJa4EigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_FRZIUCgbEei5K6PV_O0G8g" name="bandwidthupdown" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FRbkkCgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FRbkkSgbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ZHjacCgbEei5K6PV_O0G8g" name="technology" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZHkokSgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZHkokigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_bsIQACgbEei5K6PV_O0G8g" name="serviceStatus" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bsJeISgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bsJeIigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fRJ18CgbEei5K6PV_O0G8g" name="buildingName" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fRLEESgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fRLEEigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fbmycCgbEei5K6PV_O0G8g" name="buildingID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fbnZgSgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fbnZgigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_flXycCgbEei5K6PV_O0G8g" name="contactPerson" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_flZAkSgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_flZAkigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_f32CgCgbEei5K6PV_O0G8g" name="mobile" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f32pkSgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f32pkigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_mJ1lACgbEei5K6PV_O0G8g" name="sector" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mJ2MESgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mJ2MEigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_makIoCgbEei5K6PV_O0G8g" name="email" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_malWwSgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_malWwigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_muZDkCgbEei5K6PV_O0G8g" name="serviceStart" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_UcSGcIvhEd68OqPx9MxH3A?BomPrimitiveTypes%3a%3aDateTimeTZ?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_muZqoSgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_muZqoigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nAZZkCgbEei5K6PV_O0G8g" name="serviceEnd" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_UcSGcIvhEd68OqPx9MxH3A?BomPrimitiveTypes%3a%3aDateTimeTZ?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nAansSgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nAansigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wzr4kCgbEei5K6PV_O0G8g" name="requestDate" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_UcSGcIvhEd68OqPx9MxH3A?BomPrimitiveTypes%3a%3aDateTimeTZ?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wztGsCgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wztGsSgbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zyfMACgbEei5K6PV_O0G8g" name="installDate" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_UcSGcIvhEd68OqPx9MxH3A?BomPrimitiveTypes%3a%3aDateTimeTZ?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zyfzESgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zyfzEigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1cKfkCgbEei5K6PV_O0G8g" name="notesComments" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1cLGoSgbEei5K6PV_O0G8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1cLGoigbEei5K6PV_O0G8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_i-sdoEFUEeiWSuWFK3Y-hg" name="address" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jC0vsEFUEeiWSuWFK3Y-hg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jC1WwEFUEeiWSuWFK3Y-hg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_laDs0EFUEeiWSuWFK3Y-hg" name="engineer" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_laE68UFUEeiWSuWFK3Y-hg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_laE68kFUEeiWSuWFK3Y-hg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_t_dcYEFUEeiWSuWFK3Y-hg" name="lastNotificationBy" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t_eDcUFUEeiWSuWFK3Y-hg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t_eDckFUEeiWSuWFK3Y-hg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_w1DJcEFUEeiWSuWFK3Y-hg" name="lastNotificationDate" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1EXkUFUEeiWSuWFK3Y-hg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1E-oEFUEeiWSuWFK3Y-hg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zzlXIEFUEeiWSuWFK3Y-hg" name="recordStatus" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zzl-MUFUEeiWSuWFK3Y-hg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zzmlQEFUEeiWSuWFK3Y-hg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GTDYcFjVEei-YLtY71j4-A" name="contractor_Engineer" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GTF0sVjVEei-YLtY71j4-A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GTF0sljVEei-YLtY71j4-A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_drRosKOrEeil8c3otxV2zw" name="ctrEngineer_PhNumber" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_drRosqOrEeil8c3otxV2zw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_drRos6OrEeil8c3otxV2zw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_26wNwCLjEe2wEoo8St6PPQ" name="state" type="_e0weICLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_26xb4iLjEe2wEoo8St6PPQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_26xb4yLjEe2wEoo8St6PPQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1XGCMEFdEeih74BcCGeYZw" name="Building_Mapping">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-PQ8wEFdEeih74BcCGeYZw" name="buildingCaseIdentifier" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-PUAEEFdEeih74BcCGeYZw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-PUAEUFdEeih74BcCGeYZw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DaPM0EFeEeih74BcCGeYZw" name="building_ID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DaRCAEFeEeih74BcCGeYZw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DaRCAUFeEeih74BcCGeYZw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GRE3EEFeEeih74BcCGeYZw" name="building_Name" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GRGsQEFeEeih74BcCGeYZw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GRGsQUFeEeih74BcCGeYZw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ZzH60CLkEe2wEoo8St6PPQ" name="state" type="_e0weICLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZzH60yLkEe2wEoo8St6PPQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZzH61CLkEe2wEoo8St6PPQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xE-DYFjPEei-YLtY71j4-A" name="Management_IP_List">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_88hRMGDHEeiKHe8PzgqrqQ" name="capacity" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_88ifUWDHEeiKHe8PzgqrqQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_88ifUmDHEeiKHe8PzgqrqQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_lw_fUI11Eeima4J9XCb_cA" name="port_Type" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lw_fUo11Eeima4J9XCb_cA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lw_fU411Eeima4J9XCb_cA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_W84OII2eEeiYjK1G9XN6yg" name="carrierIP" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W841MY2eEeiYjK1G9XN6yg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W841Mo2eEeiYjK1G9XN6yg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_hyx84CRAEe2wEoo8St6PPQ" name="management_VLAN" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hyzyECRAEe2wEoo8St6PPQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hzE30CRAEe2wEoo8St6PPQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_psUE8CRAEe2wEoo8St6PPQ" name="carrierEquipmentType" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_psUsASRAEe2wEoo8St6PPQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_psUsAiRAEe2wEoo8St6PPQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sozrQCRAEe2wEoo8St6PPQ" name="comments" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_so05YSRAEe2wEoo8St6PPQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_so05YiRAEe2wEoo8St6PPQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yzrSECRAEe2wEoo8St6PPQ" name="port_Number" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yzsgMCRAEe2wEoo8St6PPQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yzsgMSRAEe2wEoo8St6PPQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3p-5sCRAEe2wEoo8St6PPQ" name="management_Carrier_IP" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3qAH0SRAEe2wEoo8St6PPQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3qAH0iRAEe2wEoo8St6PPQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_6xonICRAEe2wEoo8St6PPQ" name="aggregation_Point" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6xp1QCRAEe2wEoo8St6PPQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6xp1QSRAEe2wEoo8St6PPQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__PWIkCRAEe2wEoo8St6PPQ" name="carrier_VLAN" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__PWvoSRAEe2wEoo8St6PPQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__PXWsCRAEe2wEoo8St6PPQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SVvn8Fp6EeiX_Mb7qrf0MA" name="DeviceRequest">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_SVvn8Vp6EeiX_Mb7qrf0MA" name="deviceName" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVvn81p6EeiX_Mb7qrf0MA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVvn8lp6EeiX_Mb7qrf0MA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_SVvn9Fp6EeiX_Mb7qrf0MA" name="deviceDescription" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVvn9lp6EeiX_Mb7qrf0MA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVvn9Vp6EeiX_Mb7qrf0MA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_SVvn91p6EeiX_Mb7qrf0MA" name="quantity" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVvn-Vp6EeiX_Mb7qrf0MA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVvn-Fp6EeiX_Mb7qrf0MA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_oocl8mDFEeiKHe8PzgqrqQ" name="type" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oocl9GDFEeiKHe8PzgqrqQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oocl82DFEeiKHe8PzgqrqQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_oofCMGDFEeiKHe8PzgqrqQ" name="address" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oofCMmDFEeiKHe8PzgqrqQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oofCMWDFEeiKHe8PzgqrqQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_oogQUGDFEeiKHe8PzgqrqQ" name="VLAN" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oogQUmDFEeiKHe8PzgqrqQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oogQUWDFEeiKHe8PzgqrqQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_oogQU2DFEeiKHe8PzgqrqQ" name="SFC_Tag_Number" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oogQVWDFEeiKHe8PzgqrqQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oogQVGDFEeiKHe8PzgqrqQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_oog3YGDFEeiKHe8PzgqrqQ" name="serial_Number" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oog3YmDFEeiKHe8PzgqrqQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oog3YWDFEeiKHe8PzgqrqQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_oohecGDFEeiKHe8PzgqrqQ" name="IMEI" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oohecmDFEeiKHe8PzgqrqQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oohecWDFEeiKHe8PzgqrqQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_oolI0GDFEeiKHe8PzgqrqQ" name="IR_Number" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oolI0mDFEeiKHe8PzgqrqQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oolI0WDFEeiKHe8PzgqrqQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GAIN8CRDEe2jzprw-H37Gg" name="addedBy" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GaTogSRDEe2jzprw-H37Gg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GaUPkCRDEe2jzprw-H37Gg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_J3lnsCRDEe2jzprw-H37Gg" name="status" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J3m10SRDEe2jzprw-H37Gg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J3nc4CRDEe2jzprw-H37Gg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_O11qYCRDEe2jzprw-H37Gg" name="siebelCircuitID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O124gSRDEe2jzprw-H37Gg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O124giRDEe2jzprw-H37Gg" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qCvBUI11Eeima4J9XCb_cA" name="CPEManagementIPDetails">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rORnYI11Eeima4J9XCb_cA" name="CPEManagementIP" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rORnYo11Eeima4J9XCb_cA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rORnY411Eeima4J9XCb_cA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sZF0sI11Eeima4J9XCb_cA" name="CPEManagementVLAN" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sZF0so11Eeima4J9XCb_cA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sZF0s411Eeima4J9XCb_cA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_tqJM4I11Eeima4J9XCb_cA" name="ServiceIPDetails">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_v4eFoI11Eeima4J9XCb_cA" name="clientIP" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v4eFoo11Eeima4J9XCb_cA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v4eFo411Eeima4J9XCb_cA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xI7n8I11Eeima4J9XCb_cA" name="clientVLAN" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xI7n8o11Eeima4J9XCb_cA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xI7n8411Eeima4J9XCb_cA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yHrvMI11Eeima4J9XCb_cA" name="SFCPOPPE" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yHrvMo11Eeima4J9XCb_cA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yHrvM411Eeima4J9XCb_cA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_vToHT81OEeiey6XW2b1Sng" name="Customer_Information_Del">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHUM1OEeiey6XW2b1Sng" name="siebelCircuitID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHUs1OEeiey6XW2b1Sng" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHUc1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHU81OEeiey6XW2b1Sng" name="projectManager" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHVc1OEeiey6XW2b1Sng" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHVM1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHVs1OEeiey6XW2b1Sng" name="clientName" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHWM1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHV81OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHWc1OEeiey6XW2b1Sng" name="accountManager" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHW81OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHWs1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHXM1OEeiey6XW2b1Sng" name="account" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHXs1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHXc1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHX81OEeiey6XW2b1Sng" name="contractor" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHYc1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHYM1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHYs1OEeiey6XW2b1Sng" name="location" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHZM1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHY81OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHZc1OEeiey6XW2b1Sng" name="regionView" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHZ81OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHZs1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHaM1OEeiey6XW2b1Sng" name="floor" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHas1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHac1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHa81OEeiey6XW2b1Sng" name="clientID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHbc1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHbM1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHbs1OEeiey6XW2b1Sng" name="serviceType" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHcM1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHb81OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHcc1OEeiey6XW2b1Sng" name="GPSCoordinates" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHc81OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHcs1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHdM1OEeiey6XW2b1Sng" name="bandwidthupdown" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHds1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHdc1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHd81OEeiey6XW2b1Sng" name="technology" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHec1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHeM1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHes1OEeiey6XW2b1Sng" name="serviceStatus" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHfM1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHe81OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHfc1OEeiey6XW2b1Sng" name="buildingName" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHf81OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHfs1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHgM1OEeiey6XW2b1Sng" name="buildingID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHgs1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHgc1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHg81OEeiey6XW2b1Sng" name="contactPerson" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHhc1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHhM1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHhs1OEeiey6XW2b1Sng" name="mobile" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHiM1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHh81OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHic1OEeiey6XW2b1Sng" name="sector" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHi81OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHis1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHjM1OEeiey6XW2b1Sng" name="email" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHjs1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHjc1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHj81OEeiey6XW2b1Sng" name="serviceStart" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_UcSGcIvhEd68OqPx9MxH3A?BomPrimitiveTypes%3a%3aDateTimeTZ?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHkc1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHkM1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHks1OEeiey6XW2b1Sng" name="serviceEnd" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_UcSGcIvhEd68OqPx9MxH3A?BomPrimitiveTypes%3a%3aDateTimeTZ?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHlM1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHk81OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHlc1OEeiey6XW2b1Sng" name="requestDate" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_UcSGcIvhEd68OqPx9MxH3A?BomPrimitiveTypes%3a%3aDateTimeTZ?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHl81OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHls1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHmM1OEeiey6XW2b1Sng" name="installDate" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_UcSGcIvhEd68OqPx9MxH3A?BomPrimitiveTypes%3a%3aDateTimeTZ?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHms1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHmc1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHm81OEeiey6XW2b1Sng" name="notesComments" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHnc1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHnM1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHns1OEeiey6XW2b1Sng" name="address" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHoM1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHn81OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHoc1OEeiey6XW2b1Sng" name="engineer" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHo81OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHos1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHpM1OEeiey6XW2b1Sng" name="lastNotificationBy" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHps1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHpc1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHp81OEeiey6XW2b1Sng" name="lastNotificationDate" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHqc1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHqM1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHqs1OEeiey6XW2b1Sng" name="recordStatus" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHrM1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHq81OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHrc1OEeiey6XW2b1Sng" name="contractor_Engineer" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHr81OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHrs1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vToHsM1OEeiey6XW2b1Sng" name="ctrEngineer_PhNumber" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vToHss1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vToHsc1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0Y1GQM1OEeiey6XW2b1Sng" name="actionBy" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0Y4Jkc1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Y4woM1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_364QsM1OEeiey6XW2b1Sng" name="activityDateTime" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_366s8c1OEeiey6XW2b1Sng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_366s8s1OEeiey6XW2b1Sng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LYDYYCLkEe2wEoo8St6PPQ" name="state" type="_e0weICLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LYDYYyLkEe2wEoo8St6PPQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LYDYZCLkEe2wEoo8St6PPQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_e0weICLjEe2wEoo8St6PPQ" name="States">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ihpmoCLjEe2wEoo8St6PPQ" name="STARTED" classifier="_e0weICLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ihpmoiLjEe2wEoo8St6PPQ" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_ihpmoyLjEe2wEoo8St6PPQ" value="STARTED"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_i3904CLjEe2wEoo8St6PPQ" name="COMPLETED" classifier="_e0weICLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i3904iLjEe2wEoo8St6PPQ" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_i3904yLjEe2wEoo8St6PPQ" value="COMPLETED"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jhMYECLjEe2wEoo8St6PPQ" name="CANCELLED" classifier="_e0weICLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jhMYEiLjEe2wEoo8St6PPQ" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_jhMYEyLjEe2wEoo8St6PPQ" value="CANCELLED"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_uJzVgCLjEe2wEoo8St6PPQ" name="OPENED" classifier="_e0weICLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uJ5cICLjEe2wEoo8St6PPQ" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_uJ5cISLjEe2wEoo8St6PPQ" value="OPENED"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_vyzToCLjEe2wEoo8St6PPQ" name="ALLOCATED" classifier="_e0weICLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vyzToiLjEe2wEoo8St6PPQ" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_vyzToyLjEe2wEoo8St6PPQ" value="ALLOCATED"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_xEu1kCLjEe2wEoo8St6PPQ" name="OFFERED" classifier="_e0weICLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xEu1kiLjEe2wEoo8St6PPQ" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_xEu1kyLjEe2wEoo8St6PPQ" value="OFFERED"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zB2CgCLjEe2wEoo8St6PPQ" name="ERRORED" classifier="_e0weICLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zB2CgiLjEe2wEoo8St6PPQ" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_zB2CgyLjEe2wEoo8St6PPQ" value="ERRORED"/>
+        </eAnnotations>
+      </ownedLiteral>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iy081RbLEei5zJcabt9kCg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iy081hbLEei5zJcabt9kCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_-r7KEXyPEeCumvZ6xHSUiw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_20kHsWs1EeC_hvle0zpSaA?BOM%20Global%20Data%20Profile?"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_muaooBbLEei5zJcabt9kCg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mubPsBbLEei5zJcabt9kCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_3A574HcJEdytQ9AWEvOuug?PrimitiveTypeFacets?"/>
+    </profileApplication>
+  </uml:Model>
+  <notation:Diagram xmi:id="_i0qv4BbLEei5zJcabt9kCg" type="Business Object Model" element="_iy080BbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel?" name="com.sfc.fosImpl.bizData.dataModel.bom" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_jJDrgBbLEei5zJcabt9kCg" type="1007" element="_iy080BbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel?">
+      <children xmi:type="notation:Node" xmi:id="_jJFgsBbLEei5zJcabt9kCg" type="4023">
+        <styles xmi:type="notation:FontStyle" xmi:id="_jJFgsRbLEei5zJcabt9kCg" fontName="Segoe UI" fontHeight="10" bold="true"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_jJFgshbLEei5zJcabt9kCg" type="4024"/>
+      <children xmi:type="notation:Node" xmi:id="_jJGHwBbLEei5zJcabt9kCg" type="4025"/>
+      <children xmi:type="notation:Node" xmi:id="_jJGHwRbLEei5zJcabt9kCg" type="4026"/>
+      <children xmi:type="notation:Node" xmi:id="_jJGHwhbLEei5zJcabt9kCg" type="4027"/>
+      <children xmi:type="notation:Node" xmi:id="_jJGu0BbLEei5zJcabt9kCg" type="4028"/>
+      <children xmi:type="notation:Node" xmi:id="_jJGu0RbLEei5zJcabt9kCg" type="4029"/>
+      <children xmi:type="notation:Node" xmi:id="_jJGu0hbLEei5zJcabt9kCg" type="4030"/>
+      <children xmi:type="notation:Node" xmi:id="_jJHV4BbLEei5zJcabt9kCg" type="5007">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_jJHV4RbLEei5zJcabt9kCg"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_jJHV4hbLEei5zJcabt9kCg" showTitle="true"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_jJHV4xbLEei5zJcabt9kCg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_jJHV5BbLEei5zJcabt9kCg"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_jJDrgRbLEei5zJcabt9kCg" fontName="Segoe UI" fontHeight="10" fillColor="16316150" lineColor="37120"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_jJDrghbLEei5zJcabt9kCg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jJDrgxbLEei5zJcabt9kCg"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_oVy2IBbLEei5zJcabt9kCg" type="1002" element="_oVYmcBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information?">
+      <children xmi:type="notation:Node" xmi:id="_oV0rUBbLEei5zJcabt9kCg" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_oV1SYBbLEei5zJcabt9kCg" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_oV15cBbLEei5zJcabt9kCg" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_oV2ggBbLEei5zJcabt9kCg" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_si_PUBbLEei5zJcabt9kCg" type="2001" element="_sjAdcBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3acarrierVLAN?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_si_PURbLEei5zJcabt9kCg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_si_PUhbLEei5zJcabt9kCg" type="2001" element="_sjBrkBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3acarrierIP?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_si_PUxbLEei5zJcabt9kCg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_si_PVBbLEei5zJcabt9kCg" type="2001" element="_sjBrkxbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aaggPoint?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_si_PVRbLEei5zJcabt9kCg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_si_PVhbLEei5zJcabt9kCg" type="2001" element="_sjCSoBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aport?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_si_PVxbLEei5zJcabt9kCg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_si_PWBbLEei5zJcabt9kCg" type="2001" element="_sjCSoxbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aclientVLAN?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_si_PWRbLEei5zJcabt9kCg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_si_2YBbLEei5zJcabt9kCg" type="2001" element="_sjC5sBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aclientIP?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_si_2YRbLEei5zJcabt9kCg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_si_2YhbLEei5zJcabt9kCg" type="2001" element="_sjC5sxbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aSFCPOPPE?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_si_2YxbLEei5zJcabt9kCg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_si_2ZBbLEei5zJcabt9kCg" type="2001" element="_sjDgwBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aportType?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_si_2ZRbLEei5zJcabt9kCg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_si_2ZhbLEei5zJcabt9kCg" type="2001" element="_sjDgwxbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3amodifiedBy?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_si_2ZxbLEei5zJcabt9kCg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_si_2aBbLEei5zJcabt9kCg" type="2001" element="_sjDgxhbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3amodifiedDate?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_si_2aRbLEei5zJcabt9kCg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_u4BNABbLEei5zJcabt9kCg" type="2001" element="_uvKzABbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3asiebelCircuitID?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_u4BNARbLEei5zJcabt9kCg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_5l2BoBbLEei5zJcabt9kCg" type="2001" element="_5luF0BbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aequipment?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_5l2BoRbLEei5zJcabt9kCg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_JoMuoEZmEeimsaF6DY9_0g" type="2001" element="_Jjo-wEZmEeimsaF6DY9_0g?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3arecordStatus?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_JoMuoUZmEeimsaF6DY9_0g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cGMt8FjQEei-YLtY71j4-A" type="2001" element="_cGELEFjQEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3amanagement_IP_Info?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_cGMt8VjQEei-YLtY71j4-A"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_dfd8EFjSEei-YLtY71j4-A" type="2001" element="_dfSV4FjSEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aIR_Number?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_dfd8EVjSEei-YLtY71j4-A"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_CbfGcFjUEei-YLtY71j4-A" type="2001" element="_CbRrEFjUEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aMRR?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_CbfGcVjUEei-YLtY71j4-A"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_wcDMsFmUEei-YLtY71j4-A" type="2001" element="_wbRwoFmUEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3asecurity?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_wcDzwFmUEei-YLtY71j4-A"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Uj2eQFp6EeiX_Mb7qrf0MA" type="2001" element="_UjsGMFp6EeiX_Mb7qrf0MA?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3adeviceRequest?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Uj2eQVp6EeiX_Mb7qrf0MA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_0tM6sB-6Ee2wEoo8St6PPQ" type="2001" element="_zyMhkGDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aclientName?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_0tM6sR-6Ee2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_0tM6sh-6Ee2wEoo8St6PPQ" type="2001" element="_0422UI11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aCPEManagementIPDetails?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_0tM6sx-6Ee2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_0tM6tB-6Ee2wEoo8St6PPQ" type="2001" element="_3cepoI11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aserviceIPDetails?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_0tM6tR-6Ee2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_P6clgCLkEe2wEoo8St6PPQ" type="2001" element="_P6We4CLkEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3astate?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_P6clgSLkEe2wEoo8St6PPQ"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_oV2ggRbLEei5zJcabt9kCg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_oV2gghbLEei5zJcabt9kCg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_oV2ggxbLEei5zJcabt9kCg"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_oV3uoBbLEei5zJcabt9kCg" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_oV3uoRbLEei5zJcabt9kCg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_oV3uohbLEei5zJcabt9kCg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_oV3uoxbLEei5zJcabt9kCg"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_oVy2IRbLEei5zJcabt9kCg" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_oVy2IhbLEei5zJcabt9kCg" gradStartColor="16096809" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oVy2IxbLEei5zJcabt9kCg" x="1362" y="240" width="293" height="615"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_0RvDsBbLEei5zJcabt9kCg" type="1002" element="_0RkEkBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details?">
+      <children xmi:type="notation:Node" xmi:id="_0RvDtBbLEei5zJcabt9kCg" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_0RvqwBbLEei5zJcabt9kCg" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_0RvqwRbLEei5zJcabt9kCg" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_0RvqwhbLEei5zJcabt9kCg" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_3IJ3MRbLEei5zJcabt9kCg" type="2001" element="_3IJ3NxbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3atype?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_3IJ3MhbLEei5zJcabt9kCg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_3IJ3MxbLEei5zJcabt9kCg" type="2001" element="_3IKeQBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aaddress?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_3IJ3NBbLEei5zJcabt9kCg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_3IJ3NRbLEei5zJcabt9kCg" type="2001" element="_3IKeQxbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aVLAN?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_3IJ3NhbLEei5zJcabt9kCg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_lB2k4FjREei-YLtY71j4-A" type="2001" element="_lBlfIFjREei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aSFC_Tag_Number?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_lB2k4VjREei-YLtY71j4-A"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_nigjwFjREei-YLtY71j4-A" type="2001" element="_niU9kFjREei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aserial_Number?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_nigjwVjREei-YLtY71j4-A"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_o_5HwFjREei-YLtY71j4-A" type="2001" element="_o_p3MFjREei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aEMEI?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_o_5HwVjREei-YLtY71j4-A"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_sKVqgFjREei-YLtY71j4-A" type="2001" element="_sKEkwFjREei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aaddedBy?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_sKVqgVjREei-YLtY71j4-A"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_t7k-oFjREei-YLtY71j4-A" type="2001" element="_t7amkFjREei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3astatus?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_t7k-oVjREei-YLtY71j4-A"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Uf28sFmWEei-YLtY71j4-A" type="2001" element="_UfTjEFmWEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aIR_Number?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Uf28sVmWEei-YLtY71j4-A"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_uQOjcFmWEei-YLtY71j4-A" type="2001" element="_uPqiwFmWEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3asiebel_Circuit_ID?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_uQOjcVmWEei-YLtY71j4-A"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_0RvqwxbLEei5zJcabt9kCg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_0RvqxBbLEei5zJcabt9kCg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_0RvqxRbLEei5zJcabt9kCg"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_0RvqxhbLEei5zJcabt9kCg" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_0RvqxxbLEei5zJcabt9kCg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_0RvqyBbLEei5zJcabt9kCg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_0RvqyRbLEei5zJcabt9kCg"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_0RvDsRbLEei5zJcabt9kCg" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_0RvDshbLEei5zJcabt9kCg" gradStartColor="6356832" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0RvDsxbLEei5zJcabt9kCg" x="378" y="-180" width="320" height="399"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_E2H-ECgaEei5K6PV_O0G8g" type="1002" element="_EtWckCgaEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information?">
+      <children xmi:type="notation:Node" xmi:id="_E2JzQCgaEei5K6PV_O0G8g" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_E2KaUCgaEei5K6PV_O0G8g" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_E2KaUSgaEei5K6PV_O0G8g" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_E2LocCgaEei5K6PV_O0G8g" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_BMP34CgbEei5K6PV_O0G8g" type="2001" element="_A-_fACgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3asiebelCircuitID?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_BMP34SgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_C2JN4CgbEei5K6PV_O0G8g" type="2001" element="_C16kYCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aprojectManager?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_C2JN4SgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_DNW0ACgbEei5K6PV_O0G8g" type="2001" element="_DNMb8CgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aclientName?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_DNW0ASgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ELdbACgbEei5K6PV_O0G8g" type="2001" element="_ELTC8CgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aaccountManager?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ELdbASgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ESrdUCgbEei5K6PV_O0G8g" type="2001" element="_EShsUCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aaccount?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ESrdUSgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_EZi6UCgbEei5K6PV_O0G8g" type="2001" element="_EZZwYCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3acontractor?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_EZi6USgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_EgNjACgbEei5K6PV_O0G8g" type="2001" element="_EgDyACgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3alocation?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_EgOKECgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_EowbACgbEei5K6PV_O0G8g" type="2001" element="_EoiYkCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aregionView?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_EowbASgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_EwNG0CgbEei5K6PV_O0G8g" type="2001" element="_EwEj8CgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3afloor?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_EwNG0SgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_E3BggCgbEei5K6PV_O0G8g" type="2001" element="_E22hYCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aclientID?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_E3BggSgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_E_eR4CgbEei5K6PV_O0G8g" type="2001" element="_E_QPcCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aserviceType?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_E_eR4SgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_FJiz4CgbEei5K6PV_O0G8g" type="2001" element="_FJZp8CgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aGPSCoordinates?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_FJiz4SgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_FRo_8CgbEei5K6PV_O0G8g" type="2001" element="_FRZIUCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3abandwidthupdown?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_FRo_8SgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ZHr9UCgbEei5K6PV_O0G8g" type="2001" element="_ZHjacCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3atechnology?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ZHr9USgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_bsRZ8CgbEei5K6PV_O0G8g" type="2001" element="_bsIQACgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aserviceStatus?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_bsRZ8SgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fRSY0CgbEei5K6PV_O0G8g" type="2001" element="_fRJ18CgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3abuildingName?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_fRSY0SgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fbv8YCgbEei5K6PV_O0G8g" type="2001" element="_fbmycCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3abuildingID?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_fbv8YSgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_flegICgbEei5K6PV_O0G8g" type="2001" element="_flXycCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3acontactPerson?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_flegISgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_f3-lYCgbEei5K6PV_O0G8g" type="2001" element="_f32CgCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3amobile?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_f3-lYSgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mJ-H4CgbEei5K6PV_O0G8g" type="2001" element="_mJ1lACgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3asector?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_mJ-H4SgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_masrgCgbEei5K6PV_O0G8g" type="2001" element="_makIoCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aemail?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_matSkCgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mug_YCgbEei5K6PV_O0G8g" type="2001" element="_muZDkCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aserviceStart?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_mug_YSgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_nAk_wCgbEei5K6PV_O0G8g" type="2001" element="_nAZZkCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aserviceEnd?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_nAk_wSgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_wzz0YCgbEei5K6PV_O0G8g" type="2001" element="_wzr4kCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3arequestDate?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_wzz0YSgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_zynu4CgbEei5K6PV_O0G8g" type="2001" element="_zyfMACgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3ainstallDate?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_zyoV8CgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_1cRNQCgbEei5K6PV_O0G8g" type="2001" element="_1cKfkCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3anotesComments?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_1cRNQSgbEei5K6PV_O0G8g"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_jDRboEFUEeiWSuWFK3Y-hg" type="2001" element="_i-sdoEFUEeiWSuWFK3Y-hg?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aaddress?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_jDRboUFUEeiWSuWFK3Y-hg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_laIlUEFUEeiWSuWFK3Y-hg" type="2001" element="_laDs0EFUEeiWSuWFK3Y-hg?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aengineer?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_laIlUUFUEeiWSuWFK3Y-hg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_t_iU4EFUEeiWSuWFK3Y-hg" type="2001" element="_t_dcYEFUEeiWSuWFK3Y-hg?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3alastNotificationBy?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_t_iU4UFUEeiWSuWFK3Y-hg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_w1IpAEFUEeiWSuWFK3Y-hg" type="2001" element="_w1DJcEFUEeiWSuWFK3Y-hg?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3alastNotificationDate?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_w1IpAUFUEeiWSuWFK3Y-hg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_zzqPoEFUEeiWSuWFK3Y-hg" type="2001" element="_zzlXIEFUEeiWSuWFK3Y-hg?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3arecordStatus?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_zzqPoUFUEeiWSuWFK3Y-hg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_GTgEYFjVEei-YLtY71j4-A" type="2001" element="_GTDYcFjVEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3acontractor_Engineer?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_GTgEYVjVEei-YLtY71j4-A"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_0tWEoB-6Ee2wEoo8St6PPQ" type="2001" element="_drRosKOrEeil8c3otxV2zw?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3actrEngineer_PhNumber?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_0tWEoR-6Ee2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_26yqACLjEe2wEoo8St6PPQ" type="2001" element="_26wNwCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3astate?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_26yqASLjEe2wEoo8St6PPQ"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_E2LocSgaEei5K6PV_O0G8g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_E2LocigaEei5K6PV_O0G8g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_E2LocygaEei5K6PV_O0G8g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_E2MPgCgaEei5K6PV_O0G8g" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_E2MPgSgaEei5K6PV_O0G8g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_E2MPgigaEei5K6PV_O0G8g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_E2MPgygaEei5K6PV_O0G8g"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_E2H-ESgaEei5K6PV_O0G8g" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_E2H-EigaEei5K6PV_O0G8g" gradStartColor="16096809" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E2H-EygaEei5K6PV_O0G8g" x="705" y="-210" width="290" height="793"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_1YM1cEFdEeih74BcCGeYZw" type="1002" element="_1XGCMEFdEeih74BcCGeYZw?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping?">
+      <children xmi:type="notation:Node" xmi:id="_1YPRsEFdEeih74BcCGeYZw" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_1YPRsUFdEeih74BcCGeYZw" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_1YP4wEFdEeih74BcCGeYZw" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_1YQf0EFdEeih74BcCGeYZw" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_-PkewEFdEeih74BcCGeYZw" type="2001" element="_-PQ8wEFdEeih74BcCGeYZw?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping%3a%3abuildingCaseIdentifier?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-PkewUFdEeih74BcCGeYZw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_DaedYEFeEeih74BcCGeYZw" type="2001" element="_DaPM0EFeEeih74BcCGeYZw?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping%3a%3abuilding_ID?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_DaedYUFeEeih74BcCGeYZw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_GRTgkEFeEeih74BcCGeYZw" type="2001" element="_GRE3EEFeEeih74BcCGeYZw?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping%3a%3abuilding_Name?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_GRTgkUFeEeih74BcCGeYZw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ZzQdsCLkEe2wEoo8St6PPQ" type="2001" element="_ZzH60CLkEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping%3a%3astate?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ZzQdsSLkEe2wEoo8St6PPQ"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_1YQf0UFdEeih74BcCGeYZw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_1YQf0kFdEeih74BcCGeYZw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_1YQf00FdEeih74BcCGeYZw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_1YRt8EFdEeih74BcCGeYZw" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_1YRt8UFdEeih74BcCGeYZw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_1YRt8kFdEeih74BcCGeYZw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_1YRt80FdEeih74BcCGeYZw"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_1YM1cUFdEeih74BcCGeYZw" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_1YM1ckFdEeih74BcCGeYZw" gradStartColor="16096809" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1YM1c0FdEeih74BcCGeYZw" x="1013" height="183"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_xFlHYFjPEei-YLtY71j4-A" type="1002" element="_xE-DYFjPEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List?">
+      <children xmi:type="notation:Node" xmi:id="_xFlucFjPEei-YLtY71j4-A" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_xFlucVjPEei-YLtY71j4-A" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_xFlucljPEei-YLtY71j4-A" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_xFluc1jPEei-YLtY71j4-A" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_0tpmoB-6Ee2wEoo8St6PPQ" type="2001" element="_88hRMGDHEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3acapacity?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_0tpmoR-6Ee2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_0tpmpB-6Ee2wEoo8St6PPQ" type="2001" element="_lw_fUI11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3aport_Type?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_0tpmpR-6Ee2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_0tpmph-6Ee2wEoo8St6PPQ" type="2001" element="_W84OII2eEeiYjK1G9XN6yg?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3acarrierIP?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_0tpmpx-6Ee2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_hzfHgCRAEe2wEoo8St6PPQ" type="2001" element="_hyx84CRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3amanagement_VLAN?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_hzfHgSRAEe2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_psiHYCRAEe2wEoo8St6PPQ" type="2001" element="_psUE8CRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3acarrierEquipmentType?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_psiHYSRAEe2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_so4jwCRAEe2wEoo8St6PPQ" type="2001" element="_sozrQCRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3acomments?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_so4jwSRAEe2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_yzwxoCRAEe2wEoo8St6PPQ" type="2001" element="_yzrSECRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3aport_Number?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_yzwxoSRAEe2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_3qDLICRAEe2wEoo8St6PPQ" type="2001" element="_3p-5sCRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3amanagement_Carrier_IP?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_3qDLISRAEe2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_6xs4kCRAEe2wEoo8St6PPQ" type="2001" element="_6xonICRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3aaggregation_Point?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_6xs4kSRAEe2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="__PaaACRAEe2wEoo8St6PPQ" type="2001" element="__PWIkCRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3acarrier_VLAN?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="__PaaASRAEe2wEoo8St6PPQ"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_xFludFjPEei-YLtY71j4-A"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_xFludVjPEei-YLtY71j4-A"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_xFludljPEei-YLtY71j4-A"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_xFlud1jPEei-YLtY71j4-A" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_xFlueFjPEei-YLtY71j4-A"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_xFlueVjPEei-YLtY71j4-A"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_xFlueljPEei-YLtY71j4-A"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_xFlHYVjPEei-YLtY71j4-A" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_xFlHYljPEei-YLtY71j4-A" gradStartColor="6356832" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xFlHY1jPEei-YLtY71j4-A" x="1025" y="190" height="302"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_SVuZ1Vp6EeiX_Mb7qrf0MA" type="1002" element="_SVvn8Fp6EeiX_Mb7qrf0MA?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest?">
+      <children xmi:type="notation:Node" xmi:id="_SVuZ1lp6EeiX_Mb7qrf0MA" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_SVuZ11p6EeiX_Mb7qrf0MA" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_SVuZ2Fp6EeiX_Mb7qrf0MA" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_SVuZ2Vp6EeiX_Mb7qrf0MA" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_SVuZ2lp6EeiX_Mb7qrf0MA" type="2001" element="_SVvn8Vp6EeiX_Mb7qrf0MA?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3adeviceName?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_SVuZ21p6EeiX_Mb7qrf0MA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_SVuZ3Fp6EeiX_Mb7qrf0MA" type="2001" element="_SVvn9Fp6EeiX_Mb7qrf0MA?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3adeviceDescription?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_SVuZ3Vp6EeiX_Mb7qrf0MA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_SVuZ3lp6EeiX_Mb7qrf0MA" type="2001" element="_SVvn91p6EeiX_Mb7qrf0MA?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aquantity?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_SVuZ31p6EeiX_Mb7qrf0MA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ooawxWDFEeiKHe8PzgqrqQ" type="2001" element="_oocl8mDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3atype?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ooawxmDFEeiKHe8PzgqrqQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_oobX0GDFEeiKHe8PzgqrqQ" type="2001" element="_oofCMGDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aaddress?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oobX0WDFEeiKHe8PzgqrqQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_oobX0mDFEeiKHe8PzgqrqQ" type="2001" element="_oogQUGDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aVLAN?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oobX02DFEeiKHe8PzgqrqQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_oobX1GDFEeiKHe8PzgqrqQ" type="2001" element="_oogQU2DFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aSFC_Tag_Number?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oobX1WDFEeiKHe8PzgqrqQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_oobX1mDFEeiKHe8PzgqrqQ" type="2001" element="_oog3YGDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aserial_Number?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oobX12DFEeiKHe8PzgqrqQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_oobX2GDFEeiKHe8PzgqrqQ" type="2001" element="_oohecGDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aIMEI?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oobX2WDFEeiKHe8PzgqrqQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_oocl8GDFEeiKHe8PzgqrqQ" type="2001" element="_oolI0GDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aIR_Number?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oocl8WDFEeiKHe8PzgqrqQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_GaZvICRDEe2jzprw-H37Gg" type="2001" element="_GAIN8CRDEe2jzprw-H37Gg?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aaddedBy?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_GaZvISRDEe2jzprw-H37Gg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_J3qgMCRDEe2jzprw-H37Gg" type="2001" element="_J3lnsCRDEe2jzprw-H37Gg?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3astatus?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_J3qgMSRDEe2jzprw-H37Gg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_O15UwCRDEe2jzprw-H37Gg" type="2001" element="_O11qYCRDEe2jzprw-H37Gg?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3asiebelCircuitID?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_O15UwSRDEe2jzprw-H37Gg"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_SVuZ4lp6EeiX_Mb7qrf0MA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_SVuZ41p6EeiX_Mb7qrf0MA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_SVuZ5Fp6EeiX_Mb7qrf0MA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_SVuZ5Vp6EeiX_Mb7qrf0MA" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_SVuZ5lp6EeiX_Mb7qrf0MA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_SVuZ51p6EeiX_Mb7qrf0MA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_SVuZ6Fp6EeiX_Mb7qrf0MA"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_SVuZ6Vp6EeiX_Mb7qrf0MA" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_SVuZ6lp6EeiX_Mb7qrf0MA" gradStartColor="6356832" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SVuZ61p6EeiX_Mb7qrf0MA" x="30" y="225" height="358"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_vToHAM1OEeiey6XW2b1Sng" type="1002" element="_vToHT81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del?">
+      <children xmi:type="notation:Node" xmi:id="_vToHAc1OEeiey6XW2b1Sng" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_vToHAs1OEeiey6XW2b1Sng" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_vToHA81OEeiey6XW2b1Sng" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_vToHBM1OEeiey6XW2b1Sng" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_vToHBc1OEeiey6XW2b1Sng" type="2001" element="_vToHUM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3asiebelCircuitID?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHBs1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHB81OEeiey6XW2b1Sng" type="2001" element="_vToHU81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aprojectManager?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHCM1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHCc1OEeiey6XW2b1Sng" type="2001" element="_vToHVs1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aclientName?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHCs1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHC81OEeiey6XW2b1Sng" type="2001" element="_vToHWc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aaccountManager?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHDM1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHDc1OEeiey6XW2b1Sng" type="2001" element="_vToHXM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aaccount?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHDs1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHD81OEeiey6XW2b1Sng" type="2001" element="_vToHX81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3acontractor?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHEM1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHEc1OEeiey6XW2b1Sng" type="2001" element="_vToHYs1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3alocation?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHEs1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHE81OEeiey6XW2b1Sng" type="2001" element="_vToHZc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aregionView?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHFM1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHFc1OEeiey6XW2b1Sng" type="2001" element="_vToHaM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3afloor?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHFs1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHF81OEeiey6XW2b1Sng" type="2001" element="_vToHa81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aclientID?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHGM1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHGc1OEeiey6XW2b1Sng" type="2001" element="_vToHbs1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aserviceType?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHGs1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHG81OEeiey6XW2b1Sng" type="2001" element="_vToHcc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aGPSCoordinates?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHHM1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHHc1OEeiey6XW2b1Sng" type="2001" element="_vToHdM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3abandwidthupdown?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHHs1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHH81OEeiey6XW2b1Sng" type="2001" element="_vToHd81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3atechnology?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHIM1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHIc1OEeiey6XW2b1Sng" type="2001" element="_vToHes1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aserviceStatus?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHIs1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHI81OEeiey6XW2b1Sng" type="2001" element="_vToHfc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3abuildingName?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHJM1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHJc1OEeiey6XW2b1Sng" type="2001" element="_vToHgM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3abuildingID?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHJs1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHJ81OEeiey6XW2b1Sng" type="2001" element="_vToHg81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3acontactPerson?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHKM1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHKc1OEeiey6XW2b1Sng" type="2001" element="_vToHhs1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3amobile?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHKs1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHK81OEeiey6XW2b1Sng" type="2001" element="_vToHic1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3asector?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHLM1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHLc1OEeiey6XW2b1Sng" type="2001" element="_vToHjM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aemail?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHLs1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHL81OEeiey6XW2b1Sng" type="2001" element="_vToHj81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aserviceStart?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHMM1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHMc1OEeiey6XW2b1Sng" type="2001" element="_vToHks1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aserviceEnd?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHMs1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHM81OEeiey6XW2b1Sng" type="2001" element="_vToHlc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3arequestDate?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHNM1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHNc1OEeiey6XW2b1Sng" type="2001" element="_vToHmM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3ainstallDate?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHNs1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHN81OEeiey6XW2b1Sng" type="2001" element="_vToHm81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3anotesComments?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHOM1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHOc1OEeiey6XW2b1Sng" type="2001" element="_vToHns1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aaddress?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHOs1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHO81OEeiey6XW2b1Sng" type="2001" element="_vToHoc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aengineer?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHPM1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHPc1OEeiey6XW2b1Sng" type="2001" element="_vToHpM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3alastNotificationBy?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHPs1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHP81OEeiey6XW2b1Sng" type="2001" element="_vToHp81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3alastNotificationDate?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHQM1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHQc1OEeiey6XW2b1Sng" type="2001" element="_vToHqs1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3arecordStatus?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHQs1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vToHQ81OEeiey6XW2b1Sng" type="2001" element="_vToHrc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3acontractor_Engineer?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vToHRM1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vUAhgM1OEeiey6XW2b1Sng" type="2001" element="_vToHsM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3actrEngineer_PhNumber?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vUAhgc1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_0ZfNkM1OEeiey6XW2b1Sng" type="2001" element="_0Y1GQM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aactionBy?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_0ZfNkc1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_37bDQM1OEeiey6XW2b1Sng" type="2001" element="_364QsM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aactivityDateTime?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_37bDQc1OEeiey6XW2b1Sng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_LYNJYCLkEe2wEoo8St6PPQ" type="2001" element="_LYDYYCLkEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3astate?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_LYNJYSLkEe2wEoo8St6PPQ"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_vToHRc1OEeiey6XW2b1Sng"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_vToHRs1OEeiey6XW2b1Sng"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_vToHR81OEeiey6XW2b1Sng"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_vToHSM1OEeiey6XW2b1Sng" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_vToHSc1OEeiey6XW2b1Sng"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_vToHSs1OEeiey6XW2b1Sng"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_vToHS81OEeiey6XW2b1Sng"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_vToHTM1OEeiey6XW2b1Sng" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_vToHTc1OEeiey6XW2b1Sng" gradStartColor="16096809" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vToHTs1OEeiey6XW2b1Sng" x="260" y="225" width="290" height="915"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_YluywM1OEeiey6XW2b1Sng" type="1002" element="_qCvBUI11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aCPEManagementIPDetails?">
+      <children xmi:type="notation:Node" xmi:id="_YlxPAM1OEeiey6XW2b1Sng" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_Ylx2EM1OEeiey6XW2b1Sng" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_Ylx2Ec1OEeiey6XW2b1Sng" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_YlzEMM1OEeiey6XW2b1Sng" type="5002">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_YlzEMc1OEeiey6XW2b1Sng"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_YlzEMs1OEeiey6XW2b1Sng"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_YlzEM81OEeiey6XW2b1Sng"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_YlzrQM1OEeiey6XW2b1Sng" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_YlzrQc1OEeiey6XW2b1Sng"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_YlzrQs1OEeiey6XW2b1Sng"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_YlzrQ81OEeiey6XW2b1Sng"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_Yluywc1OEeiey6XW2b1Sng" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_Yluyws1OEeiey6XW2b1Sng" gradStartColor="6356832" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Yluyw81OEeiey6XW2b1Sng" x="24" y="-144"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Yl0SUM1OEeiey6XW2b1Sng" type="1002" element="_tqJM4I11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aServiceIPDetails?">
+      <children xmi:type="notation:Node" xmi:id="_Yl05YM1OEeiey6XW2b1Sng" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_Yl05Yc1OEeiey6XW2b1Sng" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_Yl05Ys1OEeiey6XW2b1Sng" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_Yl05Y81OEeiey6XW2b1Sng" type="5002">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_Yl05ZM1OEeiey6XW2b1Sng"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Yl05Zc1OEeiey6XW2b1Sng"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Yl05Zs1OEeiey6XW2b1Sng"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Yl05Z81OEeiey6XW2b1Sng" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_Yl05aM1OEeiey6XW2b1Sng"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Yl05ac1OEeiey6XW2b1Sng"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Yl05as1OEeiey6XW2b1Sng"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_Yl0SUc1OEeiey6XW2b1Sng" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_Yl0SUs1OEeiey6XW2b1Sng" gradStartColor="6356832" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Yl0SU81OEeiey6XW2b1Sng" x="235" y="-144"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_e2b5ICLjEe2wEoo8St6PPQ" type="1004" element="_e0weICLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates?">
+      <children xmi:type="notation:Node" xmi:id="_e2wpQCLjEe2wEoo8St6PPQ" type="4015"/>
+      <children xmi:type="notation:Node" xmi:id="_e2wpQSLjEe2wEoo8St6PPQ" type="4016"/>
+      <children xmi:type="notation:Node" xmi:id="_e2wpQiLjEe2wEoo8St6PPQ" type="4017"/>
+      <children xmi:type="notation:Node" xmi:id="_e2wpQyLjEe2wEoo8St6PPQ" type="5004">
+        <children xmi:type="notation:Node" xmi:id="_ihvtQCLjEe2wEoo8St6PPQ" type="2003" element="_ihpmoCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aSTARTED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ihvtQSLjEe2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_i4D7gCLjEe2wEoo8St6PPQ" type="2003" element="_i3904CLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aCOMPLETED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_i4D7gSLjEe2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_jhQpgCLjEe2wEoo8St6PPQ" type="2003" element="_jhMYECLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aCANCELLED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_jhQpgSLjEe2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_uJ5cIiLjEe2wEoo8St6PPQ" type="2003" element="_uJzVgCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aOPENED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_uJ5cIyLjEe2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vyzTpCLjEe2wEoo8St6PPQ" type="2003" element="_vyzToCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aALLOCATED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vyzTpSLjEe2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_xEu1lCLjEe2wEoo8St6PPQ" type="2003" element="_xEu1kCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aOFFERED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_xEu1lSLjEe2wEoo8St6PPQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_zB8JICLjEe2wEoo8St6PPQ" type="2003" element="_zB2CgCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aERRORED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_zB8JISLjEe2wEoo8St6PPQ"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_e2wpRCLjEe2wEoo8St6PPQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_e2wpRSLjEe2wEoo8St6PPQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_e2wpRiLjEe2wEoo8St6PPQ"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_e2b5ISLjEe2wEoo8St6PPQ" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_e2b5IiLjEe2wEoo8St6PPQ" gradStartColor="8454143" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e2b5IyLjEe2wEoo8St6PPQ" x="1045" y="-205" width="175" height="193"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_i0qv4RbLEei5zJcabt9kCg"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_i0qv4hbLEei5zJcabt9kCg"/>
+  </notation:Diagram>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_mugvQBbLEei5zJcabt9kCg" displayLabel="com.sfc.fosImpl.bizData.dataModel" base_NamedElement="_iy080BbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel?"/>
+  <BOMGlobalDataProfile:Case xmi:id="_oVZNgBbLEei5zJcabt9kCg" base_Class="_oVYmcBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information?" summaryAttributes="siebelCircuitID recordStatus carrierVLAN clientIP SFCPOPPE portType state"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_oVbpwBbLEei5zJcabt9kCg" displayLabel="Technical_Information" base_NamedElement="_oVYmcBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_si-oQBbLEei5zJcabt9kCg" displayLabel="Aggregation Point" base_NamedElement="_sjBrkxbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aaggPoint?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_si-oQRbLEei5zJcabt9kCg" displayLabel="SFC POP/PE" base_NamedElement="_sjC5sxbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aSFCPOPPE?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_si-oQhbLEei5zJcabt9kCg" displayLabel="ClientIP" base_NamedElement="_sjC5sBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aclientIP?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_si-oQxbLEei5zJcabt9kCg" displayLabel="Carrier IP" base_NamedElement="_sjBrkBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3acarrierIP?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_si-oRBbLEei5zJcabt9kCg" displayLabel="PortType" base_NamedElement="_sjDgwBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aportType?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_si-oRRbLEei5zJcabt9kCg" displayLabel="Port on Switch" base_NamedElement="_sjCSoBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aport?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_si-oRhbLEei5zJcabt9kCg" displayLabel="ModifiedDate" base_NamedElement="_sjDgxhbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3amodifiedDate?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_si-oRxbLEei5zJcabt9kCg" displayLabel="ModifiedBy" base_NamedElement="_sjDgwxbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3amodifiedBy?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_si-oSBbLEei5zJcabt9kCg" displayLabel="ClientVLAN" base_NamedElement="_sjCSoxbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aclientVLAN?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_si-oSRbLEei5zJcabt9kCg" displayLabel="Carrier VLAN" base_NamedElement="_sjAdcBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3acarrierVLAN?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_u37GYBbLEei5zJcabt9kCg" displayLabel="Siebel Circuit ID" base_NamedElement="_uvKzABbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3asiebelCircuitID?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_u37GYRbLEei5zJcabt9kCg" integerLength="19" integerSubType="fixedLength" base_Property="_uvKzABbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3asiebelCircuitID?"/>
+  <BOMGlobalDataProfile:CaseIdentifier xmi:id="_xzzBoBbLEei5zJcabt9kCg" base_Property="_uvKzABbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3asiebelCircuitID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_0RlSsBbLEei5zJcabt9kCg" displayLabel="Equipment_Details" base_NamedElement="_0RkEkBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_3IJQIhbLEei5zJcabt9kCg" displayLabel="Address" base_NamedElement="_3IKeQBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aaddress?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_3IJQIxbLEei5zJcabt9kCg" displayLabel="Type" base_NamedElement="_3IJ3NxbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3atype?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_3IJ3MBbLEei5zJcabt9kCg" displayLabel="VLAN" base_NamedElement="_3IKeQxbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aVLAN?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_5lvT8BbLEei5zJcabt9kCg" displayLabel="Equipment" base_NamedElement="_5luF0BbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aequipment?"/>
+  <BOMGlobalDataProfile:Case xmi:id="_EtveICgaEei5K6PV_O0G8g" base_Class="_EtWckCgaEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information?" summaryAttributes="siebelCircuitID projectManager clientName recordStatus clientID state"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_Et7rYCgaEei5K6PV_O0G8g" displayLabel="Customer_Information" base_NamedElement="_EtWckCgaEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_BMFf0CgbEei5K6PV_O0G8g" displayLabel="SiebelCircuitID" base_NamedElement="_A-_fACgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3asiebelCircuitID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_C17ygCgbEei5K6PV_O0G8g" displayLabel="ProjectManager" base_NamedElement="_C16kYCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aprojectManager?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_DNNqECgbEei5K6PV_O0G8g" displayLabel="ClientName" base_NamedElement="_DNMb8CgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aclientName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_ELURECgbEei5K6PV_O0G8g" displayLabel="AccountManager" base_NamedElement="_ELTC8CgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aaccountManager?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_ESi6cCgbEei5K6PV_O0G8g" displayLabel="Account" base_NamedElement="_EShsUCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aaccount?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_EZaXcCgbEei5K6PV_O0G8g" displayLabel="Contractor" base_NamedElement="_EZZwYCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3acontractor?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_EgFAICgbEei5K6PV_O0G8g" displayLabel="Location" base_NamedElement="_EgDyACgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3alocation?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_EojmsCgbEei5K6PV_O0G8g" displayLabel="RegionView" base_NamedElement="_EoiYkCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aregionView?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_EwFLACgbEei5K6PV_O0G8g" displayLabel="Floor" base_NamedElement="_EwEj8CgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3afloor?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_E23IcCgbEei5K6PV_O0G8g" displayLabel="ClientID" base_NamedElement="_E22hYCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aclientID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_E_RdkCgbEei5K6PV_O0G8g" displayLabel="ServiceType" base_NamedElement="_E_QPcCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aserviceType?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_FJa4ECgbEei5K6PV_O0G8g" displayLabel="GPSCoordinates" base_NamedElement="_FJZp8CgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aGPSCoordinates?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_FRa9gCgbEei5K6PV_O0G8g" displayLabel="Bandwidth(up/down)" base_NamedElement="_FRZIUCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3abandwidthupdown?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_ZHkokCgbEei5K6PV_O0G8g" displayLabel="Technology" base_NamedElement="_ZHjacCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3atechnology?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_bsJeICgbEei5K6PV_O0G8g" displayLabel="ServiceStatus" base_NamedElement="_bsIQACgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aserviceStatus?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_fRLEECgbEei5K6PV_O0G8g" displayLabel="BuildingName" base_NamedElement="_fRJ18CgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3abuildingName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_fbnZgCgbEei5K6PV_O0G8g" displayLabel="BuildingID" base_NamedElement="_fbmycCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3abuildingID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_flZAkCgbEei5K6PV_O0G8g" displayLabel="ContactPerson" base_NamedElement="_flXycCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3acontactPerson?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_f32pkCgbEei5K6PV_O0G8g" displayLabel="Mobile" base_NamedElement="_f32CgCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3amobile?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_mJ2MECgbEei5K6PV_O0G8g" displayLabel="Sector" base_NamedElement="_mJ1lACgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3asector?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_malWwCgbEei5K6PV_O0G8g" displayLabel="Email" base_NamedElement="_makIoCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aemail?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_muZqoCgbEei5K6PV_O0G8g" displayLabel="ServiceStart" base_NamedElement="_muZDkCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aserviceStart?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_nAansCgbEei5K6PV_O0G8g" displayLabel="ServiceEnd" base_NamedElement="_nAZZkCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aserviceEnd?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_wzsfoCgbEei5K6PV_O0G8g" displayLabel="RequestDate" base_NamedElement="_wzr4kCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3arequestDate?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_zyfzECgbEei5K6PV_O0G8g" displayLabel="InstallDate" base_NamedElement="_zyfMACgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3ainstallDate?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_1cLGoCgbEei5K6PV_O0G8g" displayLabel="NotesComments" base_NamedElement="_1cKfkCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3anotesComments?"/>
+  <BOMGlobalDataProfile:CaseIdentifier xmi:id="_UqRhYCgcEei5K6PV_O0G8g" base_Property="_A-_fACgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3asiebelCircuitID?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_at1mUCgcEei5K6PV_O0G8g" textLength="200" base_Property="_A-_fACgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3asiebelCircuitID?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_cUcXwCgcEei5K6PV_O0G8g" textLength="200" base_Property="_C16kYCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aprojectManager?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_kDlNsCgcEei5K6PV_O0G8g" Searchable="true" base_Property="_C16kYCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aprojectManager?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_nIESYCgcEei5K6PV_O0G8g" textLength="200" base_Property="_ELTC8CgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aaccountManager?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_oMlDYCgcEei5K6PV_O0G8g" textLength="100" base_Property="_EShsUCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aaccount?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_pDxKECgcEei5K6PV_O0G8g" textLength="200" base_Property="_EZZwYCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3acontractor?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_qlYt0CgcEei5K6PV_O0G8g" textLength="200" base_Property="_EgDyACgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3alocation?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_sAdksCgcEei5K6PV_O0G8g" textLength="200" base_Property="_EoiYkCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aregionView?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_AD4PsCgdEei5K6PV_O0G8g" textLength="10000" base_Property="_1cKfkCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3anotesComments?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_LlG3MCgdEei5K6PV_O0G8g" textLength="100" base_Property="_E22hYCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aclientID?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_Mq0iECgdEei5K6PV_O0G8g" textLength="100" base_Property="_FJZp8CgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aGPSCoordinates?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_NaNXoCgdEei5K6PV_O0G8g" textLength="100" base_Property="_FRZIUCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3abandwidthupdown?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_N67fECgdEei5K6PV_O0G8g" textLength="100" base_Property="_ZHjacCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3atechnology?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_O-dYoCgdEei5K6PV_O0G8g" textLength="100" base_Property="_fRJ18CgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3abuildingName?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_QJ_XoCgdEei5K6PV_O0G8g" textLength="200" base_Property="_flXycCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3acontactPerson?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_RjxOACgdEei5K6PV_O0G8g" textLength="100" base_Property="_makIoCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aemail?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_jCyTcEFUEeiWSuWFK3Y-hg" displayLabel="Address" base_NamedElement="_i-sdoEFUEeiWSuWFK3Y-hg?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aaddress?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_laE68EFUEeiWSuWFK3Y-hg" displayLabel="Engineer" base_NamedElement="_laDs0EFUEeiWSuWFK3Y-hg?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aengineer?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_t_eDcEFUEeiWSuWFK3Y-hg" displayLabel="LastNotificationBy" base_NamedElement="_t_dcYEFUEeiWSuWFK3Y-hg?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3alastNotificationBy?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_w1EXkEFUEeiWSuWFK3Y-hg" displayLabel="LastNotificationDate" base_NamedElement="_w1DJcEFUEeiWSuWFK3Y-hg?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3alastNotificationDate?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_zzl-MEFUEeiWSuWFK3Y-hg" displayLabel="RecordStatus" base_NamedElement="_zzlXIEFUEeiWSuWFK3Y-hg?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3arecordStatus?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_6tU2IEFUEeiWSuWFK3Y-hg" textLength="400" base_Property="_zzlXIEFUEeiWSuWFK3Y-hg?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3arecordStatus?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_Bol_IEFVEeiWSuWFK3Y-hg" textLength="100" base_Property="_w1DJcEFUEeiWSuWFK3Y-hg?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3alastNotificationDate?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_CQlMMEFVEeiWSuWFK3Y-hg" textLength="100" base_Property="_t_dcYEFUEeiWSuWFK3Y-hg?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3alastNotificationBy?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_C2y3oEFVEeiWSuWFK3Y-hg" textLength="100" base_Property="_laDs0EFUEeiWSuWFK3Y-hg?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aengineer?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_DvVCIEFVEeiWSuWFK3Y-hg" textLength="400" base_Property="_i-sdoEFUEeiWSuWFK3Y-hg?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aaddress?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_dy5cQEFWEeiWSuWFK3Y-hg" Searchable="true" base_Property="_EZZwYCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3acontractor?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_eV5boEFWEeiWSuWFK3Y-hg" Searchable="true" base_Property="_E_QPcCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aserviceType?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_fOgeoEFWEeiWSuWFK3Y-hg" Searchable="true" base_Property="_ZHjacCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3atechnology?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_f9lLIEFWEeiWSuWFK3Y-hg" Searchable="true" base_Property="_fRJ18CgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3abuildingName?"/>
+  <BOMGlobalDataProfile:Case xmi:id="_1XGpQEFdEeih74BcCGeYZw" base_Class="_1XGCMEFdEeih74BcCGeYZw?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping?" summaryAttributes="buildingCaseIdentifier building_ID building_Name state"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_1XH3YEFdEeih74BcCGeYZw" displayLabel="Building_Mapping" base_NamedElement="_1XGCMEFdEeih74BcCGeYZw?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping?"/>
+  <BOMGlobalDataProfile:AutoCaseIdentifier xmi:id="_-PRj0EFdEeih74BcCGeYZw" base_Property="_-PQ8wEFdEeih74BcCGeYZw?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping%3a%3abuildingCaseIdentifier?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_-PSx8EFdEeih74BcCGeYZw" displayLabel="BuildingCaseIdentifier" base_NamedElement="_-PQ8wEFdEeih74BcCGeYZw?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping%3a%3abuildingCaseIdentifier?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_-PTZAEFdEeih74BcCGeYZw" decimalPlaces="0" integerLength="19" integerSubType="fixedLength" decimalSubType="fixedPoint" base_Property="_-PQ8wEFdEeih74BcCGeYZw?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping%3a%3abuildingCaseIdentifier?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_DaQa8EFeEeih74BcCGeYZw" displayLabel="Building_ID" base_NamedElement="_DaPM0EFeEeih74BcCGeYZw?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping%3a%3abuilding_ID?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_Fa418EFeEeih74BcCGeYZw" textLength="100" base_Property="_DaPM0EFeEeih74BcCGeYZw?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping%3a%3abuilding_ID?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_F5QM8EFeEeih74BcCGeYZw" Searchable="true" base_Property="_DaPM0EFeEeih74BcCGeYZw?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping%3a%3abuilding_ID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_GRGFMEFeEeih74BcCGeYZw" displayLabel="Building_Name" base_NamedElement="_GRE3EEFeEeih74BcCGeYZw?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping%3a%3abuilding_Name?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_IUeSMEFeEeih74BcCGeYZw" Searchable="true" base_Property="_GRE3EEFeEeih74BcCGeYZw?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping%3a%3abuilding_Name?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_JCHbUEFeEeih74BcCGeYZw" textLength="400" base_Property="_GRE3EEFeEeih74BcCGeYZw?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping%3a%3abuilding_Name?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_POv64EGZEeiVh-0yjN9r-g" textLength="200" base_Property="_DNMb8CgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aclientName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_JnfkAEZmEeimsaF6DY9_0g" displayLabel="RecordStatus" base_NamedElement="_Jjo-wEZmEeimsaF6DY9_0g?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3arecordStatus?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_O8FDEEZmEeimsaF6DY9_0g" textLength="100" base_Property="_Jjo-wEZmEeimsaF6DY9_0g?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3arecordStatus?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_POVQsEZmEeimsaF6DY9_0g" Searchable="true" base_Property="_Jjo-wEZmEeimsaF6DY9_0g?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3arecordStatus?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_xE-qcFjPEei-YLtY71j4-A" displayLabel="Management_IP_List" base_NamedElement="_xE-DYFjPEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_cGEyIFjQEei-YLtY71j4-A" displayLabel="Management_IP_Info" base_NamedElement="_cGELEFjQEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3amanagement_IP_Info?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_lBn7YFjREei-YLtY71j4-A" displayLabel="SFC_Tag_Number" base_NamedElement="_lBlfIFjREei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aSFC_Tag_Number?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_niWLsFjREei-YLtY71j4-A" displayLabel="Serial_Number" base_NamedElement="_niU9kFjREei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aserial_Number?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_o_sTcFjREei-YLtY71j4-A" displayLabel="EMEI" base_NamedElement="_o_p3MFjREei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aEMEI?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_sKGZ8FjREei-YLtY71j4-A" displayLabel="AddedBy" base_NamedElement="_sKEkwFjREei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aaddedBy?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_t7b0sFjREei-YLtY71j4-A" displayLabel="Status" base_NamedElement="_t7amkFjREei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3astatus?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_TtymoFjSEei-YLtY71j4-A" textLength="200" base_Property="_lBlfIFjREei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aSFC_Tag_Number?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_UUgoYFjSEei-YLtY71j4-A" textLength="200" base_Property="_niU9kFjREei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aserial_Number?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_U4EBYFjSEei-YLtY71j4-A" textLength="200" base_Property="_o_p3MFjREei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aEMEI?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_VXM0cFjSEei-YLtY71j4-A" textLength="200" base_Property="_sKEkwFjREei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aaddedBy?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_VwL8MFjSEei-YLtY71j4-A" textLength="200" base_Property="_t7amkFjREei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3astatus?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_dfS88FjSEei-YLtY71j4-A" displayLabel="IR_Number" base_NamedElement="_dfSV4FjSEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aIR_Number?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_CbTgQFjUEei-YLtY71j4-A" displayLabel="MRR" base_NamedElement="_CbRrEFjUEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aMRR?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_EO3IkFjUEei-YLtY71j4-A" textLength="200" base_Property="_dfSV4FjSEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aIR_Number?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_E25Y8FjUEei-YLtY71j4-A" textLength="200" base_Property="_CbRrEFjUEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aMRR?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_GTF0sFjVEei-YLtY71j4-A" displayLabel="Contractor_Engineer" base_NamedElement="_GTDYcFjVEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3acontractor_Engineer?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_J8oHMFjVEei-YLtY71j4-A" textLength="200" base_Property="_GTDYcFjVEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3acontractor_Engineer?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_wba6kFmUEei-YLtY71j4-A" displayLabel="Security" base_NamedElement="_wbRwoFmUEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3asecurity?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_0caq0FmUEei-YLtY71j4-A" textLength="200" base_Property="_wbRwoFmUEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3asecurity?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_UfVYQFmWEei-YLtY71j4-A" displayLabel="IR_Number" base_NamedElement="_UfTjEFmWEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aIR_Number?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_torbQFmWEei-YLtY71j4-A" textLength="200" base_Property="_UfTjEFmWEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3aIR_Number?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_uPsX8FmWEei-YLtY71j4-A" displayLabel="Siebel_Circuit_ID" base_NamedElement="_uPqiwFmWEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3asiebel_Circuit_ID?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_2KGCsFmWEei-YLtY71j4-A" textLength="200" base_Property="_uPqiwFmWEei-YLtY71j4-A?com.sfc.fosImpl.bizData.dataModel%3a%3aEquipment_Details%3a%3asiebel_Circuit_ID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_SVuZ0Fp6EeiX_Mb7qrf0MA" displayLabel="Device Name" base_NamedElement="_SVvn8Vp6EeiX_Mb7qrf0MA?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3adeviceName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_SVuZ0Vp6EeiX_Mb7qrf0MA" displayLabel="Device Request" base_NamedElement="_SVvn8Fp6EeiX_Mb7qrf0MA?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_SVuZ0lp6EeiX_Mb7qrf0MA" displayLabel="Device Description" base_NamedElement="_SVvn9Fp6EeiX_Mb7qrf0MA?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3adeviceDescription?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_SVuZ01p6EeiX_Mb7qrf0MA" textLength="100" base_Property="_SVvn9Fp6EeiX_Mb7qrf0MA?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3adeviceDescription?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_SVuZ1Fp6EeiX_Mb7qrf0MA" displayLabel="Quantity" base_NamedElement="_SVvn91p6EeiX_Mb7qrf0MA?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aquantity?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_UjstQFp6EeiX_Mb7qrf0MA" displayLabel="DeviceRequest" base_NamedElement="_UjsGMFp6EeiX_Mb7qrf0MA?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3adeviceRequest?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_ooN8cGDFEeiKHe8PzgqrqQ" textLength="200" base_Property="_oogQU2DFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aSFC_Tag_Number?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_ooaJsmDFEeiKHe8PzgqrqQ" displayLabel="Type" base_NamedElement="_oocl8mDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3atype?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_ooaJs2DFEeiKHe8PzgqrqQ" displayLabel="Address" base_NamedElement="_oofCMGDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aaddress?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_ooaJtGDFEeiKHe8PzgqrqQ" textLength="200" base_Property="_oog3YGDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aserial_Number?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_ooaJtmDFEeiKHe8PzgqrqQ" displayLabel="IR_Number" base_NamedElement="_oolI0GDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aIR_Number?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_ooaJt2DFEeiKHe8PzgqrqQ" textLength="200" base_Property="_oohecGDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aIMEI?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_ooaJuGDFEeiKHe8PzgqrqQ" displayLabel="SFC_Tag_Number" base_NamedElement="_oogQU2DFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aSFC_Tag_Number?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_ooawwGDFEeiKHe8PzgqrqQ" displayLabel="VLAN" base_NamedElement="_oogQUGDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aVLAN?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_ooawwWDFEeiKHe8PzgqrqQ" displayLabel="Serial_Number" base_NamedElement="_oog3YGDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aserial_Number?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_ooawwmDFEeiKHe8PzgqrqQ" displayLabel="IMEI" base_NamedElement="_oohecGDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aIMEI?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_ooawxGDFEeiKHe8PzgqrqQ" textLength="200" base_Property="_oolI0GDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aIR_Number?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_zyTPQGDFEeiKHe8PzgqrqQ" displayLabel="ClientName" base_NamedElement="_zyMhkGDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aclientName?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_254rQGDFEeiKHe8PzgqrqQ" Searchable="true" base_Property="_zyMhkGDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aclientName?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_4JjjYGDFEeiKHe8PzgqrqQ" textLength="200" base_Property="_zyMhkGDFEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aclientName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_88ifUGDHEeiKHe8PzgqrqQ" displayLabel="Capacity" base_NamedElement="_88hRMGDHEeiKHe8PzgqrqQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3acapacity?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_lw_fUY11Eeima4J9XCb_cA" displayLabel="port_Type" base_NamedElement="_lw_fUI11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3aport_Type?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_qCvBUY11Eeima4J9XCb_cA" displayLabel="CPEManagementIPDetails" base_NamedElement="_qCvBUI11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aCPEManagementIPDetails?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_rORnYY11Eeima4J9XCb_cA" displayLabel="CPEManagementIP" base_NamedElement="_rORnYI11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aCPEManagementIPDetails%3a%3aCPEManagementIP?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_sZF0sY11Eeima4J9XCb_cA" displayLabel="CPEManagementVLAN" base_NamedElement="_sZF0sI11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aCPEManagementIPDetails%3a%3aCPEManagementVLAN?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_tqJM4Y11Eeima4J9XCb_cA" displayLabel="ServiceIPDetails" base_NamedElement="_tqJM4I11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aServiceIPDetails?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_v4eFoY11Eeima4J9XCb_cA" displayLabel="clientIP" base_NamedElement="_v4eFoI11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aServiceIPDetails%3a%3aclientIP?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_xI7n8Y11Eeima4J9XCb_cA" displayLabel="clientVLAN" base_NamedElement="_xI7n8I11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aServiceIPDetails%3a%3aclientVLAN?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_yHrvMY11Eeima4J9XCb_cA" displayLabel="SFCPOPPE" base_NamedElement="_yHrvMI11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aServiceIPDetails%3a%3aSFCPOPPE?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_0422UY11Eeima4J9XCb_cA" displayLabel="CPEManagementIPDetails" base_NamedElement="_0422UI11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aCPEManagementIPDetails?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_3cepoY11Eeima4J9XCb_cA" displayLabel="ServiceIPDetails" base_NamedElement="_3cepoI11Eeima4J9XCb_cA?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aserviceIPDetails?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_W841MI2eEeiYjK1G9XN6yg" displayLabel="Carrier IP" base_NamedElement="_W84OII2eEeiYjK1G9XN6yg?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3acarrierIP?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_drRosaOrEeil8c3otxV2zw" displayLabel="ctrEngineer_PhNumber" base_NamedElement="_drRosKOrEeil8c3otxV2zw?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3actrEngineer_PhNumber?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_lQSfQLHCEei4cOr8IIcb2A" textLength="100" base_Property="_EwEj8CgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3afloor?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_nVfRMLHCEei4cOr8IIcb2A" textLength="100" base_Property="_E_QPcCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aserviceType?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_ol2s4LHCEei4cOr8IIcb2A" textLength="100" base_Property="_bsIQACgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3aserviceStatus?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_q4xxwLHCEei4cOr8IIcb2A" textLength="100" base_Property="_fbmycCgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3abuildingID?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_8iKqULHCEei4cOr8IIcb2A" textLength="100" base_Property="_mJ1lACgbEei5K6PV_O0G8g?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3asector?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_MCHKILHDEei4cOr8IIcb2A" textLength="200" base_Property="_sjDgwxbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3amodifiedBy?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_Nd-EILHDEei4cOr8IIcb2A" textLength="150" base_Property="_sjDgwBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aportType?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_OTW0ALHDEei4cOr8IIcb2A" textLength="150" base_Property="_sjC5sxbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aSFCPOPPE?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_PDq2oLHDEei4cOr8IIcb2A" textLength="150" base_Property="_sjC5sBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aclientIP?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_QMW9ALHDEei4cOr8IIcb2A" textLength="100" base_Property="_sjCSoxbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aclientVLAN?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_QzHbALHDEei4cOr8IIcb2A" textLength="100" base_Property="_sjCSoBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aport?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_RY62wLHDEei4cOr8IIcb2A" textLength="100" base_Property="_sjBrkxbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3aaggPoint?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_R8jvULHDEei4cOr8IIcb2A" textLength="100" base_Property="_sjBrkBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3acarrierIP?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_Si26ULHDEei4cOr8IIcb2A" textLength="100" base_Property="_sjAdcBbLEei5zJcabt9kCg?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3acarrierVLAN?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTmR0M1OEeiey6XW2b1Sng" displayLabel="SiebelCircuitID" base_NamedElement="_vToHUM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3asiebelCircuitID?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTmR0c1OEeiey6XW2b1Sng" textLength="100" base_Property="_vToHbs1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aserviceType?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTmR0s1OEeiey6XW2b1Sng" textLength="100" base_Property="_vToHic1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3asector?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTmR081OEeiey6XW2b1Sng" textLength="200" base_Property="_vToHrc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3acontractor_Engineer?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTmR1M1OEeiey6XW2b1Sng" textLength="100" base_Property="_vToHfc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3abuildingName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTmR1c1OEeiey6XW2b1Sng" displayLabel="AccountManager" base_NamedElement="_vToHWc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aaccountManager?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTmR1s1OEeiey6XW2b1Sng" displayLabel="Address" base_NamedElement="_vToHns1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aaddress?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTmR181OEeiey6XW2b1Sng" displayLabel="RecordStatus" base_NamedElement="_vToHqs1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3arecordStatus?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTmR2M1OEeiey6XW2b1Sng" textLength="100" base_Property="_vToHdM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3abandwidthupdown?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTmR2c1OEeiey6XW2b1Sng" displayLabel="Location" base_NamedElement="_vToHYs1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3alocation?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTmR2s1OEeiey6XW2b1Sng" displayLabel="ctrEngineer_PhNumber" base_NamedElement="_vToHsM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3actrEngineer_PhNumber?"/>
+  <BOMGlobalDataProfile:CaseIdentifier xmi:id="_vTmR281OEeiey6XW2b1Sng" base_Property="_vToHUM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3asiebelCircuitID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTmR3M1OEeiey6XW2b1Sng" displayLabel="ServiceType" base_NamedElement="_vToHbs1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aserviceType?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTmR3c1OEeiey6XW2b1Sng" textLength="100" base_Property="_vToHgM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3abuildingID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTmR3s1OEeiey6XW2b1Sng" displayLabel="ServiceEnd" base_NamedElement="_vToHks1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aserviceEnd?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTm44M1OEeiey6XW2b1Sng" displayLabel="BuildingID" base_NamedElement="_vToHgM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3abuildingID?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTm44c1OEeiey6XW2b1Sng" textLength="100" base_Property="_vToHcc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aGPSCoordinates?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTm44s1OEeiey6XW2b1Sng" textLength="400" base_Property="_vToHns1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aaddress?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTm4481OEeiey6XW2b1Sng" displayLabel="Contractor" base_NamedElement="_vToHX81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3acontractor?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_vTm45M1OEeiey6XW2b1Sng" Searchable="true" base_Property="_vToHU81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aprojectManager?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTm45c1OEeiey6XW2b1Sng" displayLabel="RegionView" base_NamedElement="_vToHZc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aregionView?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTm45s1OEeiey6XW2b1Sng" displayLabel="RequestDate" base_NamedElement="_vToHlc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3arequestDate?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTm4581OEeiey6XW2b1Sng" textLength="100" base_Property="_vToHpM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3alastNotificationBy?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTm46M1OEeiey6XW2b1Sng" textLength="200" base_Property="_vToHX81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3acontractor?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTm46c1OEeiey6XW2b1Sng" textLength="100" base_Property="_vToHes1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aserviceStatus?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTm46s1OEeiey6XW2b1Sng" textLength="100" base_Property="_vToHd81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3atechnology?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTm4681OEeiey6XW2b1Sng" displayLabel="InstallDate" base_NamedElement="_vToHmM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3ainstallDate?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTm47M1OEeiey6XW2b1Sng" textLength="200" base_Property="_vToHUM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3asiebelCircuitID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTm47c1OEeiey6XW2b1Sng" displayLabel="GPSCoordinates" base_NamedElement="_vToHcc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aGPSCoordinates?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTm47s1OEeiey6XW2b1Sng" textLength="100" base_Property="_vToHaM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3afloor?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTm4781OEeiey6XW2b1Sng" textLength="200" base_Property="_vToHYs1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3alocation?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTm48M1OEeiey6XW2b1Sng" displayLabel="Sector" base_NamedElement="_vToHic1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3asector?"/>
+  <BOMGlobalDataProfile:Case xmi:id="_vTm48c1OEeiey6XW2b1Sng" base_Class="_vToHT81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del?" summaryAttributes="siebelCircuitID projectManager clientName recordStatus clientID state"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTm4881OEeiey6XW2b1Sng" displayLabel="LastNotificationDate" base_NamedElement="_vToHp81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3alastNotificationDate?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTm49M1OEeiey6XW2b1Sng" textLength="100" base_Property="_vToHjM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aemail?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTm49c1OEeiey6XW2b1Sng" textLength="200" base_Property="_vToHg81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3acontactPerson?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTm49s1OEeiey6XW2b1Sng" displayLabel="ProjectManager" base_NamedElement="_vToHU81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aprojectManager?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTm4981OEeiey6XW2b1Sng" displayLabel="ClientName" base_NamedElement="_vToHVs1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aclientName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTm4-M1OEeiey6XW2b1Sng" displayLabel="Bandwidth(up/down)" base_NamedElement="_vToHdM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3abandwidthupdown?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTm4-s1OEeiey6XW2b1Sng" displayLabel="ContactPerson" base_NamedElement="_vToHg81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3acontactPerson?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTm4-81OEeiey6XW2b1Sng" textLength="100" base_Property="_vToHa81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aclientID?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTm4_M1OEeiey6XW2b1Sng" textLength="100" base_Property="_vToHp81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3alastNotificationDate?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTnf8M1OEeiey6XW2b1Sng" displayLabel="Account" base_NamedElement="_vToHXM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aaccount?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTnf8c1OEeiey6XW2b1Sng" displayLabel="ServiceStart" base_NamedElement="_vToHj81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aserviceStart?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTnf8s1OEeiey6XW2b1Sng" textLength="200" base_Property="_vToHZc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aregionView?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_vTnf881OEeiey6XW2b1Sng" Searchable="true" base_Property="_vToHbs1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aserviceType?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTnf9M1OEeiey6XW2b1Sng" displayLabel="ServiceStatus" base_NamedElement="_vToHes1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aserviceStatus?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTnf9c1OEeiey6XW2b1Sng" displayLabel="ClientID" base_NamedElement="_vToHa81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aclientID?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_vTnf9s1OEeiey6XW2b1Sng" Searchable="true" base_Property="_vToHd81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3atechnology?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTnf-M1OEeiey6XW2b1Sng" textLength="10000" base_Property="_vToHm81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3anotesComments?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTnf-c1OEeiey6XW2b1Sng" textLength="100" base_Property="_vToHoc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aengineer?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_vTnf-s1OEeiey6XW2b1Sng" Searchable="true" base_Property="_vToHfc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3abuildingName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTnf-81OEeiey6XW2b1Sng" displayLabel="Contractor_Engineer" base_NamedElement="_vToHrc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3acontractor_Engineer?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTnf_M1OEeiey6XW2b1Sng" displayLabel="Email" base_NamedElement="_vToHjM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aemail?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTnf_c1OEeiey6XW2b1Sng" displayLabel="BuildingName" base_NamedElement="_vToHfc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3abuildingName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTnf_s1OEeiey6XW2b1Sng" displayLabel="Customer_Information_Del" base_NamedElement="_vToHT81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTnf_81OEeiey6XW2b1Sng" textLength="100" base_Property="_vToHXM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aaccount?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTngAM1OEeiey6XW2b1Sng" displayLabel="LastNotificationBy" base_NamedElement="_vToHpM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3alastNotificationBy?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTngAc1OEeiey6XW2b1Sng" textLength="200" base_Property="_vToHVs1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aclientName?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTngAs1OEeiey6XW2b1Sng" displayLabel="NotesComments" base_NamedElement="_vToHm81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3anotesComments?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTngBc1OEeiey6XW2b1Sng" textLength="200" base_Property="_vToHWc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aaccountManager?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTngB81OEeiey6XW2b1Sng" displayLabel="Technology" base_NamedElement="_vToHd81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3atechnology?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTngCM1OEeiey6XW2b1Sng" textLength="400" base_Property="_vToHqs1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3arecordStatus?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTngCc1OEeiey6XW2b1Sng" displayLabel="Floor" base_NamedElement="_vToHaM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3afloor?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_vTngCs1OEeiey6XW2b1Sng" textLength="200" base_Property="_vToHU81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aprojectManager?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTngC81OEeiey6XW2b1Sng" displayLabel="Mobile" base_NamedElement="_vToHhs1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3amobile?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vTngDM1OEeiey6XW2b1Sng" displayLabel="Engineer" base_NamedElement="_vToHoc1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aengineer?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_0Y4JkM1OEeiey6XW2b1Sng" displayLabel="ActionBy" base_NamedElement="_0Y1GQM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aactionBy?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_366s8M1OEeiey6XW2b1Sng" displayLabel="ActivityDateTime" base_NamedElement="_364QsM1OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3aactivityDateTime?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_e0weISLjEe2wEoo8St6PPQ" displayLabel="States" base_NamedElement="_e0weICLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_ihpmoSLjEe2wEoo8St6PPQ" displayLabel="Started" base_NamedElement="_ihpmoCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aSTARTED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_i3904SLjEe2wEoo8St6PPQ" displayLabel="Completed" base_NamedElement="_i3904CLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aCOMPLETED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_jhMYESLjEe2wEoo8St6PPQ" displayLabel="Cancelled" base_NamedElement="_jhMYECLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aCANCELLED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_uJzVgSLjEe2wEoo8St6PPQ" displayLabel="Opened" base_NamedElement="_uJzVgCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aOPENED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_vyzToSLjEe2wEoo8St6PPQ" displayLabel="Allocated" base_NamedElement="_vyzToCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aALLOCATED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_xEu1kSLjEe2wEoo8St6PPQ" displayLabel="Offered" base_NamedElement="_xEu1kCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aOFFERED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_zB2CgSLjEe2wEoo8St6PPQ" displayLabel="Errored" base_NamedElement="_zB2CgCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aERRORED?"/>
+  <BOMGlobalDataProfile:CaseState xmi:id="_26xb4CLjEe2wEoo8St6PPQ" base_Property="_26wNwCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3astate?" terminalStates="_ihpmoCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aSTARTED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_26xb4SLjEe2wEoo8St6PPQ" displayLabel="State" base_NamedElement="_26wNwCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information%3a%3astate?"/>
+  <BOMGlobalDataProfile:CaseState xmi:id="_LYDYYSLkEe2wEoo8St6PPQ" base_Property="_LYDYYCLkEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3astate?" terminalStates="_ihpmoCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aSTARTED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_LYDYYiLkEe2wEoo8St6PPQ" displayLabel="State" base_NamedElement="_LYDYYCLkEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3astate?"/>
+  <BOMGlobalDataProfile:CaseState xmi:id="_P6ZiMCLkEe2wEoo8St6PPQ" base_Property="_P6We4CLkEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3astate?" terminalStates="_ihpmoCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aSTARTED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_P6ZiMSLkEe2wEoo8St6PPQ" displayLabel="State" base_NamedElement="_P6We4CLkEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aTechnical_Information%3a%3astate?"/>
+  <BOMGlobalDataProfile:CaseState xmi:id="_ZzH60SLkEe2wEoo8St6PPQ" base_Property="_ZzH60CLkEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping%3a%3astate?" terminalStates="_ihpmoCLjEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aStates%3a%3aSTARTED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_ZzH60iLkEe2wEoo8St6PPQ" displayLabel="State" base_NamedElement="_ZzH60CLkEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aBuilding_Mapping%3a%3astate?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_hyzLACRAEe2wEoo8St6PPQ" displayLabel="Management_VLAN" base_NamedElement="_hyx84CRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3amanagement_VLAN?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_psUsACRAEe2wEoo8St6PPQ" displayLabel="carrierEquipmentType" base_NamedElement="_psUE8CRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3acarrierEquipmentType?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_so05YCRAEe2wEoo8St6PPQ" displayLabel="Comments" base_NamedElement="_sozrQCRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3acomments?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_wsEsYCRAEe2wEoo8St6PPQ" textLength="200" base_Property="_sozrQCRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3acomments?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_yzr5ICRAEe2wEoo8St6PPQ" displayLabel="Port_Number" base_NamedElement="_yzrSECRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3aport_Number?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_0warkCRAEe2wEoo8St6PPQ" textLength="200" base_Property="_yzrSECRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3aport_Number?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_3qAH0CRAEe2wEoo8St6PPQ" displayLabel="Management_Carrier_IP" base_NamedElement="_3p-5sCRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3amanagement_Carrier_IP?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_4s5vQCRAEe2wEoo8St6PPQ" textLength="200" base_Property="_3p-5sCRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3amanagement_Carrier_IP?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_6xpOMCRAEe2wEoo8St6PPQ" displayLabel="Aggregation_Point" base_NamedElement="_6xonICRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3aaggregation_Point?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_75GlgCRAEe2wEoo8St6PPQ" textLength="200" base_Property="_6xonICRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3aaggregation_Point?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="__PWvoCRAEe2wEoo8St6PPQ" displayLabel="Carrier_VLAN" base_NamedElement="__PWIkCRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3acarrier_VLAN?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_A7jywCRBEe2wEoo8St6PPQ" textLength="200" base_Property="__PWIkCRAEe2wEoo8St6PPQ?com.sfc.fosImpl.bizData.dataModel%3a%3aManagement_IP_List%3a%3acarrier_VLAN?" booleanDefaultValue="false"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_GxRB4CRBEe2wEoo8St6PPQ" Searchable="true" base_Property="_vToHX81OEeiey6XW2b1Sng?com.sfc.fosImpl.bizData.dataModel%3a%3aCustomer_Information_Del%3a%3acontractor?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_GaTogCRDEe2jzprw-H37Gg" displayLabel="AddedBy" base_NamedElement="_GAIN8CRDEe2jzprw-H37Gg?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aaddedBy?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_J3m10CRDEe2jzprw-H37Gg" displayLabel="Status" base_NamedElement="_J3lnsCRDEe2jzprw-H37Gg?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3astatus?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_LHfJUCRDEe2jzprw-H37Gg" textLength="200" base_Property="_J3lnsCRDEe2jzprw-H37Gg?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3astatus?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_MrItYCRDEe2jzprw-H37Gg" textLength="200" base_Property="_GAIN8CRDEe2jzprw-H37Gg?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3aaddedBy?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_O124gCRDEe2jzprw-H37Gg" displayLabel="Siebel Circuit ID" base_NamedElement="_O11qYCRDEe2jzprw-H37Gg?com.sfc.fosImpl.bizData.dataModel%3a%3aDeviceRequest%3a%3asiebelCircuitID?"/>
+</xmi:XMI>

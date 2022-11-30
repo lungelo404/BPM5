@@ -1,0 +1,16 @@
+#Merged common properties for locale sv#N.B. GENERATED FILE - DO NOT EDIT! CHANGES WILL BE OVERWRITTEN BY THE BUILDER.
+#Tue Nov 29 12:57:07 CAT 2022
+currency_decimal=,
+currency_grouping=\u00A0
+date_day=['s\u00F6ndag','m\u00E5ndag','tisdag','onsdag','torsdag','fredag','l\u00F6rdag']
+date_day_abbrev=['s\u00F6n','m\u00E5n','tis','ons','tors','fre','l\u00F6r']
+date_day_narrow=['S','M','T','O','T','F','L']
+date_era=['f.Kr.','e.Kr.']
+date_month=['januari','februari','mars','april','maj','juni','juli','augusti','september','oktober','november','december']
+date_month_abbrev=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec']
+date_month_narrow=['J','F','M','A','M','J','J','A','S','O','N','D']
+format_currency=\#,\#\#0.00 \u00A4
+number_decimal=,
+number_grouping=\u00A0
+time_24hour=true
+time_ampm=['fm','em']

@@ -1,0 +1,10 @@
+#Merged common properties for locale en_GB#N.B. GENERATED FILE - DO NOT EDIT! CHANGES WILL BE OVERWRITTEN BY THE BUILDER.
+#Tue Nov 29 12:57:21 CAT 2022
+currency_code=GBP
+currency_symbol=\u00A3
+date_edit_format=dd/MM/yyyy
+date_format=dd MMM, yyyy
+date_time_edit_format=dd/MM/yyyy HH\:mm\:ssZ
+date_time_format=dd MMM, yyyy hh\:mm\:ss a
+format_currency=\u00A4\#,\#\#0.00
+time_24hour=true

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsd:Service xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:rsd="http://com.tibco.xpd/rsd" xmi:id="_MYa28En5Ee27qv4EUeKDhQ" name="com.sfc.fosImpl.RestServices-Service">
+  <resources xmi:id="_MYa28Un5Ee27qv4EUeKDhQ" name="SendMail">
+    <methods xmi:id="_MYa28kn5Ee27qv4EUeKDhQ" name="SendMail" httpMethod="POST">
+      <request xmi:id="_MYa280n5Ee27qv4EUeKDhQ">
+        <payloadReference xmi:id="_VJyIgE4jEe2t8pkeiHPZGA" namespace="http://xpd.tibco.com/jsd/1.0" ref="_ua7VNUoIEe2Hzd2lBkayuQ" location="ManageSendMail.jsd" mediaType="application/json"/>
+      </request>
+      <response xmi:id="_MYa29En5Ee27qv4EUeKDhQ"/>
+    </methods>
+  </resources>
+  <resources xmi:id="_BsHWQE4gEe26BYT0WBNlBQ" name="notifyPlanItemExecuteReply">
+    <methods xmi:id="_zRcnAE4gEe26BYT0WBNlBQ" name="notifyPlanItemExecuteReply" httpMethod="POST">
+      <request xmi:id="_zRcnAU4gEe26BYT0WBNlBQ">
+        <payloadReference xmi:id="_ow9RgE4lEe2t8pkeiHPZGA" namespace="http://xpd.tibco.com/jsd/1.0" ref="_Y4Y2UE4lEe2t8pkeiHPZGA" location="notifyPlanItem.jsd" mediaType="application/json"/>
+      </request>
+      <response xmi:id="_zRcnAk4gEe26BYT0WBNlBQ"/>
+    </methods>
+  </resources>
+  <resources xmi:id="_66pyUG_FEe2vBId6cfbH5A" name="Resource1">
+    <methods xmi:id="_66pyUW_FEe2vBId6cfbH5A" name="Method1">
+      <request xmi:id="_66pyUm_FEe2vBId6cfbH5A"/>
+      <response xmi:id="_66pyU2_FEe2vBId6cfbH5A"/>
+    </methods>
+  </resources>
+</rsd:Service>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<amxdata_base:Enterprise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:amxdata="http://tibco.com/amxadministrator/command/line/types" xmlns:amxdata_base="http://tibco.com/amxadministrator/command/line/types_base" xmlns:amxdata_reference="http://tibco.com/amxadministrator/command/line/types_reference" xsi:schemaLocation="http://tibco.com/amxadministrator/command/line/types platform:/plugin/com.tibco.amf.tools.admincligen/model/cli_data.ecore#//types http://tibco.com/amxadministrator/command/line/types_base platform:/plugin/com.tibco.amf.tools.admincligen/model/cli_data.ecore http://tibco.com/amxadministrator/command/line/types_reference platform:/plugin/com.tibco.amf.tools.admincligen/model/cli_data.ecore#//types/types_reference">
+  <Environment xsi:type="amxdata:Environment" name="BPMEnvironment">
+    <Application xsi:type="amxdata:Application" name="com.sfc.fosImpl.activation" distributionPolicy="PRODUCT_APP" resourceTemplatesScope="application">
+      <Component xsi:type="amxdata_base:Component_base" name="comsfcfosImplactivationProcessFlow"/>
+      <Component xsi:type="amxdata_base:Component_base" name="comsfcfosImplactivationpageflowsProcessFlow"/>
+      <Component xsi:type="amxdata_base:Component_base" name="BRM"/>
+      <Component xsi:type="amxdata_base:Component_base" name="comsfcfosImplactivationPageFlow"/>
+      <Component xsi:type="amxdata_base:Component_base" name="comsfcfosImplactivationpageflowsPageFlow"/>
+      <Component xsi:type="amxdata_base:Component_base" name="WorkPresentation"/>
+      <Property xsi:type="amxdata:Property" name="DefaultEMailSender" value="com.sfc.fosImpl.SMTP"/>
+      <PromotedService xsi:type="amxdata_base:Service_base" name="WaitForFOS">
+        <Binding xsi:type="amxdata_base:Binding_base" name="WaitForFOS_EP">
+          <Property xsi:type="amxdata:Property" name="HttpInboundConnectionConfig" value="httpConnector"/>
+        </Binding>
+      </PromotedService>
+      <PromotedService xsi:type="amxdata_base:Service_base" name="Activation">
+        <Binding xsi:type="amxdata_base:Binding_base" name="Activation_EP">
+          <Property xsi:type="amxdata:Property" name="HttpInboundConnectionConfig" value="httpConnector"/>
+        </Binding>
+      </PromotedService>
+      <PromotedReference xsi:type="amxdata_base:Reference_base" name="PortTypeEndpoint0_Consumer1">
+        <Binding xsi:type="amxdata_base:Binding_base" name="PortType_EP">
+          <Property xsi:type="amxdata:Property" name="HttpOutboundConnectionConfig" value="com.sfc.fosImpl.adminOps.HTTPClient"/>
+        </Binding>
+      </PromotedReference>
+      <DAA xsi:type="amxdata:DAA" location="D:\Safaricom\workspaces\bpm\com.sfc.fosImpl.activation\Exports\DAA\com.sfc.fosImpl.activation.daa"/>
+      <TargetApplication xsi:type="amxdata_reference:Application_reference" name="amx.bpm.app"/>
+    </Application>
+  </Environment>
+  <DAA xsi:type="amxdata:DAA" location="D:\Safaricom\workspaces\bpm\com.sfc.fosImpl.activation\Exports\DAA\com.sfc.fosImpl.activation.daa">
+    <importFeatureIdentifier>com.sfc.fosImpl.activation.model.bds:2.0.0.20180722172739904</importFeatureIdentifier>
+  </DAA>
+  <Feature xsi:type="amxdata_base:FeatureID" componentID="com.sfc.fosImpl.activation.model.bds" version="2.0.0.20180722172739904"/>
+  <AppTemplate xsi:type="amxdata_base:AppTemplateID" name="com.sfc.fosImpl.activation" version="2.0.0"/>
+</amxdata_base:Enterprise>

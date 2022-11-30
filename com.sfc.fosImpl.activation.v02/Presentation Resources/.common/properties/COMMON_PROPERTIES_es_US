@@ -1,0 +1,10 @@
+#Merged common properties for locale es_US#N.B. GENERATED FILE - DO NOT EDIT! CHANGES WILL BE OVERWRITTEN BY THE BUILDER.
+#Tue Nov 29 12:57:07 CAT 2022
+currency_code=USD
+currency_decimal=.
+currency_grouping=,
+currency_symbol=$
+format_currency=\u00A4\#,\#\#0.00;(\u00A4\#,\#\#0.00)
+number_decimal=.
+number_grouping=,
+time_24hour=false

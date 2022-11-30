@@ -1,0 +1,15 @@
+#Merged common properties for locale it#N.B. GENERATED FILE - DO NOT EDIT! CHANGES WILL BE OVERWRITTEN BY THE BUILDER.
+#Tue Nov 29 12:57:22 CAT 2022
+currency_decimal=,
+currency_grouping=.
+date_day=['domenica','luned\u00EC','marted\u00EC','mercoled\u00EC','gioved\u00EC','venerd\u00EC','sabato']
+date_day_abbrev=['dom','lun','mar','mer','gio','ven','sab']
+date_day_narrow=['D','L','M','M','G','V','S']
+date_era=['aC','dC']
+date_month=['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre']
+date_month_abbrev=['gen','feb','mar','apr','mag','giu','lug','ago','set','ott','nov','dic']
+date_month_narrow=['G','F','M','A','M','G','L','A','S','O','N','D']
+number_decimal=,
+number_grouping=.
+time_24hour=true
+time_ampm=['m.','p.']

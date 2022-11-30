@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ua7VMEoIEe2Hzd2lBkayuQ">
+  <packagedElement xmi:type="uml:Class" xmi:id="_ua7VM0oIEe2Hzd2lBkayuQ" name="SendMailInput">
+    <ownedAttribute xmi:id="_ua7VNEoIEe2Hzd2lBkayuQ" name="part1" type="_ua7VPkoIEe2Hzd2lBkayuQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ua7VNUoIEe2Hzd2lBkayuQ" name="SentMailRequest">
+    <eAnnotations xmi:id="_TcFQkE4jEe2t8pkeiHPZGA" source="root"/>
+    <ownedAttribute xmi:id="_ua7VNkoIEe2Hzd2lBkayuQ" name="ToField">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ua7VN0oIEe2Hzd2lBkayuQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ua7VOEoIEe2Hzd2lBkayuQ" name="Process">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ua7VOUoIEe2Hzd2lBkayuQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ua7VOkoIEe2Hzd2lBkayuQ" name="EmailType">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ua7VO0oIEe2Hzd2lBkayuQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ua7VPEoIEe2Hzd2lBkayuQ" name="SiebelCircuitID">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ua7VPUoIEe2Hzd2lBkayuQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ua7VPkoIEe2Hzd2lBkayuQ" name="part1">
+    <ownedAttribute xmi:id="_ua7VP0oIEe2Hzd2lBkayuQ" name="SentMailRequest" type="_ua7VNUoIEe2Hzd2lBkayuQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ua7VQEoIEe2Hzd2lBkayuQ" name="SendMailOutput">
+    <ownedAttribute xmi:id="_ua7VQUoIEe2Hzd2lBkayuQ" name="part1" type="_ua7VPkoIEe2Hzd2lBkayuQ"/>
+  </packagedElement>
+  <profileApplication xmi:id="_ua7VMUoIEe2Hzd2lBkayuQ">
+    <eAnnotations xmi:id="_ua7VMkoIEe2Hzd2lBkayuQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_3A574HcJEdytQ9AWEvOuug"/>
+  </profileApplication>
+</uml:Package>

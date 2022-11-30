@@ -1,0 +1,130 @@
+<project default="all">
+	<!-- TIBCO ActiveMatrix installation location-->
+	<property name="ADMIN-HOME" value="C:\apps\tibco\bpm\420\designTime\administrator\3.3"/>
+	<property name="remote-properties.file" value="${basedir}/LocalDevelopmentServer.properties"/>
+	
+	
+	<!-- Import TIBCO Administrator CLI tasks and classes -->
+	<import file="${ADMIN-HOME}/scripts/basic_cli.xml" />
+	
+	<!-- Default task for this build file -->
+	<target name="all" 
+		depends="upload.daa, upgrade.app, disable.features, enable.features, provision.features, edit.properties, wire.application, distribute.app, deploy.app, start.app"
+		description="Default target group, execute following targets: upload.daa, upgrade.app, disable.features, enable.features, provision.features, edit.properties, wire.application, distribute.app, deploy.app, start.app"/>
+	
+
+	<!-- Upload DAA specified in the data file -->
+	<target name="upload.daa" description="Uploading Application">
+  		<AMXAdminTask 
+			action="add" 
+			objectSelector="DAA" 
+			remote="true" 
+			propsFile="${remote-properties.file}" 
+			dataFile="${basedir}/com.sfc.fosImpl.activation.deployment-config.xml" 
+			overwrite="false" merge="true" createIfNotExists="true" 
+			force="false" failOnError="false" /> 
+	</target>  		
+
+	<!-- upgrade existing application -->
+	<target name="upgrade.app" description="Upgrade Existing Application">
+		<AMXAdminTask remote="true" propsFile="${remote-properties.file}" 
+			action="upgrade" dataFile="${basedir}/com.sfc.fosImpl.activation.deployment-config.xml" 
+			objectSelector="Environment//Application" 
+			overwrite="false" merge="true" 
+			createIfNotExists="true" force="false" failOnError="true" />
+	</target>
+
+	<!-- removes feature(s) from the specified node -->
+	<target name="disable.features" description="Removes features from the specified node">
+	     <AMXAdminTask remote="true" propsFile="${remote-properties.file}"
+			action="delete" objectSelector="Environment//Node//Feature[@version='2.0.0']"			
+			dataFile="${basedir}/com.sfc.fosImpl.activation.deployment-config.xml" overwrite="false"
+			merge="true" createIfNotExists="true" force="false"
+			failOnError="false"/>
+	  </target>
+
+	<!-- Add specific feature version to the node -->
+	<target name="enable.features" description="Add features to a specific node">
+	    <AMXAdminTask remote="true" propsFile="${remote-properties.file}"
+		  action="add" objectSelector="Environment//Node//Feature[@version='2.0.0.20180722172739904']"			
+		  dataFile="${basedir}/com.sfc.fosImpl.activation.deployment-config.xml" overwrite="false"	
+		  merge="true" createIfNotExists="true" force="false" failOnError="false"/>
+	</target>
+
+	<!-- Applies feature changes (add/remove) to specific node -->
+	<target name="provision.features" description="Add feature changes (add/remove) to a specific node">
+		  <AMXAdminTask remote="true" propsFile="${remote-properties.file}"
+			action="reprovision" objectSelector="Environment//Node"			
+			dataFile="${basedir}/com.sfc.fosImpl.activation.deployment-config.xml" overwrite="false"
+			merge="true" createIfNotExists="true"
+			force="false" failOnError="false" options="resolve"/>
+		</target>
+
+
+	<!-- configure properties of the application, and create resource instances if needed -->
+	<target name="edit.properties" description="Editing Properties" depends="createResourceInstances">		
+	
+	  <!-- override values for properties -->
+		<AMXAdminTask remote="true" propsFile="${remote-properties.file}" 
+			action="edit" dataFile="${basedir}/com.sfc.fosImpl.activation.deployment-config.xml" 
+			objectSelector="//Property" 
+			overwrite="false" merge="true" 
+			createIfNotExists="true" force="false" failOnError="true" />			
+		
+			
+		
+	</target>
+	
+	<!-- createResourceInstances target will not get executed if property 'doNotInstallInstances' is set to any value -->
+	<target name="createResourceInstances" description="creates resource templates and instances" unless="ignoreResourceInstances">
+		
+		
+		
+		
+	</target>
+
+	<!-- create wires to other applications -->
+	<target name="wire.application" description="Wiring Application">
+		<AMXAdminTask remote="true" propsFile="${remote-properties.file}" 
+			action="set" dataFile="${basedir}/com.sfc.fosImpl.activation.deployment-config.xml" 
+			objectSelector="//PromotedReference/Wire" 
+			overwrite="false" merge="true" 
+			createIfNotExists="true" force="false" failOnError="true" />
+	</target>
+
+ 
+	<target name="distribute.app" description="Distributing Application">
+	<AMXAdminTask
+			action="set"
+			objectSelector="Environment//Application//Component/Node | Environment//Application//PromotedService//Binding/Node | Environment//Application//PromotedReference//Binding/Node"
+			remote="true"
+			propsFile="${remote-properties.file}"
+			dataFile="${basedir}/com.sfc.fosImpl.activation.deployment-config.xml"
+			overwrite="false"
+			merge="true"
+			createIfNotExists="true"
+			force="false"
+			failOnError="false"/>
+	
+	</target>
+
+
+	<!-- deploy the application -->
+	<target name="deploy.app" description="Deploying Application">
+		<AMXAdminTask remote="true" propsFile="${remote-properties.file}" 
+			action="deploy" dataFile="${basedir}/com.sfc.fosImpl.activation.deployment-config.xml" 
+			objectSelector="Environment//Application" 
+			overwrite="false" merge="true" 
+			createIfNotExists="true" force="false" failOnError="true"
+			options="handleDependencies"/>
+	</target>
+
+	<target name="start.app" description="Starting Application">
+		<AMXAdminTask remote="true" propsFile="${remote-properties.file}" 
+			action="start" dataFile="${basedir}/com.sfc.fosImpl.activation.deployment-config.xml" 
+			objectSelector="Environment//Application" 
+			overwrite="false" merge="true" 
+			createIfNotExists="true" force="false" failOnError="true" />
+	</target>
+
+</project>

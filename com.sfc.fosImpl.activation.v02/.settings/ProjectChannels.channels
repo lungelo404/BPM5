@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channels:Channels xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:channels="http://www.tibco.com/xpd/presentation/channels/1.0" xmi:id="_rDkAQP-bEeeHkcRS9vb7jA">
+  <channels xmi:id="_rDkAQf-bEeeHkcRS9vb7jA" name="DefaultChannel" displayName="Default Channel" default="true">
+    <typeAssociations xmi:id="_rDkAQ_-bEeeHkcRS9vb7jA">
+      <channelType href="xpdextension:channelTypes#openspaceGWTPull"/>
+    </typeAssociations>
+    <typeAssociations xmi:id="_rDkARP-bEeeHkcRS9vb7jA">
+      <channelType href="xpdextension:channelTypes#openspaceEmailPush"/>
+    </typeAssociations>
+    <typeAssociations xmi:id="_t1OPkP-bEeeHkcRS9vb7jA">
+      <channelType href="xpdextension:channelTypes#MobileGWTPull"/>
+    </typeAssociations>
+  </channels>
+</channels:Channels>

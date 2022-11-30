@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PrimitiveTypeFacets="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0 pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw">
+  <uml:Model xmi:id="com.example.xmlns._1513751864707" name="com.example.xmlns._1513751864707">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MwgjcNgeEeiztP1gQW0_ow" source="model.metadata">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MwgjcdgeEeiztP1gQW0_ow" key="author" value="rujagtap"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MwgjctgeEeiztP1gQW0_ow" key="created" value="1540448485159"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Mwgjc9geEeiztP1gQW0_ow" key="version" value="1000"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NX8W4NgeEeiztP1gQW0_ow" key="checksum" value="2355489433"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="com.example.xmlns._1513751864707PortType" name="PortType"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_MBYMk9geEeiztP1gQW0_ow">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MBYMlNgeEeiztP1gQW0_ow" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_3A574HcJEdytQ9AWEvOuug?PrimitiveTypeFacets?"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_N3XxwCn7Ee2YxrlKlGfE5Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_N3XxwSn7Ee2YxrlKlGfE5Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_-r7KEXyPEeCumvZ6xHSUiw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_20kHsWs1EeC_hvle0zpSaA?BOM%20Global%20Data%20Profile?"/>
+    </profileApplication>
+  </uml:Model>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_Mwf8YNgeEeiztP1gQW0_ow" displayLabel="PortType" base_NamedElement="com.example.xmlns._1513751864707PortType?com.example.xmlns._1513751864707%3a%3aPortType?"/>
+  <notation:Diagram xmi:id="_MwhKgNgeEeiztP1gQW0_ow" type="Business Object Model" element="com.example.xmlns._1513751864707?com.example.xmlns._1513751864707?" name="com.example.xmlns._1513751864707" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_MwhKgdgeEeiztP1gQW0_ow"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_MwhKgtgeEeiztP1gQW0_ow"/>
+  </notation:Diagram>
+</xmi:XMI>

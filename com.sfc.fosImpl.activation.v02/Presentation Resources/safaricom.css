@@ -1,0 +1,273 @@
+.btnGrid .gwt-Button {
+top: 21px;
+position: relative;
+background-repeat: no-repeat;
+background-position: center;
+width: 100px;
+height: 24px;
+border: none !important;
+}
+
+.TibcoForms .component .label {
+    font-size: 11px;
+    font-weight: lighter;
+    text-align: left;
+
+}
+
+
+.TibcoForms.tf-uir-disabled .control-duration input, .TibcoForms.tf-uir-disabled .control-textinput input {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(166, 166, 175) rgb(230, 230, 230) rgb(230, 230, 230) rgb(166, 166, 175);
+    border-style: solid;
+    border-width: 1px;
+    color: black;
+    font-family: Verdana,sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 2px;
+}
+
+.TibcoForms .control-textarea textarea {
+    color: black;
+    font-family: Verdana,sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    max-width: 100%;
+}
+
+.TibcoForms .disabled .control-widget, .TibcoForms .control-widget option:disabled {
+    background-color: white;
+    color: #000000;
+}
+
+.TibcoForms .pane-grid .component {
+    overflow: visible;
+    padding-bottom: 8px;
+    word-wrap: break-word;
+    font-size:  small;
+}
+
+.TibcoForms .secAcct.component .label  {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: left; 
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.vPaneImage {
+	margin-left	   : 0%;
+	padding-left   : 100px;
+	 
+}
+
+
+.citiLogo .gwt-Image control-widget
+{
+	height:  100%;
+	width:  100%;
+}
+
+.TibcoForms .control.error input {
+    background-color: tomato;
+    color: white;
+}
+.TibcoForms .control.normal input {
+ 	background-color: white;
+ 	color: black;
+}
+.TibcoForms .pane-grid .component {
+    overflow: visible;
+    padding-bottom: 8px;
+    word-wrap: break-word;
+}
+
+.TibcoForms > .container > .component > .pane-label {
+    border-color: #000000;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    border-width:thin;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 6px;
+    padding: 0 0 3px;
+    text-align: left;
+   	font-color:white;
+   	color:red;
+   	background-color: navy;
+  }
+
+.TibcoForms .control-duration input, .TibcoForms .warnCSS input {
+    background-color: #FF6347;
+    border-color: #A6A6AF #E6E6E6 #E6E6E6 #A6A6AF;
+    border-style: solid;
+    border-width: 1px;
+    color: black;
+    font-family: Verdana,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 2px;
+}
+
+.TibcoForms .control-duration input, .TibcoForms .clearCSS input {
+    background-color:  #FFFFFF;
+    border-color: #A6A6AF #E6E6E6 #E6E6E6 #A6A6AF;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Verdana,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 2px;
+    color: black;
+}
+
+.CCOpsServicesOptionList .gwt-ListBox
+{
+    width:100px;
+    font-size: 11px;
+}
+
+.CCOpsServicesOptionListCheckerAction .gwt-ListBox
+{
+    width:130px;
+    font-size: 11px;
+}
+
+.CCOpsServicesOptionListReasons .gwt-ListBox
+{
+    width:250px;
+    font-size: 11px;
+}
+
+.TibcoForms .pane-vertical > .container > .component, .TibcoForms .pane-record > .container > .pane-record-content > .component {
+    padding: 1px 0;
+}
+
+.vPaneMargin {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+.btnColor {
+	
+}
+
+.vPaneBorderMain {
+	border-left: black 1px solid;
+	border-top: black 1px solid;
+	border-right: black 1px solid;
+	border-bottom: black 1px solid;
+	padding-bottom: 2px;
+	margin-left: 5px; 
+}
+.vPaneBorderMain2 {
+	border-left: black 1px solid;
+	border-right: black 1px solid;
+	border-bottom: black 1px solid;
+	padding-bottom: 2px;
+	margin-left: 5px; 
+}
+.vPaneBorderMain3 {
+	border-left: black 1px solid;
+	border-top: black 1px solid;
+	border-right: black 1px solid;
+	padding-bottom: 2px;
+	margin-left: 5px; 
+}
+
+.vPaneBorderComments {
+	margin-left:  10px;
+	
+}
+.vTextAlignRight {
+	font-size: 11px;
+}
+
+
+.TibcoForms button {
+    background: #0B614B;
+    text-align: center !important;
+    font: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.TibcoForms .button-primary {
+    font-weight: bold;
+    font: 10px;
+    color: white;
+    background: #0B614B;
+}
+
+.TibcoForms .control-button button, .TibcoForms .static .pane-content .control-button button {
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.lblBackground {
+	background-color: #0B614B;
+	color: white !important;
+	font-size : 15px;
+	font-weight: bold;
+	height: 25px;
+	text-align: left;
+	text-indent: 5px;
+	margin-left: 5px;
+}
+
+
+.ItalicText {
+	font-style: italic;
+	font-weight: lighter;	
+}
+
+
+
+.CustomButton{
+	width: 150px;
+ 	text-align: center;
+ 	background-color: #084B8A;
+ 	color: white;
+ }
+ 
+
+ 
+textarea {
+  resize: none;
+}
+
+/*
+.TibcoForms .pane-vertical > .tf-container > .component, .TibcoForms .pane-record > .tf-container > .pane-record-content > div > .component, .TibcoForms .pane-modaldialog > .tf-container > .component {
+ 	padding-bottom: 20px;
+}
+
+.TextPadding {
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+  .vPaneBorderMain {
+	border-left: black 1px solid;
+	border-top: black 1px solid;
+	border-right: black 1px solid;
+	border-bottom: black 1px solid;
+	padding-bottom: 2px;
+	 
+}
+ .labelDebit {
+	color:white;
+   	background-color: #0B614B;
+}
+*/

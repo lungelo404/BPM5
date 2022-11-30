@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ASCII"?>
+<wlf:WorkListFacade xmlns:wlf="http://www.tibco.com/XPD/workListFacade1.0.0" FormatVersion="1">
+  <wlf:WorkItemAttributes>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Siebel Circuit ID</wlf:DisplayLabel>
+      <wlf:Name>attribute2</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Client Name</wlf:DisplayLabel>
+      <wlf:Name>attribute3</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Contractor</wlf:DisplayLabel>
+      <wlf:Name>attribute4</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Install Date</wlf:DisplayLabel>
+      <wlf:Name>attribute6</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Request Date</wlf:DisplayLabel>
+      <wlf:Name>attribute7</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Service  Type</wlf:DisplayLabel>
+      <wlf:Name>attribute8</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>PM</wlf:DisplayLabel>
+      <wlf:Name>attribute9</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Account Manager</wlf:DisplayLabel>
+      <wlf:Name>attribute10</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Building ID</wlf:DisplayLabel>
+      <wlf:Name>attribute11</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Client ID</wlf:DisplayLabel>
+      <wlf:Name>attribute13</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Contact Person</wlf:DisplayLabel>
+      <wlf:Name>attribute14</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Service Start</wlf:DisplayLabel>
+      <wlf:Name>attribute19</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Service End</wlf:DisplayLabel>
+      <wlf:Name>attribute20</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Email</wlf:DisplayLabel>
+      <wlf:Name>attribute21</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Service Status</wlf:DisplayLabel>
+      <wlf:Name>attribute22</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Access Medium</wlf:DisplayLabel>
+      <wlf:Name>attribute23</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Customer Name</wlf:DisplayLabel>
+      <wlf:Name>attribute40</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Contractor Agency</wlf:DisplayLabel>
+      <wlf:Name>attribute37</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Contractor Engineer</wlf:DisplayLabel>
+      <wlf:Name>attribute38</wlf:Name>
+    </wlf:WorkItemAttribute>
+    <wlf:WorkItemAttribute>
+      <wlf:DisplayLabel>Service Type</wlf:DisplayLabel>
+      <wlf:Name>attribute24</wlf:Name>
+    </wlf:WorkItemAttribute>
+  </wlf:WorkItemAttributes>
+</wlf:WorkListFacade>

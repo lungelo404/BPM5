@@ -1,0 +1,14 @@
+#Merged common properties for locale nn#N.B. GENERATED FILE - DO NOT EDIT! CHANGES WILL BE OVERWRITTEN BY THE BUILDER.
+#Tue Nov 29 12:57:22 CAT 2022
+currency_decimal=,
+currency_grouping=\u00A0
+date_day=['sundag','m\u00E5ndag','tysdag','onsdag','torsdag','fredag','laurdag']
+date_day_abbrev=['su','m\u00E5','ty','on','to','fr','la']
+date_day_narrow=['S','M','T','O','T','F','L']
+date_era=['f.Kr.','e.Kr.']
+date_month=['januar','februar','mars','april','mai','juni','juli','august','september','oktober','november','desember']
+date_month_abbrev=['jan','feb','mar','apr','mai','jun','jul','aug','sep','okt','nov','des']
+format_currency=\#,\#\#0.00 \u00A4
+number_decimal=,
+number_grouping=\u00A0
+time_24hour=true

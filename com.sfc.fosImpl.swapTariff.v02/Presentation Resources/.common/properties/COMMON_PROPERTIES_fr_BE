@@ -1,0 +1,6 @@
+#Merged common properties for locale fr_BE#N.B. GENERATED FILE - DO NOT EDIT! CHANGES WILL BE OVERWRITTEN BY THE BUILDER.
+#Tue Nov 29 12:57:21 CAT 2022
+currency_code=EUR
+currency_grouping=.
+currency_symbol=\u20AC
+number_grouping=.

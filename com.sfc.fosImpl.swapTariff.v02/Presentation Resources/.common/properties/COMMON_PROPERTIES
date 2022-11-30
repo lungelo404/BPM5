@@ -1,0 +1,177 @@
+#Merged common properties for locale #N.B. GENERATED FILE - DO NOT EDIT! CHANGES WILL BE OVERWRITTEN BY THE BUILDER.
+#Tue Nov 29 12:57:21 CAT 2022
+accessible_date_label={0} (enter as {1})
+accessible_gd_pane_asc_ord_col_header_label=This column is sorted in ascending order. Click on the column header to sort in descending order.
+accessible_gd_pane_desc_ord_col_header_label=This column is sorted in descending order. Click on the column header to remove sorting.
+accessible_gd_pane_normal_col_header_label=Click on the column header to sort in ascending order.
+accessible_gd_pane_select_all_rows_label=Select all rows.
+accessible_gd_pane_select_row_label=Select row to edit or delete
+bpm_live_cancel_label=Cancel
+bpm_live_refresh_label=Refresh
+control_button_class_defs=[{"selector"\: "//div[tf-comp-type\=button primary]/div[2]/div[1]/button", "classes"\: "btn btn-primary"}, {"selector"\: "//div[tf-comp-type\=button peripheral]/div[2]/div[1]/button", "classes"\: "btn btn-secondary"}, {"selector"\: "//div[tf-comp-type\=button associative]/div[2]/div[1]/button", "classes"\: "btn btn-link"}]
+control_button_static_class_defs=[{"selector"\: "//button", "target"\: "widget", "classes"\: "btn-secondary"}, {"selector"\: "div", "where"\: "not-in-grid", "classes"\: "help-block"}]
+control_checkbox_class_defs=[{"selector"\: "//div/div[class\=tf-container]/div[1]", "where"\: "not-in-grid", "classes"\: "input-group"}, {"selector"\: "//span", "target"\: "widget", "classes"\: "form-control"}, {"selector"\: "//div/div[class\=tf-container]/div[1]/span[1]", "where"\: "not-in-grid", "classes"\: "input-group-addon"}, {"selector"\: "//div/div[class\=tf-container]/div[1]/span[1]/i", "where"\: "not-in-grid", "classes"\: "glyphicon glyphicon-ok"}]
+control_class_defs=[{"selector"\: "div/div[2]", "classes"\: "help-block"}, {"selector"\: "div/div[1]", "classes"\: "form-group has-feedback"}, {"selector"\: "div/div[1]", "where"\: "in-grid", "classes"\: "form-group-sm"}, {"selector"\: "div/div/span[tf_uir\=feedback]", "classes"\: "glyphicon form-control-feedback"}, {"selector"\: "div/div[1]", "when"\: "invalid", "classes"\: "has-error"}, {"selector"\: "div/div/span[tf_uir\=feedback]", "when"\: "invalid", "classes"\: "glyphicon-warning-sign"}, {"selector"\: "div/div[1]", "when"\:"valid", "classes"\: "has-success"}, {"selector" \: "div/div/span[tf_uir\=feedback]", "when"\: "valid", "classes"\: "glyphicon-ok"}]
+control_date_class_defs=[{"selector"\: "//div/table/tbody/tr[1]/td[1]/input", "target"\: "widget", "classes"\: "form-control"}]
+control_date_list_class_defs=[{"selector"\: "//div/table/tbody/tr[1]/td[1]/input", "target"\: "list-edit-widget", "classes"\: "form-control"}]
+control_date_static_class_defs=[{"selector"\: "//input", "target"\:"widget", "classes"\: "form-control"}]
+control_datetime_class_defs=[{"selector"\: "//div/table/tbody/tr[1]/td[1]/input", "target"\: "widget", "classes"\: "form-control"}]
+control_datetime_list_class_defs=[{"selector"\: "//div/table/tbody/tr[1]/td[1]/input", "target"\: "list-edit-widget", "classes"\: "form-control"}]
+control_datetime_static_class_defs=[{"selector"\: "//input", "target"\:"widget", "classes"\: "form-control"}]
+control_duration_class_defs=[{"selector"\: "//div/div/div[1]", "target"\: "widget", "classes"\: "help-block"}, {"selector"\: "//div/div/input", "target"\: "widget", "classes"\: "form-control"}]
+control_duration_list_class_defs=[{"selector"\: "//div/div/div", "target"\: "list-edit-widget", "classes"\: "help-block"}, {"selector"\: "//div/div/input", "target"\: "list-edit-widget", "classes"\: "form-control"}]
+control_duration_static_class_defs=[{"selector"\: "//input", "target"\:"widget", "classes"\: "form-control"}]
+control_hyperlink_class_defs=[{"selector"\: "//a", "target"\: "widget", "classes"\: "btn-link"}, {"selector"\: "//div/div[2]/div[1]", "classes"\: "has-feedback has-tibco-feedback"}]
+control_hyperlink_static_class_defs=[{"selector"\: "div[class\=tf-container]/div[1]/span", "classes"\: "glyphicon glyphicon-link"}, {"selector"\: "//a", "target"\: "widget", "classes"\: "btn-link"}]
+control_label_class_defs=[{"selector"\: "//div", "target"\: "widget", "classes"\: "tf-label-control"}]
+control_label_static_class_defs=[{"selector"\: "//div", "target"\: "widget", "classes"\: "form-control tf-label-control"}]
+control_list_class_defs=[{"selector"\: "div[2]", "target"\: "widget", "classes"\: "btn btn-tertiary"}, {"selector"\: "div[2]/span/a", "target"\: "widget", "classes"\: "btn-xs"}, {"selector"\: "div[2]/span[1]/a/span", "target"\: "widget", "classes"\: "glyphicon glyphicon-plus"}, {"selector"\: "div[2]/span[2]/a/span", "target"\: "widget", "classes"\: "glyphicon glyphicon-minus"}, {"selector"\: "div[2]/span[3]/a/span", "target"\: "widget", "classes"\: "glyphicon glyphicon-chevron-up"}, {"selector"\: "div[2]/span[4]/a/span", "target"\: "widget", "classes"\: "glyphicon glyphicon-chevron-down"}]
+control_optionlist_class_defs=[{"selector"\: "//select", "target"\: "widget", "classes"\: "form-control control-lg tf-select-fixer"},{"selector"\: "div[class\=tf-container]/div[1]", "classes"\: "input-group"}]
+control_optionlist_static_class_defs=[{"selector"\: "//input", "target"\:"widget", "classes"\: "form-control"}, {"selector"\: "//select", "target"\:"widget", "classes"\: "form-control"}]
+control_radiogroup_class_defs=[{"selector"\: "//div/div/div/span", "target"\: "widget", "classes"\: "radio-inline"}]
+control_radiogroup_static_class_defs=[{"selector"\: "div[class\=tf-container]/span", "classes"\: "radio-inline"}]
+control_static_class_defs=[{"selector"\: "div[class\=tf-container]/div[class\=hint]", "classes"\: "help-block"}]
+control_textarea_class_defs=[{"selector"\: "//textarea", "target"\: "widget", "classes"\: "form-control"}]
+control_textarea_list_class_defs=[{"selector"\:"//textarea", "target"\:"list-edit-widget", "classes"\:"form-control"}]
+control_textarea_static_class_defs=[{"selector"\: "//textarea", "target"\: "widget", "classes"\: "form-control"}] 
+control_textinput_class_defs=[{"selector"\: "//input", "target"\: "widget", "classes"\: "form-control"}, {"selector"\: "//div[tf-comp-type\=textinput numeric]/div[class\=tf-container]/div[1]", "where"\: "not-in-grid", "classes"\: "input-group"}, {"selector"\: "//div[tf-comp-type\=textinput numeric]/div[class\=tf-container]/div[1]/span[1]", "where"\: "not-in-grid", "classes"\: "input-group-addon"}, {"selector"\: "//div[tf-comp-type\=textinput numeric]/div[class\=tf-container]/div[1]/span[1]/span[1]", "where"\: "not-in-grid", "classes"\: "fa fa-slack"}]
+control_textinput_list_class_defs=[{"selector"\: "//input", "target"\: "list-edit-widget", "classes"\: "form-control"}]
+control_textinput_static_class_defs=[{"selector"\: "//input", "target"\:"widget", "classes"\: "form-control"}, {"selector"\: "//div[tf-comp-type\=textinput numeric]/div[class\=tf-container]/div[1]", "where"\: "not-in-grid", "classes"\: "input-group"}, {"selector"\: "//div[tf-comp-type\=textinput numeric]/div[class\=tf-container]/div[1]/span[1]", "where"\: "not-in-grid", "classes"\: "input-group-addon"}, {"selector"\: "//div[tf-comp-type\=textinput numeric]/div[class\=tf-container]/div[1]/span[1]/span[1]", "where"\: "not-in-grid", "classes"\: "fa fa-slack"}]
+control_time_class_defs=[{"selector"\: "//div/table/tbody/tr[1]/td[1]/input", "target"\: "widget", "classes"\: "form-control"}]
+control_time_list_class_defs=[{"selector"\: "//div/table/tbody/tr[1]/td[1]/input", "target"\: "list-edit-widget", "classes"\: "form-control"}]
+control_time_static_class_defs=[{"selector"\: "//input", "target"\:"widget", "classes"\: "form-control"}]
+currency_code=USD
+currency_decimal=.
+currency_grouping=,
+currency_symbol=$
+data_preview_empty=There is no data to display.
+date_day=['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+date_day_abbrev=['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+date_day_narrow=['S', 'M', 'T', 'W', 'T', 'F', 'S']
+date_edit_format=MM/dd/yyyy
+date_era=['BC', 'AD']
+date_era_long=['Before Christ', 'Anno Domini']
+date_first_day_of_week=0
+date_format=MMM dd, yyyy
+date_hours_circle_basis=24
+date_month=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+date_month_abbrev=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+date_month_narrow=['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D']
+date_picker_ok_label=OK
+date_time_edit_format=MM/dd/yyyy HH\:mm\:ssZ
+date_time_format=MMM dd, yyyy hh\:mm\:ss a
+date_today=Today
+datetime_date_label=Date
+datetime_time_label=Time
+dialog_pane_close_button_tooltip=Close
+display_length_factor=1.1
+duration_items_display_sep=\ / 
+duration_label_days=Days
+duration_label_hours=Hours
+duration_label_milliseconds=Milliseconds
+duration_label_minutes=Minutes
+duration_label_months=Months
+duration_label_seconds=Seconds
+duration_label_years=Years
+duration_order=yMdHmsS
+duration_separator=,
+form_action_error_message=Error in script for action {0} ({1})\: {2}
+form_apply_label=Apply
+form_cancel_label=Cancel
+form_close_label=Close
+form_perf_ui_defs=[{"selector"\: "", "classes"\: "modal-content"}, {"selector"\: "div/table/tbody/tr/td/div/div/div/table", "classes"\: "table table-condensed"}, {"selector"\: "div/table/tbody/tr/td/div/div/div/table/tbody/tr/td/div/div", "classes"\: "nav-tabs-label"}, {"selector"\: "div/table/tbody/tr/td/div/div/div/div", "classes"\: "panel panel-default"}, {"selector"\: "div/table/tbody/tr/td/div/div/div/div/div/table", "classes"\: "table table-striped table-bordered table-condensed"}, {"selector"\: "div/table/tbody/tr/td/div/div/div/div/table", "classes"\: "table table-striped table-bordered table-condensed"}, {"selector"\: "div/table/tbody/tr/td[2]", "classes"\: "modal-header"}, {"selector"\: "div/table/tbody/tr/td[2]/div/table/tbody/tr/td/label", "classes"\: "label label-visible"}]
+form_required_message={0} is a required field.
+form_reset_label=Reset
+form_submit_label=Submit
+form_validate_label=Validate
+form_validation_error_message=Error in script for validation {0} of Control {1} ({2})\: {3}
+format_currency=\u00A4\#,\#\#0.00;(\u00A4\#,\#\#0.00)
+format_decimal=\#,\#\#0.\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
+format_decimal_1=\#,\#\#0.0
+format_decimal_2=\#,\#\#0.00
+format_decimal_3=\#,\#\#0.000
+format_decimal_4=\#,\#\#0.0000
+format_decimal_ungrouped=0.\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
+format_duration_days={0} days
+format_duration_days_singular={0} day
+format_duration_hours={0} hours
+format_duration_hours_singular={0} hour
+format_duration_milliseconds={0} milliseconds
+format_duration_milliseconds_singular={0} millisecond
+format_duration_minutes={0} minutes
+format_duration_minutes_singular={0} minute
+format_duration_months={0} months
+format_duration_months_singular={0} month
+format_duration_seconds={0} seconds
+format_duration_seconds_singular={0} second
+format_duration_years={0} years
+format_duration_years_singular={0} year
+format_integer=\#,\#\#0
+format_integer_ungrouped=0
+grid_pane_page_info=\ {0} - {1} of {2} 
+items_display_sep=, 
+list_add_label=Add - {0}
+list_delete_label=Delete - {0}
+list_move_down_label=Down - {0}
+list_move_up_label=Up - {0}
+msgd_pane_confirm_delete_label=Delete {0} selected records?
+nav_first_label=First - {0}
+nav_last_label=Last - {0}
+nav_next_label=Next - {0}
+nav_previous_label=Previous - {0}
+nested_pane_error_label=There are errors on this screen.
+number_currency=$
+number_decimal=.
+number_grouping=,
+number_zero=0
+option_select_label=- Select -
+pane_add_label=Add
+pane_cancel_label=Cancel
+pane_close_label=OK
+pane_delete_label=Delete
+pane_grid_class_defs=[{"selector"\: "", "classes"\: "panel panel-default form-inline"}, {"selector"\: "div[class\=pane-label]", "classes"\: "panel-heading"}, {"selector"\: "div[class\=tf-container]", "classes"\: "panel-body"}, {"selector"\: "div[class\=tf-container]/div/div", "classes"\: "form-horizontal"}, {"selector"\: "div[class\=tf-container]/div/div/table", "classes"\: "table table-striped grid-line-table"}, {"selector"\: "div[class\=tf-container]/div/div/button", "classes"\: "btn btn-secondary"}]
+pane_horizontal_class_defs=[{"selector"\: "", "classes"\: "panel-default form-inline"}, {"selector"\: "div[class\=pane-label]", "classes"\: "panel-heading"}, {"selector"\: "div[class\=tf-container]", "classes"\: "panel-body"}]
+pane_horizontal_static_class_defs=[{"selector"\: "", "classes"\: "panel-default form-inline"}, {"selector"\: "div[1]", "classes"\: "panel-heading"}, {"selector"\: "div[2]", "classes"\: "panel-body"}]
+pane_messages_class_defs=[{"selector"\: "div/div/div", "classes"\: "pane-message-validation-error"}]
+pane_modaldialog_class_defs=[{"selector"\: "//div", "classes"\: "modal-content"}, {"selector"\: "div/div/table/tbody/tr[1]/td[2]", "classes"\: "modal-header"}, {"selector"\: "div/div/table/tbody/tr[2]/td[2]/div/div/div[2]/button[class\=tf-dialog-ok]", "classes"\: "btn btn-primary"}, {"selector"\: "div/div/table/tbody/tr[2]/td[2]/div/div/div[2]/button[class\=tf-dialog-cancel]", "classes"\: "btn btn-secondary"}]
+pane_new_label=New
+pane_record_class_defs=[{"selector"\: "", "classes"\: "panel panel-default"}, {"selector"\: "div[class\=pane-label]", "classes"\: "panel-heading"}, {"selector"\: "div[class\=tf-container]", "classes"\: "panel-body"}, {"selector"\: "div[class\=tf-container]/div/div[class\=pane-page-navigation]/div[class\=nav-input]/input", "classes"\: "form-control"}, {"selector"\: "div[class\=tf-container]/div/div/button", "classes"\: "btn btn-secondary"}]
+pane_remove_label=Remove
+pane_tabbed_class_defs=[{"selector"\: "", "classes"\: "panel panel-default"}, {"selector"\: "div[class\=pane-label]", "classes"\: "panel-heading"}, {"selector"\: "div[class\=tf-container]", "classes"\: "panel-body"}, {"selector"\: "div[class\=tf-container]/div/table/tbody/tr/td/div/div[class\=gwt-Label]", "classes"\: "nav-tabs-label"}]
+pane_vertical_class_defs=[{"selector"\: "", "classes"\: "panel panel-default"}, {"selector"\: "div[class\=pane-label]", "classes"\: "panel-heading"}, {"selector"\: "div[class\=tf-container]", "classes"\: "panel-body"}]
+pane_vertical_static_class_defs=[{"selector"\: "", "classes"\: "panel panel-default"}, {"selector"\: "div[1]", "classes"\: "panel-heading"}, {"selector"\: "div[2]", "classes"\: "panel-body"}]
+record_pane_error_label=There are errors on record(s) {0}.
+record_pane_record_info=Record {0} of {1}
+record_record_label=&nbsp;&nbsp;Record&nbsp;
+record_record_of_label=&nbsp;of&nbsp;
+rp_confirm_delete_label=Delete the current record?
+screen_add_list_item_label=+
+screen_back_label=Back
+spinner_cancel_label=Cancel
+spinner_done_label=Done
+ssgd_pane_confirm_delete_label=Delete the selected record?
+static_items_display_sep=\ | 
+tibco_enhanced_ui=disable
+time_24hour=true
+time_ampm=['AM', 'PM']
+time_edit_format=HH\:mm\:ssZ
+time_format=hh\:mm\:ss a
+validation_date_format=''{0}'' is incompatible with ISO  format 'MM/dd/yyyy'
+validation_datetime_format=''{0}'' is incompatible with ISO format 'MM/dd/yyyy HH\:mm\:ssZ'
+validation_decimal_fixed_point=''{0}'' must be a fixed point decimal number with no more than {1} digits and {2} decimal places
+validation_decimal_floating_point=''{0}'' must be a floating point decimal number
+validation_integer=''{0}'' must be an integer
+validation_integer_length=''{0}'' must be an integer with no more than {1} digits
+validation_lower_limit=''{0}'' must be a number greater than {1}
+validation_lower_limit_inclusive=''{0}'' must be a number greater than or equal to {1}
+validation_multiplicity_exact=''{0}'' must contain exactly {1} values
+validation_multiplicity_maximum=''{0}'' must contain at most {1} values
+validation_multiplicity_minimum=''{0}'' must contain at least {1} value(s)
+validation_multiplicity_range=''{0}'' must contain between {1} and {2} values
+validation_null_global_data_ref=Error in server data\: The value for the parameter ''{0}'' contains an invalid global data object reference.
+validation_numeric=''{0}'' must be a number
+validation_pattern=''{0}'' has the wrong format for the ''{1}'' data type
+validation_text_length=''{0}'' must be a value with no more than {1} characters
+validation_time_format=''{0}'' is incompatible with ISO format 'HH\:mm\:ssZ'
+validation_upper_limit=''{0}'' must be a number less than {1}
+validation_upper_limit_inclusive=''{0}'' must be a number less than or equal to {1}

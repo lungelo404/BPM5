@@ -1,0 +1,4 @@
+#Merged common properties for locale iw_IL#N.B. GENERATED FILE - DO NOT EDIT! CHANGES WILL BE OVERWRITTEN BY THE BUILDER.
+#Tue Nov 29 12:57:07 CAT 2022
+currency_code=ILS
+currency_symbol=\u20AA

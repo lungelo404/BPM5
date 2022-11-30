@@ -1,0 +1,17 @@
+#Merged common properties for locale da#N.B. GENERATED FILE - DO NOT EDIT! CHANGES WILL BE OVERWRITTEN BY THE BUILDER.
+#Tue Nov 29 12:57:07 CAT 2022
+currency_decimal=,
+currency_grouping=.
+date_day=['s\u00F8ndag','mandag','tirsdag','onsdag','torsdag','fredag','l\u00F8rdag']
+date_day_abbrev=['s\u00F8n','man','tir','ons','tor','fre','l\u00F8r']
+date_day_narrow=['S','M','T','O','T','F','L']
+date_era=['f.Kr.','e.Kr.']
+date_era_long=['f.Kr.','e.Kr.']
+date_month=['januar','februar','marts','april','maj','juni','juli','august','september','oktober','november','december']
+date_month_abbrev=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec']
+date_month_narrow=['J','F','M','A','M','J','J','A','S','O','N','D']
+format_currency=\#,\#\#0.00 \u00A4
+number_decimal=,
+number_grouping=.
+time_24hour=true
+time_ampm=['f.m.','e.m.']

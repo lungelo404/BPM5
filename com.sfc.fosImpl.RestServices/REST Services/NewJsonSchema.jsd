@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_IfXLsE4gEe26BYT0WBNlBQ">
+  <packagedElement xmi:type="uml:Class" xmi:id="_IfXLs04gEe26BYT0WBNlBQ" name="notifyPlanItemExecuteReplyRequest">
+    <ownedAttribute xmi:id="_IfXLtE4gEe26BYT0WBNlBQ" name="Header" type="_IfXL504gEe26BYT0WBNlBQ"/>
+    <ownedAttribute xmi:id="_IfXLtU4gEe26BYT0WBNlBQ" name="PlanItem" type="_IfXLwk4gEe26BYT0WBNlBQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IfXLtk4gEe26BYT0WBNlBQ" name="notifyPlanItemExecuteReplyResponse">
+    <ownedAttribute xmi:id="_IfXLt04gEe26BYT0WBNlBQ" name="responseMessage">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IfXLuE4gEe26BYT0WBNlBQ" name="Request">
+    <ownedAttribute xmi:id="_IfXLuU4gEe26BYT0WBNlBQ" name="WorkItemFetchRequest" type="_IfXLvk4gEe26BYT0WBNlBQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IfXLuk4gEe26BYT0WBNlBQ" name="WorkItemLists">
+    <ownedAttribute xmi:id="_IfXLu04gEe26BYT0WBNlBQ" name="WorkItems" type="_IfXL1k4gEe26BYT0WBNlBQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXLvU4gEe26BYT0WBNlBQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IfXLvE4gEe26BYT0WBNlBQ" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IfXLvk4gEe26BYT0WBNlBQ" name="WorkItemFetchRequest">
+    <ownedAttribute xmi:id="_IfXLv04gEe26BYT0WBNlBQ" name="RequestList" type="_IfXMAU4gEe26BYT0WBNlBQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXLwU4gEe26BYT0WBNlBQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IfXLwE4gEe26BYT0WBNlBQ" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IfXLwk4gEe26BYT0WBNlBQ" name="PlanItem">
+    <ownedAttribute xmi:id="_IfXLw04gEe26BYT0WBNlBQ" name="UDF" type="_IfXL9E4gEe26BYT0WBNlBQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXLxU4gEe26BYT0WBNlBQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IfXLxE4gEe26BYT0WBNlBQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXLxk4gEe26BYT0WBNlBQ" name="PlanItemId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXLx04gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXLyE4gEe26BYT0WBNlBQ" name="resultCode">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXLyU4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXLyk4gEe26BYT0WBNlBQ" name="resultMessage">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXLy04gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXLzE4gEe26BYT0WBNlBQ" name="isError">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXLzU4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IfXLzk4gEe26BYT0WBNlBQ" name="notifyPlanItemExecuteReplyInput">
+    <ownedAttribute xmi:id="_IfXLz04gEe26BYT0WBNlBQ" name="input" type="_IfXL1E4gEe26BYT0WBNlBQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IfXL0E4gEe26BYT0WBNlBQ" name="WorkItemFetchResponse">
+    <ownedAttribute xmi:id="_IfXL0U4gEe26BYT0WBNlBQ" name="WorkItemLists" type="_IfXLuk4gEe26BYT0WBNlBQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IfXL0k4gEe26BYT0WBNlBQ" name="Response">
+    <ownedAttribute xmi:id="_IfXL004gEe26BYT0WBNlBQ" name="WorkItemFetchResponse" type="_IfXL0E4gEe26BYT0WBNlBQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IfXL1E4gEe26BYT0WBNlBQ" name="input">
+    <ownedAttribute xmi:id="_IfXL1U4gEe26BYT0WBNlBQ" name="notifyPlanItemExecuteReplyRequest" type="_IfXLs04gEe26BYT0WBNlBQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IfXL1k4gEe26BYT0WBNlBQ" name="WorkItems">
+    <ownedAttribute xmi:id="_IfXL104gEe26BYT0WBNlBQ" name="ProcessName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL2E4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXL2U4gEe26BYT0WBNlBQ" name="CustomerName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL2k4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXL204gEe26BYT0WBNlBQ" name="SiebelCircuitID">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL3E4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXL3U4gEe26BYT0WBNlBQ" name="TaskName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL3k4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXL304gEe26BYT0WBNlBQ" name="CurrentlyAllocated">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL4E4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXL4U4gEe26BYT0WBNlBQ" name="WorkItemID">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL4k4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXL404gEe26BYT0WBNlBQ" name="AllocateTo">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL5E4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXL5U4gEe26BYT0WBNlBQ" name="Status">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL5k4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IfXL504gEe26BYT0WBNlBQ" name="Header">
+    <ownedAttribute xmi:id="_IfXL6E4gEe26BYT0WBNlBQ" name="PlanId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL6U4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXL6k4gEe26BYT0WBNlBQ" name="OrderId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL604gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXL7E4gEe26BYT0WBNlBQ" name="OrderRefNumber">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL7U4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXL7k4gEe26BYT0WBNlBQ" name="CoRelationId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL704gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXL8E4gEe26BYT0WBNlBQ" name="BussinessTransactionId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL8U4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IfXL8k4gEe26BYT0WBNlBQ" name="WorkItemFetchOutput">
+    <ownedAttribute xmi:id="_IfXL804gEe26BYT0WBNlBQ" name="Response" type="_IfXL0k4gEe26BYT0WBNlBQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IfXL9E4gEe26BYT0WBNlBQ" name="UDF">
+    <ownedAttribute xmi:id="_IfXL9U4gEe26BYT0WBNlBQ" name="EvaluationPriority">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL9k4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXL904gEe26BYT0WBNlBQ" name="Type">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL-E4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXL-U4gEe26BYT0WBNlBQ" name="Flavour">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL-k4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXL-04gEe26BYT0WBNlBQ" name="Name">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL_E4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXL_U4gEe26BYT0WBNlBQ" name="Value">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXL_k4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IfXL_04gEe26BYT0WBNlBQ" name="WorkItemFetchInput">
+    <ownedAttribute xmi:id="_IfXMAE4gEe26BYT0WBNlBQ" name="Request" type="_IfXLuE4gEe26BYT0WBNlBQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IfXMAU4gEe26BYT0WBNlBQ" name="RequestList">
+    <ownedAttribute xmi:id="_IfXMAk4gEe26BYT0WBNlBQ" name="ResourceName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXMA04gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXMBE4gEe26BYT0WBNlBQ" name="ResourceGUID">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXMBU4gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IfXMBk4gEe26BYT0WBNlBQ" name="ProjectManager">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfXMB04gEe26BYT0WBNlBQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <profileApplication xmi:id="_IfXLsU4gEe26BYT0WBNlBQ">
+    <eAnnotations xmi:id="_IfXLsk4gEe26BYT0WBNlBQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_3A574HcJEdytQ9AWEvOuug"/>
+  </profileApplication>
+</uml:Package>

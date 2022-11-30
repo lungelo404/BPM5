@@ -1,0 +1,1756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" generated="true" formatVersion="11.0.0">
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri="comsfcfosImplswapTariff/SwapTariff/Validation/tmpValidation.properties" sfRelative="true" internal="true" localized="true"/>
+    <form:externalResource name="resource.helper" uri="javascript/helper.js" sfRelative="true"/>
+    <form:externalResource name="resource.jquery3" uri="JQuery/jquery-3.2.1.min.js" sfRelative="true"/>
+    <form:externalResource name="resource.SFC" uri="images/SFC.png" sfRelative="true"/>
+    <form:externalResource name="resource.safaricom" uri="CSS/safaricom.css" sfRelative="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" syncFlags="32" name="data.Provisioning_Data" label="Provisioning_Data" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_K9HKcM3FEeeozIUd784NFw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=ProvisioningDataModel?" inout="INOUT"/>
+    <form:parameter generated="true" syncFlags="32" name="data.TechnicalInfo" label="TechnicalInfo" dataType="uml:Class com.sfc.fosImpl.bizData.dataModel.bom#_oVYmcBbLEei5zJcabt9kCg?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.bizData.dataModel%26n=Technical_Information?" inout="INOUT"/>
+    <form:parameter generated="true" syncFlags="32" name="data.TaskName" label="TaskName" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.SelectedContractor" label="SelectedContractor" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.ContractorNames" label="ContractorNames" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.CommentHistory" label="CommentHistory" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" name="data.CommentText" label="CommentText" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="500" inout="INOUT"/>
+    <form:parameter generated="true" name="data.SelectedPM" label="SelectedPM" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.PM_List" label="PM_List" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.GroupNames" label="GroupNames" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.SelectedContractorGroup" label="SelectedContractorGroup" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.GrpNames" label="GrpNames" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.mgmtIPFlag" label="mgmtIPFlag" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" inout="INOUT"/>
+    <form:parameter generated="true" name="data.equipmentFlag" label="equipmentFlag" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" inout="INOUT"/>
+    <form:parameter generated="true" name="data.FolderID" label="FolderID" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="100" inout="INOUT"/>
+    <form:parameter generated="true" name="data.xDMSURL" label="xDMSURL" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="300" inout="INOUT"/>
+    <form:parameter generated="true" name="data.UID" label="UID" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="100" inout="INOUT"/>
+    <form:parameter generated="true" name="data.TechnologyArray" label="TechnologyArray" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="100" inout="INOUT"/>
+    <form:parameter generated="true" name="data.ServiceTypeArray" label="ServiceTypeArray" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="100" inout="INOUT"/>
+    <form:parameter generated="true" name="data.ServiceStatusArray" label="ServiceStatusArray" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="100" inout="INOUT"/>
+    <form:parameter generated="true" name="data.BandwidthArray" label="BandwidthArray" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="100" inout="INOUT"/>
+    <form:parameter generated="true" name="data.BuildingFloorArray" label="BuildingFloorArray" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="100" inout="INOUT"/>
+    <form:parameter generated="true" name="data.BuildingIDArray" label="BuildingIDArray" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="100" inout="INOUT"/>
+    <form:parameter generated="true" name="data.PortTypeArray" label="PortTypeArray" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="100" inout="INOUT"/>
+    <form:parameter generated="true" name="data.PortNumberArray" label="PortNumberArray" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="100" inout="INOUT"/>
+    <form:parameter generated="true" name="data.SFC_POPArray" label="SFC_POPArray" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="100" inout="INOUT"/>
+    <form:parameter generated="true" name="data.AccountTypeArray" label="AccountTypeArray" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.AggregationPointsArray" label="AggregationPointsArray" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="100" inout="INOUT"/>
+    <form:parameter generated="true" name="data.EquipmentArray" label="EquipmentArray" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="100" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Building_NameArray" label="Building_NameArray" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="200" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Account_Manager" label="Account_Manager" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="100" inout="INOUT"/>
+  </form:dataModel>
+  <form:actions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancel" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancel.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.close" label="Close">
+      <form:event source="#control.close" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.close.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.close"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submit" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submit.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.SubmitForm" label="Submit Form">
+        <form:script>if(data.TaskName=='PM_Track_Installation'){&#xD;
+	if((control.contractorAgency.value==null) || (control.contractorAgency.value ==&quot;&quot; )) {&#xD;
+		alert(&quot;Please select the Contractor Agency before proceeding.&quot;);&#xD;
+	}&#xD;
+	else {&#xD;
+		context.control.form.invokeAction(&quot;submit&quot;,context.control,context);&#xD;
+	}&#xD;
+	&#xD;
+}&#xD;
+else if(data.TaskName=='Select_Contractor'){&#xD;
+	if((control.availableContractors.value==null) || (control.availableContractors.value ==&quot;&quot; )) {&#xD;
+		alert(&quot;Please select the Contractor before proceeding.&quot;);&#xD;
+	}&#xD;
+	else {&#xD;
+		context.control.form.invokeAction(&quot;submit&quot;,context.control,context);&#xD;
+	}&#xD;
+	&#xD;
+}&#xD;
+else if(data.TaskName=='GateKeeper'){&#xD;
+	if((control.selectPM.value==null) || (control.selectPM.value ==&quot;&quot; )) {&#xD;
+		alert(&quot;Please select the Project Manager before proceeding.&quot;);&#xD;
+	}&#xD;
+	else {&#xD;
+		context.control.form.invokeAction(&quot;submit&quot;,context.control,context);&#xD;
+	}&#xD;
+}&#xD;
+else if(data.TaskName=='Provision_Management_IP') {&#xD;
+&#xD;
+	if( (control.TechnicalInfo_carrierVLAN.value==&quot;&quot;) || (control.TechnicalInfo_carrierIP.value==&quot;&quot;)|| (control.TechnicalInfo_aggPoint.value==&quot;&quot;)  || (control.TechnicalInfo_port.value==&quot;&quot;)) {&#xD;
+		alert(&quot;Please fill in all of the information for Management IPs before proceeding.&quot;);&#xD;
+	}&#xD;
+	else if((control.Provisioning_Data_buildingName.value==&quot;&quot;)){&#xD;
+		alert(&quot;Please fill the Building Name before Proceeding&quot;);&#xD;
+	}&#xD;
+	else{&#xD;
+	context.control.form.invokeAction(&quot;submit&quot;,context.control,context);&#xD;
+	}&#xD;
+&#xD;
+}&#xD;
+else if(data.TaskName=='Provision_IPs') {&#xD;
+&#xD;
+	if( (control.TechnicalInfo_clientVLAN.value==&quot;&quot;) || (control.TechnicalInfo_clientIP.value==&quot;&quot;)|| (control.TechnicalInfo_SFCPOPPE.value==&quot;&quot;)  || (control.TechnicalInfo_portType.value==&quot;&quot;)) {&#xD;
+		alert(&quot;Please fill in all of the information for Service IPs before proceeding.&quot;);&#xD;
+	}&#xD;
+	else{&#xD;
+	context.control.form.invokeAction(&quot;submit&quot;,context.control,context);&#xD;
+	}&#xD;
+}&#xD;
+else if(data.TaskName=='TES_OSG_Verification') {&#xD;
+&#xD;
+	if(data.TechnicalInfo.equipment.length ==0) {&#xD;
+		alert(&quot;Please fill in at least one Equipment before proceeding&quot;);&#xD;
+	}&#xD;
+	else{&#xD;
+	context.control.form.invokeAction(&quot;submit&quot;,context.control,context);&#xD;
+	}&#xD;
+}&#xD;
+else {&#xD;
+		context.control.form.invokeAction(&quot;submit&quot;,context.control,context);&#xD;
+	}&#xD;
+//control.Provisioning_Data_account.setValue(&quot;Rohit&quot;);&#xD;
+logger.info(&quot;*********The Account Type is: &quot;+data.Provisioning_Data.account);</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule name="rule.initialize_fields_Visibility" label="initialize_fields_Visibility">
+      <form:event source="#//@form" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#open" subject="form.open"/>
+      <form:action xsi:type="form:ScriptAction" name="action.initialize_fields_Visibility" label="initialize_fields_Visibility">
+        <form:script>//data.setTaskName(&quot;Provision_Management_IP&quot;);&#xD;
+var name=data.TaskName;&#xD;
+for(var index=0; index&lt;name.length; index++) {&#xD;
+	name=name.replace(&quot;_&quot;,&quot; &quot;);&#xD;
+}&#xD;
+&#xD;
+pane.content.label = name;&#xD;
+&#xD;
+pane.pneMarginPaneCntrAgnt.visible = false;&#xD;
+pane.selectContractorAgency.visible = false;&#xD;
+control.lblContractorAgency.visible = false;&#xD;
+&#xD;
+pane.pneMarginPaneSelectContractor.visible = false;&#xD;
+control.lblSelectContractor.visible = false;&#xD;
+pane.selectContractor.visible = false;&#xD;
+&#xD;
+//control.addEquipment.setVisible(false);&#xD;
+pane.pneAddDeleteButton.visible = false;&#xD;
+pane.pneTechInfoParent.visible = false;&#xD;
+pane.MarginPaneTechnicalInfo.visible = false;&#xD;
+control.lblTechInfo.visible = false;&#xD;
+control.Provisioning_Data_serviceStatus.enabled = false;&#xD;
+&#xD;
+pane.pneSelectProjectManager.visible = false;&#xD;
+//data.getProvisioning_Data().setAccount(&quot;Text0&quot;);&#xD;
+&#xD;
+&#xD;
+if(data.TaskName==&quot;GateKeeper&quot;){&#xD;
+	pane.pneSelectProjectManager.visible = true;&#xD;
+	pane.pneSelectProjectManager.visible = true;&#xD;
+pane.pne01.enabled = true;&#xD;
+pane.clientDetails01.enabled = true;&#xD;
+pane.installationAddress01.enabled = true;&#xD;
+pane.pane1.enabled = true;&#xD;
+pane.pane8.enabled = true;&#xD;
+pane.serviceRequest.enabled = true;&#xD;
+pane.contactDetails01.enabled = true;&#xD;
+pane.pneSrvcDtPane01.enabled = true;&#xD;
+//pane.pneSrvcDtPane02.setEnabled(true);&#xD;
+pane.pneSrvcDt.enabled = true;&#xD;
+control.Provisioning_Data_serviceStatus.value = &quot;Pre-Commissioned&quot;;&#xD;
+}&#xD;
+&#xD;
+else if(data.TaskName==&quot;PM_Track_Installation&quot;){&#xD;
+	control.lblContractorAgency.visible = true;&#xD;
+	pane.pneMarginPaneCntrAgnt.visible = true;&#xD;
+	pane.selectContractorAgency.visible = true;&#xD;
+}&#xD;
+else if(data.TaskName==&quot;Select_Contractor&quot;){&#xD;
+&#xD;
+	control.lblSelectContractor.visible = true;&#xD;
+	pane.pneMarginPaneSelectContractor.visible = true;&#xD;
+	pane.selectContractor.visible = true;	&#xD;
+	&#xD;
+	pane.pneTechInfoParent.visible = true;&#xD;
+	control.lblTechInfo.visible = true;&#xD;
+	pane.pneTechInfoParent.enabled = false;&#xD;
+}&#xD;
+else if(data.TaskName==&quot;TES_OSG_Verification&quot;) { &#xD;
+	pane.pneTechInfoParent.visible = true;&#xD;
+	pane.MarginPaneTechnicalInfo.visible = true;&#xD;
+	control.lblTechInfo.visible = true;&#xD;
+	&#xD;
+	pane.pneServiceIPs.enabled = false;&#xD;
+	pane.pneMgmtIPs.enabled = false;&#xD;
+	&#xD;
+	//control.addEquipment.setVisible(true);&#xD;
+	pane.pneAddDeleteButton.visible = true;&#xD;
+	pane.TechnicalInfo_equipment.visible = true;&#xD;
+	pane.TechnicalInfo_equipment.enabled = true;&#xD;
+	disableServiceIPFields();&#xD;
+	disableMgmtIPFields();&#xD;
+&#xD;
+}&#xD;
+else if (data.TaskName==&quot;Provision_Management_IP&quot;) {&#xD;
+	pane.pneTechInfoParent.visible = true;&#xD;
+	pane.MarginPaneTechnicalInfo.visible = true;&#xD;
+	control.lblTechInfo.visible = true;&#xD;
+	&#xD;
+	//control.addEquipment.setVisible(false);&#xD;
+	pane.pneAddDeleteButton.visible = false;&#xD;
+	pane.TechnicalInfo_equipment.visible = true;&#xD;
+	pane.TechnicalInfo_equipment.enabled = false;&#xD;
+	&#xD;
+	pane.pneServiceIPs.enabled = false;&#xD;
+	disableServiceIPFields();&#xD;
+	pane.pneMgmtIPs.enabled = true;&#xD;
+}&#xD;
+else if(data.TaskName==&quot;Provision_IPs&quot;) {&#xD;
+	pane.pneTechInfoParent.visible = true;&#xD;
+	pane.MarginPaneTechnicalInfo.visible = true;&#xD;
+	control.lblTechInfo.visible = true;&#xD;
+	&#xD;
+	//control.addEquipment.setVisible(false);&#xD;
+	pane.pneAddDeleteButton.visible = false;&#xD;
+	pane.TechnicalInfo_equipment.visible = true;&#xD;
+	pane.TechnicalInfo_equipment.enabled = false;&#xD;
+	&#xD;
+	pane.pneServiceIPs.enabled = true;&#xD;
+&#xD;
+	pane.pneMgmtIPs.enabled = false;&#xD;
+	disableMgmtIPFields();&#xD;
+	&#xD;
+}&#xD;
+if( (data.TaskName==&quot;Provision_IPs&quot;)){&#xD;
+	pane.pneTechInfoParent.visible = true;&#xD;
+	pane.MarginPaneTechnicalInfo.visible = true;&#xD;
+	control.lblTechInfo.visible = true;&#xD;
+	pane.TechnicalInfo_equipment.visible = true;&#xD;
+	pane.TechnicalInfo_equipment.enabled = false;&#xD;
+	pane.pneServiceIPs.enabled = true;&#xD;
+	pane.pneMgmtIPs.enabled = false;&#xD;
+	disableMgmtIPFields();&#xD;
+	//disableServiceIPFields();&#xD;
+	chngeBkGrndColorProvData();&#xD;
+	pane.pne01.enabled = false;&#xD;
+	pane.clientDetails01.enabled = false;&#xD;
+	pane.Pane03.enabled = false;&#xD;
+	pane.pane8.enabled = false;&#xD;
+	pane.serviceRequest.enabled = false;&#xD;
+	pane.contactDetails01.enabled = false;&#xD;
+	pane.pneSrvcDt.enabled = false;&#xD;
+	chngeBkGrndColorProvData();&#xD;
+}&#xD;
+&#xD;
+if( (data.TaskName==&quot;Select_Contractor&quot;) || (data.TaskName==&quot;Manual_Installation&quot;) || (data.TaskName==&quot;Configure_IPs&quot;) || (data.TaskName==&quot;Obtain_Customer_Confirmation&quot;) || (data.TaskName==&quot;Customer_Acknowledgement&quot;)) {&#xD;
+	pane.pneTechInfoParent.visible = true;&#xD;
+	pane.MarginPaneTechnicalInfo.visible = true;&#xD;
+	control.lblTechInfo.visible = true;&#xD;
+	&#xD;
+	pane.TechnicalInfo_equipment.visible = true;&#xD;
+	pane.TechnicalInfo_equipment.enabled = false;&#xD;
+	pane.pneServiceIPs.enabled = false;&#xD;
+	pane.pneMgmtIPs.enabled = false;&#xD;
+	disableMgmtIPFields();&#xD;
+	disableServiceIPFields();&#xD;
+	chngeBkGrndColorProvData();&#xD;
+	&#xD;
+}&#xD;
+if(data.TaskName==&quot;Select_Contractor&quot;||data.TaskName==&quot;TES_OSG_Verification&quot;||data.TaskName==&quot;Provision_Management_IP&quot;||data.TaskName==&quot;Manual_Installation&quot;||data.TaskName==&quot;Manual_Installation&quot;||data.TaskName==&quot;Configure_IPs&quot;||data.TaskName==&quot;Obtain_Customer_Confirmation&quot; ||data.TaskName==&quot;Customer_Acknowledgement&quot;){&#xD;
+	pane.pne01.enabled = false;&#xD;
+	pane.clientDetails01.enabled = false;&#xD;
+	pane.Pane03.enabled = false;&#xD;
+	pane.pane8.enabled = false;&#xD;
+	pane.serviceRequest.enabled = false;&#xD;
+	pane.contactDetails01.enabled = false;&#xD;
+	pane.pneSrvcDt.enabled = false;&#xD;
+	chngeBkGrndColorProvData();&#xD;
+}&#xD;
+&#xD;
+if (data.TaskName==&quot;Provision_Management_IP&quot;) {&#xD;
+&#xD;
+pane.pane8.enabled = true;&#xD;
+pane.installationAddress01.enabled = false;&#xD;
+pane.pane1.enabled = true;&#xD;
+control.Provisioning_Data_sector.enabled = false;&#xD;
+control.Provisioning_Data_address.enabled = false;&#xD;
+control.Provisioning_Data_buildingID.enabled = false;&#xD;
+enableColor('[id$=widget_control_Provisioning_Data_buildingName]');&#xD;
+}&#xD;
+&#xD;
+//control.Provisioning_Data_account.setValue(data.getProvisioning_Data().getAccount());&#xD;
+&#xD;
+control.fileattachments.value = &quot;&lt;iframe SCROLLING='yes' frameborder=0 width=1000 height=250 src='&quot;+data.xDMSURL.toString()+&quot;/archiv?xfunc=list&amp;folderid=&quot;+data.Provisioning_Data.siebelCircuitID+&quot;&amp;xupload=true&amp;target=_blank'>&lt;/iframe>&quot;;</form:script>
+      </form:action>
+      <form:action xsi:type="form:ScriptAction" name="action.set_form_labels" label="set_form_labels">
+        <form:script>setupFontColor('[id$=generalDetails]');&#xD;
+setupFontColor('[id$=customerDetails]');&#xD;
+setupFontColor('[id$=resource]');&#xD;
+setupFontColor('[id$=installationAddress]');&#xD;
+setupFontColor('[id$=lblServiceRequest]');&#xD;
+setupFontColor('[id$=contactDetails]');&#xD;
+setupFontColor('[id$=serviceDates]');&#xD;
+setupFontColor('[id$=commentsText]');&#xD;
+setupFontColor('[id$=lblTechInfo]');&#xD;
+setupFontColor('[id$=lblContractorAgency]');&#xD;
+setupFontColor('[id$=lblSelectContractor]');&#xD;
+setupFontColor('[id$=commentHistory]');&#xD;
+setupFontColor('[id$=lblUploadDocuments01]');&#xD;
+setupFontColor('[id$=lblSelectProjectManager01]');&#xD;
+&#xD;
+chngeBkGrndColor('[id$=widget_control_Provisioning_Data_clientID]');&#xD;
+chngeBkGrndColor('[id$=widget_control_Provisioning_Data_projectManager]');&#xD;
+&#xD;
+chngeBkGrndColor('[id$=widget_control_Provisioning_Data_contractor]');&#xD;
+chngeBkGrndColor('[id$=widget_control_Provisioning_Data_buildingID]');&#xD;
+&#xD;
+&#xD;
+&#xD;
+NummberOnlyUpdated('[id$=widget_control_Provisioning_Data_mobile]');&#xD;
+</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule name="rule.selectGroup" label="selectGroup">
+      <form:event source="#control.contractorAgency" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#update" subject="form.control.contractorAgency.update"/>
+      <form:action xsi:type="form:ScriptAction" name="action.rule12" label="rule1 2">
+        <form:script>data.SelectedContractorGroup = context.control.value;</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule name="rule.selectContractor" label="selectContractor">
+      <form:event source="#control.availableContractors" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#update" subject="form.control.availableContractors.update"/>
+      <form:action xsi:type="form:ScriptAction" name="action.rule13" label="rule1 3">
+        <form:script>data.SelectedContractor = context.control.value;&#xD;
+control.Provisioning_Data_contractor.value = context.control.value;</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule name="rule.addEquipment" label="addEquipment">
+      <form:event source="#control.addEquipment" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.addEquipment.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.equipments" label="equipments">
+        <form:script>var Record=factory.com_sfc_fosImpl_dataModel.createEquipmentDetails();&#xD;
+data.TechnicalInfo.equipment.push(Record);&#xD;
+//pane.TechnicalInfo_equipment.value.push(Record);&#xD;
+//pane.TechnicalInfo_equipment.setSelection(Record);</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule name="rule.trapdoorLogic" label="Trapdoor Logic" enabled="false">
+      <form:event source="#control.Provisioning_Data_siebelCircuitID" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#exit" subject="form.control.Provisioning_Data_siebelCircuitID.exit"/>
+      <form:action xsi:type="form:ScriptAction" name="action.trapdoorLogic" label="trapdoor Logic">
+        <form:script>var a;&#xD;
+&#xD;
+if(data.Provisioning_Data.siebelCircuitID=='90981'){&#xD;
+    data.Provisioning_Data.clientName = &quot;Excel Cinema&quot;;&#xD;
+    //data.getProvisioning_Data().setProjectManager(&quot;NA&quot;);&#xD;
+    data.Provisioning_Data.account = &quot;New&quot;;&#xD;
+    data.Provisioning_Data.clientID = &quot;4536&quot;;&#xD;
+    data.Provisioning_Data.accountManager = &quot;Alan Witsel&quot;;&#xD;
+    data.Provisioning_Data.clientName = &quot;Excel Cinema&quot;;&#xD;
+    data.Provisioning_Data.contactPerson = &quot;Alan Witsel&quot;;&#xD;
+    data.Provisioning_Data.regionView = &quot;Nairobi&quot;;&#xD;
+    data.Provisioning_Data.contractor = &quot;NA&quot;;&#xD;
+     data.Provisioning_Data.buildingID = &quot;1215&quot;;&#xD;
+    data.Provisioning_Data.buildingName = &quot;Apex Global&quot;;&#xD;
+    data.Provisioning_Data.floor = &quot;2&quot;;&#xD;
+    data.Provisioning_Data.location = &quot;Kenya&quot;;&#xD;
+    data.Provisioning_Data.sector = &quot;2&quot;;&#xD;
+    data.Provisioning_Data.GPSCoordinates = &quot;23&quot;;&#xD;
+    data.Provisioning_Data.mobile = &quot;9879786767&quot;;&#xD;
+    data.Provisioning_Data.bandwidthupdown = &quot;FFB5&quot;;&#xD;
+    data.Provisioning_Data.serviceType = &quot;Internet&quot;;&#xD;
+    data.Provisioning_Data.technology = &quot;PTP&quot;;&#xD;
+    data.Provisioning_Data.email = &quot;alan@demogmail.com&quot;;&#xD;
+	&#xD;
+	control.Provisioning_Data_serviceStatus.value = &quot;Active&quot;;&#xD;
+	&#xD;
+	control.TechnicalInfo_SFCPOPPE.value = &quot;Gospel&quot;;&#xD;
+	control.TechnicalInfo_aggPoint.value = &quot;Gospel&quot;;&#xD;
+	control.TechnicalInfo_carrierIP.value = &quot;10.163.184.212&quot;;&#xD;
+	control.TechnicalInfo_carrierVLAN.value = &quot;3181&quot;;&#xD;
+	control.TechnicalInfo_clientIP.value = &quot;41.90.11.200/30&quot;;&#xD;
+	control.TechnicalInfo_clientVLAN.value = &quot;765&quot;;&#xD;
+&#xD;
+	var record = factory.com_sfc_fosImpl_dataModel.createEquipmentDetails();&#xD;
+		record.address = &quot;10.215.17.163/28&quot;;&#xD;
+		record.type = &quot;AR169F&quot;;&#xD;
+		record.VLAN = &quot;3341&quot;;&#xD;
+		&#xD;
+     data.TechnicalInfo.equipment.push(record);&#xD;
+//	pane.TechnicalInfo_equipment.value.push(record);&#xD;
+	&#xD;
+	control.TechnicalInfo_modifiedDate.value = new Date();&#xD;
+} </form:script>
+      </form:action>
+    </form:rule>
+    <form:rule name="rule.updatePM" label="Update PM">
+      <form:event source="#control.selectPM" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#update" subject="form.control.selectPM.update"/>
+      <form:action xsi:type="form:ScriptAction" name="action.updatePM" label="Update PM">
+        <form:script>data.SelectedPM = context.control.value;</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule name="rule.rule1" label="rule1">
+      <form:event source="#control.Provisioning_Data_account" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#update" subject="form.control.Provisioning_Data_account.update"/>
+      <form:action xsi:type="form:ScriptAction" name="action.rule1" label="rule1">
+        <form:script>logger.info(&quot;*********The Account Type is: &quot;+data.Provisioning_Data.account);</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule name="rule.updateBuildingID" label="UpdateBuildingID">
+      <form:event source="#control.Provisioning_Data_buildingName" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#update" subject="form.control.Provisioning_Data_buildingName.update"/>
+      <form:action xsi:type="form:ScriptAction" name="action.updateBuildingID" label="updateBuildingID">
+        <form:script>control.Provisioning_Data_buildingID.value = context.control.value;</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule name="rule.removeEquipment" label="removeEquipment">
+      <form:event source="#control.btnremoveEquipment" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.btnremoveEquipment.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.removeEquipment" label="removeEquipment">
+        <form:script>/*var  selection = pane.TechnicalInfo_equipment.selection;&#xD;
+&#xD;
+   if (selection!=null) {&#xD;
+       var  rc = confirm(&quot;Delete the current record?&quot;);&#xD;
+       if (rc==true) {&#xD;
+           var  list = pane.TechnicalInfo_equipment.value;&#xD;
+           var $array = list;&#xD;
+           var $index = $array.indexOf(selection);&#xD;
+           if ($index != -1) { $array.splice($index, 1); }&#xD;
+       }&#xD;
+   }&#xD;
+   */</form:script>
+      </form:action>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding direction="sourceToDest" name="_wtrPUPE1EeeMCZGsP3rsrw">
+      <form:source target="data.ContractorNames" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ContractorNames.value"></form:source>
+      <form:destination target="control.availableContractors" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceLabels" data="form.control.availableContractors.choiceLabels"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_yOBAsPE1EeeMCZGsP3rsrw">
+      <form:source target="data.ContractorNames" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ContractorNames.value"></form:source>
+      <form:destination target="control.availableContractors" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceValues" data="form.control.availableContractors.choiceValues"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_iZVzsPR6Eeez78ayMGlX3w">
+      <form:source target="data.CommentText" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.CommentText.value"></form:source>
+      <form:destination target="control.CommentText" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.CommentText.value"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_HqWUEBPgEeiI4LtXlpi0-g">
+      <form:source target="data.PM_List" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.PM_List.value"></form:source>
+      <form:destination target="control.selectPM" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceLabels" data="form.control.selectPM.choiceLabels"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_JOjRwBPgEeiI4LtXlpi0-g">
+      <form:source target="data.PM_List" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.PM_List.value"></form:source>
+      <form:destination target="control.selectPM" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceValues" data="form.control.selectPM.choiceValues"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_97INkBRfEeiI4LtXlpi0-g">
+      <form:source target="data.GrpNames" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.GrpNames.value"></form:source>
+      <form:destination target="control.contractorAgency" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceLabels" data="form.control.contractorAgency.choiceLabels"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="__IgmsBRfEeiI4LtXlpi0-g">
+      <form:source target="data.GrpNames" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.GrpNames.value"></form:source>
+      <form:destination target="control.contractorAgency" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceValues" data="form.control.contractorAgency.choiceValues"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_lc-8UBRiEeiI4LtXlpi0-g">
+      <form:source target="data.mgmtIPFlag" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.mgmtIPFlag.value"></form:source>
+      <form:destination target="control.mgmtIPFlag" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.mgmtIPFlag.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ldFC8BRiEeiI4LtXlpi0-g">
+      <form:source target="data.equipmentFlag" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.equipmentFlag.value"></form:source>
+      <form:destination target="control.equipmentFlag" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.equipmentFlag.value"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_bExREDleEeiTyrdIuRo2kg">
+      <form:source target="data.PortNumberArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.PortNumberArray.value"></form:source>
+      <form:destination target="control.TechnicalInfo_port" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceLabels" data="form.control.TechnicalInfo_port.choiceLabels"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_c6QzEDleEeiTyrdIuRo2kg">
+      <form:source target="data.PortNumberArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.PortNumberArray.value"></form:source>
+      <form:destination target="control.TechnicalInfo_port" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceValues" data="form.control.TechnicalInfo_port.choiceValues"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_iITlQDleEeiTyrdIuRo2kg">
+      <form:source target="data.SFC_POPArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.SFC_POPArray.value"></form:source>
+      <form:destination target="control.TechnicalInfo_SFCPOPPE" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceLabels" data="form.control.TechnicalInfo_SFCPOPPE.choiceLabels"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_kXjEADleEeiTyrdIuRo2kg">
+      <form:source target="data.SFC_POPArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.SFC_POPArray.value"></form:source>
+      <form:destination target="control.TechnicalInfo_SFCPOPPE" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceValues" data="form.control.TechnicalInfo_SFCPOPPE.choiceValues"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_tl3NsDleEeiTyrdIuRo2kg">
+      <form:source target="data.PortTypeArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.PortTypeArray.value"></form:source>
+      <form:destination target="control.TechnicalInfo_portType" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceLabels" data="form.control.TechnicalInfo_portType.choiceLabels"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_r_EZkDlfEeiTyrdIuRo2kg">
+      <form:source target="data.PortTypeArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.PortTypeArray.value"></form:source>
+      <form:destination target="control.TechnicalInfo_portType" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceValues" data="form.control.TechnicalInfo_portType.choiceValues"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_X8NcIECaEeiS0bX1GON10w">
+      <form:source target="data.AggregationPointsArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.AggregationPointsArray.value"></form:source>
+      <form:destination target="control.TechnicalInfo_aggPoint" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceLabels" data="form.control.TechnicalInfo_aggPoint.choiceLabels"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_ZbBjgECaEeiS0bX1GON10w">
+      <form:source target="data.AggregationPointsArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.AggregationPointsArray.value"></form:source>
+      <form:destination target="control.TechnicalInfo_aggPoint" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceValues" data="form.control.TechnicalInfo_aggPoint.choiceValues"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_cbUEsECaEeiS0bX1GON10w">
+      <form:source target="data.EquipmentArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.EquipmentArray.value"></form:source>
+      <form:destination target="control.TechnicalInfo_equipment_type" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceLabels" data="form.control.TechnicalInfo_equipment_type.choiceLabels"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_eLUCsECaEeiS0bX1GON10w">
+      <form:source target="data.EquipmentArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.EquipmentArray.value"></form:source>
+      <form:destination target="control.TechnicalInfo_equipment_type" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceValues" data="form.control.TechnicalInfo_equipment_type.choiceValues"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_18ZDEEX8EeiDt_gtjgZS3g">
+      <form:source target="data.AccountTypeArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.AccountTypeArray.value"></form:source>
+      <form:destination target="control.Provisioning_Data_account" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceLabels" data="form.control.Provisioning_Data_account.choiceLabels"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_3debUEX8EeiDt_gtjgZS3g">
+      <form:source target="data.AccountTypeArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.AccountTypeArray.value"></form:source>
+      <form:destination target="control.Provisioning_Data_account" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceValues" data="form.control.Provisioning_Data_account.choiceValues"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_NpX8cFNIEeixcPIrPMJwvQ">
+      <form:source target="data.Account_Manager" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Account_Manager.value"></form:source>
+      <form:destination target="control.Provisioning_Data_accountManager" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceLabels" data="form.control.Provisioning_Data_accountManager.choiceLabels"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_OZxeoFNIEeixcPIrPMJwvQ">
+      <form:source target="data.Account_Manager" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Account_Manager.value"></form:source>
+      <form:destination target="control.Provisioning_Data_accountManager" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceValues" data="form.control.Provisioning_Data_accountManager.choiceValues"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_fV9dgFNJEeixcPIrPMJwvQ">
+      <form:source target="data.BuildingFloorArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.BuildingFloorArray.value"></form:source>
+      <form:destination target="control.Provisioning_Data_floor" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceLabels" data="form.control.Provisioning_Data_floor.choiceLabels"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_hIkqoFNJEeixcPIrPMJwvQ">
+      <form:source target="data.BuildingFloorArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.BuildingFloorArray.value"></form:source>
+      <form:destination target="control.Provisioning_Data_floor" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceValues" data="form.control.Provisioning_Data_floor.choiceValues"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_6VSKsFNJEeixcPIrPMJwvQ">
+      <form:source target="data.Building_NameArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Building_NameArray.value"></form:source>
+      <form:destination target="control.Provisioning_Data_buildingName" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceLabels" data="form.control.Provisioning_Data_buildingName.choiceLabels"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_ALvAsFNKEeixcPIrPMJwvQ">
+      <form:source target="data.BuildingIDArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.BuildingIDArray.value"></form:source>
+      <form:destination target="control.Provisioning_Data_buildingName" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceValues" data="form.control.Provisioning_Data_buildingName.choiceValues"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_PtKHMFNKEeixcPIrPMJwvQ">
+      <form:source target="data.BandwidthArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.BandwidthArray.value"></form:source>
+      <form:destination target="control.Provisioning_Data_bandwidthupdown" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceLabels" data="form.control.Provisioning_Data_bandwidthupdown.choiceLabels"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_Q12NkFNKEeixcPIrPMJwvQ">
+      <form:source target="data.BandwidthArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.BandwidthArray.value"></form:source>
+      <form:destination target="control.Provisioning_Data_bandwidthupdown" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceValues" data="form.control.Provisioning_Data_bandwidthupdown.choiceValues"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_Syp4gFNKEeixcPIrPMJwvQ">
+      <form:source target="data.TechnologyArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.TechnologyArray.value"></form:source>
+      <form:destination target="control.Provisioning_Data_technology" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceLabels" data="form.control.Provisioning_Data_technology.choiceLabels"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_Tx5vAFNKEeixcPIrPMJwvQ">
+      <form:source target="data.TechnologyArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.TechnologyArray.value"></form:source>
+      <form:destination target="control.Provisioning_Data_technology" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceValues" data="form.control.Provisioning_Data_technology.choiceValues"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_XlWygFNKEeixcPIrPMJwvQ">
+      <form:source target="data.ServiceStatusArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ServiceStatusArray.value"></form:source>
+      <form:destination target="control.Provisioning_Data_serviceStatus" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceLabels" data="form.control.Provisioning_Data_serviceStatus.choiceLabels"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_Y5NnEFNKEeixcPIrPMJwvQ">
+      <form:source target="data.ServiceStatusArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ServiceStatusArray.value"></form:source>
+      <form:destination target="control.Provisioning_Data_serviceStatus" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceValues" data="form.control.Provisioning_Data_serviceStatus.choiceValues"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_e2YJEFNKEeixcPIrPMJwvQ">
+      <form:source target="data.ServiceTypeArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ServiceTypeArray.value"></form:source>
+      <form:destination target="control.Provisioning_Data_serviceType" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceLabels" data="form.control.Provisioning_Data_serviceType.choiceLabels"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_f7UX4FNKEeixcPIrPMJwvQ">
+      <form:source target="data.ServiceTypeArray" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ServiceTypeArray.value"></form:source>
+      <form:destination target="control.Provisioning_Data_serviceType" feature="http://www.tibco.com/forms/model/elemtypes#//ChoicePropertySet/choiceValues" data="form.control.Provisioning_Data_serviceType.choiceValues"></form:destination>
+    </form:binding>
+  </form:bindings>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane15" paneType="com.tibco.forms.panes.vertical">
+    <form:label>Pane 15</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:defaults>
+      <form:labelProperties position="top" visible="true" width="120"/>
+    </form:defaults>
+    <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.content" paneType="com.tibco.forms.panes.horizontal">
+      <form:label>GateKeeper</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="true"/>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:pane generated="true" syncFlags="7274496" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_K9HKcM3FEeeozIUd784NFw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=ProvisioningDataModel?" name="pane.ProvisioningData" paneType="com.tibco.forms.panes.vertical">
+        <form:label>ProvisioningData</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+        <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.image" controlType="com.tibco.forms.controls.image" name="control.image1">
+          <form:propertySet xsi:type="et:ImagePropertySet" sfRelative="true">
+            <et:url>images/SFC.png</et:url>
+          </form:propertySet>
+          <form:label>Image 1</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:required>false</form:required>
+        </form:control>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pneMarginPane" paneType="com.tibco.forms.panes.vertical">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+        </form:pane>
+        <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.generalDetails">
+          <form:label>General Details</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pne01" paneType="com.tibco.forms.panes.vertical">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top" visible="true" width="120"/>
+          </form:defaults>
+          <form:pane styleClass="vPaneMargin" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.generalDetails01" paneType="com.tibco.forms.panes.horizontal">
+            <form:label>General Details</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:defaults>
+              <form:labelProperties position="top"/>
+            </form:defaults>
+            <form:control generated="true" syncFlags="1114112" styleClass="TextPadding" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Provisioning_Data_siebelCircuitID">
+              <form:propertySet xsi:type="et:TextPropertySet">
+                <et:displayLength>30</et:displayLength>
+                <et:maxLength>50</et:maxLength>
+              </form:propertySet>
+              <form:label>Siebel Circuit ID</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>true</form:required>
+            </form:control>
+            <form:control generated="true" syncFlags="81920" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Provisioning_Data_projectManager">
+              <form:propertySet xsi:type="et:TextPropertySet">
+                <et:displayLength>30</et:displayLength>
+                <et:maxLength>50</et:maxLength>
+              </form:propertySet>
+              <form:label>Project Manager</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>false</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" syncFlags="1572864" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.Provisioning_Data_account">
+              <form:propertySet xsi:type="et:MultiChoicePropertySet">
+                <et:choiceType>bindings</et:choiceType>
+              </form:propertySet>
+              <form:label>Account</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>true</form:required>
+            </form:control>
+          </form:pane>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane2" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Pane 2</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+        </form:pane>
+        <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.customerDetails">
+          <form:label>Customer Details</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.clientDetails01" paneType="com.tibco.forms.panes.horizontal">
+          <form:label>Client Details</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:pane styleClass="vPaneMargin" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneClientDetails02" paneType="com.tibco.forms.panes.horizontal">
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:defaults>
+              <form:labelProperties position="top"/>
+            </form:defaults>
+            <form:control generated="true" syncFlags="81920" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.Provisioning_Data_clientID">
+              <form:propertySet xsi:type="et:TextPropertySet">
+                <et:displayLength>30</et:displayLength>
+                <et:maxLength>50</et:maxLength>
+              </form:propertySet>
+              <form:label>Customer ID</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>false</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" syncFlags="589824" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.Provisioning_Data_accountManager">
+              <form:propertySet xsi:type="et:MultiChoicePropertySet">
+                <et:choiceType>bindings</et:choiceType>
+              </form:propertySet>
+              <form:label>Account Manager</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" syncFlags="1114112" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Provisioning_Data_clientName">
+              <form:propertySet xsi:type="et:TextPropertySet">
+                <et:displayLength>30</et:displayLength>
+                <et:maxLength>50</et:maxLength>
+              </form:propertySet>
+              <form:label>Customer Name</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>true</form:required>
+            </form:control>
+          </form:pane>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane4" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Pane 4</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+        </form:pane>
+        <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.resource">
+          <form:label>Resource</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.Pane03" paneType="com.tibco.forms.panes.horizontal">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.label3">
+            <form:label>Label 3</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" syncFlags="1064960" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Provisioning_Data_contractor">
+            <form:propertySet xsi:type="et:TextPropertySet">
+              <et:displayLength>30</et:displayLength>
+              <et:maxLength>50</et:maxLength>
+            </form:propertySet>
+            <form:label>Contractor</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>false</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane3" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Pane 3</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+        </form:pane>
+        <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.installationAddress">
+          <form:label>Installation Address</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane8" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Pane 8</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:pane styleClass="vPaneMargin" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.installationAddress01" paneType="com.tibco.forms.panes.horizontal">
+            <form:label>Installation Address</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:defaults>
+              <form:labelProperties position="top"/>
+            </form:defaults>
+            <form:control generated="true" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Provisioning_Data_regionView">
+              <form:propertySet xsi:type="et:TextPropertySet">
+                <et:displayLength>30</et:displayLength>
+                <et:maxLength>50</et:maxLength>
+              </form:propertySet>
+              <form:label>Region View</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" syncFlags="524288" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.Provisioning_Data_floor">
+              <form:propertySet xsi:type="et:MultiChoicePropertySet">
+                <et:choiceType>bindings</et:choiceType>
+              </form:propertySet>
+              <form:label>Floor</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Provisioning_Data_GPSCoordinates">
+              <form:propertySet xsi:type="et:TextPropertySet">
+                <et:displayLength>30</et:displayLength>
+                <et:maxLength>50</et:maxLength>
+              </form:propertySet>
+              <form:label>GPS Coordinates</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Provisioning_Data_address">
+              <form:propertySet xsi:type="et:TextPropertySet">
+                <et:displayLength>30</et:displayLength>
+                <et:maxLength>300</et:maxLength>
+              </form:propertySet>
+              <form:label>Address</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+          </form:pane>
+          <form:pane styleClass="vPaneMargin" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pane1" paneType="com.tibco.forms.panes.horizontal">
+            <form:label>Pane 1</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:defaults>
+              <form:labelProperties position="top"/>
+            </form:defaults>
+            <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Provisioning_Data_sector">
+              <form:propertySet xsi:type="et:TextPropertySet">
+                <et:displayLength>30</et:displayLength>
+                <et:maxLength>50</et:maxLength>
+              </form:propertySet>
+              <form:label>Sector</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" syncFlags="589824" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.Provisioning_Data_buildingName">
+              <form:propertySet xsi:type="et:MultiChoicePropertySet">
+                <et:choiceType>bindings</et:choiceType>
+              </form:propertySet>
+              <form:label>Building Name</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" syncFlags="606208" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.Provisioning_Data_buildingID">
+              <form:propertySet xsi:type="et:TextPropertySet"/>
+              <form:label>Building ID</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>false</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Provisioning_Data_location">
+              <form:propertySet xsi:type="et:TextPropertySet">
+                <et:displayLength>30</et:displayLength>
+                <et:maxLength>100</et:maxLength>
+              </form:propertySet>
+              <form:label>Location</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+          </form:pane>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane5" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Pane 5</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+        </form:pane>
+        <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.lblServiceRequest">
+          <form:label>Service Request</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.serviceRequest" paneType="com.tibco.forms.panes.horizontal">
+          <form:label>Service Request</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.label6">
+            <form:label>Label 6</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" syncFlags="524288" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.Provisioning_Data_bandwidthupdown">
+            <form:propertySet xsi:type="et:MultiChoicePropertySet">
+              <et:choiceType>bindings</et:choiceType>
+            </form:propertySet>
+            <form:label>Bandwidth(up/down)</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" syncFlags="524288" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.Provisioning_Data_technology">
+            <form:propertySet xsi:type="et:MultiChoicePropertySet">
+              <et:choiceType>bindings</et:choiceType>
+            </form:propertySet>
+            <form:label>Technology</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" syncFlags="589824" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.Provisioning_Data_serviceStatus">
+            <form:propertySet xsi:type="et:MultiChoicePropertySet">
+              <et:choiceType>bindings</et:choiceType>
+            </form:propertySet>
+            <form:label>Service Status</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane6" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Pane 6</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+        </form:pane>
+        <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.contactDetails">
+          <form:label>Contact Details</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.contactDetails01" paneType="com.tibco.forms.panes.horizontal">
+          <form:label>Contact Details</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.label10">
+            <form:label>Label 10</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Provisioning_Data_contactPerson">
+            <form:propertySet xsi:type="et:TextPropertySet">
+              <et:displayLength>30</et:displayLength>
+              <et:maxLength>50</et:maxLength>
+            </form:propertySet>
+            <form:label>Contact Person</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Provisioning_Data_mobile">
+            <form:propertySet xsi:type="et:TextPropertySet">
+              <et:displayLength>30</et:displayLength>
+              <et:maxLength>50</et:maxLength>
+            </form:propertySet>
+            <form:label>Mobile</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Provisioning_Data_email">
+            <form:propertySet xsi:type="et:TextPropertySet">
+              <et:displayLength>30</et:displayLength>
+              <et:maxLength>50</et:maxLength>
+            </form:propertySet>
+            <form:label>Email</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:validation name="EmailValidation" when="oncontrolchange">
+              <form:script>var ch = RegExp(&quot;(.)+@(.)+\\.(.)+&quot;).test(context.control.value);&#xD;
+&#xD;
+if(ch==true) {&#xD;
+true;&#xD;
+}&#xD;
+else {&#xD;
+false;&#xD;
+}</form:script>
+              <form:message>Please enter the email ID in form of 'xxx@xxx.xxx'</form:message>
+            </form:validation>
+            <form:required>false</form:required>
+          </form:control>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane7" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Pane 7</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+        </form:pane>
+        <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.serviceDates">
+          <form:label>Service Dates</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pneSrvcDt" paneType="com.tibco.forms.panes.vertical">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:pane styleClass="vPaneMargin" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneSrvcDtPane01" paneType="com.tibco.forms.panes.horizontal">
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:defaults>
+              <form:labelProperties position="top"/>
+            </form:defaults>
+            <form:control generated="true" syncFlags="81920" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.Provisioning_Data_serviceStart">
+              <form:propertySet xsi:type="et:DateTimePropertySet">
+                <et:minRelative>true</et:minRelative>
+                <et:maxRelative>true</et:maxRelative>
+                <et:year min="-20" max="20"/>
+                <et:minute increment="15"/>
+              </form:propertySet>
+              <form:label>Service Start</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.Provisioning_Data_serviceEnd">
+              <form:propertySet xsi:type="et:DateTimePropertySet">
+                <et:minRelative>true</et:minRelative>
+                <et:maxRelative>true</et:maxRelative>
+                <et:year min="-20" max="20"/>
+                <et:minute increment="15"/>
+              </form:propertySet>
+              <form:label>Service End</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" syncFlags="589824" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.Provisioning_Data_serviceType">
+              <form:propertySet xsi:type="et:MultiChoicePropertySet">
+                <et:choiceType>bindings</et:choiceType>
+              </form:propertySet>
+              <form:label>Service Type</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.Provisioning_Data_installDate">
+              <form:propertySet xsi:type="et:DateTimePropertySet">
+                <et:minRelative>true</et:minRelative>
+                <et:maxRelative>true</et:maxRelative>
+                <et:year min="-20" max="20"/>
+                <et:minute increment="15"/>
+              </form:propertySet>
+              <form:label>Install Date</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.Provisioning_Data_requestDate">
+              <form:propertySet xsi:type="et:DateTimePropertySet">
+                <et:minRelative>true</et:minRelative>
+                <et:maxRelative>true</et:maxRelative>
+                <et:year min="-20" max="20"/>
+                <et:minute increment="15"/>
+              </form:propertySet>
+              <form:label>Request Date</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+          </form:pane>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane9" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Pane 9</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+        </form:pane>
+        <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.commentsText">
+          <form:label>Comments</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane10" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Pane 10</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top" visible="true" width="120"/>
+          </form:defaults>
+          <form:pane styleClass="vPaneMargin" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pneCommentPane" paneType="com.tibco.forms.panes.vertical">
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:defaults>
+              <form:labelProperties position="top" visible="true" width="120"/>
+            </form:defaults>
+            <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.CommentText">
+              <form:propertySet xsi:type="et:TextAreaPropertySet">
+                <et:rows>8</et:rows>
+                <et:cols>70</et:cols>
+                <et:maxLength>500</et:maxLength>
+              </form:propertySet>
+              <form:label>CommentText</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:labelProperties visible="false"/>
+              <form:required>false</form:required>
+            </form:control>
+          </form:pane>
+          <form:pane styleClass="vPaneMargin" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pane11" paneType="com.tibco.forms.panes.horizontal">
+            <form:label>Pane 11</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:defaults>
+              <form:labelProperties position="top"/>
+            </form:defaults>
+          </form:pane>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.MarginPaneTechnicalInfo" paneType="com.tibco.forms.panes.horizontal">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+        </form:pane>
+        <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.lblTechInfo">
+          <form:label>Technical Information</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pneTechInfoParent" paneType="com.tibco.forms.panes.vertical">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top" visible="true" width="120"/>
+          </form:defaults>
+          <form:pane generated="true" syncFlags="983040" styleClass="vPaneMargin" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.TechnicalInfo" paneType="com.tibco.forms.panes.vertical">
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:defaults>
+              <form:labelProperties position="top"/>
+            </form:defaults>
+            <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneMgmtIPs" paneType="com.tibco.forms.panes.horizontal">
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:labelProperties visible="false"/>
+              <form:defaults>
+                <form:labelProperties position="top"/>
+              </form:defaults>
+              <form:control generated="true" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.TechnicalInfo_carrierVLAN">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>30</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label>Management / Carrier VLAN</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.TechnicalInfo_carrierIP">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>30</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label>Management / Carrier IP</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" syncFlags="524288" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.TechnicalInfo_aggPoint">
+                <form:propertySet xsi:type="et:MultiChoicePropertySet">
+                  <et:choiceType>bindings</et:choiceType>
+                </form:propertySet>
+                <form:label>Aggregation Point</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" syncFlags="524288" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.TechnicalInfo_port">
+                <form:propertySet xsi:type="et:MultiChoicePropertySet">
+                  <et:choiceType>bindings</et:choiceType>
+                </form:propertySet>
+                <form:label>Port on Switch</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+            </form:pane>
+            <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneServiceIPs" paneType="com.tibco.forms.panes.horizontal">
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:labelProperties visible="false"/>
+              <form:defaults>
+                <form:labelProperties position="top"/>
+              </form:defaults>
+              <form:control generated="true" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.TechnicalInfo_clientVLAN">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>30</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label>Client VLAN</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.TechnicalInfo_clientIP">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>30</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label>Client IP</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" syncFlags="524288" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.TechnicalInfo_SFCPOPPE">
+                <form:propertySet xsi:type="et:MultiChoicePropertySet">
+                  <et:choiceType>bindings</et:choiceType>
+                </form:propertySet>
+                <form:label>SFC POP/PE</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" syncFlags="589824" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.TechnicalInfo_portType">
+                <form:propertySet xsi:type="et:MultiChoicePropertySet">
+                  <et:choiceType>bindings</et:choiceType>
+                </form:propertySet>
+                <form:label>Port Type</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+            </form:pane>
+            <form:pane generated="true" syncFlags="2899968" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" name="pane.TechnicalInfo_equipment" paneType="com.tibco.forms.panes.grid">
+              <form:propertySet xsi:type="et:GridPanePropertySet">
+                <et:showNavigator>false</et:showNavigator>
+                <et:editable>true</et:editable>
+                <et:sortable>true</et:sortable>
+                <et:rowLabel>{0}</et:rowLabel>
+              </form:propertySet>
+              <form:label>Equipment</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:defaults>
+                <form:labelProperties position="top"/>
+              </form:defaults>
+              <form:control generated="true" syncFlags="589824" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.TechnicalInfo_equipment_type">
+                <form:propertySet xsi:type="et:MultiChoicePropertySet">
+                  <et:choiceType>bindings</et:choiceType>
+                </form:propertySet>
+                <form:label>Equipment Type</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.TechnicalInfo_equipment_address">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>40</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label>S/N MAC Address / IP</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.TechnicalInfo_equipment_VLAN">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>40</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label>VLAN</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+            </form:pane>
+            <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneAddDeleteButton" paneType="com.tibco.forms.panes.horizontal">
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:defaults>
+                <form:labelProperties position="top"/>
+              </form:defaults>
+              <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.addEquipment">
+                <form:propertySet xsi:type="et:ButtonPropertySet"/>
+                <form:label>Add Equipment</form:label>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+              </form:control>
+              <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.btnremoveEquipment">
+                <form:propertySet xsi:type="et:ButtonPropertySet"/>
+                <form:label>Remove Equipment</form:label>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+              </form:control>
+            </form:pane>
+            <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneTechInfo06" paneType="com.tibco.forms.panes.horizontal">
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:labelProperties visible="false"/>
+              <form:defaults>
+                <form:labelProperties position="top"/>
+              </form:defaults>
+              <form:control generated="true" syncFlags="81920" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.TechnicalInfo_modifiedBy">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>40</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label>Last ModifiedBy</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>false</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" syncFlags="16384" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.TechnicalInfo_modifiedDate">
+                <form:propertySet xsi:type="et:DateTimePropertySet">
+                  <et:minRelative>true</et:minRelative>
+                  <et:maxRelative>true</et:maxRelative>
+                  <et:year min="-20" max="20"/>
+                  <et:minute increment="15"/>
+                </form:propertySet>
+                <form:label>ModifiedDate</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>false</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+            </form:pane>
+          </form:pane>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pneSelectProjectManager" paneType="com.tibco.forms.panes.vertical">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top" visible="true" width="120"/>
+          </form:defaults>
+          <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pneMarginPane01" paneType="com.tibco.forms.panes.vertical">
+            <form:label>pneMarginPane01</form:label>
+            <form:visible>false</form:visible>
+            <form:enabled>true</form:enabled>
+          </form:pane>
+          <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.lblSelectProjectManager01">
+            <form:label>Select PM</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pneSelectProjectManager01" paneType="com.tibco.forms.panes.vertical">
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:defaults>
+              <form:labelProperties position="top" visible="true" width="120"/>
+            </form:defaults>
+            <form:pane styleClass="vPaneMargin" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pane17" paneType="com.tibco.forms.panes.horizontal">
+              <form:label>Pane 17</form:label>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:labelProperties visible="false"/>
+              <form:defaults>
+                <form:labelProperties position="top"/>
+              </form:defaults>
+              <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.selectPM">
+                <form:propertySet xsi:type="et:MultiChoicePropertySet">
+                  <et:choiceType>bindings</et:choiceType>
+                </form:propertySet>
+                <form:label>Select PM</form:label>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+              </form:control>
+            </form:pane>
+          </form:pane>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneMarginPaneCntrAgnt" paneType="com.tibco.forms.panes.horizontal">
+          <form:label></form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+        </form:pane>
+        <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.lblContractorAgency">
+          <form:label>Select Contractor Agency</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.selectContractorAgency" paneType="com.tibco.forms.panes.vertical">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top" visible="true" width="120"/>
+          </form:defaults>
+          <form:pane styleClass="vPaneMargin" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneContractorAgency" paneType="com.tibco.forms.panes.horizontal">
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:defaults>
+              <form:labelProperties position="top"/>
+            </form:defaults>
+            <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.contractorAgency">
+              <form:propertySet xsi:type="et:MultiChoicePropertySet">
+                <et:choiceType>bindings</et:choiceType>
+              </form:propertySet>
+              <form:label>Contractor Agency</form:label>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+            </form:control>
+          </form:pane>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneMarginPaneSelectContractor" paneType="com.tibco.forms.panes.horizontal">
+          <form:label></form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+        </form:pane>
+        <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.lblSelectContractor">
+          <form:label>Select Contractor</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.selectContractor" paneType="com.tibco.forms.panes.vertical">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top" visible="true" width="120"/>
+          </form:defaults>
+          <form:pane styleClass="vPaneMargin" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pane16" paneType="com.tibco.forms.panes.horizontal">
+            <form:label>Pane 16</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:defaults>
+              <form:labelProperties position="top"/>
+            </form:defaults>
+            <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.availableContractors">
+              <form:propertySet xsi:type="et:MultiChoicePropertySet">
+                <et:choiceType>bindings</et:choiceType>
+              </form:propertySet>
+              <form:label>Available Contractors</form:label>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+            </form:control>
+            <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneMarginPane02" paneType="com.tibco.forms.panes.horizontal">
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:defaults>
+                <form:labelProperties position="top"/>
+              </form:defaults>
+            </form:pane>
+            <form:control generated="true" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.mgmtIPFlag">
+              <form:label>Provision Management IPs</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+            <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneMarginPane03" paneType="com.tibco.forms.panes.horizontal">
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:defaults>
+                <form:labelProperties position="top"/>
+              </form:defaults>
+            </form:pane>
+            <form:control generated="true" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.equipmentFlag">
+              <form:label>Provision Equipments</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+          </form:pane>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneMarginCommentPane" paneType="com.tibco.forms.panes.horizontal">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+        </form:pane>
+        <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.lblUploadDocuments01">
+          <form:label>Upload Documents</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pneUploadDocument" paneType="com.tibco.forms.panes.vertical">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.passthrough" controlType="com.tibco.forms.controls.passthrough" name="control.fileattachments">
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+          </form:control>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneMarginUploadPane" paneType="com.tibco.forms.panes.horizontal">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pnecommenthistory" paneType="com.tibco.forms.panes.vertical">
+          <form:label></form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top" visible="true" width="120"/>
+          </form:defaults>
+          <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.commentHistory">
+            <form:label>Comment History</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneComments" paneType="com.tibco.forms.panes.horizontal">
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:defaults>
+              <form:labelProperties position="top"/>
+            </form:defaults>
+            <form:pane generated="true" syncFlags="2899968" styleClass="vPaneMargin" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" name="pane.CommentHistory" paneType="com.tibco.forms.panes.grid">
+              <form:propertySet xsi:type="et:GridPanePropertySet">
+                <et:showNavigator>false</et:showNavigator>
+                <et:editable>true</et:editable>
+                <et:sortable>true</et:sortable>
+                <et:rowLabel>{0}</et:rowLabel>
+              </form:propertySet>
+              <form:label>CommentHistory</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>false</form:enabled>
+              <form:labelProperties visible="false"/>
+              <form:defaults>
+                <form:labelProperties position="top" visible="true"/>
+              </form:defaults>
+              <form:control generated="true" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CommentHistory_addedby">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>40</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label>Added By</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CommentHistory_comments">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:maxLength>500</et:maxLength>
+                </form:propertySet>
+                <form:label>Comments</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CommentHistory_stepName">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>40</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label>Step Name</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CommentHistory_time">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>40</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label>Time</form:label>
+                <form:hint></form:hint>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:required>false</form:required>
+              </form:control>
+            </form:pane>
+          </form:pane>
+        </form:pane>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.Provisioning_Data_engineer">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>100</et:maxLength>
+          </form:propertySet>
+          <form:label>Engineer</form:label>
+          <form:hint></form:hint>
+          <form:visible>false</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.Provisioning_Data_lastNotificationBy">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>100</et:maxLength>
+          </form:propertySet>
+          <form:label>LastNotificationBy</form:label>
+          <form:hint></form:hint>
+          <form:visible>false</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.Provisioning_Data_lastNotificationDate">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>100</et:maxLength>
+          </form:propertySet>
+          <form:label>LastNotificationDate</form:label>
+          <form:hint></form:hint>
+          <form:visible>false</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.Provisioning_Data_recordStatus">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>100</et:maxLength>
+          </form:propertySet>
+          <form:label>RecordStatus</form:label>
+          <form:hint></form:hint>
+          <form:visible>false</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Provisioning_Data_notesComments">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label>NotesComments</form:label>
+          <form:hint></form:hint>
+          <form:visible>false</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+      </form:pane>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.SelectedContractorGroup">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>SelectedContractorGroup</form:label>
+        <form:hint></form:hint>
+        <form:visible>false</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancel">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.close">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Close</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submit">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>

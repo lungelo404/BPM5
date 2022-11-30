@@ -1,0 +1,17 @@
+#Merged common properties for locale tr#N.B. GENERATED FILE - DO NOT EDIT! CHANGES WILL BE OVERWRITTEN BY THE BUILDER.
+#Tue Nov 29 12:57:07 CAT 2022
+currency_decimal=,
+currency_grouping=.
+date_day=['Pazar','Pazartesi','Sal\u0131','\u00C7ar\u015Famba','Per\u015Fembe','Cuma','Cumartesi']
+date_day_abbrev=['Paz','Pzt','Sal','\u00C7ar','Per','Cum','Cmt']
+date_day_narrow=['P','P','S','\u00C7','P','C','C']
+date_era=['M\u00D6','MS']
+date_era_long=['Milattan \u00D6nce','Milattan Sonra']
+date_month=['Ocak','\u015Eubat','Mart','Nisan','May\u0131s','Haziran','Temmuz','A\u011Fustos','Eyl\u00FCl','Ekim','Kas\u0131m','Aral\u0131k']
+date_month_abbrev=['Oca','\u015Eub','Mar','Nis','May','Haz','Tem','A\u011Fu','Eyl','Eki','Kas','Ara']
+date_month_narrow=['O','\u015E','M','N','M','H','T','A','E','E','K','A']
+format_currency=\#,\#\#0.00 \u00A4
+number_decimal=,
+number_grouping=.
+time_24hour=true
+time_ampm=['AM','PM']

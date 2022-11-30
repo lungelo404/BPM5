@@ -1,0 +1,12 @@
+#Merged common properties for locale in#N.B. GENERATED FILE - DO NOT EDIT! CHANGES WILL BE OVERWRITTEN BY THE BUILDER.
+#Tue Nov 29 12:57:22 CAT 2022
+currency_decimal=,
+currency_grouping=.
+date_day=['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu']
+date_day_abbrev=['Min','Sen','Sel','Rab','Kam','Jum','Sab']
+date_month=['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember']
+date_month_abbrev=['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des']
+format_currency=\u00A4\#,\#\#0.00
+number_decimal=,
+number_grouping=.
+time_24hour=true
