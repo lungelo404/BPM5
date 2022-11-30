@@ -1,0 +1,20 @@
+{
+  "TESFAE_REMOVAL_ERR": "Please select a record for removal.",
+  "TES_PART_IR_ALERT": "Please acknowledge reciept of the IR Number.",
+  "CONFIRM_SCREEN_FAILURE_MSG": "The Activation process Initiation for the below details has Failed. Please Contact System Administrator.",
+  "VAL_PROV_BLDG_ERR": "Kindly select the Building Name. ",
+  "CONFIRM_SCREEN_MSG": "The Swap Tariff process for the below details has been successfully started.",
+  "TESFAE_MGMT_IP_ERR": "Please enter information related to the Management IP(s).",
+  "EQUIP_REMOVAL_ERR": "Please select a record for removal.",
+  "CONFIRM_SCREEN_DUPLICATION_MSG": "The Activation process Initiation for the below details has Failed. A case with same Siebel Circuit ID already exists.",
+  "DEVICE_REMOVAL_ERR": "Please select a record for removal.",
+  "MNUAL_INST_ALERT": "Please enter all of the information related to the device(s).",
+  "TESFAE_BDLG_ID_ERR": "Please select the Building Name.",
+  "DUP_ADDR_ALERT": "Duplicate Address not allowed.",
+  "DUP_SFC_TAG_ALERT": "Duplicate SFC Tag Number not allowed.",
+  "TES_OSG_IR_ALERT": "Please enter the IR Number for the given request.",
+  "DUP_SRL_NUM_ALERT": "Duplicate Serial Number not allowed.",
+  "DUP_IMEI_ALERT": "Duplicate IMEI not allowed.",
+  "TES_OSG_SEC_ALERT": "Please select security for the given request. ",
+  "TESPROV_SER_IP_ERR": "Please enter the required details for the Service IP(s)."
+}

@@ -1,0 +1,574 @@
+{
+    "body": {
+        "inputs": [
+
+        ],
+        "outputs": [
+
+        ],
+        "inouts": [
+            {
+                "name":"ProvisioningData",
+                "structured": [
+                    {
+                        "siebelCircuitID": "siebelCircuitID",
+                        "projectManager": "projectManager",
+                        "clientName": "clientName",
+                        "accountManager": "accountManager",
+                        "account": "account",
+                        "contractor": "contractor",
+                        "location": "location",
+                        "regionView": "regionView",
+                        "floor": "floor",
+                        "clientID": "clientID",
+                        "serviceType": "serviceType",
+                        "GPSCoordinates": "GPSCoordinates",
+                        "bandwidthupdown": "bandwidthupdown",
+                        "technology": "technology",
+                        "serviceStatus": "serviceStatus",
+                        "buildingName": "buildingName",
+                        "buildingID": "buildingID",
+                        "contactPerson": "contactPerson",
+                        "mobile": "mobile",
+                        "sector": "sector",
+                        "email": "email",
+                        "serviceStart": "2022-11-30T12:25:19+02:00",
+                        "serviceEnd": "2022-11-30T12:25:19+02:00",
+                        "requestDate": "2022-11-30T12:25:19+02:00",
+                        "installDate": "2022-11-30T12:25:19+02:00",
+                        "notesComments": "notesComments",
+                        "address": "address",
+                        "engineer": "engineer",
+                        "lastNotificationBy": "lastNotificationBy",
+                        "lastNotificationDate": "lastNotificationDate",
+                        "recordStatus": "recordStatus",
+                        "contractor_Engineer": "contractor_Engineer",
+                        "contractorEngineer_PhNumber": "contractorEngineer_PhNumber"
+                    }
+                ]
+            },
+            {
+                "name":"TechnicalInfo",
+                "structured": [
+                    {
+                        "carrierVLAN": "carrierVLAN",
+                        "carrierIP": "carrierIP",
+                        "aggPoint": "aggPoint",
+                        "port": "port",
+                        "clientVLAN": "clientVLAN",
+                        "clientIP": "clientIP",
+                        "SFCPOPPE": "SFCPOPPE",
+                        "portType": "portType",
+                        "equipment": [
+                            {
+                                "type": "type0",
+                                "address": "address0",
+                                "VLAN": "VLAN0",
+                                "SFC_Tag_Number": "SFC_Tag_Number0",
+                                "serial_Number": "serial_Number0",
+                                "EMEI": "EMEI0",
+                                "addedBy": "addedBy0",
+                                "status": "status0",
+                                "IR_Number": "IR_Number0",
+                                "siebel_Circuit_ID": "siebel_Circuit_ID0"
+                            },
+                            {
+                                "type": "type1",
+                                "address": "address1",
+                                "VLAN": "VLAN1",
+                                "SFC_Tag_Number": "SFC_Tag_Number1",
+                                "serial_Number": "serial_Number1",
+                                "EMEI": "EMEI1",
+                                "addedBy": "addedBy1",
+                                "status": "status1",
+                                "IR_Number": "IR_Number1",
+                                "siebel_Circuit_ID": "siebel_Circuit_ID1"
+                            },
+                            {
+                                "type": "type2",
+                                "address": "address2",
+                                "VLAN": "VLAN2",
+                                "SFC_Tag_Number": "SFC_Tag_Number2",
+                                "serial_Number": "serial_Number2",
+                                "EMEI": "EMEI2",
+                                "addedBy": "addedBy2",
+                                "status": "status2",
+                                "IR_Number": "IR_Number2",
+                                "siebel_Circuit_ID": "siebel_Circuit_ID2"
+                            },
+                            {
+                                "type": "type3",
+                                "address": "address3",
+                                "VLAN": "VLAN3",
+                                "SFC_Tag_Number": "SFC_Tag_Number3",
+                                "serial_Number": "serial_Number3",
+                                "EMEI": "EMEI3",
+                                "addedBy": "addedBy3",
+                                "status": "status3",
+                                "IR_Number": "IR_Number3",
+                                "siebel_Circuit_ID": "siebel_Circuit_ID3"
+                            }
+                        ],
+                        "modifiedBy": "modifiedBy",
+                        "modifiedDate": "2022-11-30T12:25:19+02:00",
+                        "management_IP_Info": [
+                            {
+                                "management_VLAN": "management_VLAN0",
+                                "carrier_VLAN": "carrier_VLAN0",
+                                "management_Carrier_IP": "management_Carrier_IP0",
+                                "aggregation_Point": "aggregation_Point0",
+                                "port_Number": "port_Number0",
+                                "comments": "comments0",
+                                "capacity": "capacity0",
+                                "port_Type": "port_Type0",
+                                "carrierEquipmentType": "carrierEquipmentType0",
+                                "carrierIP": "carrierIP0"
+                            },
+                            {
+                                "management_VLAN": "management_VLAN1",
+                                "carrier_VLAN": "carrier_VLAN1",
+                                "management_Carrier_IP": "management_Carrier_IP1",
+                                "aggregation_Point": "aggregation_Point1",
+                                "port_Number": "port_Number1",
+                                "comments": "comments1",
+                                "capacity": "capacity1",
+                                "port_Type": "port_Type1",
+                                "carrierEquipmentType": "carrierEquipmentType1",
+                                "carrierIP": "carrierIP1"
+                            },
+                            {
+                                "management_VLAN": "management_VLAN2",
+                                "carrier_VLAN": "carrier_VLAN2",
+                                "management_Carrier_IP": "management_Carrier_IP2",
+                                "aggregation_Point": "aggregation_Point2",
+                                "port_Number": "port_Number2",
+                                "comments": "comments2",
+                                "capacity": "capacity2",
+                                "port_Type": "port_Type2",
+                                "carrierEquipmentType": "carrierEquipmentType2",
+                                "carrierIP": "carrierIP2"
+                            },
+                            {
+                                "management_VLAN": "management_VLAN3",
+                                "carrier_VLAN": "carrier_VLAN3",
+                                "management_Carrier_IP": "management_Carrier_IP3",
+                                "aggregation_Point": "aggregation_Point3",
+                                "port_Number": "port_Number3",
+                                "comments": "comments3",
+                                "capacity": "capacity3",
+                                "port_Type": "port_Type3",
+                                "carrierEquipmentType": "carrierEquipmentType3",
+                                "carrierIP": "carrierIP3"
+                            }
+                        ],
+                        "IR_Number": "IR_Number",
+                        "MRR": "MRR",
+                        "security": "security",
+                        "deviceRequest": [
+                            {
+                                "deviceName": "deviceName0",
+                                "deviceDescription": "deviceDescription0",
+                                "quantity": "quantity0",
+                                "siebelCircuitID": "siebelCircuitID0",
+                                "type": "type0",
+                                "address": "address0",
+                                "VLAN": "VLAN0",
+                                "SFC_Tag_Number": "SFC_Tag_Number0",
+                                "serial_Number": "serial_Number0",
+                                "IMEI": "IMEI0",
+                                "addedBy": "addedBy0",
+                                "status": "status0",
+                                "IR_Number": "IR_Number0"
+                            },
+                            {
+                                "deviceName": "deviceName1",
+                                "deviceDescription": "deviceDescription1",
+                                "quantity": "quantity1",
+                                "siebelCircuitID": "siebelCircuitID1",
+                                "type": "type1",
+                                "address": "address1",
+                                "VLAN": "VLAN1",
+                                "SFC_Tag_Number": "SFC_Tag_Number1",
+                                "serial_Number": "serial_Number1",
+                                "IMEI": "IMEI1",
+                                "addedBy": "addedBy1",
+                                "status": "status1",
+                                "IR_Number": "IR_Number1"
+                            },
+                            {
+                                "deviceName": "deviceName2",
+                                "deviceDescription": "deviceDescription2",
+                                "quantity": "quantity2",
+                                "siebelCircuitID": "siebelCircuitID2",
+                                "type": "type2",
+                                "address": "address2",
+                                "VLAN": "VLAN2",
+                                "SFC_Tag_Number": "SFC_Tag_Number2",
+                                "serial_Number": "serial_Number2",
+                                "IMEI": "IMEI2",
+                                "addedBy": "addedBy2",
+                                "status": "status2",
+                                "IR_Number": "IR_Number2"
+                            },
+                            {
+                                "deviceName": "deviceName3",
+                                "deviceDescription": "deviceDescription3",
+                                "quantity": "quantity3",
+                                "siebelCircuitID": "siebelCircuitID3",
+                                "type": "type3",
+                                "address": "address3",
+                                "VLAN": "VLAN3",
+                                "SFC_Tag_Number": "SFC_Tag_Number3",
+                                "serial_Number": "serial_Number3",
+                                "IMEI": "IMEI3",
+                                "addedBy": "addedBy3",
+                                "status": "status3",
+                                "IR_Number": "IR_Number3"
+                            }
+                        ],
+                        "CPEManagementIPDetails": [
+                            {
+                                "CPEManagementIP": "CPEManagementIP0",
+                                "CPEManagementVLAN": "CPEManagementVLAN0"
+                            },
+                            {
+                                "CPEManagementIP": "CPEManagementIP1",
+                                "CPEManagementVLAN": "CPEManagementVLAN1"
+                            },
+                            {
+                                "CPEManagementIP": "CPEManagementIP2",
+                                "CPEManagementVLAN": "CPEManagementVLAN2"
+                            },
+                            {
+                                "CPEManagementIP": "CPEManagementIP3",
+                                "CPEManagementVLAN": "CPEManagementVLAN3"
+                            }
+                        ],
+                        "serviceIPDetails": [
+                            {
+                                "SFCPOPPE": "SFCPOPPE0",
+                                "clientIP": "clientIP0",
+                                "clientVLAN": "clientVLAN0"
+                            },
+                            {
+                                "SFCPOPPE": "SFCPOPPE1",
+                                "clientIP": "clientIP1",
+                                "clientVLAN": "clientVLAN1"
+                            },
+                            {
+                                "SFCPOPPE": "SFCPOPPE2",
+                                "clientIP": "clientIP2",
+                                "clientVLAN": "clientVLAN2"
+                            },
+                            {
+                                "SFCPOPPE": "SFCPOPPE3",
+                                "clientIP": "clientIP3",
+                                "clientVLAN": "clientVLAN3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name":"FetchDataURL",
+                "simple": [
+                    "Text"
+                ]
+            },
+            {
+                "name":"SelectedECS",
+                "simple": [
+                    "Text"
+                ]
+            },
+            {
+                "name":"NetworkMappingStatus",
+                "simple": [
+                    "Text"
+                ]
+            },
+            {
+                "name":"LicenseUpgradeFlag",
+                "simple": [
+                    "Text"
+                ]
+            },
+            {
+                "name":"TaskName",
+                "simple": [
+                    "Text"
+                ]
+            },
+            {
+                "name":"CommentText",
+                "simple": [
+                    "Text"
+                ]
+            },
+            {
+                "name":"CommentHistory",
+                "structured": [
+                    {
+                        "addedby": "addedby0",
+                        "comments": "comments0",
+                        "stepName": "stepName0",
+                        "time": "time0"
+                    },
+                    {
+                        "addedby": "addedby1",
+                        "comments": "comments1",
+                        "stepName": "stepName1",
+                        "time": "time1"
+                    },
+                    {
+                        "addedby": "addedby2",
+                        "comments": "comments2",
+                        "stepName": "stepName2",
+                        "time": "time2"
+                    },
+                    {
+                        "addedby": "addedby3",
+                        "comments": "comments3",
+                        "stepName": "stepName3",
+                        "time": "time3"
+                    }
+                ]
+            },
+            {
+                "name":"EquipmentArray",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"RegionArray",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"PortTypeArray",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"BandwidthArray",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"ServiceTypeArray",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"PortNumberArray",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"SFC_POPArray",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"TechnologyArray",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"Account_Manager",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"AggregationPointsArray",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"ServiceStatusArray",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"BuildingFloorArray",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"AccountTypeArray",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"xDMSURL",
+                "simple": [
+                    "Text"
+                ]
+            },
+            {
+                "name":"DemandDeskDecision",
+                "simple": [
+                    true
+                ]
+            },
+            {
+                "name":"SelectedContractor",
+                "simple": [
+                    "Text"
+                ]
+            },
+            {
+                "name":"SelectedContractorGroup",
+                "simple": [
+                    "Text"
+                ]
+            },
+            {
+                "name":"ContractorNames",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"ContractorGroupNames",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"ContractorAgencyNames",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"Building_NameArray",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"BuildingIDArray",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"OldServiceRequest",
+                "structured": [
+                    {
+                        "bandwidthupdown": "bandwidthupdown",
+                        "serviceType": "serviceType",
+                        "technology": "technology",
+                        "serviceStatus": "serviceStatus"
+                    }
+                ]
+            },
+            {
+                "name":"Carrier_Eq_Type",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"PortCapacity",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            }
+        ]
+    }
+}

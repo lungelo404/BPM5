@@ -1,0 +1,330 @@
+
+/**
+ * Forms 3.1.0 V12 compliant.
+ */
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_messages > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_ProcessExecutionRequest_udf__add_delete > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_SwapTariffExecutionRequest_planItem_technicalInformation_deviceRequest__add_delete > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_SwapTariffExecutionRequest_planItem_technicalInformation_management_IP_Info__add_delete > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_SwapTariffExecutionRequest_planItem_technicalInformation_equipment__add_delete > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_SwapTariffExecutionRequest_planItem_udf__add_delete > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_TechnicalInfo_deviceRequest__add_delete > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane31__add_delete > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_TechnicalInfo_equipment__add_delete > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane36__add_delete > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_TechnicalInfo_management_IP_Info__add_delete > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane22__add_delete > .label {
+        display:none !important;
+    }
+	.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .control_label10 > .label > label {
+	    display:none !important;
+	}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_contactDetails > .label {
+        display:none !important;
+    }
+	.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .control_optionlist3 > .label > label {
+	    display:none !important;
+	}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane25 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneSelectContractor > .label {
+        display:none !important;
+    }
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneSelectContractor>.pane-content>.component>.label {
+    width: 120px;
+    display:table-cell;
+}
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneSelectContractor>.pane-content>.component>.pane-content>.gwt-TabBar .gwt-TabBarItem {
+    width: 120px;
+}
+	.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .control_image1 > .label > label {
+	    display:none !important;
+	}
+	.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .control_btnSearch > .label > label {
+	    display:none !important;
+	}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_generalDetails > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pne01 > .label {
+        display:none !important;
+    }
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pne01>.pane-content>.component>.label {
+    width: 120px;
+    display:table-cell;
+}
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pne01>.pane-content>.component>.pane-content>.gwt-TabBar .gwt-TabBarItem {
+    width: 120px;
+}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane26 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane29 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_installationAddress > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane1 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane8 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneSpace4 > .label {
+        display:none !important;
+    }
+	.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .control_selectNetworkMapping > .label > label {
+	    display:none !important;
+	}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneNetworkStatusFlag > .label {
+        display:none !important;
+    }
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneNetworkStatusFlag>.pane-content>.component>.label {
+    width: 120px;
+    display:table-cell;
+}
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneNetworkStatusFlag>.pane-content>.component>.pane-content>.gwt-TabBar .gwt-TabBarItem {
+    width: 120px;
+}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneNetworkMapping > .label {
+        display:none !important;
+    }
+	.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .control_selectContractorAgency > .label > label {
+	    display:none !important;
+	}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneContractorDrdn > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneSelectContractorAgency > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneCommentPane > .label {
+        display:none !important;
+    }
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneCommentPane>.pane-content>.component>.label {
+    width: 120px;
+    display:table-cell;
+}
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneCommentPane>.pane-content>.component>.pane-content>.gwt-TabBar .gwt-TabBarItem {
+    width: 120px;
+}
+	.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .control_CommentText > .label > label {
+	    display:none !important;
+	}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane11 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane10 > .label {
+        display:none !important;
+    }
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane10>.pane-content>.component>.label {
+    width: 120px;
+    display:table-cell;
+}
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane10>.pane-content>.component>.pane-content>.gwt-TabBar .gwt-TabBarItem {
+    width: 120px;
+}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane21 > .label {
+        display:none !important;
+    }
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane21>.pane-content>.component>.label {
+    width: 120px;
+    display:table-cell;
+}
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane21>.pane-content>.component>.pane-content>.gwt-TabBar .gwt-TabBarItem {
+    width: 120px;
+}
+	.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .control_label11 > .label > label {
+	    display:none !important;
+	}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_OldServiceRequest > .label {
+        display:none !important;
+    }
+	.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .control_label7 > .label > label {
+	    display:none !important;
+	}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_serviceDates > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneSpace3 > .label {
+        display:none !important;
+    }
+	.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .control_fileattachments > .label > label {
+	    display:none !important;
+	}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneUploadDocuments > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_MarginPaneTechnicalInfo > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneSpace1 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane2 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneLicenseUpgradeFlag > .label {
+        display:none !important;
+    }
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneLicenseUpgradeFlag>.pane-content>.component>.label {
+    width: 120px;
+    display:table-cell;
+}
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneLicenseUpgradeFlag>.pane-content>.component>.pane-content>.gwt-TabBar .gwt-TabBarItem {
+    width: 120px;
+}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneLicenseUpgrade > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane3 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneAddDeleteManagementIP > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneTechnicalInfo06 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneDeviceReq > .label {
+        display:none !important;
+    }
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane33>.pane-content .label {    width: 120px;
+    display:table-cell;
+}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneMgmtIPDetails > .label {
+        display:none !important;
+    }
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneCPEMgmtDetails>.pane-content>.component>.label {
+    width: 120px;
+    display:table-cell;
+}
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneCPEMgmtDetails>.pane-content>.component>.pane-content>.gwt-TabBar .gwt-TabBarItem {
+    width: 120px;
+}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneTechInfo04 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneTechInfo06 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneServiceIPDetailsBtns > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneServiceIPDetails > .label {
+        display:none !important;
+    }
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneServiceIPDetails>.pane-content>.component>.label {
+    width: 120px;
+    display:table-cell;
+}
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneServiceIPDetails>.pane-content>.component>.pane-content>.gwt-TabBar .gwt-TabBarItem {
+    width: 120px;
+}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane35 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneTechInfoParent > .label {
+        display:none !important;
+    }
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneTechInfoParent>.pane-content>.component>.label {
+    width: 120px;
+    display:table-cell;
+}
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneTechInfoParent>.pane-content>.component>.pane-content>.gwt-TabBar .gwt-TabBarItem {
+    width: 120px;
+}
+	.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .control_label3 > .label > label {
+	    display:none !important;
+	}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_Pane03 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane4 > .label {
+        display:none !important;
+    }
+	.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .control_label6 > .label > label {
+	    display:none !important;
+	}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_serviceRequest > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneClientDetails02 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_clientDetails > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneMarginPane > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane6 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_CommentHistory__add_delete > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_CommentHistory > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pnecommenthistory > .label {
+        display:none !important;
+    }
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pnecommenthistory>.pane-content>.component>.label {
+    width: 120px;
+    display:table-cell;
+}
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pnecommenthistory>.pane-content>.component>.pane-content>.gwt-TabBar .gwt-TabBarItem {
+    width: 120px;
+}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane9 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pneMarginPaneSelectContractor > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane5 > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_ProvisioningData > .label {
+        display:none !important;
+    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_content > .label {
+display:table-cell !important;    }
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane15 > .label {
+        display:none !important;
+    }
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane15>.pane-content>.component>.label {
+    width: 120px;
+    display:table-cell;
+}
+.fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_pane15>.pane-content>.component>.pane-content>.gwt-TabBar .gwt-TabBarItem {
+    width: 120px;
+}
+    .fd749d71d-d0d5-4fb1-a6e5-3e035511efdc .pane_toolbar > .label {
+        display:none !important;
+    }
