@@ -1,0 +1,1774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" generated="true" generatorSource="com.sfc.updateResource.xpdl#_y6rOEPBTEeeuzZ1H_57zBQ?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aActivity%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=UpdateResource?" formatVersion="11.0.0">
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri="comsfcupdateResource/comsfcfosImplmapResources/UserTask/UserTask.properties" sfRelative="true" internal="true" localized="true"/>
+    <form:externalResource name="resource.safaricom" uri="CSS/safaricom.css" sfRelative="true"/>
+    <form:externalResource name="resource.msg" uri="MessageProperties/msg.properties" sfRelative="true" localized="true"/>
+    <form:externalResource name="resource.request" uri="JavaScript/request.js" sfRelative="true" localized="true"/>
+    <form:externalResource name="resource.helper" uri="JavaScript/helper.js" sfRelative="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" generatorSource="com.sfc.updateResource.xpdl#_ranV8PBTEeeuzZ1H_57zBQ?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=resourceList?" name="data.resourceList" label="resource List" dataType="uml:Class BusinessObjectModel.bom#_ipNxwPBTEeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.adminOps.dataModel%26n=Resource?" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="com.sfc.updateResource.xpdl#_tzG3UPBTEeeuzZ1H_57zBQ?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=GroupName?" name="data.GroupName" label="Group Name" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="50" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="com.sfc.updateResource.xpdl#__CZRAPBXEeeuzZ1H_57zBQ?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=ContractorGroup?" name="data.ContractorGroup" label="Contractor Group" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_X_aPwPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=ContractorGroups?" inout="INOUT"/>
+    <form:parameter generated="true" name="data.decision" label="decision" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.BusinessUser" label="BusinessUser" dataType="uml:Class com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.SchemacreateresourceinputType?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%26n=createresourceinputType?" inout="INOUT"/>
+    <form:parameter generated="true" name="data.ContractorMasterUserFlag" label="Contractor Master User Flag" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" inout="INOUT"/>
+    <form:parameter generated="true" name="data.ContractorNormalUsers" label="ContractorNormalUsers" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_X_aPwPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=ContractorGroups?" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" name="data.BPMUsers" label="BPMUsers" dataType="uml:Class BusinessObjectModel.bom#_KHBXwPRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.adminOps.dataModel%26n=BPMUsers?" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" name="data.LoginName" label="LoginName" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="100" inout="INOUT"/>
+    <form:parameter generated="true" name="data.ContractorSingleUser" label="ContractorSingleUser" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_X_aPwPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=ContractorGroups?" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="com.sfc.updateResource.xpdl#_BT09gVLDEei0v_uM2IXT3g?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=ContractorGroups?" name="data.ContractorGroups" label="ContractorGroups" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_X_aPwPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=ContractorGroups?" isArray="true" inout="IN"/>
+  </form:dataModel>
+  <form:actions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancela" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancela.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submita" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submita.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+    <form:rule name="rule.updateDecision" label="update Decision">
+      <form:event source="#control.onboardUsers" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#update" subject="form.control.onboardUsers.update"/>
+      <form:action xsi:type="form:ScriptAction" name="action.updateDecision" label="update Decision">
+        <form:script>data.decision = context.control.value;&#xD;
+if(context.control.value==&quot;BUSINESS&quot;) {&#xD;
+	pane.BPMUsers.visible = false;&#xD;
+	pane.pneAddBusinessUsers.visible = true;&#xD;
+	pane.BusinessUser_createresourcerequest.value.length = 0;&#xD;
+	pane.pneContractorMaster.visible = false;&#xD;
+	pane.pneButton01.visible = true;&#xD;
+	pane.pneBPMUsers.visible = false;&#xD;
+	control.lblallUsers.visible = false;&#xD;
+	pane.pneContractorGroups.visible = false;&#xD;
+	control.lblcontractors.visible = false;&#xD;
+	&#xD;
+}&#xD;
+else if(context.control.value==&quot;CONTRACTOR_MASTER&quot;) {&#xD;
+	pane.BPMUsers.visible = false;&#xD;
+	pane.pneAddBusinessUsers.visible = false;&#xD;
+	pane.pneContractorMaster.visible = true;&#xD;
+	data.ContractorGroup.masterUser = &quot;Y&quot;;&#xD;
+	pane.pneBPMUsers.visible = false;&#xD;
+	control.lblallUsers.visible = false;&#xD;
+	pane.pneContractorGroups.visible = false;&#xD;
+	control.lblcontractors.visible = false;&#xD;
+}&#xD;
+else if(context.control.value==&quot;VIEW_ALL_USERS&quot;) {&#xD;
+	pane.pneAddBusinessUsers.visible = false;&#xD;
+	pane.pneContractorMaster.visible = false;&#xD;
+	//pane.BPMUsers.getValue().clear();&#xD;
+	pane.BPMUsers.visible = true;&#xD;
+	pane.pneBPMUsers.visible = true;&#xD;
+	control.lblallUsers.visible = true;&#xD;
+	pane.pneContractorGroups.visible = true;&#xD;
+	control.lblcontractors.visible = true;&#xD;
+&#xD;
+	//control.LoginName.setValue(&quot;ABC&quot;);&#xD;
+	//listUsers(factory,pane,control,logger,&quot;http://rbapat-t470:9801/getusers&quot;,&quot;?emailid=&quot;+control.LoginName.getValue());	&#xD;
+}&#xD;
+else {&#xD;
+	pane.pneAddBusinessUsers.visible = false;&#xD;
+	pane.pneContractorMaster.visible = false;&#xD;
+}</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule name="rule.setPanesVisibility" label="Set Panes Visibility">
+      <form:event source="#//@form" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#open" subject="form.open"/>
+      <form:action xsi:type="form:ScriptAction" name="action.setPanesVisibility" label="Set Panes Visibility">
+        <form:script>//control.ContractorMasterUserFlag.setValue(true);&#xD;
+pane.pneContractorGroups.visible = false;&#xD;
+control.lblcontractors.visible = false;&#xD;
+&#xD;
+&#xD;
+if(control.ContractorMasterUserFlag.value==true) {&#xD;
+	pane.pneOnBoardUserDetailsParent.visible = false;&#xD;
+	pane.pneAddBusinessUsers.visible = false;&#xD;
+	pane.pneContractorMaster.visible = false;&#xD;
+	pane.pneContractorUserDetails.visible = true;&#xD;
+	pane.ContractorNormalUsers.visible = true;&#xD;
+	pane.pane3.visible = false;&#xD;
+}&#xD;
+else if(control.ContractorMasterUserFlag.value==false) {&#xD;
+	pane.pneOnBoardUserDetailsParent.visible = true;&#xD;
+	pane.pneAddBusinessUsers.visible = false;&#xD;
+	pane.pneContractorMaster.visible = false;&#xD;
+	pane.pneContractorUserDetails.visible = false;&#xD;
+	pane.ContractorNormalUsers.visible = false;//to change back to false&#xD;
+	&#xD;
+	pane.pneButton01.visible = false;&#xD;
+}&#xD;
+&#xD;
+&#xD;
+/*&#xD;
+control.ContractorMasterUserFlag.setValue(false);&#xD;
+&#xD;
+if(control.ContractorMasterUserFlag.getValue()==true) {&#xD;
+	pane.pneContractorUserDetails.setVisible(true);&#xD;
+	control.onboardUsers.setVisible(false);&#xD;
+	pane.pneAddBusinessUsers.setVisible(false);&#xD;
+	pane.pneContractorMaster.setVisible(false);&#xD;
+	pane.BusinessUser_createresourcerequest.setVisible(false);&#xD;
+	pane.pneAddBusinessUsers.setVisible(false);&#xD;
+	pane.ContractorNormalUsers.setVisible(true);&#xD;
+	pane.pane3.setVisible(false);&#xD;
+}&#xD;
+else if(control.ContractorMasterUserFlag.getValue()==false) {&#xD;
+	control.onboardUsers.setVisible(true);&#xD;
+	pane.pneAddBusinessUsers.setVisible(false);&#xD;
+	pane.pneContractorMaster.setVisible(false);&#xD;
+	pane.pneContractorUserDetails.setVisible(false);&#xD;
+	pane.BusinessUser_createresourcerequest.setVisible(true);&#xD;
+	pane.pneAddBusinessUsers.setVisible(false);&#xD;
+	pane.ContractorNormalUsers.setVisible(false);&#xD;
+	pane.pneButton01.setVisible(false);&#xD;
+}&#xD;
+*/</form:script>
+      </form:action>
+      <form:action xsi:type="form:ScriptAction" name="action.SetLabelBackground" label="Set Label Background">
+        <form:script>setupFontColor('[id$=lblSelectOption]');&#xD;
+setupFontColor('[id$=contractorGroupDetails]');&#xD;
+setupFontColor('[id$=contractorUsers]');&#xD;
+setupFontColor('[id$=lblcontractors]');&#xD;
+setupFontColor('[id$=lblallUsers]');&#xD;
+setupFontColor('[id$=businessUserAddition]');&#xD;
+&#xD;
+&#xD;
+</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule name="rule.addNewRow" label="Add New Row">
+      <form:event source="#control.addRow" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.addRow.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.addNewRow" label="Add New Row">
+        <form:script>pane.BusinessUser_createresourcerequest.value.push(factory.com_tibco_schemas_SFC_FOS_BPM_SharedResources_SchemaDefinitions_Schema.createCreateresourcerequestType());</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule name="rule.deleteSelectedRow" label="Delete Selected Row">
+      <form:event source="#control.deleteRow" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.deleteRow.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.deleteSelectedRow" label="Delete Selected Row">
+        <form:script>if(pane.BusinessUser_createresourcerequest.selection== null) {&#xD;
+	alert(&quot;Please select one row for deletion.&quot;);&#xD;
+}&#xD;
+else {&#xD;
+	var $array = pane.BusinessUser_createresourcerequest.value;&#xD;
+	var $index = $array.indexOf(pane.BusinessUser_createresourcerequest.selection);&#xD;
+	if ($index != -1) { $array.splice($index, 1); }&#xD;
+}</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule name="rule.addNewRowContractors" label="Add New RowContractors">
+      <form:event source="#control.addRow01" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.addRow01.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.addNewRowContractors" label="Add New RowContractors">
+        <form:script>var a;&#xD;
+//pane.ContractorNormalUsers.getValue().add(data.getContractorSingleUser());&#xD;
+&#xD;
+var Record=factory.com_sfc_fosImpl_dataModel.createContractorGroups();&#xD;
+pane.ContractorNormalUsers.value.push(Record);</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule name="rule.deleteSelectedRowContractors" label="Delete Selected Row Contractors">
+      <form:event source="#control.deleteRow01" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.deleteRow01.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.deleteSelectedRowContractors" label="Delete Selected Row Contractors">
+        <form:script>var $array = pane.ContractorNormalUsers.value;&#xD;
+var $index = $array.indexOf(pane.ContractorNormalUsers.selection);&#xD;
+if ($index != -1) { $array.splice($index, 1); }</form:script>
+      </form:action>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_q390sPB7EeeuzZ1H_57zBQ">
+      <form:source target="data.ContractorGroup" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ContractorGroup.value"></form:source>
+      <form:destination target="pane.ContractorGroup" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.ContractorGroup.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_q4GXkPB7EeeuzZ1H_57zBQ">
+      <form:source target="pane.ContractorGroup" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_cfRGQPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=loginName?" data="form.pane.ContractorGroup.value.loginName"></form:source>
+      <form:destination target="control.ContractorGroup_loginName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroup_loginName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_q4QIkPB7EeeuzZ1H_57zBQ">
+      <form:source target="pane.ContractorGroup" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_clS1wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=firstName?" data="form.pane.ContractorGroup.value.firstName"></form:source>
+      <form:destination target="control.ContractorGroup_firstName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroup_firstName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_q4VoIPB7EeeuzZ1H_57zBQ">
+      <form:source target="pane.ContractorGroup" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_cpR94PB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=lastName?" data="form.pane.ContractorGroup.value.lastName"></form:source>
+      <form:destination target="control.ContractorGroup_lastName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroup_lastName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_q4buwPB7EeeuzZ1H_57zBQ">
+      <form:source target="pane.ContractorGroup" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_ctE4wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=contractorGroupName?" data="form.pane.ContractorGroup.value.contractorGroupName"></form:source>
+      <form:destination target="control.ContractorGroup_contractorGroupName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroup_contractorGroupName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_q4h1YPB7EeeuzZ1H_57zBQ">
+      <form:source target="pane.ContractorGroup" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_oKsLkPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=masterUser?" data="form.pane.ContractorGroup.value.masterUser"></form:source>
+      <form:destination target="control.ContractorGroup_masterUser" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroup_masterUser.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_q4q_UPB7EeeuzZ1H_57zBQ">
+      <form:source target="data.ContractorGroup" feature="http://www.tibco.com/forms/model/form#//Datum/value com.sfc.fosImpl.dataModel.bom#_xLxKgPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=emailID?" data="form.data.ContractorGroup.value.emailID"></form:source>
+      <form:destination target="control.ContractorGroup_emailID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroup_emailID.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_QO7JcPCPEeesJ4bn2tlLXg">
+      <form:source target="data.BusinessUser" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.BusinessUser.value"></form:source>
+      <form:destination target="pane.BusinessUser" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.BusinessUser.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_QPH9wPCPEeesJ4bn2tlLXg">
+      <form:source target="pane.BusinessUser" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourceinputTypecreateresourcerequestType?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourceinputType%26n=createresourcerequest?" data="form.pane.BusinessUser.value.createresourcerequest"></form:source>
+      <form:destination target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value" data="form.pane.BusinessUser_createresourcerequest.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_QPfKIPCPEeesJ4bn2tlLXg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypename?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=name?" data="form.pane.BusinessUser_createresourcerequest.value.name"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_name" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_name.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_QP29kPCPEeesJ4bn2tlLXg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeorgname?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=orgname?" data="form.pane.BusinessUser_createresourcerequest.value.orgname"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_orgname" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_orgname.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_QQNi4PCPEeesJ4bn2tlLXg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeflag?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=flag?" data="form.pane.BusinessUser_createresourcerequest.value.flag"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_flag" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_flag.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_QQi6EPCPEeesJ4bn2tlLXg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeentityname?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=entityname?" data="form.pane.BusinessUser_createresourcerequest.value.entityname"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_entityname" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_entityname.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_QQ6tgPCPEeesJ4bn2tlLXg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeemail?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=email?" data="form.pane.BusinessUser_createresourcerequest.value.email"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_email" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_email.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_QRRS0PCPEeesJ4bn2tlLXg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypepassword?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=password?" data="form.pane.BusinessUser_createresourcerequest.value.password"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_password" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_password.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_PYfH4PEXEeeW2tm46yiN8A">
+      <form:source target="data.ContractorNormalUsers" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ContractorNormalUsers.value"></form:source>
+      <form:destination target="pane.ContractorNormalUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value" data="form.pane.ContractorNormalUsers.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_PYhkIPEXEeeW2tm46yiN8A">
+      <form:source target="pane.ContractorNormalUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_cfRGQPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=loginName?" data="form.pane.ContractorNormalUsers.value.loginName"></form:source>
+      <form:destination target="control.ContractorNormalUsers_loginName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorNormalUsers_loginName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_PYkncPEXEeeW2tm46yiN8A">
+      <form:source target="pane.ContractorNormalUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_clS1wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=firstName?" data="form.pane.ContractorNormalUsers.value.firstName"></form:source>
+      <form:destination target="control.ContractorNormalUsers_firstName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorNormalUsers_firstName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_PYnDsPEXEeeW2tm46yiN8A">
+      <form:source target="pane.ContractorNormalUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_cpR94PB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=lastName?" data="form.pane.ContractorNormalUsers.value.lastName"></form:source>
+      <form:destination target="control.ContractorNormalUsers_lastName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorNormalUsers_lastName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_PYpf8PEXEeeW2tm46yiN8A">
+      <form:source target="pane.ContractorNormalUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_ctE4wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=contractorGroupName?" data="form.pane.ContractorNormalUsers.value.contractorGroupName"></form:source>
+      <form:destination target="control.ContractorNormalUsers_contractorGroupName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorNormalUsers_contractorGroupName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_PYr8MPEXEeeW2tm46yiN8A">
+      <form:source target="pane.ContractorNormalUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_oKsLkPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=masterUser?" data="form.pane.ContractorNormalUsers.value.masterUser"></form:source>
+      <form:destination target="control.ContractorNormalUsers_masterUser" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorNormalUsers_masterUser.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_PYuYcPEXEeeW2tm46yiN8A">
+      <form:source target="pane.ContractorNormalUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_xLxKgPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=emailID?" data="form.pane.ContractorNormalUsers.value.emailID"></form:source>
+      <form:destination target="control.ContractorNormalUsers_emailID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorNormalUsers_emailID.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_k6J5kPEXEeeW2tm46yiN8A">
+      <form:source target="data.ContractorMasterUserFlag" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ContractorMasterUserFlag.value"></form:source>
+      <form:destination target="control.ContractorMasterUserFlag" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorMasterUserFlag.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_xZi78PRYEeeRs7eYTPjalw">
+      <form:source target="pane.BPMUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value BusinessObjectModel.bom#_MiwaYPRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%26n=name?" data="form.pane.BPMUsers.value.name"></form:source>
+      <form:destination target="control.BPMUsers_name" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BPMUsers_name.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_xZobgPRYEeeRs7eYTPjalw">
+      <form:source target="pane.BPMUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value BusinessObjectModel.bom#_MuSU8PRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%26n=groupName?" data="form.pane.BPMUsers.value.groupName"></form:source>
+      <form:destination target="control.BPMUsers_groupName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BPMUsers_groupName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_xZss8PRYEeeRs7eYTPjalw">
+      <form:source target="pane.BPMUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value BusinessObjectModel.bom#_M1iMcPRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%26n=addedBy?" data="form.pane.BPMUsers.value.addedBy"></form:source>
+      <form:destination target="control.BPMUsers_addedBy" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BPMUsers_addedBy.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_xZxlcPRYEeeRs7eYTPjalw">
+      <form:source target="pane.BPMUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value BusinessObjectModel.bom#_M9KecPRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%26n=addedOn?" data="form.pane.BPMUsers.value.addedOn"></form:source>
+      <form:destination target="control.BPMUsers_addedOn" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BPMUsers_addedOn.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_loqc8PRaEeeRs7eYTPjalw">
+      <form:source target="data.BPMUsers" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.BPMUsers.value"></form:source>
+      <form:destination target="pane.BPMUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value" data="form.pane.BPMUsers.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_Q3a6QPRoEeeRs7eYTPjalw">
+      <form:source target="data.LoginName" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.LoginName.value"></form:source>
+      <form:destination target="control.LoginName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.LoginName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_0Q6toPVIEee786-X2LpNbg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeaddby?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=addby?" data="form.pane.BusinessUser_createresourcerequest.value.addby"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_addby" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_addby.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_0RANMPVIEee786-X2LpNbg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeaction?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=action?" data="form.pane.BusinessUser_createresourcerequest.value.action"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_action" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_action.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_0RFswPVIEee786-X2LpNbg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTyperesult?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=result?" data="form.pane.BusinessUser_createresourcerequest.value.result"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_result" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_result.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" syncFlags="2048" direction="bothways" name="_f-U0kFLGEeigkI-SLd1OGw">
+      <form:source target="data.ContractorGroups" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ContractorGroups.value"></form:source>
+      <form:destination target="pane.ContractorGroups" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value" data="form.pane.ContractorGroups.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_n2_pIIf8Eeik6qsM39_1JA">
+      <form:source target="pane.ContractorGroup" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_xFgckIf7Eeik6qsM39_1JA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=mobileNumber?" data="form.pane.ContractorGroup.value.mobileNumber"></form:source>
+      <form:destination target="control.ContractorGroup_mobileNumber" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroup_mobileNumber.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_n3DTgIf8Eeik6qsM39_1JA">
+      <form:source target="pane.ContractorNormalUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_xFgckIf7Eeik6qsM39_1JA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=mobileNumber?" data="form.pane.ContractorNormalUsers.value.mobileNumber"></form:source>
+      <form:destination target="control.ContractorNormalUsers_mobileNumber" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorNormalUsers_mobileNumber.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9jXkwGGSEe2V075YU_dt7w">
+      <form:source target="data.GroupName" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.GroupName.value"></form:source>
+      <form:destination target="control.GroupName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.GroupName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9jgusGGSEe2V075YU_dt7w">
+      <form:source target="pane.ContractorGroup" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_ddpVYFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedBy?" data="form.pane.ContractorGroup.value.addedBy"></form:source>
+      <form:destination target="control.ContractorGroup_addedBy" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroup_addedBy.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9jgusWGSEe2V075YU_dt7w">
+      <form:source target="pane.ContractorGroup" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_gJq2wFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedOn?" data="form.pane.ContractorGroup.value.addedOn"></form:source>
+      <form:destination target="control.ContractorGroup_addedOn" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroup_addedOn.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9jh80GGSEe2V075YU_dt7w">
+      <form:source target="pane.ContractorGroup" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_JeJlkCLmEe2wEoo8St6PPQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=state?" data="form.pane.ContractorGroup.value.state"></form:source>
+      <form:destination target="control.ContractorGroup_state" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroup_state.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9jh80WGSEe2V075YU_dt7w">
+      <form:source target="data.resourceList" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.resourceList.value"></form:source>
+      <form:destination target="pane.resourceList" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value" data="form.pane.resourceList.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9jrt0GGSEe2V075YU_dt7w">
+      <form:source target="pane.resourceList" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value BusinessObjectModel.bom#_k1FMYPBTEeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aResource%26n=loginName?" data="form.pane.resourceList.value.loginName"></form:source>
+      <form:destination target="control.resourceList_loginName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.resourceList_loginName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9jrt0WGSEe2V075YU_dt7w">
+      <form:source target="pane.resourceList" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value BusinessObjectModel.bom#_lQShsPBTEeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aResource%26n=emailAddress?" data="form.pane.resourceList.value.emailAddress"></form:source>
+      <form:destination target="control.resourceList_emailAddress" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.resourceList_emailAddress.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9jybgGGSEe2V075YU_dt7w">
+      <form:source target="pane.resourceList" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value BusinessObjectModel.bom#_oZnqIPBTEeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aResource%26n=groupName?" data="form.pane.resourceList.value.groupName"></form:source>
+      <form:destination target="control.resourceList_groupName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.resourceList_groupName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9j37EGGSEe2V075YU_dt7w">
+      <form:source target="data.decision" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.decision.value"></form:source>
+      <form:destination target="control.decision" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.decision.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9j37EWGSEe2V075YU_dt7w">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeMobileNumber?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=mobileNumber?" data="form.pane.BusinessUser_createresourcerequest.value.mobileNumber"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_mobileNumber" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_mobileNumber.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9j5wQGGSEe2V075YU_dt7w">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeField1?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=field1?" data="form.pane.BusinessUser_createresourcerequest.value.field1"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_field1" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_field1.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9j5wQWGSEe2V075YU_dt7w">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeField2?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=field2?" data="form.pane.BusinessUser_createresourcerequest.value.field2"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_field2" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_field2.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9j5wQmGSEe2V075YU_dt7w">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeField3?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=field3?" data="form.pane.BusinessUser_createresourcerequest.value.field3"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_field3" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_field3.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9j8MgGGSEe2V075YU_dt7w">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeField4?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=field4?" data="form.pane.BusinessUser_createresourcerequest.value.field4"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_field4" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_field4.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9j-BsGGSEe2V075YU_dt7w">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeField5?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=field5?" data="form.pane.BusinessUser_createresourcerequest.value.field5"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_field5" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_field5.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9j_P0GGSEe2V075YU_dt7w">
+      <form:source target="pane.ContractorNormalUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_ddpVYFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedBy?" data="form.pane.ContractorNormalUsers.value.addedBy"></form:source>
+      <form:destination target="control.ContractorNormalUsers_addedBy" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorNormalUsers_addedBy.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9j_P0WGSEe2V075YU_dt7w">
+      <form:source target="pane.ContractorNormalUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_gJq2wFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedOn?" data="form.pane.ContractorNormalUsers.value.addedOn"></form:source>
+      <form:destination target="control.ContractorNormalUsers_addedOn" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorNormalUsers_addedOn.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9j_P0mGSEe2V075YU_dt7w">
+      <form:source target="pane.ContractorNormalUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_JeJlkCLmEe2wEoo8St6PPQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=state?" data="form.pane.ContractorNormalUsers.value.state"></form:source>
+      <form:destination target="control.ContractorNormalUsers_state" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorNormalUsers_state.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9j_P02GSEe2V075YU_dt7w">
+      <form:source target="data.ContractorSingleUser" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ContractorSingleUser.value"></form:source>
+      <form:destination target="pane.ContractorSingleUser" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.ContractorSingleUser.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9kK2AGGSEe2V075YU_dt7w">
+      <form:source target="pane.ContractorSingleUser" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_cfRGQPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=loginName?" data="form.pane.ContractorSingleUser.value.loginName"></form:source>
+      <form:destination target="control.ContractorSingleUser_loginName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorSingleUser_loginName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9kK2AWGSEe2V075YU_dt7w">
+      <form:source target="pane.ContractorSingleUser" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_clS1wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=firstName?" data="form.pane.ContractorSingleUser.value.firstName"></form:source>
+      <form:destination target="control.ContractorSingleUser_firstName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorSingleUser_firstName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9kT_8GGSEe2V075YU_dt7w">
+      <form:source target="pane.ContractorSingleUser" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_cpR94PB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=lastName?" data="form.pane.ContractorSingleUser.value.lastName"></form:source>
+      <form:destination target="control.ContractorSingleUser_lastName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorSingleUser_lastName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9kT_8WGSEe2V075YU_dt7w">
+      <form:source target="pane.ContractorSingleUser" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_ctE4wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=contractorGroupName?" data="form.pane.ContractorSingleUser.value.contractorGroupName"></form:source>
+      <form:destination target="control.ContractorSingleUser_contractorGroupName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorSingleUser_contractorGroupName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9kZfgGGSEe2V075YU_dt7w">
+      <form:source target="pane.ContractorSingleUser" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_oKsLkPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=masterUser?" data="form.pane.ContractorSingleUser.value.masterUser"></form:source>
+      <form:destination target="control.ContractorSingleUser_masterUser" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorSingleUser_masterUser.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9kjQgGGSEe2V075YU_dt7w">
+      <form:source target="pane.ContractorSingleUser" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_xLxKgPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=emailID?" data="form.pane.ContractorSingleUser.value.emailID"></form:source>
+      <form:destination target="control.ContractorSingleUser_emailID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorSingleUser_emailID.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9kj3kGGSEe2V075YU_dt7w">
+      <form:source target="pane.ContractorSingleUser" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_ddpVYFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedBy?" data="form.pane.ContractorSingleUser.value.addedBy"></form:source>
+      <form:destination target="control.ContractorSingleUser_addedBy" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorSingleUser_addedBy.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9kj3kWGSEe2V075YU_dt7w">
+      <form:source target="pane.ContractorSingleUser" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_gJq2wFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedOn?" data="form.pane.ContractorSingleUser.value.addedOn"></form:source>
+      <form:destination target="control.ContractorSingleUser_addedOn" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorSingleUser_addedOn.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9ktBgGGSEe2V075YU_dt7w">
+      <form:source target="pane.ContractorSingleUser" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_xFgckIf7Eeik6qsM39_1JA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=mobileNumber?" data="form.pane.ContractorSingleUser.value.mobileNumber"></form:source>
+      <form:destination target="control.ContractorSingleUser_mobileNumber" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorSingleUser_mobileNumber.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_9kx6AGGSEe2V075YU_dt7w">
+      <form:source target="pane.ContractorSingleUser" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_JeJlkCLmEe2wEoo8St6PPQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=state?" data="form.pane.ContractorSingleUser.value.state"></form:source>
+      <form:destination target="control.ContractorSingleUser_state" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorSingleUser_state.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_nFC2AGs0Ee2d9au2bVyQcg">
+      <form:source target="pane.ContractorGroups" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_cfRGQPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=loginName?" data="form.pane.ContractorGroups.value.loginName"/>
+      <form:destination target="control.ContractorGroups_loginName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroups_loginName.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_nFKKwGs0Ee2d9au2bVyQcg">
+      <form:source target="pane.ContractorGroups" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_clS1wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=firstName?" data="form.pane.ContractorGroups.value.firstName"/>
+      <form:destination target="control.ContractorGroups_firstName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroups_firstName.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_nFOcMGs0Ee2d9au2bVyQcg">
+      <form:source target="pane.ContractorGroups" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_cpR94PB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=lastName?" data="form.pane.ContractorGroups.value.lastName"/>
+      <form:destination target="control.ContractorGroups_lastName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroups_lastName.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_nFVJ4Gs0Ee2d9au2bVyQcg">
+      <form:source target="pane.ContractorGroups" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_ctE4wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=contractorGroupName?" data="form.pane.ContractorGroups.value.contractorGroupName"/>
+      <form:destination target="control.ContractorGroups_contractorGroupName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroups_contractorGroupName.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_nFe64Gs0Ee2d9au2bVyQcg">
+      <form:source target="pane.ContractorGroups" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_oKsLkPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=masterUser?" data="form.pane.ContractorGroups.value.masterUser"/>
+      <form:destination target="control.ContractorGroups_masterUser" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroups_masterUser.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_nFor4Gs0Ee2d9au2bVyQcg">
+      <form:source target="pane.ContractorGroups" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_xLxKgPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=emailID?" data="form.pane.ContractorGroups.value.emailID"/>
+      <form:destination target="control.ContractorGroups_emailID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroups_emailID.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_nF1gMGs0Ee2d9au2bVyQcg">
+      <form:source target="pane.ContractorGroups" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_ddpVYFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedBy?" data="form.pane.ContractorGroups.value.addedBy"/>
+      <form:destination target="control.ContractorGroups_addedBy" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroups_addedBy.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_nF_4QGs0Ee2d9au2bVyQcg">
+      <form:source target="pane.ContractorGroups" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_gJq2wFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedOn?" data="form.pane.ContractorGroups.value.addedOn"/>
+      <form:destination target="control.ContractorGroups_addedOn" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroups_addedOn.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_nGLecGs0Ee2d9au2bVyQcg">
+      <form:source target="pane.ContractorGroups" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_xFgckIf7Eeik6qsM39_1JA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=mobileNumber?" data="form.pane.ContractorGroups.value.mobileNumber"/>
+      <form:destination target="control.ContractorGroups_mobileNumber" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroups_mobileNumber.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_nGYSwGs0Ee2d9au2bVyQcg">
+      <form:source target="pane.ContractorGroups" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_JeJlkCLmEe2wEoo8St6PPQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=state?" data="form.pane.ContractorGroups.value.state"/>
+      <form:destination target="control.ContractorGroups_state" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGroups_state.value"/>
+    </form:binding>
+  </form:bindings>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="true"/>
+    <form:defaults>
+      <form:labelProperties position="top"/>
+    </form:defaults>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.image" controlType="com.tibco.forms.controls.image" name="control.image1">
+      <form:propertySet xsi:type="et:ImagePropertySet" sfRelative="true">
+        <et:url>Images/Safaricom_logo_V02.jpg</et:url>
+      </form:propertySet>
+      <form:label>Image 1</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:required>false</form:required>
+    </form:control>
+    <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pneOnBoardUserDetailsParent" paneType="com.tibco.forms.panes.vertical">
+      <form:label></form:label>
+      <form:visible>false</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="top" visible="true" width="120"/>
+      </form:defaults>
+      <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.lblSelectOption">
+        <form:label>Select Option</form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneOnBoardUserDetailsParent01" paneType="com.tibco.forms.panes.horizontal">
+        <form:label></form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+        <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.radiogroup" controlType="com.tibco.forms.controls.radiogroup" name="control.onboardUsers">
+          <form:propertySet xsi:type="et:RadioGroupPropertySet">
+            <et:choiceValues>BUSINESS</et:choiceValues>
+            <et:choiceValues>CONTRACTOR_MASTER</et:choiceValues>
+            <et:choiceValues>VIEW_ALL_USERS</et:choiceValues>
+            <et:choiceLabels>Add Business Users</et:choiceLabels>
+            <et:choiceLabels>Add Contractor Group &amp; Master Users</et:choiceLabels>
+            <et:choiceLabels>View All Users</et:choiceLabels>
+            <et:nColumns>1</et:nColumns>
+          </form:propertySet>
+          <form:label>On board Users</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+        </form:control>
+      </form:pane>
+    </form:pane>
+    <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pneAddBusinessUsers" paneType="com.tibco.forms.panes.vertical">
+      <form:visible>false</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pane2" paneType="com.tibco.forms.panes.horizontal">
+        <form:label>Pane 2</form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+      </form:pane>
+      <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.businessUserAddition">
+        <form:label>Business User Addition</form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:pane generated="true" generatorSource="com.sfc.updateResource.xpdl#_ihIyAPCOEeesJ4bn2tlLXg?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=BusinessUser?" syncFlags="327680" styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.SchemacreateresourceinputType?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%26n=createresourceinputType?" name="pane.BusinessUser" paneType="com.tibco.forms.panes.vertical">
+        <form:label>Resources List</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+        <form:pane styleClass="marginPane" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneButton01" paneType="com.tibco.forms.panes.horizontal">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.addRow">
+            <form:propertySet xsi:type="et:ButtonPropertySet"/>
+            <form:label>Add Row</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+          </form:control>
+          <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.deleteRow">
+            <form:propertySet xsi:type="et:ButtonPropertySet"/>
+            <form:label>Delete Row</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+          </form:control>
+        </form:pane>
+        <form:pane generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourceinputTypecreateresourcerequestType?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourceinputType%26n=createresourcerequest?" syncFlags="327680" styleClass="marginPane" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.SchemacreateresourcerequestType?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%26n=createresourcerequestType?" name="pane.BusinessUser_createresourcerequest" paneType="com.tibco.forms.panes.grid">
+          <form:propertySet xsi:type="et:GridPanePropertySet">
+            <et:showNavigator>false</et:showNavigator>
+            <et:supportAddOperation>true</et:supportAddOperation>
+            <et:supportDeleteOperation>true</et:supportDeleteOperation>
+            <et:editable>true</et:editable>
+            <et:sortable>true</et:sortable>
+            <et:rowLabel>{0}</et:rowLabel>
+          </form:propertySet>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypename?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=name?" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_name">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+            </form:propertySet>
+            <form:label>Login Name</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeorgname?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=orgname?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_orgname">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+            </form:propertySet>
+            <form:label>orgname</form:label>
+            <form:hint></form:hint>
+            <form:visible>false</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeflag?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=flag?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_flag">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+            </form:propertySet>
+            <form:label>flag</form:label>
+            <form:hint></form:hint>
+            <form:visible>false</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeentityname?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=entityname?" syncFlags="589824" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_entityname">
+            <form:propertySet xsi:type="et:TextAreaPropertySet"/>
+            <form:label>Group Name</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeemail?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=email?" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_email">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+            </form:propertySet>
+            <form:label>Email</form:label>
+            <form:hint></form:hint>
+            <form:visible>false</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypepassword?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=password?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_password">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+            </form:propertySet>
+            <form:label>password</form:label>
+            <form:hint></form:hint>
+            <form:visible>false</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeaddby?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=addby?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_addby">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+            </form:propertySet>
+            <form:label>addby</form:label>
+            <form:hint></form:hint>
+            <form:visible>false</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeaction?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=action?" syncFlags="524288" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_action">
+            <form:propertySet xsi:type="et:TextAreaPropertySet"/>
+            <form:label>action</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTyperesult?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=result?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_result">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+            </form:propertySet>
+            <form:label>result</form:label>
+            <form:hint></form:hint>
+            <form:visible>false</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeMobileNumber?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=mobileNumber?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_mobileNumber">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+            </form:propertySet>
+            <form:label>MobileNumber</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeField1?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=field1?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_field1">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+            </form:propertySet>
+            <form:label>Field1</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeField2?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=field2?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_field2">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+            </form:propertySet>
+            <form:label>Field2</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeField3?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=field3?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_field3">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+            </form:propertySet>
+            <form:label>Field3</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeField4?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=field4?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_field4">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+            </form:propertySet>
+            <form:label>Field4</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeField5?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=field5?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_field5">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+            </form:propertySet>
+            <form:label>Field5</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+        </form:pane>
+      </form:pane>
+    </form:pane>
+    <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pneContractorMaster" paneType="com.tibco.forms.panes.vertical">
+      <form:visible>false</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="top" visible="true" width="120"/>
+      </form:defaults>
+      <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneMarginPane" paneType="com.tibco.forms.panes.horizontal">
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+      </form:pane>
+      <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.contractorGroupDetails">
+        <form:label>Contractor Group Details</form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:pane generated="true" generatorSource="com.sfc.updateResource.xpdl#__CZRAPBXEeeuzZ1H_57zBQ?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=ContractorGroup?" syncFlags="2621440" styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_X_aPwPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=ContractorGroups?" name="pane.ContractorGroup" paneType="com.tibco.forms.panes.vertical">
+        <form:label>Contractor Group</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+        <form:pane styleClass="marginPane" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneContractorGroupName" paneType="com.tibco.forms.panes.horizontal">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_ctE4wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=contractorGroupName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGroup_contractorGroupName">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+              <et:maxLength>100</et:maxLength>
+            </form:propertySet>
+            <form:label>Contractor Group Name</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+        </form:pane>
+        <form:pane styleClass="marginPane" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.masterUser" paneType="com.tibco.forms.panes.horizontal">
+          <form:label>Master User</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_cfRGQPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=loginName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGroup_loginName">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+              <et:maxLength>100</et:maxLength>
+            </form:propertySet>
+            <form:label>login Name</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_clS1wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=firstName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGroup_firstName">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+              <et:maxLength>100</et:maxLength>
+            </form:propertySet>
+            <form:label>first Name</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_cpR94PB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=lastName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGroup_lastName">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+              <et:maxLength>100</et:maxLength>
+            </form:propertySet>
+            <form:label>last Name</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_oKsLkPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=masterUser?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGroup_masterUser">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+              <et:maxLength>100</et:maxLength>
+            </form:propertySet>
+            <form:label>Master User</form:label>
+            <form:hint></form:hint>
+            <form:visible>false</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+        </form:pane>
+        <form:pane styleClass="marginPane" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneContactDetails" paneType="com.tibco.forms.panes.horizontal">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_xLxKgPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=emailID?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGroup_emailID">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+              <et:maxLength>100</et:maxLength>
+            </form:propertySet>
+            <form:label>email ID</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:validation name="ValidateEmail" when="oncontrolchange">
+              <form:script>if(context.control.value.length&lt;8)&#xD;
+{&#xD;
+	false;&#xD;
+}&#xD;
+else&#xD;
+{&#xD;
+var ch = RegExp(&quot;(.)+@(.)+\\.(.)+&quot;).test(context.control.value);&#xD;
+&#xD;
+if(ch==true) {&#xD;
+true;&#xD;
+}&#xD;
+else {&#xD;
+false;&#xD;
+}&#xD;
+}</form:script>
+              <form:message>Please enter valid Email ID</form:message>
+            </form:validation>
+            <form:required>true</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_xFgckIf7Eeik6qsM39_1JA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=mobileNumber?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.ContractorGroup_mobileNumber">
+            <form:propertySet xsi:type="et:TextPropertySet">
+              <et:displayLength>40</et:displayLength>
+              <et:maxLength>50</et:maxLength>
+            </form:propertySet>
+            <form:label>MobileNumber</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:validation name="validateContactNumber" when="oncontrolchange">
+              <form:script>var MobNumber=context.control.value;&#xD;
+if(MobNumber==null || MobNumber==&quot;&quot;)&#xD;
+{&#xD;
+	&#xD;
+	return false;&#xD;
+}&#xD;
+else&#xD;
+{&#xD;
+	&#xD;
+	if(MobNumber.length==10)&#xD;
+	{&#xD;
+		var isNonDigitChar;&#xD;
+		&#xD;
+		for(var i=0;i&lt;MobNumber.length;i++)&#xD;
+		{&#xD;
+			&#xD;
+			isNonDigitChar = isNaN(parseInt(MobNumber.charAt(i)));&#xD;
+			logger.info(MobNumber.charAt(i)+parseInt(MobNumber.charAt(i))+isNonDigitChar);&#xD;
+			if(isNonDigitChar)&#xD;
+			{&#xD;
+				&#xD;
+				return false;&#xD;
+			}&#xD;
+		}&#xD;
+		&#xD;
+		return true;&#xD;
+	}&#xD;
+	&#xD;
+	else if(MobNumber.length==13)&#xD;
+	{&#xD;
+		var c = MobNumber.charAt(0);&#xD;
+ 		if(c==&quot;+&quot;)&#xD;
+		{&#xD;
+			var isNonDigitChar;&#xD;
+			for(var i=1;i&lt;MobNumber.length;i++)&#xD;
+			{&#xD;
+				isNonDigitChar = isNaN(parseInt(MobNumber.charAt(i)));&#xD;
+				if(isNonDigitChar)&#xD;
+				{	&#xD;
+					return false;&#xD;
+				}&#xD;
+			}&#xD;
+			return true;&#xD;
+		}&#xD;
+		else&#xD;
+		{&#xD;
+			return false;&#xD;
+		}&#xD;
+	}&#xD;
+	else&#xD;
+	{&#xD;
+		return false;&#xD;
+	}&#xD;
+}	</form:script>
+              <form:message>Please enter valid Contact Number</form:message>
+            </form:validation>
+            <form:required>false</form:required>
+          </form:control>
+        </form:pane>
+        <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_ddpVYFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedBy?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGroup_addedBy">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>200</et:maxLength>
+          </form:propertySet>
+          <form:label>AddedBy</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_gJq2wFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedOn?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGroup_addedOn">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>200</et:maxLength>
+          </form:propertySet>
+          <form:label>AddedOn</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_JeJlkCLmEe2wEoo8St6PPQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=state?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.ContractorGroup_state">
+          <form:propertySet xsi:type="et:MultiChoicePropertySet">
+            <et:choiceType>enumeration</et:choiceType>
+            <et:choiceEnumeration>com.sfc.fosImpl.bizData.dataModel.bom#_e0weICLjEe2wEoo8St6PPQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aEnumeration%26q=com.sfc.fosImpl.bizData.dataModel%26n=States?</et:choiceEnumeration>
+          </form:propertySet>
+          <form:label>State</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>true</form:required>
+        </form:control>
+      </form:pane>
+    </form:pane>
+    <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pneContractorUserDetails" paneType="com.tibco.forms.panes.vertical">
+      <form:visible>false</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top" visible="true" width="120"/>
+      </form:defaults>
+      <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane3" paneType="com.tibco.forms.panes.vertical">
+        <form:label>Pane 3</form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+      </form:pane>
+      <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.contractorUsers">
+        <form:label>Contractor Users</form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane4" paneType="com.tibco.forms.panes.vertical">
+        <form:label>Pane 4</form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:defaults>
+          <form:labelProperties position="top" visible="true" width="120"/>
+        </form:defaults>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneButtonPane02" paneType="com.tibco.forms.panes.horizontal">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.addRow01">
+            <form:propertySet xsi:type="et:ButtonPropertySet"/>
+            <form:label>Add Row</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+          </form:control>
+          <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.deleteRow01">
+            <form:propertySet xsi:type="et:ButtonPropertySet"/>
+            <form:label>Delete Row</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+          </form:control>
+        </form:pane>
+        <form:pane generated="true" generatorSource="com.sfc.updateResource.xpdl#_GbLOoPEXEeeW2tm46yiN8A?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=ContractorNormalUsers?" styleClass="marginPane" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_X_aPwPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=ContractorGroups?" name="pane.ContractorNormalUsers" paneType="com.tibco.forms.panes.grid">
+          <form:propertySet xsi:type="et:GridPanePropertySet">
+            <et:showNavigator>false</et:showNavigator>
+            <et:supportAddOperation>true</et:supportAddOperation>
+            <et:supportDeleteOperation>true</et:supportDeleteOperation>
+            <et:editable>true</et:editable>
+            <et:sortable>true</et:sortable>
+            <et:rowLabel>{0}</et:rowLabel>
+          </form:propertySet>
+          <form:label>ContractorNormalUsers</form:label>
+          <form:hint></form:hint>
+          <form:visible>false</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_cfRGQPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=loginName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorNormalUsers_loginName">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+              <et:maxLength>100</et:maxLength>
+            </form:propertySet>
+            <form:label>login Name</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_clS1wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=firstName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorNormalUsers_firstName">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+              <et:maxLength>100</et:maxLength>
+            </form:propertySet>
+            <form:label>first Name</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_cpR94PB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=lastName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorNormalUsers_lastName">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+              <et:maxLength>100</et:maxLength>
+            </form:propertySet>
+            <form:label>last Name</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_ctE4wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=contractorGroupName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorNormalUsers_contractorGroupName">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+              <et:maxLength>100</et:maxLength>
+            </form:propertySet>
+            <form:label>Contractor Group Name</form:label>
+            <form:hint></form:hint>
+            <form:visible>false</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_oKsLkPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=masterUser?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorNormalUsers_masterUser">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+              <et:maxLength>100</et:maxLength>
+            </form:propertySet>
+            <form:label>Master User</form:label>
+            <form:hint></form:hint>
+            <form:visible>false</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_xLxKgPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=emailID?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorNormalUsers_emailID">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+              <et:maxLength>100</et:maxLength>
+            </form:propertySet>
+            <form:label>email ID</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:validation name="ValidateEmail" when="oncontrolchange">
+              <form:script>if(context.control.value.length&lt;8)&#xD;
+{&#xD;
+	false;&#xD;
+}&#xD;
+else&#xD;
+{&#xD;
+var ch = RegExp(&quot;(.)+@(.)+\\.(.)+&quot;).test(context.control.value);&#xD;
+&#xD;
+if(ch==true) {&#xD;
+true;&#xD;
+}&#xD;
+else {&#xD;
+false;&#xD;
+}&#xD;
+}</form:script>
+              <form:message>Please enter valid Email ID</form:message>
+            </form:validation>
+            <form:required>true</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_xFgckIf7Eeik6qsM39_1JA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=mobileNumber?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.ContractorNormalUsers_mobileNumber">
+            <form:propertySet xsi:type="et:TextPropertySet">
+              <et:displayLength>40</et:displayLength>
+              <et:maxLength>50</et:maxLength>
+            </form:propertySet>
+            <form:label>MobileNumber</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:validation name="ValidatePhoneNumber" when="oncontrolchange">
+              <form:script>var MobNumber=context.control.value;&#xD;
+if(MobNumber==null || MobNumber==&quot;&quot;)&#xD;
+{&#xD;
+	&#xD;
+	return false;&#xD;
+}&#xD;
+else&#xD;
+{&#xD;
+	&#xD;
+	if(MobNumber.length==10)&#xD;
+	{&#xD;
+		var isNonDigitChar;&#xD;
+		&#xD;
+		for(var i=0;i&lt;MobNumber.length;i++)&#xD;
+		{&#xD;
+			&#xD;
+			isNonDigitChar = isNaN(parseInt(MobNumber.charAt(i)));&#xD;
+			logger.info(MobNumber.charAt(i)+parseInt(MobNumber.charAt(i))+isNonDigitChar);&#xD;
+			if(isNonDigitChar)&#xD;
+			{&#xD;
+				&#xD;
+				return false;&#xD;
+			}&#xD;
+		}&#xD;
+		&#xD;
+		return true;&#xD;
+	}&#xD;
+	&#xD;
+	else if(MobNumber.length==13)&#xD;
+	{&#xD;
+		var c = MobNumber.charAt(0);&#xD;
+ 		if(c==&quot;+&quot;)&#xD;
+		{&#xD;
+			var isNonDigitChar;&#xD;
+			for(var i=1;i&lt;MobNumber.length;i++)&#xD;
+			{&#xD;
+				isNonDigitChar = isNaN(parseInt(MobNumber.charAt(i)));&#xD;
+				if(isNonDigitChar)&#xD;
+				{	&#xD;
+					return false;&#xD;
+				}&#xD;
+			}&#xD;
+			return true;&#xD;
+		}&#xD;
+		else&#xD;
+		{&#xD;
+			return false;&#xD;
+		}&#xD;
+	}&#xD;
+	else&#xD;
+	{&#xD;
+		return false;&#xD;
+	}&#xD;
+}	</form:script>
+              <form:message>Please enter valid Contact Number</form:message>
+            </form:validation>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_ddpVYFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedBy?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorNormalUsers_addedBy">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+              <et:maxLength>200</et:maxLength>
+            </form:propertySet>
+            <form:label>AddedBy</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_gJq2wFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedOn?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorNormalUsers_addedOn">
+            <form:propertySet xsi:type="et:TextAreaPropertySet">
+              <et:rows>10</et:rows>
+              <et:cols>25</et:cols>
+              <et:maxLength>200</et:maxLength>
+            </form:propertySet>
+            <form:label>AddedOn</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_JeJlkCLmEe2wEoo8St6PPQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=state?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.ContractorNormalUsers_state">
+            <form:propertySet xsi:type="et:MultiChoicePropertySet">
+              <et:choiceType>enumeration</et:choiceType>
+              <et:choiceEnumeration>com.sfc.fosImpl.bizData.dataModel.bom#_e0weICLjEe2wEoo8St6PPQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aEnumeration%26q=com.sfc.fosImpl.bizData.dataModel%26n=States?</et:choiceEnumeration>
+            </form:propertySet>
+            <form:label>State</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>true</form:required>
+          </form:control>
+        </form:pane>
+      </form:pane>
+    </form:pane>
+    <form:control generated="true" generatorSource="com.sfc.updateResource.xpdl#_yMRsYPEWEeeW2tm46yiN8A?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=ContractorMasterUserFlag?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.ContractorMasterUserFlag">
+      <form:label>Contractor Master User Flag</form:label>
+      <form:hint></form:hint>
+      <form:visible>false</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pane5" paneType="com.tibco.forms.panes.horizontal">
+      <form:label>Pane 5</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+    </form:pane>
+    <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.lblallUsers">
+      <form:label>Business Users</form:label>
+      <form:visible>false</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneBPMUsers" paneType="com.tibco.forms.panes.horizontal">
+      <form:visible>false</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:pane generated="true" generatorSource="com.sfc.updateResource.xpdl#_cXp2gPRYEeeRs7eYTPjalw?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=BPMUsers?" syncFlags="344064" styleClass="marginPane" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class BusinessObjectModel.bom#_KHBXwPRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.adminOps.dataModel%26n=BPMUsers?" readOnly="true" name="pane.BPMUsers" paneType="com.tibco.forms.panes.grid">
+        <form:propertySet xsi:type="et:GridPanePropertySet">
+          <et:showNavigator>false</et:showNavigator>
+          <et:supportAddOperation>true</et:supportAddOperation>
+          <et:supportDeleteOperation>true</et:supportDeleteOperation>
+          <et:editable>true</et:editable>
+          <et:sortable>true</et:sortable>
+          <et:rowLabel>{0}</et:rowLabel>
+        </form:propertySet>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+        <form:control generated="true" generatorSource="BusinessObjectModel.bom#_MiwaYPRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%26n=name?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BPMUsers_name">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>100</et:maxLength>
+          </form:propertySet>
+          <form:label>Name</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="BusinessObjectModel.bom#_MuSU8PRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%26n=groupName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BPMUsers_groupName">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>100</et:maxLength>
+          </form:propertySet>
+          <form:label>Group Name</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="BusinessObjectModel.bom#_M1iMcPRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%26n=addedBy?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BPMUsers_addedBy">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>100</et:maxLength>
+          </form:propertySet>
+          <form:label>Added By</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="BusinessObjectModel.bom#_M9KecPRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%26n=addedOn?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BPMUsers_addedOn">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>100</et:maxLength>
+          </form:propertySet>
+          <form:label>Added On</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+      </form:pane>
+    </form:pane>
+    <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pane7" paneType="com.tibco.forms.panes.horizontal">
+      <form:label>Pane 7</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+    </form:pane>
+    <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.lblcontractors">
+      <form:label>Contractors</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pneContractorGroups" paneType="com.tibco.forms.panes.horizontal">
+      <form:visible>false</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:pane generated="true" generatorSource="com.sfc.updateResource.xpdl#_BT09gVLDEei0v_uM2IXT3g?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=ContractorGroups?" syncFlags="786432" styleClass="marginPane" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_X_aPwPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=ContractorGroups?" readOnly="true" name="pane.ContractorGroups" paneType="com.tibco.forms.panes.grid">
+        <form:propertySet xsi:type="et:GridPanePropertySet">
+          <et:showNavigator>false</et:showNavigator>
+          <et:editable>true</et:editable>
+          <et:sortable>true</et:sortable>
+          <et:rowLabel>{0}</et:rowLabel>
+        </form:propertySet>
+        <form:label>ContractorGroups</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+        <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_cfRGQPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=loginName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGroups_loginName">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>100</et:maxLength>
+          </form:propertySet>
+          <form:label>login Name</form:label>
+          <form:hint/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_clS1wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=firstName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGroups_firstName">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>100</et:maxLength>
+          </form:propertySet>
+          <form:label>first Name</form:label>
+          <form:hint/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_cpR94PB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=lastName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGroups_lastName">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>100</et:maxLength>
+          </form:propertySet>
+          <form:label>last Name</form:label>
+          <form:hint/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_ctE4wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=contractorGroupName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGroups_contractorGroupName">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>100</et:maxLength>
+          </form:propertySet>
+          <form:label>Contractor Group Name</form:label>
+          <form:hint/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_oKsLkPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=masterUser?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGroups_masterUser">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>100</et:maxLength>
+          </form:propertySet>
+          <form:label>Master User</form:label>
+          <form:hint/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_xLxKgPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=emailID?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGroups_emailID">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>100</et:maxLength>
+          </form:propertySet>
+          <form:label>email ID</form:label>
+          <form:hint/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_ddpVYFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedBy?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGroups_addedBy">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>200</et:maxLength>
+          </form:propertySet>
+          <form:label>AddedBy</form:label>
+          <form:hint/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_gJq2wFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedOn?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGroups_addedOn">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>200</et:maxLength>
+          </form:propertySet>
+          <form:label>AddedOn</form:label>
+          <form:hint/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_xFgckIf7Eeik6qsM39_1JA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=mobileNumber?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.ContractorGroups_mobileNumber">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label>MobileNumber</form:label>
+          <form:hint/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_JeJlkCLmEe2wEoo8St6PPQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=state?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" readOnly="true" controlType="com.tibco.forms.controls.optionlist" name="control.ContractorGroups_state">
+          <form:propertySet xsi:type="et:MultiChoicePropertySet">
+            <et:choiceType>enumeration</et:choiceType>
+            <et:choiceEnumeration>com.sfc.fosImpl.bizData.dataModel.bom#_e0weICLjEe2wEoo8St6PPQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aEnumeration%26q=com.sfc.fosImpl.bizData.dataModel%26n=States?</et:choiceEnumeration>
+          </form:propertySet>
+          <form:label>State</form:label>
+          <form:hint/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+      </form:pane>
+    </form:pane>
+    <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pane8" paneType="com.tibco.forms.panes.horizontal">
+      <form:label>Pane 8</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+    </form:pane>
+    <form:control generated="true" generatorSource="com.sfc.updateResource.xpdl#_HHS5cPRnEeeRs7eYTPjalw?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=LoginName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.LoginName">
+      <form:propertySet xsi:type="et:TextAreaPropertySet">
+        <et:rows>10</et:rows>
+        <et:cols>25</et:cols>
+        <et:maxLength>100</et:maxLength>
+      </form:propertySet>
+      <form:label>LoginName</form:label>
+      <form:hint></form:hint>
+      <form:visible>false</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="com.sfc.updateResource.xpdl#_tzG3UPBTEeeuzZ1H_57zBQ?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=GroupName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.GroupName">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <form:list>true</form:list>
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>Group Name</form:label>
+      <form:hint></form:hint>
+      <form:visible>false</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:pane generated="true" generatorSource="com.sfc.updateResource.xpdl#_ranV8PBTEeeuzZ1H_57zBQ?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=resourceList?" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class BusinessObjectModel.bom#_ipNxwPBTEeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.adminOps.dataModel%26n=Resource?" name="pane.resourceList" paneType="com.tibco.forms.panes.grid">
+      <form:propertySet xsi:type="et:GridPanePropertySet">
+        <et:showNavigator>false</et:showNavigator>
+        <et:supportAddOperation>true</et:supportAddOperation>
+        <et:supportDeleteOperation>true</et:supportDeleteOperation>
+        <et:editable>true</et:editable>
+        <et:sortable>true</et:sortable>
+        <et:rowLabel>{0}</et:rowLabel>
+      </form:propertySet>
+      <form:label>resource List</form:label>
+      <form:hint></form:hint>
+      <form:visible>false</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" generatorSource="BusinessObjectModel.bom#_k1FMYPBTEeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aResource%26n=loginName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.resourceList_loginName">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>login Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="BusinessObjectModel.bom#_lQShsPBTEeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aResource%26n=emailAddress?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.resourceList_emailAddress">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>email Address</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="BusinessObjectModel.bom#_oZnqIPBTEeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aResource%26n=groupName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.resourceList_groupName">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>group Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:control generated="true" generatorSource="com.sfc.updateResource.xpdl#_WFbVsPCCEeeuzZ1H_57zBQ?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=decision?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.decision">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>decision</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:pane generated="true" generatorSource="com.sfc.updateResource.xpdl#_XYYsAPVcEee_HfiEwKRl-A?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=ContractorSingleUser?" syncFlags="131072" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_X_aPwPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=ContractorGroups?" name="pane.ContractorSingleUser" paneType="com.tibco.forms.panes.vertical">
+      <form:label>ContractorSingleUser</form:label>
+      <form:hint></form:hint>
+      <form:visible>false</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="left"/>
+      </form:defaults>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_cfRGQPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=loginName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorSingleUser_loginName">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>login Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_clS1wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=firstName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorSingleUser_firstName">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>first Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_cpR94PB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=lastName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorSingleUser_lastName">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>last Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_ctE4wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=contractorGroupName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorSingleUser_contractorGroupName">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>Contractor Group Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_oKsLkPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=masterUser?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorSingleUser_masterUser">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>Master User</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_xLxKgPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=emailID?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorSingleUser_emailID">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>email ID</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>true</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_ddpVYFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedBy?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorSingleUser_addedBy">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>200</et:maxLength>
+        </form:propertySet>
+        <form:label>AddedBy</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_gJq2wFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedOn?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContractorSingleUser_addedOn">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>200</et:maxLength>
+        </form:propertySet>
+        <form:label>AddedOn</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_xFgckIf7Eeik6qsM39_1JA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=mobileNumber?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.ContractorSingleUser_mobileNumber">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>MobileNumber</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_JeJlkCLmEe2wEoo8St6PPQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=state?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.ContractorSingleUser_state">
+        <form:propertySet xsi:type="et:MultiChoicePropertySet">
+          <et:choiceType>enumeration</et:choiceType>
+          <et:choiceEnumeration>com.sfc.fosImpl.bizData.dataModel.bom#_e0weICLjEe2wEoo8St6PPQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aEnumeration%26q=com.sfc.fosImpl.bizData.dataModel%26n=States?</et:choiceEnumeration>
+        </form:propertySet>
+        <form:label>State</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>true</form:required>
+      </form:control>
+    </form:pane>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancela">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submita">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>

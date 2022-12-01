@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config:ProjectConfig xmlns:config="http://www.tibco.com/XPD/projectConfig">
+  <projectDetails id="com.sfc.fosImpl.genericReporting">
+    <globalDestinations>
+      <destination type="BPM"/>
+    </globalDestinations>
+  </projectDetails>
+  <config:assetTypes id="com.tibco.xpd.asset.businessAssetsV3"/>
+  <config:assetTypes id="com.tibco.xpd.asset.form" version="9"/>
+  <config:assetTypes id="com.tibco.xpd.asset.wsdl"/>
+  <config:assetTypes id="com.tibco.xpd.asset.businessProcess" version="20"/>
+  <config:assetTypes id="com.tibco.xpd.asset.bom" version="4"/>
+  <config:specialFolders>
+    <config:folder id="_omaDoNv0EeewD-vyNDe4_g" kind="forms" location="Forms"/>
+    <config:folder id="_omotINv0EeewD-vyNDe4_g" kind="formsInt" location=".forms/intermediate"/>
+    <config:folder id="_omxQANv0EeewD-vyNDe4_g" kind="formsGWT" location=".forms/gwt"/>
+    <config:folder id="_om7oENv0EeewD-vyNDe4_g" kind="formsMobile" location=".forms/mobile"/>
+    <config:folder id="_onCVwNv0EeewD-vyNDe4_g" kind="wsdl" location="Service Descriptors"/>
+    <config:folder id="_onTbgNv0EeewD-vyNDe4_g" kind="processes" location="Process Packages"/>
+    <config:folder id="_os67UNv0EeewD-vyNDe4_g" kind="presentation" location="Presentation Resources"/>
+    <config:folder id="_tJgbYNv0EeewD-vyNDe4_g" kind="bom" location="Business Objects"/>
+    <config:folder id="_tsudMNv0EeewD-vyNDe4_g" kind="formsBOM" location=".forms/bom"/>
+    <config:folder id="_t63m4Nv0EeewD-vyNDe4_g" kind="bom" location="Generated Business Objects" generated="bpm.wsdl2bom"/>
+    <config:folder id="_wlpyINv0EeewD-vyNDe4_g" kind="bom2xsd" location=".bom2Xsd"/>
+    <config:folder id="_11DyEN5sEee3V8FdpYhKwg" kind="compositeModulesOutput" location=".bpm"/>
+  </config:specialFolders>
+</config:ProjectConfig>

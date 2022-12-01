@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" generated="true" generatorSource="com.sfc.updateBusinessConfig.xpdl#_kE1zAuViEee0aKkJX_OoAg?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aActivity%26q=comsfcupdateBusinessConfig%3a%3aSafaricomFixedInternet_SLAConfigurations_Create%26n=SLAConfigurationsCreateNewEntry?" formatVersion="11.0.0">
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri="SFC_FOSImpl_Business_Case/SLA_ConfigurationCreateCaseData/EnterDataToCreateCase/EnterDataToCreateCase.properties" sfRelative="true" internal="true" localized="true"/>
+    <form:externalResource name="resource.safaricom" uri="CSS/safaricom.css" sfRelative="true"/>
+    <form:externalResource name="resource.SFC" uri="Images/SFC.png" sfRelative="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" generatorSource="com.sfc.updateBusinessConfig.xpdl#_kE1zFOViEee0aKkJX_OoAg?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateBusinessConfig%3a%3aSafaricomFixedInternet_SLAConfigurations_Create%26n=SLA_Configuration?" name="data.SLA_Configuration" label="SLA_Configuration" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_-rMtkNZvEeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=SLA_Configuration?" inout="INOUT"/>
+  </form:dataModel>
+  <form:actions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancel" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancel.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submit" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submit.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+    <form:rule name="rule.setVisible2" label="setVisible2">
+      <form:event source="#control.SLA_Configuration_emailTo" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#update" subject="form.control.SLA_Configuration_emailTo.update"/>
+      <form:action xsi:type="form:ScriptAction" name="action.rule11" label="rule1 1">
+        <form:script>logger.info(data.SLA_Configuration.emailTo+'Outside');&#xD;
+if(data.SLA_Configuration.emailTo=='PM'){&#xD;
+logger.info(data.SLA_Configuration.emailTo+'Inside');&#xD;
+control.SLA_Configuration_emailConfig.visible = false;&#xD;
+}&#xD;
+else{&#xD;
+control.SLA_Configuration_emailConfig.visible = true;&#xD;
+}</form:script>
+      </form:action>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_7G0EYOVjEee0aKkJX_OoAg">
+      <form:source target="data.SLA_Configuration" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.SLA_Configuration.value"></form:source>
+      <form:destination target="pane.SLA_Configuration" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.SLA_Configuration.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_7G0rceVjEee0aKkJX_OoAg">
+      <form:source target="pane.SLA_Configuration" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_fioAINZ8EeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=taskName?" data="form.pane.SLA_Configuration.value.taskName"></form:source>
+      <form:destination target="control.SLA_Configuration_taskName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.SLA_Configuration_taskName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_7G0rcuVjEee0aKkJX_OoAg">
+      <form:source target="pane.SLA_Configuration" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_6KMtIOVNEeeRkLvTRwuu3w?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=processName?" data="form.pane.SLA_Configuration.value.processName"></form:source>
+      <form:destination target="control.SLA_Configuration_processName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.SLA_Configuration_processName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_7G0rc-VjEee0aKkJX_OoAg">
+      <form:source target="pane.SLA_Configuration" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_s5sH4NZ8EeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=SLA_Deadline?" data="form.pane.SLA_Configuration.value.SLA_Deadline"></form:source>
+      <form:destination target="control.SLA_Configuration_SLA_Deadline" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.SLA_Configuration_SLA_Deadline.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_7G1SgOVjEee0aKkJX_OoAg">
+      <form:source target="pane.SLA_Configuration" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_heL4cNZ9EeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=emailTo?" data="form.pane.SLA_Configuration.value.emailTo"></form:source>
+      <form:destination target="control.SLA_Configuration_emailTo" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.SLA_Configuration_emailTo.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_7G1SgeVjEee0aKkJX_OoAg">
+      <form:source target="pane.SLA_Configuration" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_kdhXYNZ9EeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=taskTo?" data="form.pane.SLA_Configuration.value.taskTo"></form:source>
+      <form:destination target="control.SLA_Configuration_taskTo" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.SLA_Configuration_taskTo.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_7G1SguVjEee0aKkJX_OoAg">
+      <form:source target="pane.SLA_Configuration" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_nhAWgNZ9EeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=emailConfig?" data="form.pane.SLA_Configuration.value.emailConfig"></form:source>
+      <form:destination target="control.SLA_Configuration_emailConfig" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.SLA_Configuration_emailConfig.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_7G1Sg-VjEee0aKkJX_OoAg">
+      <form:source target="pane.SLA_Configuration" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_poyiYNZ9EeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=taskConfig?" data="form.pane.SLA_Configuration.value.taskConfig"></form:source>
+      <form:destination target="control.SLA_Configuration_taskConfig" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.SLA_Configuration_taskConfig.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_7G1ShOVjEee0aKkJX_OoAg">
+      <form:source target="pane.SLA_Configuration" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_HWIL0OViEee0aKkJX_OoAg?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=enableDisableFlag?" data="form.pane.SLA_Configuration.value.enableDisableFlag"></form:source>
+      <form:destination target="control.SLA_Configuration_enableDisableFlag" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.SLA_Configuration_enableDisableFlag.value"></form:destination>
+    </form:binding>
+  </form:bindings>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>Enter Data To Create Case</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="true"/>
+    <form:defaults>
+      <form:labelProperties position="top"/>
+    </form:defaults>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.image" controlType="com.tibco.forms.controls.image" name="control.image1">
+      <form:propertySet xsi:type="et:ImagePropertySet" sfRelative="true">
+        <et:url>Images/SFC.png</et:url>
+      </form:propertySet>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.sLAConfigurations">
+      <form:label>SLA Configurations</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:pane generated="true" generatorSource="com.sfc.updateBusinessConfig.xpdl#_kE1zFOViEee0aKkJX_OoAg?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateBusinessConfig%3a%3aSafaricomFixedInternet_SLAConfigurations_Create%26n=SLA_Configuration?" syncFlags="2949120" styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_-rMtkNZvEeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=SLA_Configuration?" name="pane.SLA_Configuration" paneType="com.tibco.forms.panes.vertical">
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="left"/>
+      </form:defaults>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_dgwPANZ8EeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=SLALevel?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.SLA_Configuration_SLALevel">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>20</et:displayLength>
+          <et:maxLength>19</et:maxLength>
+          <et:numeric>true</et:numeric>
+          <et:formatRef>resource.common.format_integer</et:formatRef>
+        </form:propertySet>
+        <form:label>SLALevel</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>true</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_6KMtIOVNEeeRkLvTRwuu3w?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=processName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.SLA_Configuration_processName">
+        <form:propertySet xsi:type="et:MultiChoicePropertySet">
+          <et:choiceValues>Provisioning</et:choiceValues>
+          <et:choiceValues>Decomissioning</et:choiceValues>
+          <et:choiceLabels>Provisioning</et:choiceLabels>
+          <et:choiceLabels>Decomissioning</et:choiceLabels>
+        </form:propertySet>
+        <form:label>ProcessName</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>true</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_fioAINZ8EeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=taskName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.SLA_Configuration_taskName">
+        <form:propertySet xsi:type="et:MultiChoicePropertySet">
+          <et:choiceValues>Process Manager Review</et:choiceValues>
+          <et:choiceValues>Select Contractor Agency</et:choiceValues>
+          <et:choiceValues>Manual Installation Removal : Contractor</et:choiceValues>
+          <et:choiceValues>TES OSG Verification</et:choiceValues>
+          <et:choiceValues>Deprovision Mngment IP : TES FAE Team</et:choiceValues>
+          <et:choiceValues>Deprovision IP : TES Team</et:choiceValues>
+          <et:choiceLabels>Process Manager Review</et:choiceLabels>
+          <et:choiceLabels>Select Contractor Agency</et:choiceLabels>
+          <et:choiceLabels>Manual Installation Removal : Contractor</et:choiceLabels>
+          <et:choiceLabels>TES OSG Verification</et:choiceLabels>
+          <et:choiceLabels>Deprovision Mngment IP : TES FAE Team</et:choiceLabels>
+          <et:choiceLabels>Deprovision IP : TES Team</et:choiceLabels>
+        </form:propertySet>
+        <form:label>Task Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>true</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_s5sH4NZ8EeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=SLA_Deadline?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.SLA_Configuration_SLA_Deadline">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>SLA_Deadline</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_heL4cNZ9EeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=emailTo?" syncFlags="524288" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.SLA_Configuration_emailTo">
+        <form:propertySet xsi:type="et:MultiChoicePropertySet">
+          <et:choiceType>enumeration</et:choiceType>
+          <et:choiceEnumeration>com.sfc.fosImpl.dataModel.bom#_0i3fwNZ8EeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aEnumeration%26q=com.sfc.fosImpl.dataModel%26n=EmailRecipient?</et:choiceEnumeration>
+        </form:propertySet>
+        <form:label>EmailTo</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_kdhXYNZ9EeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=taskTo?" syncFlags="524288" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.SLA_Configuration_taskTo">
+        <form:propertySet xsi:type="et:MultiChoicePropertySet">
+          <et:choiceType>enumeration</et:choiceType>
+          <et:choiceEnumeration>com.sfc.fosImpl.dataModel.bom#_BbEhQNZ9EeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aEnumeration%26q=com.sfc.fosImpl.dataModel%26n=TaskRecipient?</et:choiceEnumeration>
+        </form:propertySet>
+        <form:label>TaskTo</form:label>
+        <form:hint></form:hint>
+        <form:visible>false</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_nhAWgNZ9EeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=emailConfig?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.SLA_Configuration_emailConfig">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>EmailConfig</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_poyiYNZ9EeevAohC3a_ghw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=taskConfig?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.SLA_Configuration_taskConfig">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>TaskConfig</form:label>
+        <form:hint></form:hint>
+        <form:visible>false</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_HWIL0OViEee0aKkJX_OoAg?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSLA_Configuration%26n=enableDisableFlag?" syncFlags="524288" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.SLA_Configuration_enableDisableFlag">
+        <form:propertySet xsi:type="et:MultiChoicePropertySet">
+          <et:choiceType>enumeration</et:choiceType>
+          <et:choiceEnumeration>com.sfc.fosImpl.dataModel.bom#_PtgtgOViEee0aKkJX_OoAg?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aEnumeration%26q=com.sfc.fosImpl.dataModel%26n=EnableDisable?</et:choiceEnumeration>
+        </form:propertySet>
+        <form:label>EnableDisableFlag</form:label>
+        <form:hint></form:hint>
+        <form:visible>false</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancel">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submit">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>

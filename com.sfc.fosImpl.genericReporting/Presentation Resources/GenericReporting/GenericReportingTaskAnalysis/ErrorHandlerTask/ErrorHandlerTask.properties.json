@@ -1,0 +1,14 @@
+{
+  "pane_content_label": "Error Handler Task",
+  "pane_pane1_label": "Pane 1",
+  "pane_toolbar_label": "Toolbar",
+  "pane_messages_label": "Invalid Entries",
+  "control_ErrorCode_label": "Error Code",
+  "form_validation_error_message": "Error in script for validation {0} of Control {1} ({2}): {3}",
+  "form_action_error_message": "Error in script for action {0} ({1}): {2}",
+  "control_lblErrorMessage_label": "Error Occured. Please Contact System Administrator With Below Details",
+  "control_cancel_label": "Cancel",
+  "form_required_message": "{0} is a required field.",
+  "control_ErrorDetail_label": "Error Detail",
+  "control_submit_label": "Submit"
+}

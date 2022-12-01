@@ -1,5 +1,5 @@
 #Merged common properties for locale #N.B. GENERATED FILE - DO NOT EDIT! CHANGES WILL BE OVERWRITTEN BY THE BUILDER.
-#Tue Nov 29 12:57:06 CAT 2022
+#Thu Dec 01 09:54:21 CAT 2022
 accessible_date_label={0} (enter as {1})
 accessible_gd_pane_asc_ord_col_header_label=This column is sorted in ascending order. Click on the column header to sort in descending order.
 accessible_gd_pane_desc_ord_col_header_label=This column is sorted in descending order. Click on the column header to remove sorting.

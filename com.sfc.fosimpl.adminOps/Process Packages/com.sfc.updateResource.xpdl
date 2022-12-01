@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xpdl2:Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:email="http://www.tibco.com/XPD/email1.0.0" xmlns:orchestrator="http://www.tibco.com/XPD/orchestrator1.0.0" xmlns:order="http://www.tibco.com/XPD/order1.0.0" xmlns:xpdExt="http://www.tibco.com/XPD/xpdExtension1.0.0" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" xsi:schemaLocation="http://www.wfmc.org/2008/XPDL2.1 http://www.wfmc.org/standards/bpmnxpdl_31.xsd" Id="_ISyUsMUeEee_QIoggc4qFg" xpdExt:DisplayName="com.sfc.updateResource" Name="comsfcupdateResource">
+  <xpdl2:PackageHeader xpdExt:Language="en_US">
+    <xpdl2:XPDLVersion>2.1</xpdl2:XPDLVersion>
+    <xpdl2:Vendor>TIBCO</xpdl2:Vendor>
+    <xpdl2:Created>2017-11-09</xpdl2:Created>
+    <xpdl2:Description></xpdl2:Description>
+    <xpdl2:Documentation></xpdl2:Documentation>
+    <xpdl2:CostUnit>USD</xpdl2:CostUnit>
+  </xpdl2:PackageHeader>
+  <xpdl2:RedefinableHeader PublicationStatus="UNDER_REVISION">
+    <xpdl2:Author>rujagtap</xpdl2:Author>
+  </xpdl2:RedefinableHeader>
+  <xpdl2:Participants>
+    <xpdl2:Participant Id="_hSR4IMUeEee_QIoggc4qFg" xpdExt:DisplayName="resouceCreationAndMappingPortTypeEndpoint1_Consumer" Name="resouceCreationAndMappingPortTypeEndpoint1_Consumer">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_1LXcQMU7Eeef49Iy9--ICQ" xpdExt:DisplayName="portType_Consumer" Name="portType_Consumer">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_3Uym4MU7Eeef49Iy9--ICQ" xpdExt:DisplayName="portType_Consumer2" Name="portType_Consumer2">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_7AdAUMU7Eeef49Iy9--ICQ" xpdExt:DisplayName="intfwscreateResourceEndpoint1_Consumer" Name="intfwscreateResourceEndpoint1_Consumer">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_QsDfMMU-Eeef49Iy9--ICQ" xpdExt:DisplayName="intfwscreateResourceEndpoint2_Consumer" Name="intfwscreateResourceEndpoint2_Consumer">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_NxjTIMqzEeeihY-FJ2Idsg" xpdExt:DisplayName="intfwsLdapEntryEndpoint0_Consumer" Name="intfwsLdapEntryEndpoint0_Consumer">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="__2JCAMrPEeeihY-FJ2Idsg" xpdExt:DisplayName="PortEndpoint0_Consumer" Name="PortEndpoint0_Consumer">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_u5ZWIMtVEeeihY-FJ2Idsg" xpdExt:DisplayName="PortEndpoint1_Consumer" Name="PortEndpoint1_Consumer">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_ncc8EOPCEeeIu-I2QAJ3Hw" xpdExt:DisplayName="PortTypeEndpoint1_Consumer" Name="PortTypeEndpoint1_Consumer">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_QtBjgOPSEeeIu-I2QAJ3Hw" xpdExt:DisplayName="Default EMail Sender" Name="DefaultEMailSender">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:Email InstanceName="EmailSender"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_lQgrAOVZEeeIu-I2QAJ3Hw" xpdExt:DisplayName="PortTypeEndpoint0_Consumer" Name="PortTypeEndpoint0_Consumer">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_QmiNoPCOEeesJ4bn2tlLXg" xpdExt:DisplayName="PortTypeEndpoint0_Consumer2" Name="PortTypeEndpoint0_Consumer2">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_AHWOMPEZEeeW2tm46yiN8A" xpdExt:DisplayName="PortType_Consumer" Name="PortType_Consumer">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+  </xpdl2:Participants>
+  <xpdl2:Pools>
+    <xpdl2:Pool Id="_fXJkEfBTEeeuzZ1H_57zBQ" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_fXJkEPBTEeeuzZ1H_57zBQ">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_fXJkEvBTEeeuzZ1H_57zBQ" xpdExt:DisplayName="Lane" Name="Lane">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="415.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+    </xpdl2:Pool>
+  </xpdl2:Pools>
+  <xpdl2:WorkflowProcesses>
+    <xpdl2:WorkflowProcess Id="_fXJkEPBTEeeuzZ1H_57zBQ" xpdExt:XpdModelType="PageFlow" xpdExt:PublishAsBusinessService="true" xpdExt:DisplayName="SafaricomFixedInternet_MapResources" xpdExt:BusinessServiceCategory="AdminOps/UpdateResource/Map Resources" Name="SafaricomFixedInternet_MapResources">
+      <xpdl2:ProcessHeader/>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_ranV8PBTEeeuzZ1H_57zBQ" xpdExt:DisplayName="resource List" Name="resourceList" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="BusinessObjectModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_ipNxwPBTEeeuzZ1H_57zBQ"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_tzG3UPBTEeeuzZ1H_57zBQ" xpdExt:DisplayName="Group Name" Name="GroupName" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_1K02UPBUEeeuzZ1H_57zBQ" xpdExt:DisplayName="Resource Entry" Name="ResourceEntry">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.SchemaldapentryinputrepeatType"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="__CZRAPBXEeeuzZ1H_57zBQ" xpdExt:DisplayName="Contractor Group" Name="ContractorGroup">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_X_aPwPB6EeeuzZ1H_57zBQ"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_a_36oPB7EeeuzZ1H_57zBQ" xpdExt:DisplayName="Contractor GroupRef" Name="ContractorGroupRef">
+          <xpdl2:DataType>
+            <xpdl2:RecordType>
+              <xpdl2:Member>
+                <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_X_aPwPB6EeeuzZ1H_57zBQ"/>
+              </xpdl2:Member>
+            </xpdl2:RecordType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_WFbVsPCCEeeuzZ1H_57zBQ" xpdExt:DisplayName="decision" Name="decision">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_ihIyAPCOEeesJ4bn2tlLXg" xpdExt:DisplayName="BusinessUser" Name="BusinessUser" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.SchemacreateresourceinputType"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_s0Fj4PEPEeeW2tm46yiN8A" xpdExt:DisplayName="LDAPEntry" Name="LDAPEntry" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.SchemaldapentryinputrepeatType"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_aTAKIPEWEeeW2tm46yiN8A" xpdExt:DisplayName="ContractorGroupArrRef" Name="ContractorGroupArrRef" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:RecordType>
+              <xpdl2:Member>
+                <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_X_aPwPB6EeeuzZ1H_57zBQ"/>
+              </xpdl2:Member>
+            </xpdl2:RecordType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_yMRsYPEWEeeW2tm46yiN8A" xpdExt:DisplayName="Contractor Master User Flag" Name="ContractorMasterUserFlag">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_GbLOoPEXEeeW2tm46yiN8A" xpdExt:DisplayName="ContractorNormalUsers" Name="ContractorNormalUsers" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_X_aPwPB6EeeuzZ1H_57zBQ"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_vunFMPEYEeeW2tm46yiN8A" xpdExt:DisplayName="tmpGroupName" Name="tmpGroupName">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_cXp2gPRYEeeRs7eYTPjalw" xpdExt:DisplayName="BPMUsers" Name="BPMUsers" IsArray="true" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="BusinessObjectModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_KHBXwPRYEeeRs7eYTPjalw"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_HHS5cPRnEeeRs7eYTPjalw" xpdExt:DisplayName="LoginName" Name="LoginName" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_XYYsAPVcEee_HfiEwKRl-A" xpdExt:DisplayName="ContractorSingleUser" Name="ContractorSingleUser">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_X_aPwPB6EeeuzZ1H_57zBQ"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_hVsHkFKvEei0v_uM2IXT3g" xpdExt:DisplayName="FetchUsers" Name="FetchUsers" IsArray="true" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:RecordType>
+              <xpdl2:Member>
+                <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_o0zLAAvCEeiB0btp05nrFQ"/>
+              </xpdl2:Member>
+            </xpdl2:RecordType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_BT09gVLDEei0v_uM2IXT3g" xpdExt:DisplayName="ContractorGroups" Name="ContractorGroups" IsArray="true" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_X_aPwPB6EeeuzZ1H_57zBQ"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_eQ6icFLEEei0v_uM2IXT3g" xpdExt:DisplayName="ContractorListRef" Name="ContractorListRef" IsArray="true" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:RecordType>
+              <xpdl2:Member>
+                <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_X_aPwPB6EeeuzZ1H_57zBQ"/>
+              </xpdl2:Member>
+            </xpdl2:RecordType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_NK2lIGWzEe2Rr4rTJnVWWg" xpdExt:DisplayName="User" Name="User">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="BusinessObjectModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_KHBXwPRYEeeRs7eYTPjalw"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_dVu14GZDEe2Rr4rTJnVWWg" xpdExt:DisplayName="FetchUsersA" Name="FetchUsersA">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_o0zLAAvCEeiB0btp05nrFQ"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_fXKyM_BTEeeuzZ1H_57zBQ" Name="Start" xpdExt:Visibility="Private" xpdExt:DisplayName="Start">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="205,158,233" Height="27.0" LaneId="_fXJkEvBTEeeuzZ1H_57zBQ" Width="27.0">
+              <xpdl2:Coordinates XCoordinate="53.0" YCoordinate="115.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Completed">
+              <xpdExt:Information ScriptGrammar="JavaScript">data.GroupName.push(&quot;admin&quot;);&#xD;
+data.GroupName.push(&quot;BillingDepartment&quot;);&#xD;
+data.GroupName.push(&quot;GateKeeper&quot;);&#xD;
+data.GroupName.push(&quot;InfraEngineer&quot;);&#xD;
+data.GroupName.push(&quot;PM&quot;);&#xD;
+data.GroupName.push(&quot;ProvisionEngineer&quot;);&#xD;
+data.GroupName.push(&quot;TESFAE&quot;);&#xD;
+data.GroupName.push(&quot;TESOSG&quot;);&#xD;
+data.GroupName.push(&quot;ECS&quot;);&#xD;
+data.GroupName.push(&quot;DemandDesk&quot;);&#xD;
+data.GroupName.push(&quot;Support&quot;);&#xD;
+data.GroupName.push(&quot;Reporting&quot;);</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_fXKyNPBTEeeuzZ1H_57zBQ" Name="End" xpdExt:Visibility="Private" xpdExt:DisplayName="End">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Join Type="Exclusive" ExclusiveType="Data"/>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="205,158,233" Height="57.0" LaneId="_fXJkEvBTEeeuzZ1H_57zBQ" Width="32.0">
+              <xpdl2:Coordinates XCoordinate="1619.0" YCoordinate="115.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_y6rOEPBTEeeuzZ1H_57zBQ" Name="UpdateResource" xpdExt:Visibility="Private" xpdExt:DisplayName="Update Resource">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_y6r1IPBTEeeuzZ1H_57zBQ"/>
+                <xpdl2:MessageOut Id="_y6r1IfBTEeeuzZ1H_57zBQ"/>
+                <xpdExt:FormImplementation FormType="Form" FormURI="form://comsfcupdateResource/comsfcfosImplmapResources/UserTask/UserTask.form"/>
+                <xpdExt:UserTaskScripts/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Split Type="Inclusive">
+                <xpdl2:TransitionRefs>
+                  <xpdl2:TransitionRef Id="_ymwE4WpTEe2uBPh7KzUvaw"/>
+                  <xpdl2:TransitionRef Id="_aZ1_gGpUEe2uBPh7KzUvaw"/>
+                  <xpdl2:TransitionRef Id="_8IVXYG8KEe2uB67nWYzFHg"/>
+                </xpdl2:TransitionRefs>
+              </xpdl2:Split>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:ExtendedAttributes>
+            <xpdl2:ExtendedAttribute Name="bpmJspTask" Value="form://comsfcupdateResource/comsfcfosImplmapResources/UserTask/UserTask.form"/>
+          </xpdl2:ExtendedAttributes>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="205,158,233" Height="64.0" LaneId="_fXJkEvBTEeeuzZ1H_57zBQ" Width="126.0">
+              <xpdl2:Coordinates XCoordinate="695.0" YCoordinate="115.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
+            <xpdExt:AssociatedParameter FormalParam="GroupName" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="ContractorGroup" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="resourceList" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="decision" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="BusinessUser" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="ContractorMasterUserFlag" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="ContractorNormalUsers" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="BPMUsers" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="LoginName" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="ContractorSingleUser" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="ContractorGroups" Mode="IN" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+          </xpdExt:AssociatedParameters>
+          <xpdExt:Audit/>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_7kmKEPB7EeeuzZ1H_57zBQ" Name="CreateEntryforContractorGroup" xpdExt:Visibility="Private" xpdExt:DisplayName="Create Entry for Contractor Group">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskService xpdExt:ImplementationType="GlobalData" Implementation="Other">
+                <xpdl2:MessageIn Id="_8XWcsPB7EeeuzZ1H_57zBQ"/>
+                <xpdl2:MessageOut Id="_8XWcsfB7EeeuzZ1H_57zBQ"/>
+                <xpdExt:GlobalDataOperation>
+                  <xpdExt:CaseAccessOperations>
+                    <xpdExt:CaseClassExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_X_aPwPB6EeeuzZ1H_57zBQ"/>
+                    <xpdExt:Create FromFieldPath="ContractorGroup" ToCaseRefField="ContractorGroupRef"/>
+                  </xpdExt:CaseAccessOperations>
+                </xpdExt:GlobalDataOperation>
+              </xpdl2:TaskService>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="205,158,233" Height="64.0" LaneId="_fXJkEvBTEeeuzZ1H_57zBQ" Width="147.0">
+              <xpdl2:Coordinates XCoordinate="1078.0" YCoordinate="115.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_1RQtUPCHEeesJ4bn2tlLXg" Name="BusinessUsers" IsATransaction="false" xpdExt:Visibility="Private" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="Business Users">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskService xpdExt:ImplementationType="RESTService" Implementation="Other">
+                <xpdl2:MessageIn Id="_fSsgcFkfEe2qBK_PxeaLMA">
+                  <xpdExt:ScriptDataMapper MapperContext="ProcessToRestService" MappingDirection="IN"/>
+                </xpdl2:MessageIn>
+                <xpdl2:MessageOut Id="_fSsgcVkfEe2qBK_PxeaLMA">
+                  <xpdExt:ScriptDataMapper MapperContext="RestServiceToProcess" MappingDirection="OUT"/>
+                </xpdl2:MessageOut>
+                <xpdExt:RestServiceOperation xpdExt:Location="com.sfc.fosImpl.RestServices.rsd" xpdExt:MethodId="_66pyUW_FEe2vBId6cfbH5A"/>
+              </xpdl2:TaskService>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:Performers>
+            <xpdl2:Performer>_QmiNoPCOEeesJ4bn2tlLXg</xpdl2:Performer>
+          </xpdl2:Performers>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="205,158,233" Height="64.0" LaneId="_fXJkEvBTEeeuzZ1H_57zBQ" Width="126.0">
+              <xpdl2:Coordinates XCoordinate="717.0" YCoordinate="341.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Completed">
+              <xpdExt:Information ScriptGrammar="JavaScript">for(var i=0;i&lt;data.BusinessUser.createresourcerequest.length ;i++) {&#xD;
+	if(data.BusinessUser.createresourcerequest[i].action==&quot;ADD&quot;) {&#xD;
+		data.BusinessUser.createresourcerequest[i].action = &quot;Map to Group&quot;;&#xD;
+	}	&#xD;
+	else if(data.BusinessUser.createresourcerequest[i].action==&quot;REMOVE&quot;) {&#xD;
+		data.BusinessUser.createresourcerequest[i].action = &quot;Remove User from Group&quot;;&#xD;
+		&#xD;
+	}&#xD;
+	else if(data.BusinessUser.createresourcerequest[i].action==&quot;DELETE&quot;) { &#xD;
+		data.BusinessUser.createresourcerequest[i].action = &quot;Delete User From System&quot;;		&#xD;
+	}&#xD;
+}&#xD;
+&#xD;
+for(var i=0;i&lt;data.BusinessUser.createresourcerequest.length ;i++) {&#xD;
+	if(data.BusinessUser.createresourcerequest[i].result==&quot;SUCCESS&quot;) {&#xD;
+		data.BusinessUser.createresourcerequest[i].result = &quot;Intended Action has been performed successfully&quot;;&#xD;
+	}	&#xD;
+	else if(data.BusinessUser.createresourcerequest[i].action==&quot;FAILED&quot;) {&#xD;
+		data.BusinessUser.createresourcerequest[i].action = &quot;Error: Please contact System Administrator&quot;;&#xD;
+	}&#xD;
+}&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">for(var i=0;i&lt;data.BusinessUser.createresourcerequest.length ;i++) {&#xD;
+	data.BusinessUser.createresourcerequest[i].addby = bpm.process.getWorkItemCompleter();&#xD;
+	data.BusinessUser.createresourcerequest[i].flag=&quot;G&quot;;&#xD;
+}&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_pGDy8PEPEeeW2tm46yiN8A" Name="LDAPEntryContractorMasterUser" xpdExt:Visibility="Private" xpdExt:DisplayName="LDAP Entry - Contractor Master User">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskService xpdExt:ImplementationType="RESTService" Implementation="Other">
+                <xpdl2:MessageIn Id="_nzsRIFkfEe2qBK_PxeaLMA">
+                  <xpdExt:ScriptDataMapper MapperContext="ProcessToRestService" MappingDirection="IN"/>
+                </xpdl2:MessageIn>
+                <xpdl2:MessageOut Id="_nzsRIVkfEe2qBK_PxeaLMA">
+                  <xpdExt:ScriptDataMapper MapperContext="RestServiceToProcess" MappingDirection="OUT"/>
+                </xpdl2:MessageOut>
+                <xpdExt:RestServiceOperation xpdExt:Location="com.sfc.fosImpl.RestServices.rsd" xpdExt:MethodId="_66pyUW_FEe2vBId6cfbH5A"/>
+              </xpdl2:TaskService>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:Performers>
+            <xpdl2:Performer>_QmiNoPCOEeesJ4bn2tlLXg</xpdl2:Performer>
+          </xpdl2:Performers>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="205,158,233" Height="64.0" LaneId="_fXJkEvBTEeeuzZ1H_57zBQ" Width="142.0">
+              <xpdl2:Coordinates XCoordinate="1280.0" YCoordinate="115.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">data.LDAPEntry = factory.com_tibco_schemas_SFC_FOS_BPM_SharedResources_SchemaDefinitions_Schema.createLdapentryinputrepeatType();&#xD;
+&#xD;
+var entry=factory.com_tibco_schemas_SFC_FOS_BPM_SharedResources_SchemaDefinitions_Schema.createInputType();&#xD;
+entry.email=data.ContractorGroup.emailID;&#xD;
+entry.entity=&quot;ContractorMaster&quot;;&#xD;
+entry.firstname=data.ContractorGroup.firstName;&#xD;
+entry.flag=&quot;G&quot;;&#xD;
+entry.lastname=data.ContractorGroup.lastName;&#xD;
+entry.orgmodelname=data.ContractorGroup.loginName;&#xD;
+entry.loginName = data.ContractorGroup.loginName;&#xD;
+entry.password=&quot;NA&quot;;&#xD;
+entry.addby = bpm.process.getWorkItemCompleter();&#xD;
+entry.mobileNumber = data.ContractorGroup.mobileNumber;&#xD;
+data.LDAPEntry.input.push(entry);&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+            <xpdExt:AuditEvent Type="Completed">
+              <xpdExt:Information ScriptGrammar="JavaScript">&#xD;
+var entry=data.LDAPEntry.input[0];&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_qfHo4PEVEeeW2tm46yiN8A" Name="ContractorMasterUserCheck" IsATransaction="false" xpdExt:Visibility="Private" xpdExt:DisplayName="Contractor Master User Check" xpdExt:RequireNewTransaction="false">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskScript>
+                <xpdl2:Script ScriptGrammar="JavaScript">&#xD;
+//data.LoginName=bpm.process.getWorkItemCompleter();&#xD;
+&#xD;
+data.LoginName= &quot;tibco-admin&quot;;&#xD;
+var criteria = &quot;loginName='&quot;+ data.LoginName+&quot;'&quot;;&#xD;
+data.ContractorGroupArrRef.pushAll(bpm.caseData.findByCriteria(criteria,&quot;com.sfc.fosImpl.dataModel.ContractorGroups&quot;,0,100));&#xD;
+var ContractorGroupArrObj = factory.com_sfc_fosImpl_dataModel.createContractorGroups();&#xD;
+data.ContractorGroups.pushAll(bpm.caseData.readAll(data.ContractorGroupArrRef));&#xD;
+if(data.ContractorGroupArrRef.length >0)//to remove =&#xD;
+	{&#xD;
+    	ContractorGroupArrObj = bpm.caseData.read(data.ContractorGroupArrRef[0]);&#xD;
+		data.ContractorMasterUserFlag=true;&#xD;
+		data.decision=&quot;CONTRACTOR_NORMAL_USER&quot;;&#xD;
+		//data.tmpGroupName=data.ContractorGroupArrRef[0].readContractorGroups().contractorGroupName;&#xD;
+		data.tmpGroupName=ContractorGroupArrObj.contractorGroupName;&#xD;
+	}&#xD;
+else &#xD;
+	{&#xD;
+	data.ContractorMasterUserFlag=false;&#xD;
+	&#xD;
+	}&#xD;
+&#xD;
+	//data.FetchUsers=bpm.caseData.findAll(&quot;com.sfc.fosImpl.dataModel.BussinessUsers&quot;);&#xD;
+	data.FetchUsers.pushAll(bpm.caseData.findAll(&quot;com.sfc.fosImpl.dataModel.BussinessUsers&quot;,0,100));&#xD;
+	//var fetchUsersList=bpm.caseData.readAll(data.FetchUsers);&#xD;
+	var businessuserOBj = factory.com_sfc_fosImpl_dataModel.createBussinessUsers();&#xD;
+&#xD;
+&#xD;
+		for (var i=0;i&lt;data.FetchUsers.length;i++) &#xD;
+			{&#xD;
+				data.User = factory.com_sfc_fosImpl_adminOps_dataModel.createBPMUsers();&#xD;
+				businessuserOBj = bpm.caseData.read(data.FetchUsers[i]);&#xD;
+				&#xD;
+		&#xD;
+				data.User.addedBy    = businessuserOBj.addedBy;&#xD;
+	 			data.User.addedOn	= businessuserOBj.addedOn;&#xD;
+				data.User.groupName	= businessuserOBj.groupName;&#xD;
+     			data.User.name 	= businessuserOBj.loginName;&#xD;
+   &#xD;
+				data.BPMUsers.push(data.User);&#xD;
+				&#xD;
+				&#xD;
+				//data.UserUser.addedBy    = fetchUsersList.get(i).addedBy;&#xD;
+				//User.addedOn	= fetchUsersList.get(i).addedOn;&#xD;
+				//User.groupName= fetchUsersList.get(i).groupName;&#xD;
+				//User.name = fetchUsersList.get(i).loginName;&#xD;
+			}&#xD;
+			&#xD;
+	data.ContractorListRef.pushAll(bpm.caseData.findAll(&quot;com.sfc.fosImpl.dataModel.ContractorGroups&quot;,0,100));&#xD;
+		//var CtruserList	  = bpm.caseData.readAll(data.ContractorListRef);&#xD;
+&#xD;
+		var CtruserListObj = factory.com_sfc_fosImpl_dataModel.createContractorGroups();&#xD;
+		//data.ContractorGroup = bpm.caseData.read(data.ContractorGroupArrRef[0]);&#xD;
+		for(var index=0; index&lt;data.ContractorListRef; index++) &#xD;
+		{&#xD;
+		//changed to data model
+			//var Contractors = factory.com_sfc_fosImpl_adminOps_dataModel.createContractorGroups();&#xD;
+			var Contractors = factory.com_sfc_fosImpl_dataModel.createContractorGroups();&#xD;
+			CtruserListObj = bpm.caseData.read(data.ContractorGroupArrRef[index]);&#xD;
+			&#xD;
+			&#xD;
+				Contractors.contractorGroupName= CtruserListObj.contractorGroupName;&#xD;
+				Contractors.emailID= CtruserListObj.emailID;&#xD;
+				Contractors.firstName= CtruserListObj.firstName;&#xD;
+				Contractors.lastName= CtruserListObj.lastName;&#xD;
+				Contractors.loginName= CtruserListObj.loginName;&#xD;
+				Contractors.masterUser= CtruserListObj.masterUser;&#xD;
+				data.ContractorGroups.push(Contractors);
+		}&#xD;
+		&#xD;
+		//data.ContractorNormalUsers.pushAll(bpm.caseData.readAll(data.ContractorGroupArrRef));&#xD;
+		/*&#xD;
+			for(var i=0;i&lt;data.ContractorListRef.length;i++) &#xD;
+				{&#xD;
+				CtruserListObj = bpm.caseData.read(data.ContractorGroupArrRef[i]);&#xD;
+				var Contractors=factory.com_sfc_fosImpl_adminOps_dataModel.createContractorGroups();&#xD;
+				//Contractors.contractorGroupName=CtruserList.get(i).contractorGroupName;&#xD;
+				//Contractors.emailID=CtruserList.get(i).emailID;&#xD;
+				//Contractors.firstName=CtruserList.get(i).firstName;&#xD;
+				//Contractors.lastName=CtruserList.get(i).lastName;&#xD;
+				//Contractors.loginName=CtruserList.get(i).loginName;&#xD;
+				//Contractors.masterUser=CtruserList.get(i).masterUser;&#xD;
+&#xD;
+				Contractors.contractorGroupName= CtruserListObj.contractorGroupName;&#xD;
+				Contractors.emailID= CtruserListObj.emailID;&#xD;
+				Contractors.firstName= CtruserListObj.firstName;&#xD;
+				Contractors.lastName= CtruserListObj.lastName;&#xD;
+				Contractors.loginName= CtruserListObj.loginName;&#xD;
+				Contractors.masterUser= CtruserListObj.masterUser;&#xD;
+				data.ContractorGroups.push(Contractors);&#xD;
+				}&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+/*&#xD;
+for(var a=0;a&lt;ContractorListRef.size();a++){&#xD;
+var Contractors=com_sfc_fosImpl_adminOps_dataModel_Factory.createContractorGroups();&#xD;
+Contractors.contractorGroupName=ContractorListRef.get(a).readContractorGroups().contractorGroupName;&#xD;
+Contractors.emailID=ContractorListRef.get(a).readContractorGroups().emailID;&#xD;
+Contractors.firstName=ContractorListRef.get(a).readContractorGroups().firstName;&#xD;
+Contractors.lastName=ContractorListRef.get(a).readContractorGroups().lastName;&#xD;
+Contractors.loginName=ContractorListRef.get(a).readContractorGroups().loginName;&#xD;
+Contractors.masterUser=ContractorListRef.get(a).readContractorGroups().masterUser;&#xD;
+ContractorGroups.add(Contractors);&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+//Log.write(&quot;THE USER LIST SIZE IS:&quot;+FetchUsers.size());&#xD;
+for(var i=0;i&lt;FetchUsers.size();i++){&#xD;
+	var User=com_sfc_fosImpl_adminOps_dataModel_Factory.createBPMUsers();&#xD;
+	User.addedBy=FetchUsers.get(i).readBussinessUsers().addedBy;&#xD;
+	//Log.write(&quot;THE USER ADDED BY:&quot;+FetchUsers.get(i).readBussinessUsers().addedBy);&#xD;
+	//Log.write(&quot;THE USER ADDED BY:&quot;+User.addedBy);&#xD;
+	User.addedOn=FetchUsers.get(i).readBussinessUsers().addedOn;&#xD;
+	User.name=FetchUsers.get(i).readBussinessUsers().firstName+&quot; &quot;+FetchUsers.get(i).readBussinessUsers().lastName;&#xD;
+	User.groupName=FetchUsers.get(i).readBussinessUsers().groupName;&#xD;
+	BPMUsers.add(User);&#xD;
+}&#xD;
+//Log.write(&quot;THE Final USERS ARE:&quot;+BPMUsers.get(0).addedBy);&#xD;
+*/&#xD;
+</xpdl2:Script>
+              </xpdl2:TaskScript>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="205,158,233" Height="64.0" LaneId="_fXJkEvBTEeeuzZ1H_57zBQ" Width="139.0">
+              <xpdl2:Coordinates XCoordinate="233.0" YCoordinate="115.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_WDcHgPEYEeeW2tm46yiN8A" Name="CreateEntryforContractorNormalUser" xpdExt:Visibility="Private" xpdExt:DisplayName="Create Entry for Contractor Normal Users">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskService xpdExt:ImplementationType="GlobalData" Implementation="Other">
+                <xpdl2:MessageIn Id="_lz5IgPEYEeeW2tm46yiN8A"/>
+                <xpdl2:MessageOut Id="_lz5IgfEYEeeW2tm46yiN8A"/>
+                <xpdExt:GlobalDataOperation>
+                  <xpdExt:CaseAccessOperations>
+                    <xpdExt:CaseClassExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_X_aPwPB6EeeuzZ1H_57zBQ"/>
+                    <xpdExt:Create FromFieldPath="ContractorNormalUsers" ToCaseRefField="ContractorGroupArrRef"/>
+                  </xpdExt:CaseAccessOperations>
+                </xpdExt:GlobalDataOperation>
+              </xpdl2:TaskService>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="205,158,233" Height="64.0" LaneId="_fXJkEvBTEeeuzZ1H_57zBQ" Width="147.0">
+              <xpdl2:Coordinates XCoordinate="1032.0" YCoordinate="245.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">for(var i=0;i&lt;data.ContractorNormalUsers.length ;i++){&#xD;
+data.ContractorNormalUsers[i].contractorGroupName = data.tmpGroupName;&#xD;
+data.ContractorNormalUsers[i].masterUser = &quot;N&quot;;&#xD;
+}&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_7YTsMPEYEeeW2tm46yiN8A" Name="LDAPEntryContractorNormalUsers" xpdExt:Visibility="Private" xpdExt:DisplayName="LDAP Entry - Contractor Normal Users">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskService xpdExt:ImplementationType="RESTService" Implementation="Other">
+                <xpdl2:MessageIn Id="_jJH_cFkfEe2qBK_PxeaLMA">
+                  <xpdExt:ScriptDataMapper MapperContext="ProcessToRestService" MappingDirection="IN"/>
+                </xpdl2:MessageIn>
+                <xpdl2:MessageOut Id="_jJH_cVkfEe2qBK_PxeaLMA">
+                  <xpdExt:ScriptDataMapper MapperContext="RestServiceToProcess" MappingDirection="OUT"/>
+                </xpdl2:MessageOut>
+                <xpdExt:RestServiceOperation xpdExt:Location="com.sfc.fosImpl.RestServices.rsd" xpdExt:MethodId="_66pyUW_FEe2vBId6cfbH5A"/>
+              </xpdl2:TaskService>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:Performers>
+            <xpdl2:Performer>_QmiNoPCOEeesJ4bn2tlLXg</xpdl2:Performer>
+          </xpdl2:Performers>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="205,158,233" Height="64.0" LaneId="_fXJkEvBTEeeuzZ1H_57zBQ" Width="142.0">
+              <xpdl2:Coordinates XCoordinate="1500.0" YCoordinate="245.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">data.LDAPEntry = factory.com_tibco_schemas_SFC_FOS_BPM_SharedResources_SchemaDefinitions_Schema.createLdapentryinputrepeatType();&#xD;
+&#xD;
+&#xD;
+for(var i=0;i&lt;data.ContractorNormalUsers.length ;i++){&#xD;
+var entry=factory.com_tibco_schemas_SFC_FOS_BPM_SharedResources_SchemaDefinitions_Schema.createInputType();&#xD;
+&#xD;
+entry.email=data.ContractorNormalUsers[i].emailID;&#xD;
+entry.entity=&quot;Contractor&quot;;&#xD;
+entry.firstname=data.ContractorNormalUsers[i].firstName;&#xD;
+entry.flag=&quot;G&quot;;&#xD;
+entry.lastname=data.ContractorNormalUsers[i].lastName;&#xD;
+entry.orgmodelname=data.ContractorNormalUsers[i].loginName;&#xD;
+entry.loginName =data.ContractorNormalUsers[i].loginName;&#xD;
+entry.addby = bpm.process.getWorkItemCompleter();&#xD;
+entry.password=&quot;NA&quot;;&#xD;
+entry.mobileNumber = data.ContractorNormalUsers[i].mobileNumber;&#xD;
+data.LDAPEntry.input.push(entry);&#xD;
+Log.write(&quot;normalIssue&quot;+data.ContractorNormalUsers[i].mobileNumber);&#xD;
+}&#xD;
+&#xD;
+&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+            <xpdExt:AuditEvent Type="Completed">
+              <xpdExt:Information ScriptGrammar="JavaScript">for(var i=0;i&lt;data.LDAPEntry.input.length ;i++) {&#xD;
+	if(data.LDAPEntry.input[i].response==&quot;SUCCESS&quot;) {&#xD;
+		data.LDAPEntry.input[i].response=&quot;Intended Action has been performed successfully&quot;;&#xD;
+		&#xD;
+	}&#xD;
+	else {&#xD;
+		data.LDAPEntry.input[i].response=&quot;Error: Please contact System Administrator&quot;;	&#xD;
+	}&#xD;
+}&#xD;
+&#xD;
+&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_wbDZ4PVJEee786-X2LpNbg" Name="UpdateResourceResult" xpdExt:Visibility="Private" xpdExt:DisplayName="Update Resource Result">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_wbDZ4fVJEee786-X2LpNbg"/>
+                <xpdl2:MessageOut Id="_wbDZ4vVJEee786-X2LpNbg"/>
+                <xpdExt:FormImplementation FormType="Form" FormURI="form://comsfcupdateResource/comsfcfosImplmapResources/UpdateResourceResult/UpdateResourceResult.form"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:ExtendedAttributes>
+            <xpdl2:ExtendedAttribute Name="bpmJspTask" Value="form://comsfcupdateResource/comsfcfosImplmapResources/UpdateResourceResult/UpdateResourceResult.form"/>
+          </xpdl2:ExtendedAttributes>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="205,158,233" Height="64.0" LaneId="_fXJkEvBTEeeuzZ1H_57zBQ" Width="126.0">
+              <xpdl2:Coordinates XCoordinate="957.0" YCoordinate="341.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
+            <xpdExt:AssociatedParameter FormalParam="BusinessUser" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+          </xpdExt:AssociatedParameters>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_JAChIPm0Eee1r_rrBJBvlg" Name="UpdateResourceResultContractorMasterUser" xpdExt:Visibility="Private" xpdExt:DisplayName="Update Resource Result - Contractor Master User">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_JAChIfm0Eee1r_rrBJBvlg"/>
+                <xpdl2:MessageOut Id="_JAChIvm0Eee1r_rrBJBvlg"/>
+                <xpdExt:FormImplementation FormType="Form" FormURI="form://comsfcupdateResource/comsfcfosImplmapResources/UpdateResourceResultContractorMasterUser/UpdateResourceResultContractorMasterUser.form"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:ExtendedAttributes>
+            <xpdl2:ExtendedAttribute Name="bpmJspTask" Value="form://comsfcupdateResource/comsfcfosImplmapResources/UpdateResourceResultContractorMasterUser/UpdateResourceResultContractorMasterUser.form"/>
+          </xpdl2:ExtendedAttributes>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="205,158,233" Height="64.0" LaneId="_fXJkEvBTEeeuzZ1H_57zBQ" Width="126.0">
+              <xpdl2:Coordinates XCoordinate="1477.0" YCoordinate="115.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
+            <xpdExt:AssociatedParameter FormalParam="LDAPEntry" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="ContractorGroup" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+          </xpdExt:AssociatedParameters>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_3LHhcPnIEeepcKbonwg3GQ" Name="UpdateResourceResultContractorNormalUsers" xpdExt:Visibility="Private" xpdExt:DisplayName="Update Resource Result - Contractor Normal Users">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_3LHhcfnIEeepcKbonwg3GQ"/>
+                <xpdl2:MessageOut Id="_3LHhcvnIEeepcKbonwg3GQ"/>
+                <xpdExt:FormImplementation FormType="Form" FormURI="form://comsfcupdateResource/comsfcfosImplmapResources/UpdateResourceResultContractorNormalUsers/UpdateResourceResultContractorNormalUsers.form"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:ExtendedAttributes>
+            <xpdl2:ExtendedAttribute Name="bpmJspTask" Value="form://comsfcupdateResource/comsfcfosImplmapResources/UpdateResourceResultContractorNormalUsers/UpdateResourceResultContractorNormalUsers.form"/>
+          </xpdl2:ExtendedAttributes>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="205,158,233" Height="64.0" LaneId="_fXJkEvBTEeeuzZ1H_57zBQ" Width="126.0">
+              <xpdl2:Coordinates XCoordinate="1705.0" YCoordinate="245.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
+            <xpdExt:AssociatedParameter FormalParam="LDAPEntry" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+          </xpdExt:AssociatedParameters>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_nS3nwGpREe2uBPh7KzUvaw" Name="UserTask" xpdExt:Visibility="Private" xpdExt:DisplayName="User Task">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_nS3nwWpREe2uBPh7KzUvaw"/>
+                <xpdl2:MessageOut Id="_nS3nwmpREe2uBPh7KzUvaw"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="205,158,233" Height="64.0" LaneId="_fXJkEvBTEeeuzZ1H_57zBQ" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="1259.0" YCoordinate="245.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
+            <xpdExt:AssociatedParameter FormalParam="ContractorNormalUsers" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+          </xpdExt:AssociatedParameters>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_aZv44GpUEe2uBPh7KzUvaw" Name="UserTask2" IsATransaction="false" xpdExt:Visibility="Private" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="User Task 2">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_aZv44WpUEe2uBPh7KzUvaw"/>
+                <xpdl2:MessageOut Id="_aZv44mpUEe2uBPh7KzUvaw"/>
+                <xpdExt:FormImplementation FormType="Form" FormURI="form://comsfcupdateResource/SafaricomFixedInternet_MapResources/UserTask2/UserTask2.form"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:ExtendedAttributes>
+            <xpdl2:ExtendedAttribute Name="bpmJspTask" Value="form://comsfcupdateResource/SafaricomFixedInternet_MapResources/UserTask2/UserTask2.form"/>
+          </xpdl2:ExtendedAttributes>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="205,158,233" Height="64.0" LaneId="_fXJkEvBTEeeuzZ1H_57zBQ" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="702.0" YCoordinate="245.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
+            <xpdExt:AssociatedParameter FormalParam="ContractorNormalUsers" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+          </xpdExt:AssociatedParameters>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_8IK_nG8KEe2uB67nWYzFHg" Name="UserTask3" IsATransaction="false" xpdExt:Visibility="Private" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="User Task 3">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_8IK_nW8KEe2uB67nWYzFHg"/>
+                <xpdl2:MessageOut Id="_8IK_nm8KEe2uB67nWYzFHg"/>
+                <xpdExt:FormImplementation FormType="Form" FormURI="form://comsfcupdateResource/SafaricomFixedInternet_MapResources/UserTask2/UserTask2.form"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:ExtendedAttributes>
+            <xpdl2:ExtendedAttribute Name="bpmJspTask" Value="form://comsfcupdateResource/SafaricomFixedInternet_MapResources/UserTask2/UserTask2.form"/>
+          </xpdl2:ExtendedAttributes>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="205,158,233" Height="64.0" LaneId="_fXJkEvBTEeeuzZ1H_57zBQ" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="930.0" YCoordinate="115.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
+            <xpdExt:AssociatedParameter FormalParam="ContractorNormalUsers" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="ContractorGroup" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+          </xpdExt:AssociatedParameters>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_ACOBMPBWEeeuzZ1H_57zBQ" xpdExt:DisplayName="" Name="" From="_JAChIPm0Eee1r_rrBJBvlg" To="_fXKyNPBTEeeuzZ1H_57zBQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_7kmKE_B7EeeuzZ1H_57zBQ" Name="" From="_8IK_nG8KEe2uB67nWYzFHg" To="_7kmKEPB7EeeuzZ1H_57zBQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_pGEaAPEPEeeW2tm46yiN8A" xpdExt:DisplayName="" Name="" From="_7kmKEPB7EeeuzZ1H_57zBQ" To="_pGDy8PEPEeeW2tm46yiN8A">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_v14SMPEVEeeW2tm46yiN8A" Name="" From="_aZv44GpUEe2uBPh7KzUvaw" To="_1RQtUPCHEeesJ4bn2tlLXg">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_9sZ1wPEYEeeW2tm46yiN8A" xpdExt:DisplayName="" Name="" From="_3LHhcPnIEeepcKbonwg3GQ" To="_fXKyNPBTEeeuzZ1H_57zBQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="254.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="13.0" YCoordinate="128.0"/>
+              <xpdl2:Coordinates XCoordinate="279.0" YCoordinate="-61.0"/>
+              <xpdl2:Coordinates XCoordinate="38.0" YCoordinate="68.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="48.488796658054035" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_R7THQPE1EeeWw8R4pwNr1Q" xpdExt:DisplayName="" Name="" From="_nS3nwGpREe2uBPh7KzUvaw" To="_7YTsMPEYEeeW2tm46yiN8A">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_6hboYPE1EeeWw8R4pwNr1Q" xpdExt:DisplayName="" Name="" From="_wbDZ4PVJEee786-X2LpNbg" To="_fXKyNPBTEeeuzZ1H_57zBQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="685.0" YCoordinate="-48.0"/>
+              <xpdl2:Coordinates XCoordinate="37.0" YCoordinate="177.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="48.33083167847374" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_wbEA8PVJEee786-X2LpNbg" xpdExt:DisplayName="" Name="" From="_1RQtUPCHEeesJ4bn2tlLXg" To="_wbDZ4PVJEee786-X2LpNbg">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_JADIMPm0Eee1r_rrBJBvlg" xpdExt:DisplayName="" Name="" From="_pGDy8PEPEeeW2tm46yiN8A" To="_JAChIPm0Eee1r_rrBJBvlg">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_3LHhc_nIEeepcKbonwg3GQ" xpdExt:DisplayName="" Name="" From="_7YTsMPEYEeeW2tm46yiN8A" To="_3LHhcPnIEeepcKbonwg3GQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_SLXzMWmZEe2uBPh7KzUvaw" xpdExt:DisplayName="" Name="" From="_fXKyM_BTEeeuzZ1H_57zBQ" To="_qfHo4PEVEeeW2tm46yiN8A">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_nS3nw2pREe2uBPh7KzUvaw" xpdExt:DisplayName="" Name="" From="_WDcHgPEYEeeW2tm46yiN8A" To="_nS3nwGpREe2uBPh7KzUvaw">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_ymwE4WpTEe2uBPh7KzUvaw" xpdExt:DisplayName="" Name="" From="_y6rOEPBTEeeuzZ1H_57zBQ" To="_WDcHgPEYEeeW2tm46yiN8A">
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">data.decision.toString()==&quot;CONTRACTOR_NORMAL_USER&quot;;
+</xpdl2:Expression></xpdl2:Condition>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="10.3125" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_aZ1_gGpUEe2uBPh7KzUvaw" xpdExt:DisplayName="" Name="" From="_y6rOEPBTEeeuzZ1H_57zBQ" To="_aZv44GpUEe2uBPh7KzUvaw">
+          <xpdl2:Condition Type="OTHERWISE"/>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_LgRPMmswEe2d9au2bVyQcg" xpdExt:DisplayName="" Name="" From="_qfHo4PEVEeeW2tm46yiN8A" To="_y6rOEPBTEeeuzZ1H_57zBQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_8IVXYG8KEe2uB67nWYzFHg" xpdExt:DisplayName="" Name="" From="_y6rOEPBTEeeuzZ1H_57zBQ" To="_8IK_nG8KEe2uB67nWYzFHg">
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">data.decision.toString()==&quot;CONTRACTOR_MASTER&quot;;&#xD;
+&#xD;
+</xpdl2:Expression></xpdl2:Condition>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="CE"/>
+      </xpdl2:ExtendedAttributes>
+      <xpdl2:Extensions/>
+      <xpdExt:RequiredAccessPrivileges>
+        <xpdExt:PrivilegeReference location="orgModel.om" namespace="http://www.tibco.com/om/1.0" xref="_7UzTgPtQEeeupNwu8S8N4Q"/>
+      </xpdExt:RequiredAccessPrivileges>
+    </xpdl2:WorkflowProcess>
+  </xpdl2:WorkflowProcesses>
+  <xpdl2:ExtendedAttributes>
+    <xpdl2:ExtendedAttribute Name="CreatedBy" Value="TIBCO Business Studio"/>
+    <xpdl2:ExtendedAttribute Name="FormatVersion" Value="1000"/>
+    <xpdl2:ExtendedAttribute Name="OriginalFormatVersion" Value="19"/>
+  </xpdl2:ExtendedAttributes>
+</xpdl2:Package>

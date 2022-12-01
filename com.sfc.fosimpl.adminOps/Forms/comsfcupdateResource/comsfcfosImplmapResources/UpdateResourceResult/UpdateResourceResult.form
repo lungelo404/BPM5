@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" generated="true" generatorSource="com.sfc.updateResource.xpdl#_wbDZ4PVJEee786-X2LpNbg?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aActivity%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=UpdateResourceResult?" formatVersion="11.0.0">
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri="comsfcupdateResource/comsfcfosImplmapResources/UpdateResourceResult/UpdateResourceResult.properties" sfRelative="true" internal="true" localized="true"/>
+    <form:externalResource name="resource.jquery3" uri="JQuery/jquery-3.2.1.min.js" sfRelative="true"/>
+    <form:externalResource name="resource.helper" uri="JavaScript/helper.js" sfRelative="true"/>
+    <form:externalResource name="resource.safaricom" uri="CSS/safaricom.css" sfRelative="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" generatorSource="com.sfc.updateResource.xpdl#_ihIyAPCOEeesJ4bn2tlLXg?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=BusinessUser?" name="data.BusinessUser" label="BusinessUser" dataType="uml:Class com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.SchemacreateresourceinputType?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%26n=createresourceinputType?" inout="INOUT"/>
+  </form:dataModel>
+  <form:actions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancela" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancela.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submita" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submita.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+    <form:rule name="rule.setLabelBackground" label="Set Label Background">
+      <form:event source="#//@form" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#open" subject="form.open"/>
+      <form:action xsi:type="form:ScriptAction" name="action.setLabelBackground" label="Set Label Background">
+        <form:script>setupFontColor('[id$=lblResult]');</form:script>
+      </form:action>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_2MS_wPVJEee786-X2LpNbg">
+      <form:source target="data.BusinessUser" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.BusinessUser.value"></form:source>
+      <form:destination target="pane.BusinessUser" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.BusinessUser.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_2MTm0PVJEee786-X2LpNbg">
+      <form:source target="pane.BusinessUser" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourceinputTypecreateresourcerequestType?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourceinputType%26n=createresourcerequest?" data="form.pane.BusinessUser.value.createresourcerequest"></form:source>
+      <form:destination target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value" data="form.pane.BusinessUser_createresourcerequest.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_2MTm0fVJEee786-X2LpNbg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypename?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=name?" data="form.pane.BusinessUser_createresourcerequest.value.name"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_name" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_name.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_2MUN4PVJEee786-X2LpNbg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeorgname?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=orgname?" data="form.pane.BusinessUser_createresourcerequest.value.orgname"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_orgname" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_orgname.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_2MUN4fVJEee786-X2LpNbg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeflag?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=flag?" data="form.pane.BusinessUser_createresourcerequest.value.flag"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_flag" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_flag.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_2MUN4vVJEee786-X2LpNbg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeentityname?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=entityname?" data="form.pane.BusinessUser_createresourcerequest.value.entityname"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_entityname" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_entityname.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_2MU08PVJEee786-X2LpNbg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeemail?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=email?" data="form.pane.BusinessUser_createresourcerequest.value.email"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_email" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_email.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_2MU08fVJEee786-X2LpNbg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypepassword?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=password?" data="form.pane.BusinessUser_createresourcerequest.value.password"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_password" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_password.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_2MU08vVJEee786-X2LpNbg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeaddby?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=addby?" data="form.pane.BusinessUser_createresourcerequest.value.addby"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_addby" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_addby.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_2MVcAPVJEee786-X2LpNbg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeaction?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=action?" data="form.pane.BusinessUser_createresourcerequest.value.action"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_action" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_action.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_2MVcAfVJEee786-X2LpNbg">
+      <form:source target="pane.BusinessUser_createresourcerequest" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTyperesult?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=result?" data="form.pane.BusinessUser_createresourcerequest.value.result"></form:source>
+      <form:destination target="control.BusinessUser_createresourcerequest_result" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BusinessUser_createresourcerequest_result.value"></form:destination>
+    </form:binding>
+  </form:bindings>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>Update Resource Result</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:defaults>
+      <form:labelProperties position="top"/>
+    </form:defaults>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.image" controlType="com.tibco.forms.controls.image" name="control.imgSFC">
+      <form:propertySet xsi:type="et:ImagePropertySet" sfRelative="true">
+        <et:url>Images/Safaricom_logo_V02.jpg</et:url>
+      </form:propertySet>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control styleClass="lblBackground" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.label" controlType="com.tibco.forms.controls.label" name="control.lblResult">
+      <form:label>Result For Business Users Mapping</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:pane generated="true" generatorSource="com.sfc.updateResource.xpdl#_ihIyAPCOEeesJ4bn2tlLXg?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=BusinessUser?" syncFlags="16384" styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.SchemacreateresourceinputType?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%26n=createresourceinputType?" readOnly="true" name="pane.BusinessUser" paneType="com.tibco.forms.panes.vertical">
+      <form:label>BusinessUser</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:pane generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourceinputTypecreateresourcerequestType?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourceinputType%26n=createresourcerequest?" syncFlags="2883584" styleClass="MarginPane" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.SchemacreateresourcerequestType?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%26n=createresourcerequestType?" name="pane.BusinessUser_createresourcerequest" paneType="com.tibco.forms.panes.grid">
+        <form:propertySet xsi:type="et:GridPanePropertySet">
+          <et:showNavigator>false</et:showNavigator>
+          <et:editable>true</et:editable>
+          <et:sortable>true</et:sortable>
+          <et:rowLabel>{0}</et:rowLabel>
+        </form:propertySet>
+        <form:label>createresourcerequest</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+        <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypename?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=name?" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.BusinessUser_createresourcerequest_name">
+          <form:propertySet xsi:type="et:TextPropertySet"/>
+          <form:label>Resource Name</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeorgname?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=orgname?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_orgname">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+          </form:propertySet>
+          <form:label>orgname</form:label>
+          <form:hint></form:hint>
+          <form:visible>false</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeflag?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=flag?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_flag">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+          </form:propertySet>
+          <form:label>flag</form:label>
+          <form:hint></form:hint>
+          <form:visible>false</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeentityname?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=entityname?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_entityname">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+          </form:propertySet>
+          <form:label>entityname</form:label>
+          <form:hint></form:hint>
+          <form:visible>false</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeemail?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=email?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_email">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+          </form:propertySet>
+          <form:label>email</form:label>
+          <form:hint></form:hint>
+          <form:visible>false</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypepassword?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=password?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BusinessUser_createresourcerequest_password">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+          </form:propertySet>
+          <form:label>password</form:label>
+          <form:hint></form:hint>
+          <form:visible>false</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeaddby?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=addby?" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.BusinessUser_createresourcerequest_addby">
+          <form:propertySet xsi:type="et:TextPropertySet"/>
+          <form:label>Added By</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTypeaction?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=action?" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.BusinessUser_createresourcerequest_action">
+          <form:propertySet xsi:type="et:TextPropertySet"/>
+          <form:label>Action Performed</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom#createresourcerequestTyperesult?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema%3a%3acreateresourcerequestType%26n=result?" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.BusinessUser_createresourcerequest_result">
+          <form:propertySet xsi:type="et:TextPropertySet"/>
+          <form:label>Result</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+      </form:pane>
+    </form:pane>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancela">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submita">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>

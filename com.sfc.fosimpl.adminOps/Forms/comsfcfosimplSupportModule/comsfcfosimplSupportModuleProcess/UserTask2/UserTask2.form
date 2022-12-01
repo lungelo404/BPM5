@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" generated="true" generatorSource="com.sfc.fosimpl.SupportModule.xpdl#_h6jgED7jEeiyb5FpDfTWBQ?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aActivity%26q=comsfcfosimplSupportModule%3a%3aBusiness_Support%26n=ErrorHandling?" formatVersion="11.0.0">
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri="comsfcfosimplSupportModule/comsfcfosimplSupportModuleProcess/UserTask2/UserTask2.properties" sfRelative="true" internal="true" localized="true"/>
+    <form:externalResource name="resource.safaricom" uri="CSS/safaricom.css" sfRelative="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" generatorSource="com.sfc.fosimpl.SupportModule.xpdl#_2kSkMD7jEeiyb5FpDfTWBQ?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcfosimplSupportModule%3a%3aBusiness_Support%26n=ErrorDetails?" name="data.ErrorDetails" label="ErrorDetails" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="com.sfc.fosimpl.SupportModule.xpdl#_1LOfgD7jEeiyb5FpDfTWBQ?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcfosimplSupportModule%3a%3aBusiness_Support%26n=ErrorCode?" name="data.ErrorCode" label="ErrorCode" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="400" inout="INOUT"/>
+    <form:parameter generated="true" name="data.ErrorMessage" label="ErrorMessage" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="100" inout="INOUT"/>
+  </form:dataModel>
+  <form:actions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancela" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancela.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submita" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submita.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+    <form:rule name="rule.onFormLoad" label="onFormLoad">
+      <form:event source="#//@form" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#open" subject="form.open"/>
+      <form:action xsi:type="form:ScriptAction" name="action.setFieldVisibility" label="setFieldVisibility">
+        <form:script>if (data.ErrorCode==&quot;&quot;)&#xD;
+{&#xD;
+	control.ErrorCode.visible = false;&#xD;
+}&#xD;
+&#xD;
+if (data.ErrorDetails==&quot;&quot;)&#xD;
+{&#xD;
+	control.ErrorDetails.visible = false;&#xD;
+}&#xD;
+&#xD;
+if (data.ErrorMessage==&quot;&quot;)&#xD;
+{&#xD;
+	control.ErrorMessage.visible = false;&#xD;
+}</form:script>
+      </form:action>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_93cBsD7jEeiyb5FpDfTWBQ">
+      <form:source target="data.ErrorDetails" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ErrorDetails.value"></form:source>
+      <form:destination target="control.ErrorDetails" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ErrorDetails.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_93cowD7jEeiyb5FpDfTWBQ">
+      <form:source target="data.ErrorCode" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ErrorCode.value"></form:source>
+      <form:destination target="control.ErrorCode" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ErrorCode.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_oJbiUEYkEeimsaF6DY9_0g">
+      <form:source target="data.ErrorMessage" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ErrorMessage.value"></form:source>
+      <form:destination target="control.ErrorMessage" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ErrorMessage.value"></form:destination>
+    </form:binding>
+  </form:bindings>
+  <form:defaults>
+    <form:labelProperties position="top" visible="false"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:defaults>
+      <form:labelProperties position="top" visible="false"/>
+    </form:defaults>
+    <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pneErrorHandling" paneType="com.tibco.forms.panes.vertical">
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="top" visible="false" width="120"/>
+      </form:defaults>
+      <form:control styleClass="vPaneImage" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.image" controlType="com.tibco.forms.controls.image" name="control.safaricomLogo">
+        <form:propertySet xsi:type="et:ImagePropertySet" sfRelative="true">
+          <et:url>Images/SFC.png</et:url>
+        </form:propertySet>
+        <form:label></form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:required>false</form:required>
+      </form:control>
+      <form:pane styleClass="vPaneBorderMain" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pneErrorDeatils" paneType="com.tibco.forms.panes.vertical">
+        <form:label></form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:control generated="true" generatorSource="com.sfc.fosimpl.SupportModule.xpdl#_8u8fsEYiEeimsaF6DY9_0g?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcfosimplSupportModule%3a%3aBusiness_Support%26n=ErrorMessage?" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ErrorMessage">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>100</et:maxLength>
+          </form:propertySet>
+          <form:label>Error Message</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.sfc.fosimpl.SupportModule.xpdl#_1LOfgD7jEeiyb5FpDfTWBQ?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcfosimplSupportModule%3a%3aBusiness_Support%26n=ErrorCode?" syncFlags="65536" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ErrorCode">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+            <et:maxLength>400</et:maxLength>
+          </form:propertySet>
+          <form:label>Error Code</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" generatorSource="com.sfc.fosimpl.SupportModule.xpdl#_2kSkMD7jEeiyb5FpDfTWBQ?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcfosimplSupportModule%3a%3aBusiness_Support%26n=ErrorDetails?" syncFlags="65536" styleClass="vPaneMargin" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ErrorDetails">
+          <form:propertySet xsi:type="et:TextAreaPropertySet">
+            <et:rows>10</et:rows>
+            <et:cols>25</et:cols>
+          </form:propertySet>
+          <form:label>Error Details</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+      </form:pane>
+    </form:pane>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancela">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submita">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>

@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xpdl2:Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:email="http://www.tibco.com/XPD/email1.0.0" xmlns:orchestrator="http://www.tibco.com/XPD/orchestrator1.0.0" xmlns:order="http://www.tibco.com/XPD/order1.0.0" xmlns:xpdExt="http://www.tibco.com/XPD/xpdExtension1.0.0" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" xsi:schemaLocation="http://www.wfmc.org/2008/XPDL2.1 http://www.wfmc.org/standards/bpmnxpdl_31.xsd" Id="_ZqaEEF56EeiSs9l5Ie3u4w" xpdExt:DisplayName="com.sfc.fosimpl.WorkReallocation" Name="comsfcfosimplWorkReallocation">
+  <xpdl2:PackageHeader xpdExt:Language="en_US">
+    <xpdl2:XPDLVersion>2.1</xpdl2:XPDLVersion>
+    <xpdl2:Vendor>TIBCO</xpdl2:Vendor>
+    <xpdl2:Created>2018-05-23</xpdl2:Created>
+    <xpdl2:Description></xpdl2:Description>
+    <xpdl2:Documentation></xpdl2:Documentation>
+    <xpdl2:CostUnit>USD</xpdl2:CostUnit>
+  </xpdl2:PackageHeader>
+  <xpdl2:RedefinableHeader PublicationStatus="UNDER_REVISION">
+    <xpdl2:Author>rbapat</xpdl2:Author>
+  </xpdl2:RedefinableHeader>
+  <xpdl2:Participants>
+    <xpdl2:Participant Id="_9ZXnoF6KEeiSs9l5Ie3u4w" xpdExt:DisplayName="PortTypeEndpoint0_Consumer" Name="PortTypeEndpoint0_Consumer">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_nYH1oF6YEeiSs9l5Ie3u4w" xpdExt:DisplayName="PortTypeEndpoint0_Consumer2" Name="PortTypeEndpoint0_Consumer2">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_ZZNKoF8PEeiSs9l5Ie3u4w" xpdExt:DisplayName="PortTypeEndpoint0_Consumer3" Name="PortTypeEndpoint0_Consumer3">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_FcGGgF8QEeiSs9l5Ie3u4w" xpdExt:DisplayName="PortTypeEndpoint0_Consumer4" Name="PortTypeEndpoint0_Consumer4">
+      <xpdl2:ParticipantType Type="SYSTEM"/>
+      <xpdExt:ParticipantSharedResource>
+        <xpdExt:RestService resourceName="Test_RestAPI"/>
+      </xpdExt:ParticipantSharedResource>
+    </xpdl2:Participant>
+  </xpdl2:Participants>
+  <xpdl2:Pools>
+    <xpdl2:Pool Id="_x4eKkF56EeiSs9l5Ie3u4w" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_x4D64F56EeiSs9l5Ie3u4w">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_x4exoF56EeiSs9l5Ie3u4w" xpdExt:DisplayName="Lane" Name="Lane">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="300.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+    </xpdl2:Pool>
+  </xpdl2:Pools>
+  <xpdl2:WorkflowProcesses>
+    <xpdl2:WorkflowProcess Id="_x4D64F56EeiSs9l5Ie3u4w" xpdExt:XpdModelType="PageFlow" xpdExt:DisplayName="Work Reallocation" Name="comsfcfosimplWorkReallocation">
+      <xpdl2:ProcessHeader/>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_MkWh4F58EeiSs9l5Ie3u4w" xpdExt:DisplayName="FetchUsers" Name="FetchUsers" IsArray="true" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:RecordType>
+              <xpdl2:Member>
+                <xpdl2:ExternalReference location="com.sfc.fosImpl.dataModel.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_X_aPwPB6EeeuzZ1H_57zBQ"/>
+              </xpdl2:Member>
+            </xpdl2:RecordType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_7NT3YF6YEeiSs9l5Ie3u4w" xpdExt:DisplayName="ResourceListInput" Name="ResourceListInput" IsArray="true" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.SchemaRequestListType"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_lotmIV6bEeiSs9l5Ie3u4w" xpdExt:DisplayName="WorkList" Name="WorkList" IsArray="false" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.SchemaWorkItemListsType"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_0V39sF8VEeiSs9l5Ie3u4w" xpdExt:DisplayName="ResourceList" Name="ResourceList" IsArray="true" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_5GOHQF8VEeiSs9l5Ie3u4w" xpdExt:DisplayName="ResourceGUID" Name="ResourceGUID" IsArray="true" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>100</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_9NozIF8WEeiSs9l5Ie3u4w" xpdExt:DisplayName="UpdatedWorkList" Name="UpdatedWorkList" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.Schema.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="com.tibco.schemas.SFC_FOS_BPM.SharedResources.SchemaDefinitions.SchemaWorkItemListsType"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_x5T4EF56EeiSs9l5Ie3u4w" Name="Start" xpdExt:Visibility="Private" xpdExt:DisplayName="Start">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="143,191,251" Height="27.0" LaneId="_x4exoF56EeiSs9l5Ie3u4w" Width="27.0">
+              <xpdl2:Coordinates XCoordinate="53.0" YCoordinate="115.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_x5UfIF56EeiSs9l5Ie3u4w" Name="End" xpdExt:Visibility="Private" xpdExt:DisplayName="End">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="143,191,251" Height="57.0" LaneId="_x4exoF56EeiSs9l5Ie3u4w" Width="32.0">
+              <xpdl2:Coordinates XCoordinate="1246.0" YCoordinate="115.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_1R49cF56EeiSs9l5Ie3u4w" Name="FetchWorkList" xpdExt:Visibility="Private" xpdExt:DisplayName="Fetch Work List">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskScript>
+                <xpdl2:Script ScriptGrammar="JavaScript">var name=bpm.process.getWorkItemCompleter();&#xD;
+&#xD;
+var group = bpm.process.getOrgModel().resourceByName(name)[0].getGroups()[0].getName();&#xD;
+&#xD;
+//var group=bpm.process.getOrgModel().resourceByName(name).get(0).getGroups().get(0).getName();&#xD;
+Log.write(&quot;Work Reallocation Service Group Name :&quot;+group);&#xD;
+if(group==&quot;ContractorMaster&quot;){&#xD;
+Log.write(&quot;Work Reallocation Service Group Name :1&quot;);&#xD;
+var criteria=&quot;loginName='&quot;+bpm.process.getWorkItemCompleter()+&quot;'&quot;;&#xD;
+Log.write(&quot;Work Reallocation Service Group Name :2&quot;);&#xD;
+//data.FetchUsers=cac_com_sfc_fosImpl_dataModel_ContractorGroups.findByCriteria(criteria);&#xD;
+&#xD;
+data.FetchUsers.pushAll(bpm.caseData.findByCriteria(criteria,&quot;com.sfc.fosImpl.dataModel.ContractorGroups&quot;,1,10));&#xD;
+&#xD;
+Log.write(&quot;Work Reallocation Service Group Name :3&quot;);&#xD;
+&#xD;
+&#xD;
+var GroupNameCriteria =factory.com_sfc_fosImpl_dataModel.createContractorGroups();&#xD;
+&#xD;
+GroupNameCriteria = bpm.caseData.read(data.FetchUsers[0]);&#xD;
+var GroupName=GroupNameCriteria.contractorGroupName;&#xD;
+&#xD;
+&#xD;
+Log.write(&quot;Work Reallocation Service Group Name :4&quot;);&#xD;
+criteria=&quot;contractorGroupName='&quot;+GroupName+&quot;' and masterUser='N'&quot;;&#xD;
+Log.write(&quot;Work Reallocation Service Group Name :5&quot;);&#xD;
+//data.FetchUsers=cac_com_sfc_fosImpl_dataModel_ContractorGroups.findByCriteria(criteria);&#xD;
+&#xD;
+data.FetchUsers.pushAll(bpm.caseData.findByCriteria(criteria,&quot;com.sfc.fosImpl.dataModel.ContractorGroups&quot;,1,10));&#xD;
+Log.write(&quot;Work Reallocation Service Group Name :6&quot;);&#xD;
+Log.write(&quot;Work Reallocation Service Group Name :7&quot;+data.FetchUsers.length );&#xD;
+var GroupNameCriteria =factory.com_sfc_fosImpl_dataModel.createContractorGroups();&#xD;
+&#xD;
+&#xD;
+for(var i=0;i&lt;data.FetchUsers.length ;i++){&#xD;
+&#xD;
+GroupNameCriteria = bpm.caseData.read(data.FetchUsers[i]);&#xD;
+//var username=data.FetchUsers[i].readContractorGroups().loginName;&#xD;
+var username = GroupNameCriteria.loginName;&#xD;
+Log.write(&quot;Work Reallocation Service Group Name :8&quot;+username);&#xD;
+data.ResourceList.push(username);&#xD;
+//var userguid=bpm.process.getOrgModel().resourceByName(username).get(0).getGuid();&#xD;
+var userguid = bpm.process.getOrgModel().resourceByName(username)[0].getGuid();&#xD;
+Log.write(&quot;Work Reallocation Service Group Name :9&quot;+userguid);&#xD;
+data.ResourceGUID.push(userguid);&#xD;
+//var username=bpm.process.getOrgModel().resourceByName(username).get(0).getName();&#xD;
+var username=bpm.process.getOrgModel().resourceByName(username)[0].getName();&#xD;
+var resource=factory.com_tibco_schemas_SFC_FOS_BPM_SharedResources_SchemaDefinitions_Schema.createRequestListType();&#xD;
+resource.resourceGUID=userguid;&#xD;
+resource.resourceName=username;&#xD;
+Log.write(&quot;Work Reallocation Service Group Name :10&quot;);&#xD;
+data.ResourceListInput.push(resource);&#xD;
+}&#xD;
+}&#xD;
+if(group==&quot;PM&quot;){&#xD;
+//Log.write(&quot;Work Reallocation Service Inside PM Loop &quot;);&#xD;
+criteria=&quot;masterUser='Y'&quot;;&#xD;
+//data.FetchUsers=cac_com_sfc_fosImpl_dataModel_ContractorGroups.findByCriteria(criteria);&#xD;
+&#xD;
+data.FetchUsers.pushAll(bpm.caseData.findByCriteria(criteria,&quot;com.sfc.fosImpl.dataModel.ContractorGroups&quot;,1,10));&#xD;
+var GroupNameCriteria =factory.com_sfc_fosImpl_dataModel.createContractorGroups();&#xD;
+//Log.write(&quot;Work Reaalocation Service Group Master Size :&quot;+FetchUsers.size());&#xD;
+for(var i=0;i&lt;data.FetchUsers.length ;i++){&#xD;
+GroupNameCriteria = bpm.caseData.read(data.FetchUsers[i]);&#xD;
+var username = GroupNameCriteria.loginName;&#xD;
+//var username=data.FetchUsers[i].readContractorGroups().loginName;&#xD;
+&#xD;
+data.ResourceList.push(GroupNameCriteria.contractorGroupName);&#xD;
+//data.ResourceList.push(data.FetchUsers[i].readContractorGroups().contractorGroupName);&#xD;
+//Log.write(&quot;Work Reaalocation Service User Name :&quot;+username);&#xD;
+//var userguid=bpm.process.getOrgModel().resourceByName(username).get(0).getGuid();&#xD;
+var userguid=bpm.process.getOrgModel().resourceByName(username)[0].getGuid();&#xD;
+data.ResourceGUID.push(userguid);&#xD;
+//Log.write(&quot;Work Reallocation Service Group GUID Masters :&quot;+userguid);&#xD;
+//var username=bpm.process.getOrgModel().resourceByName(username).get(0).getName();&#xD;
+var username=bpm.process.getOrgModel().resourceByName(username)[0].getName();&#xD;
+var resource=factory.com_tibco_schemas_SFC_FOS_BPM_SharedResources_SchemaDefinitions_Schema.createRequestListType();&#xD;
+resource.resourceGUID=userguid;&#xD;
+//Log.write(&quot;Work Reaalocation Service Group GUID Resource :&quot;+resource.resourceGUID);&#xD;
+resource.resourceName=username;&#xD;
+//Log.write(&quot;Work Reaalocation Service Group Name Resource :&quot;+resource.resourceName);&#xD;
+resource.projectManager=name;&#xD;
+//Log.write(&quot;Work Reaalocation Service Proj Manager :&quot;+resource.projectManager);&#xD;
+data.ResourceListInput.push(resource);&#xD;
+}&#xD;
+}&#xD;
+/*&#xD;
+var criteria = &quot;contractorGroupName='&quot;+Process.getOriginatorName()+&quot;' and masterUser='N'&quot;;&#xD;
+var Fetch_Groups=cac_com_sfc_fosImpl_dataModel_ContractorGroups.findByCriteria(criteria);&#xD;
+for(var index=0; index&lt;Fetch_Groups.size(); index++) {&#xD;
+	ContractorNames.add(Fetch_Groups.get(index).readContractorGroups().loginName);&#xD;
+}&#xD;
+*/&#xD;
+</xpdl2:Script>
+              </xpdl2:TaskScript>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="143,191,251" Height="64.0" LaneId="_x4exoF56EeiSs9l5Ie3u4w" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="173.0" YCoordinate="115.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_2grr0F56EeiSs9l5Ie3u4w" Name="WorkItemList" xpdExt:Visibility="Private" xpdExt:DisplayName="Work Item List">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskService xpdExt:ImplementationType="RESTService" Implementation="Other">
+                <xpdl2:MessageIn Id="_WzCzkFkfEe2qBK_PxeaLMA">
+                  <xpdExt:ScriptDataMapper MapperContext="ProcessToRestService" MappingDirection="IN"/>
+                </xpdl2:MessageIn>
+                <xpdl2:MessageOut Id="_WzCzkVkfEe2qBK_PxeaLMA">
+                  <xpdExt:ScriptDataMapper MapperContext="RestServiceToProcess" MappingDirection="OUT"/>
+                </xpdl2:MessageOut>
+                <xpdExt:RestServiceOperation xpdExt:Location="com.sfc.fosImpl.RestServices.rsd" xpdExt:MethodId="_66pyUW_FEe2vBId6cfbH5A"/>
+              </xpdl2:TaskService>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:Performers>
+            <xpdl2:Performer>_nYH1oF6YEeiSs9l5Ie3u4w</xpdl2:Performer>
+          </xpdl2:Performers>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="143,191,251" Height="64.0" LaneId="_x4exoF56EeiSs9l5Ie3u4w" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="333.0" YCoordinate="115.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:Audit/>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_RhxSkF6GEeiSs9l5Ie3u4w" Name="WorkReallocationForm" xpdExt:Visibility="Private" xpdExt:DisplayName="Work Reallocation Form">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_RhxSkV6GEeiSs9l5Ie3u4w"/>
+                <xpdl2:MessageOut Id="_RhxSkl6GEeiSs9l5Ie3u4w"/>
+                <xpdExt:FormImplementation FormType="Form" FormURI="form://comsfcfosimplWorkReallocation/comsfcfosimplWorkReallocation/UserTask/FetchWorkItemList.form"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:ExtendedAttributes>
+            <xpdl2:ExtendedAttribute Name="bpmJspTask" Value="form://comsfcfosimplWorkReallocation/comsfcfosimplWorkReallocation/UserTask/FetchWorkItemList.form"/>
+          </xpdl2:ExtendedAttributes>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="143,191,251" Height="64.0" LaneId="_x4exoF56EeiSs9l5Ie3u4w" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="508.0" YCoordinate="115.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
+            <xpdExt:AssociatedParameter FormalParam="WorkList" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="UpdatedWorkList" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="ResourceGUID" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="ResourceList" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+          </xpdExt:AssociatedParameters>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Completed">
+              <xpdExt:Information ScriptGrammar="JavaScript">for(var i=0;i&lt;data.WorkList.workItems.length ;i++){&#xD;
+&#xD;
+//var Allocatedguid=bpm.process.getOrgModel().resourceByName(data.WorkList.workItems[i].currentlyAllocated).get(0).getGuid();&#xD;
+//	data.WorkList.workItems[i].currentlyAllocated=Allocatedguid;&#xD;
+//}&#xD;
+&#xD;
+var Allocatedguid = bpm.process.getOrgModel().resourceByGuid(data.WorkList.workItems[i].currentlyAllocated).getGuid();&#xD;
+data.WorkList.workItems[i].currentlyAllocated = Allocatedguid;&#xD;
+&#xD;
+}</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_v0qm4F8WEeiSs9l5Ie3u4w" Name="ReallocateWorkService" xpdExt:Visibility="Private" xpdExt:DisplayName="Reallocate Work Service">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskService xpdExt:ImplementationType="RESTService" Implementation="Other">
+                <xpdl2:MessageIn Id="_-eEFUEPsEe24T8aaOvp7MA">
+                  <xpdExt:ScriptDataMapper MapperContext="ProcessToRestService" MappingDirection="IN"/>
+                </xpdl2:MessageIn>
+                <xpdl2:MessageOut Id="_-eEFUUPsEe24T8aaOvp7MA">
+                  <xpdExt:ScriptDataMapper MapperContext="RestServiceToProcess" MappingDirection="OUT"/>
+                </xpdl2:MessageOut>
+                <xpdExt:RestServiceOperation xpdExt:Location="com.sfc.fosImpl.RestServices.rsd" xpdExt:MethodId="_66pyUW_FEe2vBId6cfbH5A"/>
+              </xpdl2:TaskService>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:Performers>
+            <xpdl2:Performer>_nYH1oF6YEeiSs9l5Ie3u4w</xpdl2:Performer>
+          </xpdl2:Performers>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="143,191,251" Height="64.0" LaneId="_x4exoF56EeiSs9l5Ie3u4w" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="821.0" YCoordinate="115.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">Log.write(&quot;Work Item Allocation Work Item List Size : &quot;+data.WorkList.workItems.length );&#xD;
+&#xD;
+data.UpdatedWorkList = factory.com_tibco_schemas_SFC_FOS_BPM_SharedResources_SchemaDefinitions_Schema.createWorkItemListsType();&#xD;
+&#xD;
+for(var i=0;i&lt;data.WorkList.workItems.length ;i++){&#xD;
+if(data.WorkList.workItems[i].allocateTo!=&quot;&quot;||data.WorkList.workItems[i].allocateTo!=null){&#xD;
+	var WorkItemList=factory.com_tibco_schemas_SFC_FOS_BPM_SharedResources_SchemaDefinitions_Schema.createWorkItemsType();&#xD;
+	WorkItemList.allocateTo=data.WorkList.workItems[i].allocateTo;&#xD;
+	Log.write(&quot;Work Item Allocation Work Item Allocate To : &quot;+WorkItemList.allocateTo);&#xD;
+	WorkItemList.currentlyAllocated=data.WorkList.workItems[i].currentlyAllocated;&#xD;
+	//var Allocatedguid=Process.getOrgModel().resourceByName(WorkItemList.currentlyAllocated).get(0).getGuid();&#xD;
+	//WorkItemList.currentlyAllocated=Allocatedguid;&#xD;
+	Log.write(&quot;Work Item Allocation Work Item current Allocate To : &quot;+WorkItemList.currentlyAllocated);&#xD;
+	WorkItemList.customerName=data.WorkList.workItems[i].customerName;&#xD;
+	Log.write(&quot;Work Item Allocation Work Item Allocate Client : &quot;+WorkItemList.customerName);&#xD;
+	WorkItemList.processName=data.WorkList.workItems[i].processName;&#xD;
+	Log.write(&quot;Work Item Allocation Work Item Allocate Process Name : &quot;+WorkItemList.processName);&#xD;
+	WorkItemList.siebelCircuitID=data.WorkList.workItems[i].siebelCircuitID;&#xD;
+	Log.write(&quot;Work Item Allocation Work Item Allocate Siebel : &quot;+WorkItemList.siebelCircuitID);&#xD;
+	WorkItemList.status=data.WorkList.workItems[i].status;&#xD;
+	Log.write(&quot;Work Item Allocation Work Item Allocate Status : &quot;+WorkItemList.status);&#xD;
+	WorkItemList.taskName=data.WorkList.workItems[i].taskName;&#xD;
+	Log.write(&quot;Work Item Allocation Work Item Allocate Task Name : &quot;+WorkItemList.taskName);&#xD;
+	WorkItemList.workItemID=data.WorkList.workItems[i].workItemID;&#xD;
+	Log.write(&quot;Work Item Allocation Work Item Allocate Work Item ID : &quot;+WorkItemList.workItemID);&#xD;
+	data.UpdatedWorkList.workItems.push(WorkItemList);&#xD;
+}&#xD;
+}&#xD;
+Log.write(&quot;Updated Work Item Allocation Work Item List Size : &quot;+data.UpdatedWorkList.workItems.length );&#xD;
+//WorkList.workItems.clear();&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_qAR0IF8bEeiSs9l5Ie3u4w" Name="ReallocationAcknowledgement" xpdExt:Visibility="Private" xpdExt:DisplayName="Reallocation Acknowledgement">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_qAR0IV8bEeiSs9l5Ie3u4w"/>
+                <xpdl2:MessageOut Id="_qAR0Il8bEeiSs9l5Ie3u4w"/>
+                <xpdExt:FormImplementation FormType="Form" FormURI="form://comsfcfosimplWorkReallocation/comsfcfosimplWorkReallocation/UserTask2/AllocateStatus.form"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:ExtendedAttributes>
+            <xpdl2:ExtendedAttribute Name="bpmJspTask" Value="form://comsfcfosimplWorkReallocation/comsfcfosimplWorkReallocation/UserTask2/AllocateStatus.form"/>
+          </xpdl2:ExtendedAttributes>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="143,191,251" Height="64.0" LaneId="_x4exoF56EeiSs9l5Ie3u4w" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="1018.0" YCoordinate="115.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+          <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
+            <xpdExt:AssociatedParameter FormalParam="ResourceGUID" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="ResourceList" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="UpdatedWorkList" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+          </xpdExt:AssociatedParameters>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">for(var k=0;k&lt;data.UpdatedWorkList.workItems.length ;k++){&#xD;
+	var AllocatedName=bpm.process.getOrgModel().resourceByGuid(data.UpdatedWorkList.workItems[k].currentlyAllocated).getName();&#xD;
+	var AllocatedToName=bpm.process.getOrgModel().resourceByGuid(data.UpdatedWorkList.workItems[k].allocateTo).getName();&#xD;
+	data.UpdatedWorkList.workItems[k].currentlyAllocated=AllocatedName;&#xD;
+	data.UpdatedWorkList.workItems[k].allocateTo=AllocatedToName;&#xD;
+}&#xD;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_x5UfIV56EeiSs9l5Ie3u4w" xpdExt:DisplayName="" Name="" From="_qAR0IF8bEeiSs9l5Ie3u4w" To="_x5UfIF56EeiSs9l5Ie3u4w">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_1R6LkF56EeiSs9l5Ie3u4w" xpdExt:DisplayName="" Name="" From="_x5T4EF56EeiSs9l5Ie3u4w" To="_1R49cF56EeiSs9l5Ie3u4w">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_2gsS4F56EeiSs9l5Ie3u4w" xpdExt:DisplayName="" Name="" From="_1R49cF56EeiSs9l5Ie3u4w" To="_2grr0F56EeiSs9l5Ie3u4w">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_RhygsF6GEeiSs9l5Ie3u4w" xpdExt:DisplayName="" Name="" From="_2grr0F56EeiSs9l5Ie3u4w" To="_RhxSkF6GEeiSs9l5Ie3u4w">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_qATCQF8bEeiSs9l5Ie3u4w" xpdExt:DisplayName="" Name="" From="_v0qm4F8WEeiSs9l5Ie3u4w" To="_qAR0IF8bEeiSs9l5Ie3u4w">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_9voYs2MCEeiqYY0bnhYc4Q" xpdExt:DisplayName="" Name="" From="_RhxSkF6GEeiSs9l5Ie3u4w" To="_v0qm4F8WEeiSs9l5Ie3u4w">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="CE"/>
+      </xpdl2:ExtendedAttributes>
+      <xpdl2:Extensions/>
+      <xpdExt:RequiredAccessPrivileges>
+        <xpdExt:PrivilegeReference location="orgModel.om" namespace="http://www.tibco.com/om/1.0" xref="_0-Ko8Fz1Eeiwcu54pcKb1g"/>
+      </xpdExt:RequiredAccessPrivileges>
+    </xpdl2:WorkflowProcess>
+  </xpdl2:WorkflowProcesses>
+  <xpdl2:ExtendedAttributes>
+    <xpdl2:ExtendedAttribute Name="CreatedBy" Value="TIBCO Business Studio"/>
+    <xpdl2:ExtendedAttribute Name="FormatVersion" Value="1000"/>
+    <xpdl2:ExtendedAttribute Name="OriginalFormatVersion" Value="20"/>
+  </xpdl2:ExtendedAttributes>
+</xpdl2:Package>

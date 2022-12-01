@@ -24,11 +24,11 @@
     </form:rule>
   </form:rules>
   <form:bindings>
-    <form:binding generated="true" direction="bothways" name="_lXUO4G_UEe27i642v7WElw">
+    <form:binding generated="true" direction="bothways" name="_XYgIUHFNEe2oQtmO7xH1OQ">
       <form:source target="data.ErrorCode" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ErrorCode.value"/>
       <form:destination target="control.ErrorCode" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ErrorCode.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_lXUO4W_UEe27i642v7WElw">
+    <form:binding generated="true" direction="bothways" name="_XYgIUXFNEe2oQtmO7xH1OQ">
       <form:source target="data.ErrorDetail" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ErrorDetail.value"/>
       <form:destination target="control.ErrorDetail" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ErrorDetail.value"/>
     </form:binding>

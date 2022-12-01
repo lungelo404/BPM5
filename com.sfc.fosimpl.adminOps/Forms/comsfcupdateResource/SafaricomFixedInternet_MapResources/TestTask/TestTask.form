@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" generated="true" formatVersion="11.0.0">
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri="comsfcupdateResource/SafaricomFixedInternet_MapResources/TestTask/TestTask.properties" sfRelative="true" internal="true" localized="true"/>
+    <form:externalResource name="resource.helper" uri="JavaScript/helper.js" sfRelative="true"/>
+    <form:externalResource name="resource.SFC" uri="Images/SFC.png.back" sfRelative="true"/>
+    <form:externalResource name="resource.safaricom" uri="CSS/safaricom.css" sfRelative="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" generatorSource="com.sfc.updateResource.xpdl#_dVu14GZDEe2Rr4rTJnVWWg?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=FetchUsersA?" name="data.FetchUsersA" label="FetchUsersA" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_o0zLAAvCEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=BussinessUsers?" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="com.sfc.updateResource.xpdl#_cXp2gPRYEeeRs7eYTPjalw?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=BPMUsers?" name="data.BPMUsers" label="BPMUsers" dataType="uml:Class BusinessObjectModel.bom#_KHBXwPRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.adminOps.dataModel%26n=BPMUsers?" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" name="data.GroupName" label="Group Name" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="50" inout="INOUT"/>
+  </form:dataModel>
+  <form:actions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancela" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancela.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submita" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submita.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_8Q01EGZDEe2Rr4rTJnVWWg">
+      <form:source target="data.FetchUsersA" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.FetchUsersA.value"></form:source>
+      <form:destination target="pane.FetchUsersA" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.FetchUsersA.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_8Q01EWZDEe2Rr4rTJnVWWg">
+      <form:source target="pane.FetchUsersA" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_vcTDcAvCEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=caseID?" data="form.pane.FetchUsersA.value.caseID"></form:source>
+      <form:destination target="control.FetchUsersA_caseID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.FetchUsersA_caseID.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_8Q01EmZDEe2Rr4rTJnVWWg">
+      <form:source target="pane.FetchUsersA" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_7td6IAvCEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=loginName?" data="form.pane.FetchUsersA.value.loginName"></form:source>
+      <form:destination target="control.FetchUsersA_loginName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.FetchUsersA_loginName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_8Q01E2ZDEe2Rr4rTJnVWWg">
+      <form:source target="pane.FetchUsersA" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#__wEM4AvCEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=firstName?" data="form.pane.FetchUsersA.value.firstName"></form:source>
+      <form:destination target="control.FetchUsersA_firstName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.FetchUsersA_firstName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_8Q01FGZDEe2Rr4rTJnVWWg">
+      <form:source target="pane.FetchUsersA" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_Ej0PwAvDEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=lastName?" data="form.pane.FetchUsersA.value.lastName"></form:source>
+      <form:destination target="control.FetchUsersA_lastName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.FetchUsersA_lastName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_8Q01FWZDEe2Rr4rTJnVWWg">
+      <form:source target="pane.FetchUsersA" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_FXiywAvDEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=groupName?" data="form.pane.FetchUsersA.value.groupName"></form:source>
+      <form:destination target="control.FetchUsersA_groupName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.FetchUsersA_groupName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_8Q01FmZDEe2Rr4rTJnVWWg">
+      <form:source target="pane.FetchUsersA" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_aU9n4AvDEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=email?" data="form.pane.FetchUsersA.value.email"></form:source>
+      <form:destination target="control.FetchUsersA_email" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.FetchUsersA_email.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_8Q01F2ZDEe2Rr4rTJnVWWg">
+      <form:source target="pane.FetchUsersA" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_gekDYAvDEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=addedBy?" data="form.pane.FetchUsersA.value.addedBy"></form:source>
+      <form:destination target="control.FetchUsersA_addedBy" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.FetchUsersA_addedBy.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_8Q01GGZDEe2Rr4rTJnVWWg">
+      <form:source target="pane.FetchUsersA" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_hR-dUAvDEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=addedOn?" data="form.pane.FetchUsersA.value.addedOn"></form:source>
+      <form:destination target="control.FetchUsersA_addedOn" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.FetchUsersA_addedOn.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_8Q01GWZDEe2Rr4rTJnVWWg">
+      <form:source target="pane.FetchUsersA" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_y2JTwIf7Eeik6qsM39_1JA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=mobileNumber?" data="form.pane.FetchUsersA.value.mobileNumber"></form:source>
+      <form:destination target="control.FetchUsersA_mobileNumber" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.FetchUsersA_mobileNumber.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_8Q01GmZDEe2Rr4rTJnVWWg">
+      <form:source target="pane.FetchUsersA" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_noIi0CLkEe2wEoo8St6PPQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=state?" data="form.pane.FetchUsersA.value.state"></form:source>
+      <form:destination target="control.FetchUsersA_state" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.FetchUsersA_state.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_8Q01G2ZDEe2Rr4rTJnVWWg">
+      <form:source target="data.BPMUsers" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.BPMUsers.value"></form:source>
+      <form:destination target="pane.BPMUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value" data="form.pane.BPMUsers.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_8Q01HGZDEe2Rr4rTJnVWWg">
+      <form:source target="pane.BPMUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value BusinessObjectModel.bom#_MiwaYPRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%26n=name?" data="form.pane.BPMUsers.value.name"></form:source>
+      <form:destination target="control.BPMUsers_name" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BPMUsers_name.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_8Q01HWZDEe2Rr4rTJnVWWg">
+      <form:source target="pane.BPMUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value BusinessObjectModel.bom#_MuSU8PRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%26n=groupName?" data="form.pane.BPMUsers.value.groupName"></form:source>
+      <form:destination target="control.BPMUsers_groupName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BPMUsers_groupName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_8Q01HmZDEe2Rr4rTJnVWWg">
+      <form:source target="pane.BPMUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value BusinessObjectModel.bom#_M1iMcPRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%26n=addedBy?" data="form.pane.BPMUsers.value.addedBy"></form:source>
+      <form:destination target="control.BPMUsers_addedBy" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BPMUsers_addedBy.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_8Q01H2ZDEe2Rr4rTJnVWWg">
+      <form:source target="pane.BPMUsers" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value BusinessObjectModel.bom#_M9KecPRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%26n=addedOn?" data="form.pane.BPMUsers.value.addedOn"></form:source>
+      <form:destination target="control.BPMUsers_addedOn" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.BPMUsers_addedOn.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_35iPQGZEEe2Rr4rTJnVWWg">
+      <form:source target="data.GroupName" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.GroupName.value"/>
+      <form:destination target="control.GroupName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.GroupName.value"/>
+    </form:binding>
+  </form:bindings>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>Test Task</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="true"/>
+    <form:defaults>
+      <form:labelProperties position="top"/>
+    </form:defaults>
+    <form:pane generated="true" generatorSource="com.sfc.updateResource.xpdl#_dVu14GZDEe2Rr4rTJnVWWg?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=FetchUsersA?" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_o0zLAAvCEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=BussinessUsers?" name="pane.FetchUsersA" paneType="com.tibco.forms.panes.vertical">
+      <form:label>FetchUsersA</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_vcTDcAvCEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=caseID?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.FetchUsersA_caseID">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>200</et:maxLength>
+        </form:propertySet>
+        <form:label>Case ID</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_7td6IAvCEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=loginName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.FetchUsersA_loginName">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>200</et:maxLength>
+        </form:propertySet>
+        <form:label>Login Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#__wEM4AvCEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=firstName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.FetchUsersA_firstName">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>200</et:maxLength>
+        </form:propertySet>
+        <form:label>First Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_Ej0PwAvDEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=lastName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.FetchUsersA_lastName">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>200</et:maxLength>
+        </form:propertySet>
+        <form:label>Last Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_FXiywAvDEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=groupName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.FetchUsersA_groupName">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>Group Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_aU9n4AvDEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=email?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.FetchUsersA_email">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>200</et:maxLength>
+        </form:propertySet>
+        <form:label>Email</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_gekDYAvDEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=addedBy?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.FetchUsersA_addedBy">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>200</et:maxLength>
+        </form:propertySet>
+        <form:label>Added By</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_hR-dUAvDEeiB0btp05nrFQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=addedOn?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.FetchUsersA_addedOn">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>200</et:maxLength>
+        </form:propertySet>
+        <form:label>Added On</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_y2JTwIf7Eeik6qsM39_1JA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=mobileNumber?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.FetchUsersA_mobileNumber">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>MobileNumber</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_noIi0CLkEe2wEoo8St6PPQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aBussinessUsers%26n=state?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.FetchUsersA_state">
+        <form:propertySet xsi:type="et:MultiChoicePropertySet">
+          <et:choiceType>enumeration</et:choiceType>
+          <et:choiceEnumeration>com.sfc.fosImpl.bizData.dataModel.bom#_e0weICLjEe2wEoo8St6PPQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aEnumeration%26q=com.sfc.fosImpl.bizData.dataModel%26n=States?</et:choiceEnumeration>
+        </form:propertySet>
+        <form:label>State</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>true</form:required>
+      </form:control>
+    </form:pane>
+    <form:pane generated="true" generatorSource="com.sfc.updateResource.xpdl#_cXp2gPRYEeeRs7eYTPjalw?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=BPMUsers?" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class BusinessObjectModel.bom#_KHBXwPRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.adminOps.dataModel%26n=BPMUsers?" name="pane.BPMUsers" paneType="com.tibco.forms.panes.grid">
+      <form:propertySet xsi:type="et:GridPanePropertySet">
+        <et:showNavigator>false</et:showNavigator>
+        <et:supportAddOperation>true</et:supportAddOperation>
+        <et:supportDeleteOperation>true</et:supportDeleteOperation>
+        <et:editable>true</et:editable>
+        <et:sortable>true</et:sortable>
+        <et:rowLabel>{0}</et:rowLabel>
+      </form:propertySet>
+      <form:label>BPMUsers</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" generatorSource="BusinessObjectModel.bom#_MiwaYPRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%26n=name?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BPMUsers_name">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="BusinessObjectModel.bom#_MuSU8PRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%26n=groupName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BPMUsers_groupName">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>Group Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="BusinessObjectModel.bom#_M1iMcPRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%26n=addedBy?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BPMUsers_addedBy">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>Added By</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="BusinessObjectModel.bom#_M9KecPRYEeeRs7eYTPjalw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.adminOps.dataModel%3a%3aBPMUsers%26n=addedOn?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.BPMUsers_addedOn">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>Added On</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:control generated="true" generatorSource="com.sfc.updateResource.xpdl#_tzG3UPBTEeeuzZ1H_57zBQ?p=com.sfc.fosimpl.adminOps%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comsfcupdateResource%3a%3aSafaricomFixedInternet_MapResources%26n=GroupName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.GroupName">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <form:list>true</form:list>
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>Group Name</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane gwt:toolbar="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancela">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submita">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>

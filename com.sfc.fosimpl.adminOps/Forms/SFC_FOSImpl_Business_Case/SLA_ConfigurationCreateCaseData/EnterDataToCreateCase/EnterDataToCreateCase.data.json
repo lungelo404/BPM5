@@ -1,0 +1,19 @@
+{
+    "items":[
+        {
+            "$param":"SLA_Configuration",
+            "$value":{
+                "$type":"com.example.sfc_provisioningbom.SLA_Configuration",
+                "SLALevel":"1",
+                "taskName":"taskName",
+                "processName":"processName",
+                "SLA_Deadline":"SLA_Deadline",
+                "emailTo":"NONE",
+                "taskTo":"NONE",
+                "emailConfig":"emailConfig",
+                "taskConfig":"taskConfig",
+                "enableDisableFlag":"ENABLE"
+            }
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "body": {
+        "inputs": [
+
+        ],
+        "outputs": [
+
+        ],
+        "inouts": [
+            {
+                "name":"ContractorNormalUsers",
+                "structured": [
+                    {
+                        "loginName": "loginName0",
+                        "firstName": "firstName0",
+                        "lastName": "lastName0",
+                        "contractorGroupName": "contractorGroupName0",
+                        "masterUser": "masterUser0",
+                        "emailID": "emailID0",
+                        "addedBy": "addedBy0",
+                        "addedOn": "addedOn0",
+                        "mobileNumber": "mobileNumber0",
+                        "state": "STARTED"
+                    },
+                    {
+                        "loginName": "loginName1",
+                        "firstName": "firstName1",
+                        "lastName": "lastName1",
+                        "contractorGroupName": "contractorGroupName1",
+                        "masterUser": "masterUser1",
+                        "emailID": "emailID1",
+                        "addedBy": "addedBy1",
+                        "addedOn": "addedOn1",
+                        "mobileNumber": "mobileNumber1",
+                        "state": "STARTED"
+                    },
+                    {
+                        "loginName": "loginName2",
+                        "firstName": "firstName2",
+                        "lastName": "lastName2",
+                        "contractorGroupName": "contractorGroupName2",
+                        "masterUser": "masterUser2",
+                        "emailID": "emailID2",
+                        "addedBy": "addedBy2",
+                        "addedOn": "addedOn2",
+                        "mobileNumber": "mobileNumber2",
+                        "state": "STARTED"
+                    },
+                    {
+                        "loginName": "loginName3",
+                        "firstName": "firstName3",
+                        "lastName": "lastName3",
+                        "contractorGroupName": "contractorGroupName3",
+                        "masterUser": "masterUser3",
+                        "emailID": "emailID3",
+                        "addedBy": "addedBy3",
+                        "addedOn": "addedOn3",
+                        "mobileNumber": "mobileNumber3",
+                        "state": "STARTED"
+                    }
+                ]
+            },
+            {
+                "name":"ContractorGroup",
+                "structured": [
+                    {
+                        "loginName": "loginName",
+                        "firstName": "firstName",
+                        "lastName": "lastName",
+                        "contractorGroupName": "contractorGroupName",
+                        "masterUser": "masterUser",
+                        "emailID": "emailID",
+                        "addedBy": "addedBy",
+                        "addedOn": "addedOn",
+                        "mobileNumber": "mobileNumber",
+                        "state": "STARTED"
+                    }
+                ]
+            }
+        ]
+    }
+}

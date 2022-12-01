@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" generated="true" formatVersion="11.0.0">
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri="GenericReporting/GenericReportingTaskAnalysis/UserTask/UserTask.properties" sfRelative="true" internal="true" localized="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" generatorSource="GenericReporting.xpdl#_bta4UN_AEee4yOWJZ8GYTA?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=fetchDataURL?" name="data.fetchDataURL" label="fetchDataURL" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="100" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="GenericReporting.xpdl#_X82iAN_GEee4yOWJZ8GYTA?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=CancelledInstances?" name="data.CancelledInstances" label="CancelledInstances" dataType="uml:Class GenericReporting.bom#_LjqXwN_GEee4yOWJZ8GYTA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.genericReporting%26n=Record?" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="GenericReporting.xpdl#_KMbiQN_KEee4yOWJZ8GYTA?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=StartedInstances?" name="data.StartedInstances" label="StartedInstances" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="GenericReporting.xpdl#_IyxOYN_PEeeQHIXdSwQiWA?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=HaltedInstances?" name="data.HaltedInstances" label="HaltedInstances" dataType="uml:Class GenericReporting.bom#_LjqXwN_GEee4yOWJZ8GYTA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.genericReporting%26n=Record?" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="GenericReporting.xpdl#_JMvNkN_PEeeQHIXdSwQiWA?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=CompletedInstances?" name="data.CompletedInstances" label="CompletedInstances" dataType="uml:Class GenericReporting.bom#_LjqXwN_GEee4yOWJZ8GYTA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.genericReporting%26n=Record?" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="GenericReporting.xpdl#_ZEsZgPH-Eee-3Kv3Q1H-xQ?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=loginUserGrp?" name="data.loginUserGrp" label="loginUserGrp" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="100" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="GenericReporting.xpdl#_eg9N4fH-Eee-3Kv3Q1H-xQ?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=loginName?" name="data.loginName" label="loginName" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="100" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="GenericReporting.xpdl#_gQgf8PH-Eee-3Kv3Q1H-xQ?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=ResourceGroups?" name="data.ResourceGroups" label="ResourceGroups" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="50" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="GenericReporting.xpdl#_jhyDcPH-Eee-3Kv3Q1H-xQ?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=TaskList?" name="data.TaskList" label="TaskList" dataType="uml:Class GenericReporting.bom#_hTFMsPH9EeeIX9PjIyxHhQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.genericReporting%26n=Task?" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="GenericReporting.xpdl#_6BG4YPQ8EeeMCZGsP3rsrw?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=tmp?" name="data.tmp" label="tmp" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_8CyNENAdEeeYN6H5-MXFxQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=SystemParameters?" inout="IN"/>
+    <form:parameter generated="true" generatorSource="GenericReporting.xpdl#_t0DnIPtXEeeLb4hQs9WX0Q?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=ResourceList?" name="data.ResourceList" label="ResourceList" dataType="uml:Class GenericReporting.bom#_gRVpAPtXEeeLb4hQs9WX0Q?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.genericReporting%26n=ResourceDetails?" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="GenericReporting.xpdl#_qU00YPxNEeedYo2shDdA0Q?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=ActivityList?" name="data.ActivityList" label="ActivityList" dataType="uml:Class GenericReporting.bom#_atyOEPxNEeedYo2shDdA0Q?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.genericReporting%26n=Activity?" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="GenericReporting.xpdl#__o8uwP69EeeuGbQVt6VBIQ?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=ErrorCode?" name="data.ErrorCode" label="Error Code" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="50" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="GenericReporting.xpdl#_AzsDkP6-EeeuGbQVt6VBIQ?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=ErrorDetail?" name="data.ErrorDetail" label="Error Detail" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="4000" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="GenericReporting.xpdl#_SshhgFzxEeiwcu54pcKb1g?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=ContractorGrpRef?" name="data.ContractorGrpRef" label="ContractorGrpRef" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_X_aPwPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=ContractorGroups?" isArray="true" inout="IN"/>
+    <form:parameter generated="true" generatorSource="GenericReporting.xpdl#_geQMAFzxEeiwcu54pcKb1g?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=ContracterAgencyName?" name="data.ContracterAgencyName" label="ContracterAgencyName" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="200" inout="INOUT"/>
+  </form:dataModel>
+  <form:actions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancel" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancel.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submit" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submit.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_iPJm0F1-Eeiwcu54pcKb1g">
+      <form:source target="data.fetchDataURL" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.fetchDataURL.value"></form:source>
+      <form:destination target="control.fetchDataURL" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.fetchDataURL.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_iPQ7kF1-Eeiwcu54pcKb1g">
+      <form:source target="data.loginUserGrp" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.loginUserGrp.value"></form:source>
+      <form:destination target="control.loginUserGrp" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.loginUserGrp.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_iPQ7kV1-Eeiwcu54pcKb1g">
+      <form:source target="data.loginName" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.loginName.value"></form:source>
+      <form:destination target="control.loginName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.loginName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_iPQ7kl1-Eeiwcu54pcKb1g">
+      <form:source target="data.ResourceGroups" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ResourceGroups.value"></form:source>
+      <form:destination target="control.ResourceGroups" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ResourceGroups.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_iPRipV1-Eeiwcu54pcKb1g">
+      <form:source target="data.tmp" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.tmp.value"></form:source>
+      <form:destination target="pane.tmp" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.tmp.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_iPSJsF1-Eeiwcu54pcKb1g">
+      <form:source target="pane.tmp" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_-XsO8NAdEeeYN6H5-MXFxQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSystemParameters%26n=propertyName?" data="form.pane.tmp.value.propertyName"></form:source>
+      <form:destination target="control.tmp_propertyName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.tmp_propertyName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_iPSJsV1-Eeiwcu54pcKb1g">
+      <form:source target="pane.tmp" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_J9IBANAeEeeYN6H5-MXFxQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSystemParameters%26n=propertyValue?" data="form.pane.tmp.value.propertyValue"></form:source>
+      <form:destination target="control.tmp_propertyValue" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.tmp_propertyValue.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_iPSJsl1-Eeiwcu54pcKb1g">
+      <form:source target="data.ResourceList" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ResourceList.value"></form:source>
+      <form:destination target="pane.ResourceList" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value" data="form.pane.ResourceList.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_iPTX0F1-Eeiwcu54pcKb1g">
+      <form:source target="data.ErrorCode" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ErrorCode.value"></form:source>
+      <form:destination target="control.ErrorCode" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ErrorCode.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_iPTX0V1-Eeiwcu54pcKb1g">
+      <form:source target="data.ErrorDetail" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ErrorDetail.value"></form:source>
+      <form:destination target="control.ErrorDetail" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ErrorDetail.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_iPTX0l1-Eeiwcu54pcKb1g">
+      <form:source target="data.ContractorGrpRef" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ContractorGrpRef.value"></form:source>
+      <form:destination target="pane.ContractorGrpRef" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value" data="form.pane.ContractorGrpRef.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_iPTX011-Eeiwcu54pcKb1g">
+      <form:source target="pane.ContractorGrpRef" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_cfRGQPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=loginName?" data="form.pane.ContractorGrpRef.value.loginName"></form:source>
+      <form:destination target="control.ContractorGrpRef_loginName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGrpRef_loginName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_iPTX1F1-Eeiwcu54pcKb1g">
+      <form:source target="pane.ContractorGrpRef" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_clS1wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=firstName?" data="form.pane.ContractorGrpRef.value.firstName"></form:source>
+      <form:destination target="control.ContractorGrpRef_firstName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGrpRef_firstName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_iPT-4F1-Eeiwcu54pcKb1g">
+      <form:source target="pane.ContractorGrpRef" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_cpR94PB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=lastName?" data="form.pane.ContractorGrpRef.value.lastName"></form:source>
+      <form:destination target="control.ContractorGrpRef_lastName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGrpRef_lastName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_iPT-4V1-Eeiwcu54pcKb1g">
+      <form:source target="pane.ContractorGrpRef" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_ctE4wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=contractorGroupName?" data="form.pane.ContractorGrpRef.value.contractorGroupName"></form:source>
+      <form:destination target="control.ContractorGrpRef_contractorGroupName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGrpRef_contractorGroupName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_iPT-4l1-Eeiwcu54pcKb1g">
+      <form:source target="pane.ContractorGrpRef" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_oKsLkPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=masterUser?" data="form.pane.ContractorGrpRef.value.masterUser"></form:source>
+      <form:destination target="control.ContractorGrpRef_masterUser" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGrpRef_masterUser.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_iPT-411-Eeiwcu54pcKb1g">
+      <form:source target="pane.ContractorGrpRef" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_xLxKgPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=emailID?" data="form.pane.ContractorGrpRef.value.emailID"></form:source>
+      <form:destination target="control.ContractorGrpRef_emailID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGrpRef_emailID.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_iPT-5F1-Eeiwcu54pcKb1g">
+      <form:source target="pane.ContractorGrpRef" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_ddpVYFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedBy?" data="form.pane.ContractorGrpRef.value.addedBy"></form:source>
+      <form:destination target="control.ContractorGrpRef_addedBy" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGrpRef_addedBy.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_iPT-5V1-Eeiwcu54pcKb1g">
+      <form:source target="pane.ContractorGrpRef" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value com.sfc.fosImpl.dataModel.bom#_gJq2wFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedOn?" data="form.pane.ContractorGrpRef.value.addedOn"></form:source>
+      <form:destination target="control.ContractorGrpRef_addedOn" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContractorGrpRef_addedOn.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_iPUl8F1-Eeiwcu54pcKb1g">
+      <form:source target="data.ContracterAgencyName" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ContracterAgencyName.value"></form:source>
+      <form:destination target="control.ContracterAgencyName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ContracterAgencyName.value"></form:destination>
+    </form:binding>
+    <form:binding direction="bothways" name="_VW8ugD9AEe20Geuz5h7Eag">
+      <form:source target="pane.CancelledInstances" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value GenericReporting.bom#_RFUCcN_GEee4yOWJZ8GYTA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.genericReporting%3a%3aRecord%26n=processInstance?" data="form.pane.CancelledInstances.value.processInstance"/>
+      <form:destination target="control.CancelledInstances_processInstance" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.CancelledInstances_processInstance.value"/>
+    </form:binding>
+    <form:binding direction="bothways" name="_W4UaoD9AEe20Geuz5h7Eag">
+      <form:source target="pane.CancelledInstances" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value GenericReporting.bom#_RKp1cN_GEee4yOWJZ8GYTA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.genericReporting%3a%3aRecord%26n=processTemplate?" data="form.pane.CancelledInstances.value.processTemplate"/>
+      <form:destination target="control.CancelledInstances_processTemplate" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.CancelledInstances_processTemplate.value"/>
+    </form:binding>
+    <form:binding direction="bothways" name="_YvwdYD9AEe20Geuz5h7Eag">
+      <form:source target="pane.CancelledInstances" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value GenericReporting.bom#_RNqtMN_GEee4yOWJZ8GYTA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.genericReporting%3a%3aRecord%26n=status?" data="form.pane.CancelledInstances.value.status"/>
+      <form:destination target="control.CancelledInstances_status" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.CancelledInstances_status.value"/>
+    </form:binding>
+    <form:binding direction="bothways" name="_aitowD9AEe20Geuz5h7Eag">
+      <form:source target="pane.CancelledInstances" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value GenericReporting.bom#_RRF0oN_GEee4yOWJZ8GYTA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.genericReporting%3a%3aRecord%26n=time?" data="form.pane.CancelledInstances.value.time"/>
+      <form:destination target="control.CancelledInstances_time" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.CancelledInstances_time.value"/>
+    </form:binding>
+    <form:binding direction="bothways" name="_dQxxgD9AEe20Geuz5h7Eag">
+      <form:source target="pane.CancelledInstances" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value GenericReporting.bom#_RTzKYN_GEee4yOWJZ8GYTA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.genericReporting%3a%3aRecord%26n=siebelCircuitID?" data="form.pane.CancelledInstances.value.siebelCircuitID"/>
+      <form:destination target="control.CancelledInstances_siebelCircuitID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.CancelledInstances_siebelCircuitID.value"/>
+    </form:binding>
+    <form:binding direction="bothways" name="_fZzTgD9AEe20Geuz5h7Eag">
+      <form:source target="pane.CancelledInstances" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value GenericReporting.bom#_RW7W4N_GEee4yOWJZ8GYTA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.genericReporting%3a%3aRecord%26n=clientName?" data="form.pane.CancelledInstances.value.clientName"/>
+      <form:destination target="control.CancelledInstances_clientName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.CancelledInstances_clientName.value"/>
+    </form:binding>
+    <form:binding direction="bothways" name="_hrcmAD9AEe20Geuz5h7Eag">
+      <form:source target="pane.CancelledInstances" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value GenericReporting.bom#_WhewMN_GEee4yOWJZ8GYTA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.genericReporting%3a%3aRecord%26n=projectName?" data="form.pane.CancelledInstances.value.projectName"/>
+      <form:destination target="control.CancelledInstances_projectName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.CancelledInstances_projectName.value"/>
+    </form:binding>
+    <form:binding direction="bothways" name="_vzfM0D9CEe20Geuz5h7Eag">
+      <form:source target="pane.TaskList" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value" data="form.pane.TaskList.value"/>
+      <form:destination target="data.TaskList" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.TaskList.value"/>
+    </form:binding>
+  </form:bindings>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>User Task</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="true"/>
+    <form:defaults>
+      <form:labelProperties position="left"/>
+    </form:defaults>
+    <form:control generated="true" generatorSource="GenericReporting.xpdl#_bta4UN_AEee4yOWJZ8GYTA?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=fetchDataURL?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.fetchDataURL">
+      <form:propertySet xsi:type="et:TextAreaPropertySet">
+        <et:rows>10</et:rows>
+        <et:cols>25</et:cols>
+        <et:maxLength>100</et:maxLength>
+      </form:propertySet>
+      <form:label>fetchDataURL</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" name="pane.pane1" paneType="com.tibco.forms.panes.grid">
+      <form:propertySet xsi:type="et:GridPanePropertySet">
+        <et:showNavigator>false</et:showNavigator>
+        <et:editable>true</et:editable>
+        <et:sortable>true</et:sortable>
+        <et:rowLabel>{0}</et:rowLabel>
+      </form:propertySet>
+      <form:label>Pane 1</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+    </form:pane>
+    <form:pane generated="true" generatorSource="GenericReporting.xpdl#_X82iAN_GEee4yOWJZ8GYTA?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=CancelledInstances?" syncFlags="524288" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class GenericReporting.bom#_LjqXwN_GEee4yOWJZ8GYTA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.genericReporting%26n=Record?" name="pane.CancelledInstances" paneType="com.tibco.forms.panes.grid">
+      <form:propertySet xsi:type="et:GridPanePropertySet">
+        <et:showNavigator>false</et:showNavigator>
+        <et:supportAddOperation>true</et:supportAddOperation>
+        <et:supportDeleteOperation>true</et:supportDeleteOperation>
+        <et:editable>true</et:editable>
+        <et:sortable>true</et:sortable>
+        <et:rowLabel>{0}</et:rowLabel>
+      </form:propertySet>
+      <form:label>CancelledInstances</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CancelledInstances_processInstance">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Process Instance</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CancelledInstances_processTemplate">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Process Template</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CancelledInstances_status">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Status</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CancelledInstances_time">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Time</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CancelledInstances_siebelCircuitID">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Siebel Circuit ID</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CancelledInstances_clientName">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Client Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CancelledInstances_projectName">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Project Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CancelledInstances_currentActivity">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Current Activity</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:pane generated="true" generatorSource="GenericReporting.xpdl#_KMbiQN_KEee4yOWJZ8GYTA?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=StartedInstances?" syncFlags="524288" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class GenericReporting.bom#_LjqXwN_GEee4yOWJZ8GYTA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.genericReporting%26n=Record?" name="pane.StartedInstances" paneType="com.tibco.forms.panes.grid">
+      <form:propertySet xsi:type="et:GridPanePropertySet">
+        <et:showNavigator>false</et:showNavigator>
+        <et:supportAddOperation>true</et:supportAddOperation>
+        <et:supportDeleteOperation>true</et:supportDeleteOperation>
+        <et:editable>true</et:editable>
+        <et:sortable>true</et:sortable>
+        <et:rowLabel>{0}</et:rowLabel>
+      </form:propertySet>
+      <form:label>StartedInstances</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.StartedInstances_processInstance">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Process Instance</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.StartedInstances_processTemplate">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Process Template</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.StartedInstances_status">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Status</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.StartedInstances_time">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Time</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.StartedInstances_siebelCircuitID">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Siebel Circuit ID</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.StartedInstances_clientName">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Client Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.StartedInstances_projectName">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Project Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.StartedInstances_currentActivity">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Current Activity</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:pane generated="true" generatorSource="GenericReporting.xpdl#_IyxOYN_PEeeQHIXdSwQiWA?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=HaltedInstances?" syncFlags="524288" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class GenericReporting.bom#_LjqXwN_GEee4yOWJZ8GYTA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.genericReporting%26n=Record?" name="pane.HaltedInstances" paneType="com.tibco.forms.panes.grid">
+      <form:propertySet xsi:type="et:GridPanePropertySet">
+        <et:showNavigator>false</et:showNavigator>
+        <et:supportAddOperation>true</et:supportAddOperation>
+        <et:supportDeleteOperation>true</et:supportDeleteOperation>
+        <et:editable>true</et:editable>
+        <et:sortable>true</et:sortable>
+        <et:rowLabel>{0}</et:rowLabel>
+      </form:propertySet>
+      <form:label>HaltedInstances</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.HaltedInstances_processInstance">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Process Instance</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.HaltedInstances_processTemplate">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Process Template</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.HaltedInstances_status">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Status</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.HaltedInstances_time">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Time</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.HaltedInstances_siebelCircuitID">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Siebel Circuit ID</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.HaltedInstances_clientName">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Client Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.HaltedInstances_projectName">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Project Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.HaltedInstances_currentActivity">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Current Activity</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:pane generated="true" generatorSource="GenericReporting.xpdl#_JMvNkN_PEeeQHIXdSwQiWA?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=CompletedInstances?" syncFlags="524288" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class GenericReporting.bom#_LjqXwN_GEee4yOWJZ8GYTA?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.genericReporting%26n=Record?" name="pane.CompletedInstances" paneType="com.tibco.forms.panes.grid">
+      <form:propertySet xsi:type="et:GridPanePropertySet">
+        <et:showNavigator>false</et:showNavigator>
+        <et:supportAddOperation>true</et:supportAddOperation>
+        <et:supportDeleteOperation>true</et:supportDeleteOperation>
+        <et:editable>true</et:editable>
+        <et:sortable>true</et:sortable>
+        <et:rowLabel>{0}</et:rowLabel>
+      </form:propertySet>
+      <form:label>CompletedInstances</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CompletedInstances_processInstance">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Process Instance</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CompletedInstances_processTemplate">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Process Template</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CompletedInstances_status">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Status</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CompletedInstances_time">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Time</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CompletedInstances_siebelCircuitID">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Siebel Circuit ID</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CompletedInstances_clientName">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Client Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CompletedInstances_projectName">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Project Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.CompletedInstances_currentActivity">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Current Activity</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:control generated="true" generatorSource="GenericReporting.xpdl#_ZEsZgPH-Eee-3Kv3Q1H-xQ?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=loginUserGrp?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.loginUserGrp">
+      <form:propertySet xsi:type="et:TextAreaPropertySet">
+        <et:rows>10</et:rows>
+        <et:cols>25</et:cols>
+        <et:maxLength>100</et:maxLength>
+      </form:propertySet>
+      <form:label>loginUserGrp</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="GenericReporting.xpdl#_eg9N4fH-Eee-3Kv3Q1H-xQ?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=loginName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.loginName">
+      <form:propertySet xsi:type="et:TextAreaPropertySet">
+        <et:rows>10</et:rows>
+        <et:cols>25</et:cols>
+        <et:maxLength>100</et:maxLength>
+      </form:propertySet>
+      <form:label>loginName</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="GenericReporting.xpdl#_gQgf8PH-Eee-3Kv3Q1H-xQ?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=ResourceGroups?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.ResourceGroups">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <form:list>true</form:list>
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>ResourceGroups</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:pane generated="true" generatorSource="GenericReporting.xpdl#_jhyDcPH-Eee-3Kv3Q1H-xQ?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=TaskList?" syncFlags="524288" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class GenericReporting.bom#_hTFMsPH9EeeIX9PjIyxHhQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.genericReporting%26n=Task?" name="pane.TaskList" paneType="com.tibco.forms.panes.grid">
+      <form:propertySet xsi:type="et:GridPanePropertySet">
+        <et:showNavigator>false</et:showNavigator>
+        <et:supportAddOperation>true</et:supportAddOperation>
+        <et:supportDeleteOperation>true</et:supportDeleteOperation>
+        <et:editable>true</et:editable>
+        <et:sortable>true</et:sortable>
+        <et:rowLabel>{0}</et:rowLabel>
+      </form:propertySet>
+      <form:label>TaskList</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.TaskList_processInstance">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>Process Instance</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.TaskList_firstOfferTime">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>150</et:maxLength>
+        </form:propertySet>
+        <form:label>First Offer Time</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.TaskList_taskName">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>150</et:maxLength>
+        </form:propertySet>
+        <form:label>Task Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.TaskList_taskDuration">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>150</et:maxLength>
+        </form:propertySet>
+        <form:label>Task Duration</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.TaskList_waitDuration">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>150</et:maxLength>
+        </form:propertySet>
+        <form:label>Wait Duration</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.TaskList_workDuration">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>150</et:maxLength>
+        </form:propertySet>
+        <form:label>Work Duration</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.TaskList_status">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>150</et:maxLength>
+        </form:propertySet>
+        <form:label>Status</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:pane generated="true" generatorSource="GenericReporting.xpdl#_6BG4YPQ8EeeMCZGsP3rsrw?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=tmp?" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_8CyNENAdEeeYN6H5-MXFxQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=SystemParameters?" name="pane.tmp" paneType="com.tibco.forms.panes.vertical">
+      <form:label>tmp</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_-XsO8NAdEeeYN6H5-MXFxQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSystemParameters%26n=propertyName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.tmp_propertyName">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>PropertyName</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_J9IBANAeEeeYN6H5-MXFxQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aSystemParameters%26n=propertyValue?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.tmp_propertyValue">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>PropertyValue</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:pane generated="true" generatorSource="GenericReporting.xpdl#_t0DnIPtXEeeLb4hQs9WX0Q?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=ResourceList?" syncFlags="524288" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class GenericReporting.bom#_gRVpAPtXEeeLb4hQs9WX0Q?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.genericReporting%26n=ResourceDetails?" name="pane.ResourceList" paneType="com.tibco.forms.panes.grid">
+      <form:propertySet xsi:type="et:GridPanePropertySet">
+        <et:showNavigator>false</et:showNavigator>
+        <et:supportAddOperation>true</et:supportAddOperation>
+        <et:supportDeleteOperation>true</et:supportDeleteOperation>
+        <et:editable>true</et:editable>
+        <et:sortable>true</et:sortable>
+        <et:rowLabel>{0}</et:rowLabel>
+      </form:propertySet>
+      <form:label>ResourceList</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ResourceList_resourceName">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>500</et:maxLength>
+        </form:propertySet>
+        <form:label>Resource Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ResourceList_resourceEntity">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>500</et:maxLength>
+        </form:propertySet>
+        <form:label>Resource Entity</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ResourceList_caseCount">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>500</et:maxLength>
+        </form:propertySet>
+        <form:label>Case Count</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:pane generated="true" generatorSource="GenericReporting.xpdl#_qU00YPxNEeedYo2shDdA0Q?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=ActivityList?" syncFlags="524288" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class GenericReporting.bom#_atyOEPxNEeedYo2shDdA0Q?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.genericReporting%26n=Activity?" name="pane.ActivityList" paneType="com.tibco.forms.panes.grid">
+      <form:propertySet xsi:type="et:GridPanePropertySet">
+        <et:showNavigator>false</et:showNavigator>
+        <et:supportAddOperation>true</et:supportAddOperation>
+        <et:supportDeleteOperation>true</et:supportDeleteOperation>
+        <et:editable>true</et:editable>
+        <et:sortable>true</et:sortable>
+        <et:rowLabel>{0}</et:rowLabel>
+      </form:propertySet>
+      <form:label>ActivityList</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ActivityList_activityName">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>500</et:maxLength>
+        </form:propertySet>
+        <form:label>Activity Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ActivityList_activityCount">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>500</et:maxLength>
+        </form:propertySet>
+        <form:label>Activity Count</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:control generated="true" generatorSource="GenericReporting.xpdl#__o8uwP69EeeuGbQVt6VBIQ?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=ErrorCode?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.ErrorCode">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>Error Code</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="GenericReporting.xpdl#_AzsDkP6-EeeuGbQVt6VBIQ?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=ErrorDetail?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ErrorDetail">
+      <form:propertySet xsi:type="et:TextAreaPropertySet">
+        <et:rows>10</et:rows>
+        <et:cols>25</et:cols>
+        <et:maxLength>4000</et:maxLength>
+      </form:propertySet>
+      <form:label>Error Detail</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:pane generated="true" generatorSource="GenericReporting.xpdl#_SshhgFzxEeiwcu54pcKb1g?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=ContractorGrpRef?" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class com.sfc.fosImpl.dataModel.bom#_X_aPwPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.sfc.fosImpl.dataModel%26n=ContractorGroups?" readOnly="true" name="pane.ContractorGrpRef" paneType="com.tibco.forms.panes.grid">
+      <form:propertySet xsi:type="et:GridPanePropertySet">
+        <et:showNavigator>false</et:showNavigator>
+        <et:editable>true</et:editable>
+        <et:sortable>true</et:sortable>
+        <et:rowLabel>{0}</et:rowLabel>
+      </form:propertySet>
+      <form:label>ContractorGrpRef</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_cfRGQPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=loginName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGrpRef_loginName">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>login Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_clS1wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=firstName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGrpRef_firstName">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>first Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_cpR94PB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=lastName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGrpRef_lastName">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>last Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_ctE4wPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=contractorGroupName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGrpRef_contractorGroupName">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>Contractor Group Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_oKsLkPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=masterUser?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGrpRef_masterUser">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>Master User</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_xLxKgPB6EeeuzZ1H_57zBQ?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=emailID?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGrpRef_emailID">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>100</et:maxLength>
+        </form:propertySet>
+        <form:label>email ID</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_ddpVYFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedBy?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGrpRef_addedBy">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>200</et:maxLength>
+        </form:propertySet>
+        <form:label>AddedBy</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.sfc.fosImpl.dataModel.bom#_gJq2wFNnEeiG79zvZB9mbw?p=com.sfc.fosImpl.dataModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.sfc.fosImpl.dataModel%3a%3aContractorGroups%26n=addedOn?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" readOnly="true" controlType="com.tibco.forms.controls.textarea" name="control.ContractorGrpRef_addedOn">
+        <form:propertySet xsi:type="et:TextAreaPropertySet">
+          <et:rows>10</et:rows>
+          <et:cols>25</et:cols>
+          <et:maxLength>200</et:maxLength>
+        </form:propertySet>
+        <form:label>AddedOn</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:control generated="true" generatorSource="GenericReporting.xpdl#_geQMAFzxEeiwcu54pcKb1g?p=com.sfc.fosImpl.genericReporting%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=GenericReporting%3a%3aGenericReportingTaskAnalysis%26n=ContracterAgencyName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.ContracterAgencyName">
+      <form:propertySet xsi:type="et:TextAreaPropertySet">
+        <et:rows>10</et:rows>
+        <et:cols>25</et:cols>
+        <et:maxLength>200</et:maxLength>
+      </form:propertySet>
+      <form:label>ContracterAgencyName</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancel">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submit">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>
